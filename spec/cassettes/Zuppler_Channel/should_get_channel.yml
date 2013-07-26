@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.zuppler.com/v2/channels/zuppler.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 26 Jul 2013 15:14:46 GMT
+      server:
+      - thin 1.5.0 codename Knife
+      access-control-allow-origin:
+      - ! '*'
+      access-control-allow-methods:
+      - POST, GET, OPTIONS
+      access-control-allow-headers:
+      - ! '*'
+      content-type:
+      - application/json; charset=utf-8
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"8e6afac2a0e067fe65fe91d8586749d1"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-request-id:
+      - 5bb8eb46b5f30c6d391317d6efe5a41b
+      x-runtime:
+      - '0.021326'
+      x-rack-cache:
+      - miss
+      set-cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc0MzM2NGE0Mzk4YWYyOGE3MTQxMzMyYTU4ZjJkYjdhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXVra0x2Vk1lT0dpNjFwakVkVjNNVFI1T3h6eTZYOHFDS2R1ZXk5RWszTE09BjsARg%3D%3D--8759c1ffc964a0f907fb2cb63595aca14309b0e2;
+        path=/; HttpOnly
+      via:
+      - 1.1 api.zuppler.com
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":1,"permalink":"zuppler","name":"Zuppler","logo":"http://cdn.zuppler.com/images/channels/logos/000/000/001/original/zuppler-logo.png?1323439953"}'
+    http_version: '1.1'
+  recorded_at: Fri, 26 Jul 2013 15:14:31 GMT
+recorded_with: VCR 2.5.0
