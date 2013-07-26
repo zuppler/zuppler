@@ -1,4 +1,4 @@
-# Zuppler [![Build Status](https://travis-ci.org/zuppler/zuppler.png?branch=master)](https://travis-ci.org/zuppler/zuppler) [![Coverage Status](https://coveralls.io/repos/zuppler/zuppler/badge.png)](https://coveralls.io/r/zuppler/zuppler) [![Code Climate](https://codeclimate.com/github/zuppler/zuppler.png)](https://codeclimate.com/github/zuppler/zuppler)
+# Zuppler [![Build Status](https://travis-ci.org/zuppler/zuppler.png?branch=master)](https://travis-ci.org/zuppler/zuppler) [![Coverage Status](https://coveralls.io/repos/zuppler/zuppler/badge.png)](https://coveralls.io/r/zuppler/zuppler) [![Code Climate](https://codeclimate.com/github/zuppler/zuppler.png)](https://codeclimate.com/github/zuppler/zuppler) [![Dependency Status](https://gemnasium.com/zuppler/zuppler.png)](https://gemnasium.com/zuppler/zuppler)
 
 TODO: Write a gem description
 
