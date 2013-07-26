@@ -24,3 +24,6 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.configure_rspec_metadata!
 end
+
+require 'coveralls'
+Coveralls.wear!
