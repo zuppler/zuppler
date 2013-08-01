@@ -1,33 +1,44 @@
 require 'httparty'
+require 'active_resource'
 
 require "zuppler/version"
 require "zuppler/channel"
 require "zuppler/restaurant"
 
 module Zuppler
-
   class << self
-    attr_reader :channel, :api_key, :test
+    attr_reader :channel_key, :api_key, :test
 
-    def init(channel, api_key, test = false)
-      self.channel, self.api_key, self.test = channel, api_key, test
+    def init(channel_key, api_key, test = false)
+      self.channel_key, self.api_key, self.test = channel_key, api_key, test
+    end
+    def check
+      raise ':channel_key cannot be blank' if channel_key.blank?
+      raise ':api_key cannot be blank' if api_key.blank?
     end
     
     def api_host
-      'http://api.zuppler.com'
+      test? ? 'http://api.biznettechnologies.com' : 'http://api.zuppler.com'
     end
     def api_version
       '/v2'
     end
+    def channels_uri
+      "/channels/#{channel_key}"
+    end
     def api_url
-      api_host + api_version
+      api_host + api_version + channels_uri
     end
     
     def test?
       !!test
     end
-private
-    attr_writer :channel, :api_key, :test
-  end
 
+    def channel
+      @channel ||= Zuppler::Channel.find channel_key
+    end
+
+    private
+    attr_writer :channel_key, :api_key, :test
+  end
 end

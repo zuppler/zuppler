@@ -2,13 +2,19 @@ module Zuppler
   class Channel
     include HTTParty
 
-    def self.find(cid)
-      response = get resource_url(cid)
-      response
+    class << self
+      def find(cid)
+        response = get resource_url(cid)
+        response
+      end
+
+      def resource_url(cid)
+        Zuppler.api_url + ".json"
+      end
     end
 
-    def self.resource_url(cid)
-      Zuppler.api_url + "/channels/#{cid}.json"
+    def restaurants
+      []
     end
   end
 end
