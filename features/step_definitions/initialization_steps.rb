@@ -3,11 +3,11 @@ Given(/^Zuppler is loaded$/) do
 end
 
 When(/^I initialize with (.*) and (.*)$/) do |channel, key|
-  Zuppler.channel = channel
-  Zuppler.api_key = key
+  Zuppler.init channel, key
 end
 
 Then(/^Is initialized with (.*) and (.*)$/) do |channel, key|
   Zuppler.channel.should eq(channel)
   Zuppler.api_key.should eq(key)
+  Zuppler.test?.should be_false
 end

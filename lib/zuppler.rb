@@ -5,9 +5,14 @@ require "zuppler/channel"
 require "zuppler/restaurant"
 
 module Zuppler
-  class << self
-    attr_accessor :channel, :api_key, :test
 
+  class << self
+    attr_reader :channel, :api_key, :test
+
+    def init(channel, api_key, test = false)
+      self.channel, self.api_key, self.test = channel, api_key, test
+    end
+    
     def api_host
       'http://api.zuppler.com'
     end
@@ -21,5 +26,8 @@ module Zuppler
     def test?
       !!test
     end
+private
+    attr_writer :channel, :api_key, :test
   end
+
 end
