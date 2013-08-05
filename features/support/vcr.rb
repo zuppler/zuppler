@@ -1,8 +1,8 @@
 require 'vcr'
 
-VCR.config do |c|
+VCR.configure do |c|
   c.cassette_library_dir = 'features/cassettes'
-  c.stub_with :webmock
+  c.hook_into :webmock
 end
 
 VCR.cucumber_tags do |t|

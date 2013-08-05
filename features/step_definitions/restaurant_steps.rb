@@ -4,7 +4,6 @@ Then(/^Restaurants should raise error$/) do
 end
 
 
-
 Given(/^Zuppler configured with (.*) and (.*)$/) do |channel, key|
   Zuppler.init channel, key, true
 end

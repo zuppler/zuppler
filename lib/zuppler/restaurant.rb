@@ -31,7 +31,7 @@ module Zuppler
     def save
       response = self.class.post self.class.restaurants_url, :body => {:restaurant => 
         {:name => name, :remote_id => rid, :logo => logo, :location => location, :owner => owner}}
-      puts response
+#      puts response
       response.success?
     end
 
