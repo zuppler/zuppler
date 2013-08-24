@@ -7,7 +7,7 @@ Feature: Restaurant resource
     Then Restaurants should raise error
 
   @vcr
-  Scenario: Create restaurant
+  Scenario: Create restaurant with required info
     Given Zuppler configured with demorestaurant and qwe123
     When I create oscar,123456,https://www.google.com/images/srpr/logo4w.png,123 North St New York,Syca,syca@zuppler.com,0745586010 restaurant
-    Then I should have oscar in channel
+    Then I should have oscar restaurant created

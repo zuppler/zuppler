@@ -1,39 +1,40 @@
 module Zuppler
-  class Restaurant
+  class Restaurant < Model
     include HTTParty
-    attr_accessor :name, :rid, :logo, :location, :owner
+
+    self.attribute_keys = [:id, :name, :remote_id, :logo, :location, :owner]
+
+    validates_presence_of :name, :remote_id, :logo, :location, :owner
 
     class << self
-      def all
-        Zuppler.check
-
-        response = get restaurants_url
-        response
+      def restaurants_url
+        "#{Zuppler.api_url}/restaurants.json"
       end
 
-      def create
+      def create(options = {})
         Zuppler.check
-
         restaurant = Restaurant.new
         yield restaurant
-        restaurant.save
+        
+        options = {:body => {:restaurant => restaurant.attributes}}
+        response = post restaurants_url, options
+        log response, options
+        if success?(response)
+          restaurant.id = response.body['id']
+          restaurant
+        else
+          nil
+        end
       end
 
-      def find(params)
-        {'id' => 1}
+      def all
+        Zuppler.check
+        get restaurants_url
       end
-
-      def restaurants_url
-        Zuppler.api_url + "/restaurants.json"
+      
+      def success?(response)
+        response.success? and response['valid']
       end
     end
-
-    def save
-      response = self.class.post self.class.restaurants_url, :body => {:restaurant => 
-        {:name => name, :remote_id => rid, :logo => logo, :location => location, :owner => owner}}
-#      puts response
-      response.success?
-    end
-
   end
 end

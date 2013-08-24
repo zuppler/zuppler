@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants.json
+    body:
+      encoding: US-ASCII
+      string: restaurant[id]=&restaurant[name]=oscar&restaurant[remote_id]=123456&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Syca&restaurant[owner][email]=syca%40zuppler.com&restaurant[owner][phone]=0745586010
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 24 Aug 2013 12:06:17 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"3c7be184710850c9df7792cf0c2f70f3"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e52c04d1adc9ffd9d940f6173174369d
+      X-Runtime:
+      - '17.871232'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTUxNDlkNDcyMDRiYmEzMDdmYzUzNjdjNzUxNzA3ZmFkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXRCUmx4UEFGaHRUK3ptamVhSlA1a2hDRFQ3MnF2T3VBUXRIbkFmRVhIaWs9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--8aa8799343cb1495e1a1881ac950e3e64c2fae63;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{},"valid":true,"id":1822,"name":"oscar","permalink":"oscar","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/018/065/medium/open-uri20130824-14021-eovqnf.?1377345963","cuisines":"","amenities":"","owner":{"name":"Syca","email":"syca@zuppler.com","phone":"0745586010"},"address":{"id":228583,"street":"123
+        North Avenue","block":null,"city":"Staten Island","state":"NY","country":"US","zip":"10314","lat":"40.622237","lng":"-74.134152"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
+    http_version: 
+  recorded_at: Sat, 24 Aug 2013 12:08:16 GMT
+recorded_with: VCR 2.5.0

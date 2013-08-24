@@ -15,3 +15,8 @@ end
 When(/^Zuppler is not initialized$/) do
   Zuppler.init '', ''
 end
+When(/^Zuppler is initialized$/) do
+  Zuppler.channel.should be
+  Zuppler.api_key.should be
+  Zuppler.test?.should be_true
+end

@@ -1,11 +1,13 @@
+require 'active_model'
 require 'httparty'
-require 'active_resource'
 
 require "zuppler/version"
+require "zuppler/model"
 require "zuppler/channel"
 require "zuppler/restaurant"
 
 module Zuppler
+
   class << self
     attr_reader :channel_key, :api_key, :test
 

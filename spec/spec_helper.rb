@@ -1,5 +1,8 @@
 require 'zuppler'
 
+require 'shoulda-matchers'
+require 'active_support/core_ext/array/wrap'
+
 require 'coveralls'
 Coveralls.wear!
 
