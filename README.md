@@ -18,10 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
+
+``` ruby
+Zuppler.init 'channel', 'key'
+```
+
+``` ruby
 restaurant = Zuppler::Restaurant.create do |r|
   r.name, r.remote_id, r.logo, r.location = name, rid, logo, location
   r.owner = {:name => oname, :email => oemail, :phone => ophone}
 end
+```
 
 ## Contributing
 
