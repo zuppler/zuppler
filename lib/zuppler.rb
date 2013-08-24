@@ -7,6 +7,8 @@ require "zuppler/channel"
 require "zuppler/restaurant"
 
 module Zuppler
+  class Error < RuntimeError
+  end
 
   class << self
     attr_reader :channel_key, :api_key, :test
@@ -15,8 +17,8 @@ module Zuppler
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
     end
     def check
-      raise ':channel_key cannot be blank' if channel_key.blank?
-      raise ':api_key cannot be blank' if api_key.blank?
+      raise Zuppler::Error.new(':channel_key cannot be blank') if channel_key.blank?
+      raise Zuppler::Error.new(':api_key cannot be blank') if api_key.blank?
     end
     
     def api_host

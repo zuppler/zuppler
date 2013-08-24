@@ -8,6 +8,13 @@ describe Zuppler::Restaurant do
   it { should validate_presence_of(:location) }
   it { should validate_presence_of(:owner) }
 
+  it 'should validate owner' do
+    subject.name, subject.remote_id, subject.logo, subject.location = 'n',2,'http://example.com','Main'
+    subject.owner = {:name => 'name'}
+    subject.should_not be_valid
+    subject.errors[:owner].should eql(["email is required", "phone is required"])
+  end
+
   it 'returns name attributes' do
     restaurant = Zuppler::Restaurant.new :name => 'name'
     restaurant.attributes.should include({:name => 'name'})

@@ -1,4 +1,17 @@
 module Zuppler
+  module Macros
+    def self.included(mod)
+      class << mod
+        alias_method :original_create, :create
+
+        def create 
+          Zuppler.check
+          original_create
+        end
+      end
+    end
+  end
+
   class Model
     include ActiveModel::Model
 
@@ -9,7 +22,7 @@ module Zuppler
     # include ActiveModel::MassAssignmentSecurity
 
     define_model_callbacks :create, :all
-
+    
     class << self
       def attribute_keys=(keys)
         @attribute_keys = keys
@@ -25,6 +38,9 @@ module Zuppler
       end
     end
 
+    def log(response, options)
+      self.class.log response, options
+    end
 
     def persisted?
       !!self.id

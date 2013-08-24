@@ -1,8 +1,6 @@
 Then(/^Restaurants should raise error$/) do
-  expect { Zuppler::Restaurant.all }.to raise_error
-  expect { Zuppler::Restaurant.create }.to raise_error
+  expect { Zuppler::Restaurant.create }.to raise_error(Zuppler::Error)
 end
-
 
 Given(/^Zuppler configured with (.*) and (.*)$/) do |channel, key|
   Zuppler.init channel, key, true

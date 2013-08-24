@@ -1,6 +1,6 @@
 # Zuppler [![Build Status](https://travis-ci.org/zuppler/zuppler.png?branch=master)](https://travis-ci.org/zuppler/zuppler) [![Coverage Status](https://coveralls.io/repos/zuppler/zuppler/badge.png)](https://coveralls.io/r/zuppler/zuppler) [![Code Climate](https://codeclimate.com/github/zuppler/zuppler.png)](https://codeclimate.com/github/zuppler/zuppler) [![Dependency Status](https://gemnasium.com/zuppler/zuppler.png)](https://gemnasium.com/zuppler/zuppler)
 
-TODO: Write a gem description
+Ruby wrapper for Zuppler API.
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+restaurant = Zuppler::Restaurant.create do |r|
+  r.name, r.remote_id, r.logo, r.location = name, rid, logo, location
+  r.owner = {:name => oname, :email => oemail, :phone => ophone}
+end
 
 ## Contributing
 
