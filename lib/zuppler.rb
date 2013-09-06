@@ -22,7 +22,8 @@ module Zuppler
     end
     
     def api_host
-      test? ? 'http://api.biznettechnologies.com' : 'http://api.zuppler.com'
+#      test? ? 'http://api.biznettechnologies.com' : 'http://api.zuppler.com'
+      test? ? 'http://api.zuppler.dev' : 'http://api.zuppler.com'
     end
     def api_version
       '/v2'

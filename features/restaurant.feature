@@ -9,5 +9,5 @@ Feature: Restaurant resource
   @vcr
   Scenario: Create restaurant with required info
     Given Zuppler configured with demorestaurant and qwe123
-    When I create oscar,123456,https://www.google.com/images/srpr/logo4w.png,123 North St New York,Syca,syca@zuppler.com,0745586010 restaurant
+    When I create Restaurant,1234,https://www.google.com/images/srpr/logo4w.png,123 North St New York,Iulian,iulian.costan@zuppler.com,0745586010 restaurant
     Then I should have oscar restaurant created

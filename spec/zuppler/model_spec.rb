@@ -4,7 +4,7 @@ describe 'Zuppler::Model' do
   
   it 'should wrap create' do
     class R
-      def self.create
+      def self.create(options = {})
         'create'
       end
       include Zuppler::Macros

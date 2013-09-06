@@ -8,6 +8,10 @@ module Zuppler
       end
     end
   end
+  class ConfigurationValidator < ActiveModel::Validator
+    def validate(record)
+    end
+  end
 
   class Restaurant < Model
     include HTTParty
@@ -21,21 +25,24 @@ module Zuppler
     end
     include Zuppler::Macros
     
-    self.attribute_keys = [:id, :name, :remote_id, :logo, :location, :owner]
+    self.attribute_keys = [:id, :name, :remote_id, :logo, :location, :owner, :configuration]
 
     validates_presence_of :name, :remote_id, :logo, :location, :owner
-    validates_with OwnerValidator
+    validates_with OwnerValidator, ConfigurationValidator
 
     def save
-      options = {:body => {:restaurant => self.attributes}}
+      restaurant_attributes = self.attributes.reject{|k,v| k == :id or v.nil?}
+      options = {:body => {:restaurant => restaurant_attributes}}
       response = self.class.post restaurants_url, options
       log response, options
       if success?(response)
-        self.id = response.body['id']
-        self
+        self.id = response['id']
       else
-        nil
+        response['errors'].each do |k,v|
+          self.errors.add k, v
+        end
       end
+      self
     end
     
     private
@@ -45,7 +52,7 @@ module Zuppler
     end
     
     def success?(response)
-      response.success? and response['valid']
+      response.success? and response['valid'] == true
     end
   end
 end

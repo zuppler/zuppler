@@ -2,20 +2,16 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants.json
+    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[id]=&restaurant[name]=oscar&restaurant[remote_id]=123456&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Syca&restaurant[owner][email]=syca%40zuppler.com&restaurant[owner][phone]=0745586010
+      string: restaurant[name]=Restaurant%20-%20Langworth-Kirlin&restaurant[remote_id]=1234%20-%20Langworth-Kirlin&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Iulian&restaurant[owner][email]=iulian.costan%40zuppler.com&restaurant[owner][phone]=0745586010
     headers: {}
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Sat, 24 Aug 2013 12:06:17 GMT
-      Server:
-      - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -25,28 +21,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge,chrome=1
+      - IE=Edge
       Etag:
-      - ! '"3c7be184710850c9df7792cf0c2f70f3"'
+      - ! '"c9cd6cc878f3ba257a22ae4dfcbfc88b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e52c04d1adc9ffd9d940f6173174369d
-      X-Runtime:
-      - '17.871232'
-      X-Rack-Cache:
-      - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTUxNDlkNDcyMDRiYmEzMDdmYzUzNjdjNzUxNzA3ZmFkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXRCUmx4UEFGaHRUK3ptamVhSlA1a2hDRFQ3MnF2T3VBUXRIbkFmRVhIaWs9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--8aa8799343cb1495e1a1881ac950e3e64c2fae63;
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTZkNmIyOWY2OGFkY2YxZDYyYzc3ZWY3NmJhZWY1MjQ1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTg1TUVBMGxrVmNkOTMwdU43Q3BMRTk2MGhDK1RZQTQxU1BoNFg4V1R3azg9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--d70f9c6430cc048d2ef4212d013e1f8b02b47b44;
         path=/; HttpOnly
-      Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      X-Request-Id:
+      - 2bd49d77e290c856a4986d7d3fc25e00
+      X-Runtime:
+      - '7.217793'
+      Connection:
+      - close
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":1822,"name":"oscar","permalink":"oscar","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/018/065/medium/open-uri20130824-14021-eovqnf.?1377345963","cuisines":"","amenities":"","owner":{"name":"Syca","email":"syca@zuppler.com","phone":"0745586010"},"address":{"id":228583,"street":"123
-        North Avenue","block":null,"city":"Staten Island","state":"NY","country":"US","zip":"10314","lat":"40.622237","lng":"-74.134152"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
+      string: ! '{"errors":{},"valid":true,"id":1838,"name":"Restaurant - Langworth-Kirlin","permalink":"restaurantlangworthkirlin","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/018/115/medium/open-uri20130906-83664-1nwvjqi.?1378471464","cuisines":"","amenities":"","owner":{"name":"Iulian","email":"iulian.costan@zuppler.com","phone":"0745586010"},"address":{"id":232792,"street":"123
+        North Street","block":null,"city":"Middletown","state":"NY","country":"US","zip":"10940","lat":"41.449022","lng":"-74.41803"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
     http_version: 
-  recorded_at: Sat, 24 Aug 2013 12:08:16 GMT
+  recorded_at: Fri, 06 Sep 2013 12:44:29 GMT
 recorded_with: VCR 2.5.0

@@ -4,9 +4,9 @@ module Zuppler
       class << mod
         alias_method :original_create, :create
 
-        def create 
+        def create(options = {})
           Zuppler.check
-          original_create
+          original_create options
         end
       end
     end

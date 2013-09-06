@@ -15,6 +15,9 @@ describe Zuppler::Restaurant do
     subject.errors[:owner].should eql(["email is required", "phone is required"])
   end
 
+  it 'should validate configuration' do
+  end
+
   it 'returns name attributes' do
     restaurant = Zuppler::Restaurant.new :name => 'name'
     restaurant.attributes.should include({:name => 'name'})
