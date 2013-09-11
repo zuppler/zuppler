@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants/demorestaurant/menus.json
+    body:
+      encoding: US-ASCII
+      string: menu[name]=lunch&menu[special]=true
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"23acc30ebf03b294cbcce20fee79f28f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc5NjljM2Q3MTZiMDQ3NzliZjNjYzI0MDBkZDYzN2ZlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUkrNnRmUXVhNkpEZjkvemU5bVByY29mN01LY0xUSm5PUkROVzR2Nmt4REE9BjsARg%3D%3D--b139b91910d0090393d2cc29d5cbb5976374b300;
+        path=/; HttpOnly
+      X-Request-Id:
+      - e23d79979dbfa4e652d525c2009115d4
+      X-Runtime:
+      - '0.023908'
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{},"valid":true,"id":21178,"name":"lunch","categories":[]}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2013 15:55:16 GMT
+recorded_with: VCR 2.5.0

@@ -17,6 +17,7 @@ When(/^I create (.*),(.*),(.*),(.*),(.*),(.*),(.*) restaurant$/) do |name,rid,lo
 end
 Then(/^I should have (.*) restaurant created$/) do |permalink|
   @restaurant.id.should_not be_nil
+  @restaurant.permalink.should_not be_nil
 end
 
 

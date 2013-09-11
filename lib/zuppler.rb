@@ -1,10 +1,12 @@
 require 'active_model'
+require 'active_attr'
 require 'httparty'
 
 require "zuppler/version"
 require "zuppler/model"
 require "zuppler/channel"
 require "zuppler/restaurant"
+require "zuppler/menu"
 
 module Zuppler
   class Error < RuntimeError

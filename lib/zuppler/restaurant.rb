@@ -25,7 +25,7 @@ module Zuppler
     end
     include Zuppler::Macros
     
-    self.attribute_keys = [:id, :name, :remote_id, :logo, :location, :owner, :configuration]
+    self.attribute_keys = [:id, :permalink, :name, :remote_id, :logo, :location, :owner, :configuration]
 
     validates_presence_of :name, :remote_id, :logo, :location, :owner
     validates_with OwnerValidator, ConfigurationValidator
@@ -37,6 +37,7 @@ module Zuppler
       log response, options
       if success?(response)
         self.id = response['id']
+        self.permalink = response['permalink']
       else
         response['errors'].each do |k,v|
           self.errors.add k, v
