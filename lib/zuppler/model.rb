@@ -13,7 +13,7 @@ module Zuppler
   end
 
   class Model
-    include ActiveModel::Model
+    include ActiveModel::Model, HTTParty
 
     # extend ActiveModel::Naming
     # include ActiveModel::Conversion
@@ -38,18 +38,9 @@ module Zuppler
       end
     end
 
-    def log(response, options)
-      self.class.log response, options
-    end
-
-    def persisted?
-      !!self.id
-    end
-
     def initialize(attributes={})
       self.attributes = attributes
     end
-    
     def attributes
       self.class.attribute_keys.reduce({}) do |result, key|
         result[key] = read_attribute_for_validation key
@@ -61,6 +52,23 @@ module Zuppler
         method = "#{k}="
         send method, v if respond_to? method
       end
+    end
+
+    def log(response, options)
+      self.class.log response, options
+    end
+
+    def persisted?
+      !!self.id
+    end
+
+    def success?(response)
+      response.success? and response['valid'] == true
+    end
+    def execute_create(url, options)
+      response = self.class.post url, options
+      log response, options
+      response
     end
   end
 end
