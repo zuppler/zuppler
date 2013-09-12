@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants/demorestaurant/menus/235/categories.json
+    body:
+      encoding: US-ASCII
+      string: category[name]=pizzas
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"db29fee6c90ae5f5eb55ad921b3cc058"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTQ5MjM4MjE5M2YzZDk3N2ExZjI4OTJkNzcxMWNhZTBmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9OQWNYSkR0ZGtmdHRudERwWFptemR6NS95dnJpMHkrQTAyb1lHbmVoYUE9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--2700703eaa67510678ebd8f686b118cc1ae74507;
+        path=/; HttpOnly
+      X-Request-Id:
+      - e42480299cc02fddeaabd782f4f3f1d0
+      X-Runtime:
+      - '0.046056'
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{},"valid":true,"id":31788,"name":"pizzas","priority":0,"active":true,"items":[],"modifiers":[]}'
+    http_version: 
+  recorded_at: Thu, 12 Sep 2013 14:06:40 GMT
+recorded_with: VCR 2.5.0

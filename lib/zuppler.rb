@@ -7,6 +7,7 @@ require "zuppler/model"
 require "zuppler/channel"
 require "zuppler/restaurant"
 require "zuppler/menu"
+require "zuppler/category"
 
 module Zuppler
   class Error < RuntimeError

@@ -70,5 +70,9 @@ module Zuppler
       log response, options
       response
     end
+
+    def filter_attributes(attrs, *keys)
+      attrs.reject{|k,v| keys.include?(k) or v.nil?}
+    end
   end
 end
