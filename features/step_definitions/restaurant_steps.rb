@@ -5,6 +5,7 @@ end
 Given(/^Zuppler configured with (.*) and (.*)$/) do |channel, key|
   Zuppler.init channel, key, true
 end
+
 When(/^I create (.*),(.*),(.*),(.*),(.*),(.*),(.*) restaurant$/) do |name,rid,logo,location,oname,oemail,ophone|
   company = Faker::Company.name
   name = "#{name} - #{company}"
@@ -15,10 +16,17 @@ When(/^I create (.*),(.*),(.*),(.*),(.*),(.*),(.*) restaurant$/) do |name,rid,lo
   }
   @restaurant = Zuppler::Restaurant.create options
 end
+
 Then(/^I should have (.*) restaurant created$/) do |permalink|
   @restaurant.id.should_not be_nil
   @restaurant.permalink.should_not be_nil
 end
+
+Given(/^I have a restaurant "(.*?)","(.*?)"$/) do |id, permalink|
+  @restaurant = Zuppler::Restaurant.new :id => id, :permalink => 'demorestaurant'
+end
+
+
 
 
 

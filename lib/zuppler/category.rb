@@ -23,9 +23,13 @@ module Zuppler
       self
     end
 
+    def restaurant
+      menu.restaurant
+    end
+
     protected
     def categories_url
-      "#{Zuppler.api_url}/restaurants/#{menu.restaurant.permalink}/menus/#{menu.id}/categories.json"
+      "#{Zuppler.api_url}/restaurants/#{restaurant.permalink}/menus/#{menu.id}/categories.json"
     end
   end
 end

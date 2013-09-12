@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants/demorestaurant/categories/31788/items.json
+    body:
+      encoding: US-ASCII
+      string: item[name]=margherita&item[price]=9.99
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"875d959fe461233b8de19ade5e610cb6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWMwYWViNDI3ZWI2ZmQxNDc3ZTRjZDU4OTdjYzE5MGE5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWY3U3VFRS9mVTFpZEVTL1QybXZJbUpaNi9wV1h4bm0ydWQyN2dHaDZvOGc9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--e8869c22baabfcc3b1ad03b6f0b9d890eac84ca8;
+        path=/; HttpOnly
+      X-Request-Id:
+      - da24a4452d679e19619f5c0855077d12
+      X-Runtime:
+      - '0.088400'
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{},"valid":true,"image":"","items":[{"id":312038,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":312037,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":312036,"price":"9.99","size_name":"","active":true,"coupon":null}],"modifiers":[],"id":267608,"name":"margherita","description":null,"veg":null,"spicy":null}'
+    http_version: 
+  recorded_at: Thu, 12 Sep 2013 15:10:56 GMT
+recorded_with: VCR 2.5.0
