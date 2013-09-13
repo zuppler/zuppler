@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["iulian.costan@zuppler.com"]
   spec.description   = %q{Zuppler API}
   spec.summary       = %q{Zuppler API}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/zuppler/zuppler"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "httparty"
-  spec.add_dependency "activemodel", "~> 4.0"
   spec.add_dependency "active_attr"
 
   spec.add_development_dependency "bundler", "~> 1.3"
