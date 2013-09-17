@@ -17,7 +17,7 @@ module Zuppler
   class << self
     attr_reader :channel_key, :api_key, :test
 
-    def init(channel_key, api_key, test = false)
+    def init(channel_key, api_key, test = true)
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
     end
     def check
@@ -26,8 +26,8 @@ module Zuppler
     end
     
     def api_host
-#      test? ? 'http://api.biznettechnologies.com' : 'http://api.zuppler.com'
-      test? ? 'http://api.zuppler.dev' : 'http://api.zuppler.com'
+      test? ? 'http://api.biznettechnologies.com' : 'http://api.zuppler.com'
+#      test? ? 'http://api.zuppler.dev' : 'http://api.zuppler.com'
     end
     def api_version
       '/v2'
