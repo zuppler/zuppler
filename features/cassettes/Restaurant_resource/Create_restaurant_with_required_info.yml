@@ -2,16 +2,20 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants.json
+    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Langworth-Kirlin&restaurant[remote_id]=1234%20-%20Langworth-Kirlin&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Iulian&restaurant[owner][email]=iulian.costan%40zuppler.com&restaurant[owner][phone]=0745586010
+      string: restaurant[name]=Restaurant%20-%20Mraz%20Group&restaurant[remote_id]=1234%20-%20Mraz%20Group&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Iulian&restaurant[owner][email]=iulian.costan%40zuppler.com&restaurant[owner][phone]=0745586010
     headers: {}
   response:
     status:
       code: 200
       message: OK
     headers:
+      Date:
+      - Tue, 17 Sep 2013 11:59:35 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -21,24 +25,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
-      - ! '"c9cd6cc878f3ba257a22ae4dfcbfc88b"'
+      - ! '"00779344561694d99f06f5d3addcb9a9"'
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTZkNmIyOWY2OGFkY2YxZDYyYzc3ZWY3NmJhZWY1MjQ1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTg1TUVBMGxrVmNkOTMwdU43Q3BMRTk2MGhDK1RZQTQxU1BoNFg4V1R3azg9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--d70f9c6430cc048d2ef4212d013e1f8b02b47b44;
-        path=/; HttpOnly
       X-Request-Id:
-      - 2bd49d77e290c856a4986d7d3fc25e00
+      - 04d492d30f580435ced70f35fcb20b72
       X-Runtime:
-      - '7.217793'
-      Connection:
-      - close
+      - '14.549543'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTljM2IxMWIzODM1NzA1MTZlNGMzOGUzNjc1MzM2NDM3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWRONGsyN3NNcWFDTmdsUXFLMHJJVVBtaVBTbGZxZUM0eGlUelh0NDNXS2M9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--c5399298a542b2898bb77aea833f231906f172a4;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":1838,"name":"Restaurant - Langworth-Kirlin","permalink":"restaurantlangworthkirlin","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/018/115/medium/open-uri20130906-83664-1nwvjqi.?1378471464","cuisines":"","amenities":"","owner":{"name":"Iulian","email":"iulian.costan@zuppler.com","phone":"0745586010"},"address":{"id":232792,"street":"123
-        North Street","block":null,"city":"Middletown","state":"NY","country":"US","zip":"10940","lat":"41.449022","lng":"-74.41803"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
+      string: ! '{"errors":{},"valid":true,"id":1835,"name":"Restaurant - Mraz Group","permalink":"restaurantmrazgroup","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/018/077/medium/open-uri20130917-30380-ud1sdn.?1379419163","cuisines":"","amenities":"","owner":{"name":"Iulian","email":"iulian.costan@zuppler.com","phone":"0745586010"},"address":{"id":228597,"street":"123
+        North Street","block":null,"city":"Rye","state":"NY","country":"US","zip":"10580","lat":"40.976753","lng":"-73.694657"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
     http_version: 
-  recorded_at: Fri, 06 Sep 2013 12:44:29 GMT
+  recorded_at: Tue, 17 Sep 2013 12:02:22 GMT
 recorded_with: VCR 2.5.0

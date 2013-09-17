@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants/demorestaurant/menus.json
+    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants/demorestaurant/menus.json
     body:
       encoding: US-ASCII
       string: menu[name]=lunch&menu[special]=true
@@ -12,6 +12,10 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Tue, 17 Sep 2013 11:59:19 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -21,23 +25,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
-      - ! '"23acc30ebf03b294cbcce20fee79f28f"'
+      - ! '"cf921064adfb5a5273f08b893796717e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc5NjljM2Q3MTZiMDQ3NzliZjNjYzI0MDBkZDYzN2ZlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUkrNnRmUXVhNkpEZjkvemU5bVByY29mN01LY0xUSm5PUkROVzR2Nmt4REE9BjsARg%3D%3D--b139b91910d0090393d2cc29d5cbb5976374b300;
-        path=/; HttpOnly
       X-Request-Id:
-      - e23d79979dbfa4e652d525c2009115d4
+      - cdd26b4ea3a60e064a08431d441d6b07
       X-Runtime:
-      - '0.023908'
-      Connection:
-      - close
+      - '0.054697'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWY0NmMwYmM0MTc1ODVlMmY1MTM4MTAwNjkzY2RlOTE1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUtKNXRrcXlBVDMwQlpkUTVreHBWU2dsa2VjUkVEN28vQzRHL0lFUmpOVFE9BjsARg%3D%3D--075d4480323cdc62911b6460a615721a22f9d7de;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":21178,"name":"lunch","categories":[]}'
+      string: ! '{"errors":{},"valid":true,"id":21156,"name":"lunch","categories":[]}'
     http_version: 
-  recorded_at: Wed, 11 Sep 2013 15:55:16 GMT
+  recorded_at: Tue, 17 Sep 2013 12:02:06 GMT
 recorded_with: VCR 2.5.0

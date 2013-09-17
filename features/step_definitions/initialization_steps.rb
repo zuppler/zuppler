@@ -9,7 +9,7 @@ end
 Then(/^Is initialized with (.*) and (.*)$/) do |channel, key|
   Zuppler.channel_key.should eq(channel)
   Zuppler.api_key.should eq(key)
-  Zuppler.test?.should be_false
+  Zuppler.test?.should be_true
 end
 
 When(/^Zuppler is not initialized$/) do

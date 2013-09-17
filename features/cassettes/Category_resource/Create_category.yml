@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.zuppler.dev/v2/channels/demorestaurant/restaurants/demorestaurant/menus/235/categories.json
+    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants/demorestaurant/menus/235/categories.json
     body:
       encoding: US-ASCII
       string: category[name]=pizzas
@@ -12,6 +12,10 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Tue, 17 Sep 2013 11:59:18 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -21,23 +25,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
-      - IE=Edge
+      - IE=Edge,chrome=1
       Etag:
-      - ! '"db29fee6c90ae5f5eb55ad921b3cc058"'
+      - ! '"81d3f624c9d63efe19c78a06e9628f72"'
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTQ5MjM4MjE5M2YzZDk3N2ExZjI4OTJkNzcxMWNhZTBmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9OQWNYSkR0ZGtmdHRudERwWFptemR6NS95dnJpMHkrQTAyb1lHbmVoYUE9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--2700703eaa67510678ebd8f686b118cc1ae74507;
-        path=/; HttpOnly
       X-Request-Id:
-      - e42480299cc02fddeaabd782f4f3f1d0
+      - a30d095b2bbc4a86848295021b2ef63d
       X-Runtime:
-      - '0.046056'
-      Connection:
-      - close
+      - '1.259858'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWJlNTUwOWI5OWFlZWFmMGY1NWQwOTRjYzY5YjZmNmJkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUE2cXFBVnM1dGVGY3NtZjVIbHBGczVYcE03ZjVmcHRwM1kvTUhwR3dueW89BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--345c34999157144e0ba259872c7ac75e8c5f63aa;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":31788,"name":"pizzas","priority":0,"active":true,"items":[],"modifiers":[]}'
+      string: ! '{"errors":{},"valid":true,"id":31439,"name":"pizzas","priority":0,"active":true,"items":[],"modifiers":[]}'
     http_version: 
-  recorded_at: Thu, 12 Sep 2013 14:06:40 GMT
+  recorded_at: Tue, 17 Sep 2013 12:02:05 GMT
 recorded_with: VCR 2.5.0
