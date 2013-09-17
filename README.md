@@ -29,7 +29,23 @@ options = {
   :logo => 'http://example.com/logo.png', :location => '123 North St New York',
   :owner => {:name => 'John', :email => 'doe@example.com', :phone => '123-456-789'}
 }
-restaurant = Zuppler::Restaurant.create options
+@restaurant = Zuppler::Restaurant.new options
+@restaurant.save
+```
+
+``` ruby
+@menu = Zuppler::Menu.new :restaurant => @restaurant, :name => 'pizzas special'
+@menu.save
+```
+
+``` ruby
+@category = Zuppler::Category.new :menu => @menu, :name => 'pizzas'
+@category.save
+```
+
+``` ruby
+@item = Zuppler::Item.new :category => @category, :name => 'margerita', :price => 9.99
+@item.save
 ```
 
 ## Contributing
