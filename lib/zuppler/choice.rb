@@ -38,7 +38,7 @@ module Zuppler
     def choices_url
       if category
         "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/categories/#{category.id}/choices.json"
-      elsif item
+      else
         "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/items/#{item.id}/choices.json"         end
     end
   end
