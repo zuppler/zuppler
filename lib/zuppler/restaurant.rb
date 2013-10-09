@@ -30,10 +30,8 @@ module Zuppler
     end
 
     def save
-      restaurant_attributes = self.attributes.reject{|k,v| k == :id or v.nil?}
-      options = {:body => {:restaurant => restaurant_attributes}}
-      response = self.class.post restaurants_url, options
-      log response, options
+      restaurant_attributes = filter_attributes attributes, 'id'
+      response = execute_create restaurants_url, {:restaurant => restaurant_attributes}
       if success?(response)
         self.id = response['id']
         self.permalink = response['permalink']

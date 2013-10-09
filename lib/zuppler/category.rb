@@ -13,8 +13,7 @@ module Zuppler
 
     def save
       category_attributes = filter_attributes attributes, 'menu'
-      options = {:body => {:category => category_attributes}}
-      response = execute_create categories_url, options
+      response = execute_create categories_url, {:category => category_attributes}
       if success? response
         self.id = response['id']
       else

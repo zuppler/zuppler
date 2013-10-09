@@ -9,6 +9,8 @@ require "zuppler/restaurant"
 require "zuppler/menu"
 require "zuppler/category"
 require "zuppler/item"
+require "zuppler/choice"
+require "zuppler/modifier"
 
 module Zuppler
   class Error < RuntimeError
@@ -35,8 +37,8 @@ module Zuppler
     def channels_uri
       "/channels/#{channel_key}"
     end
-    def api_url
-      api_host + api_version + channels_uri
+    def api_url(version = 'v2')
+      api_host + "/#{version}" + channels_uri
     end
     
     def test?

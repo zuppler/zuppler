@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/categories/1713/choices.json
+    body:
+      encoding: US-ASCII
+      string: choice[name]=toppings
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2013 08:34:47 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"0bca84e1cce7920369874a9e7a2daffa"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ca918e286d3747d9953c4e5119fc86ae
+      X-Runtime:
+      - '2.527135'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTQ2MTIwZTk1MjFkMjIzYmI4YTA0ZTgyMjcwMzNlMGM5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVRzcXMvRlQvWjhtZzRSVGRQOEwxcjQzcEVPZ1hqbVJQNFJSOG94SFZqTHc9BjsARg%3D%3D--69fdca832a7904023f8a77a41fa4164f44ca525e;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"choice":{"id":66913,"name":"toppings"}}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2013 08:36:58 GMT
+recorded_with: VCR 2.5.0

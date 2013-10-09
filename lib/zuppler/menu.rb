@@ -13,9 +13,8 @@ module Zuppler
     end
 
     def save
-      menu_attributes = self.attributes.reject{|k,v| ['restaurant'].include?(k) or v.nil?}
-      options = {:body => {:menu => menu_attributes}}
-      response = execute_create menus_url, options
+      menu_attributes = filter_attributes attributes, 'restaurant'
+      response = execute_create menus_url, {:menu => menu_attributes}
       if success?(response)
         self.id = response['id']
       else

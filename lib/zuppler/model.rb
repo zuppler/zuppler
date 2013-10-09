@@ -16,35 +16,11 @@ module Zuppler
     include HTTParty
 
     class << self
-      # def attribute_keys=(keys)
-      #   @attribute_keys = keys
-      #   attr_accessor(*keys)
-      # end
-      # def attribute_keys
-      #   @attribute_keys
-      # end
       def log(response, options)
-        puts "\n"
-        puts " ***** Request: #{options}"
-        puts " ***** Response: #{response.body}"
+        puts " ***** Zuppler Request: #{options}"
+        puts " ***** Zuppler Response: #{response.body}"
       end
     end
-
-    # def initialize(attributes={})
-    #   self.attributes = attributes
-    # end
-    # def attributes
-    #   self.class.attribute_keys.reduce({}) do |result, key|
-    #     result[key] = read_attribute_for_validation key
-    #     result
-    #   end
-    # end
-    # def attributes=(attrs)
-    #   attrs.each do |k, v|
-    #     method = "#{k}="
-    #     send method, v if respond_to? method
-    #   end
-    # end
 
     def log(response, options)
       self.class.log response, options
@@ -57,7 +33,8 @@ module Zuppler
     def success?(response)
       response.success? and response['valid'] == true
     end
-    def execute_create(url, options)
+    def execute_create(url, body, headers = {})
+      options = {:body => body, :headers => headers}
       response = self.class.post url, options
       log response, options
       response

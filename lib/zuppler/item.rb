@@ -11,8 +11,7 @@ module Zuppler
 
     def save
       item_attributes = filter_attributes attributes, 'category'
-      options = {:body => {:item => item_attributes}}
-      response = execute_create items_url, options
+      response = execute_create items_url, {:item => item_attributes}
       if success? response
         self.id = response['id']
       else

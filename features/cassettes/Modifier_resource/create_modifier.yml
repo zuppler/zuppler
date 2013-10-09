@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/choices/66913/modifiers.json
+    body:
+      encoding: US-ASCII
+      string: modifier[name]=cheese&modifier[price]=0.99
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2013 08:48:39 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"86c8887fb3265ea7f99a3455e2e4cf66"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 11e784e643ef17e28e97bfbbef7689a6
+      X-Runtime:
+      - '0.445350'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFmNjA3ZDVmNDAzY2E5YzBhZTAyMDFhYjcxY2I2NDgwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW9FLzZrbTgxQWkzWTYrUUlFSGt5L2oxOTVCM3F5VFVCeG5QZVZ2dkhCbTg9BjsARg%3D%3D--302ebcdae39056e1d83274bb272915087d72c472;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"modifier":{"id":634900,"name":"cheese","price":"0.99","active":true}}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2013 08:50:50 GMT
+recorded_with: VCR 2.5.0
