@@ -48,6 +48,16 @@ options = {
 @item.save
 ```
 
+``` ruby
+@choice = Zuppler::Choice.new :category => @category, :name => 'toppings'
+@choice.save
+```
+
+``` ruby
+@modifier = Zuppler::Modifier.new :choice => @choice, :name => 'cheese', :price => 0.99
+@modifier.save
+```
+
 ## Contributing
 
 1. Fork it

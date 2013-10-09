@@ -1,0 +1,17 @@
+#!/bin/bash
+
+VERSION=$1
+
+if [ "$VERSION" == '' ]
+then
+  echo ""
+  echo "usage: $0 VERSION"
+  echo ""
+  exit -1
+fi
+
+echo "Building and installing... $VERSION"
+rake install
+
+echo "Uploading release package... $VERSION"
+fury push pkg/zuppler-$VERSION.gem
