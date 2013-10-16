@@ -1,5 +1,5 @@
 When(/^I create choice "(.*?)"$/) do |name|
-  @choice = Zuppler::Choice.new :category => @category, :name => name
+  @choice = Zuppler::Choice.new :category => @category, :name => name, :multiple => true, :max_qty => 5
   @choice.save
 end
 

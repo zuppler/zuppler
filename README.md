@@ -20,7 +20,11 @@ Or install it yourself as:
 
 
 ``` ruby
-Zuppler.init 'channel', 'key'
+Zuppler.config do |config|
+  config.channel_key = 'ccc',
+  config.api_key = 'aaa',
+  config.test = true
+end
 ```
 
 ``` ruby
@@ -49,7 +53,7 @@ options = {
 ```
 
 ``` ruby
-@choice = Zuppler::Choice.new :category => @category, :name => 'toppings'
+@choice = Zuppler::Choice.new :category => @category, :name => 'toppings', :multiple => true, :min_qty => 2, :max_qty => 5
 @choice.save
 ```
 

@@ -3,7 +3,11 @@ Given(/^Zuppler is loaded$/) do
 end
 
 When(/^I initialize with (.*) and (.*)$/) do |channel, key|
-  Zuppler.init channel, key
+  Zuppler.config do |config|
+    config.channel_key = channel
+    config.api_key = key
+    config.test = true
+  end
 end
 
 Then(/^Is initialized with (.*) and (.*)$/) do |channel, key|

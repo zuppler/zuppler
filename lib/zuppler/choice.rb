@@ -6,6 +6,10 @@ module Zuppler
     attribute :item
     attribute :id
     attribute :name
+    attribute :multiple, default: true
+    attribute :min_qty, default: 0
+    attribute :max_qty, default: 0
+
     
     validates_presence_of :name
     validate do

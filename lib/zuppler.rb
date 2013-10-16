@@ -17,10 +17,13 @@ module Zuppler
   end
 
   class << self
-    attr_reader :channel_key, :api_key, :test
-
+    attr_accessor :channel_key, :api_key, :test
+    
     def init(channel_key, api_key, test = true)
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
+    end
+    def config
+      yield self
     end
     def check
       raise Zuppler::Error.new(':channel_key cannot be blank') if channel_key.blank?
@@ -49,7 +52,5 @@ module Zuppler
       @channel ||= Zuppler::Channel.find channel_key
     end
 
-    private
-    attr_writer :channel_key, :api_key, :test
   end
 end

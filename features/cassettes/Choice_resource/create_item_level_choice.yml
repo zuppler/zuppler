@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/categories/1713/choices.json
     body:
       encoding: US-ASCII
-      string: choice[name]=toppings
+      string: choice[name]=toppings&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 09 Oct 2013 14:00:53 GMT
+      - Wed, 16 Oct 2013 08:59:41 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"08e3f2cff4296f00fdd6a46ec33cee8b"'
+      - ! '"6df211243d1fec1b3211b8e6a7f641b4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1caa3bbd459c6f6e13e760fcac37877f
+      - 15a2cfaa2aa02740adf8c4648d248403
       X-Runtime:
-      - '0.046230'
+      - '0.052924'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk0YmRkZTY1NTQ0M2UwNmQxYTE2YWJhMDE3NjI4M2I4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVJhcW5GaVNSSkViNUNLZEN6Y3g4UEQyRXd6eURQbFFSaUNGa1BveERuSGs9BjsARg%3D%3D--b5389910c64bdca13e010d6c780f5b86a21bae0a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWI1MWI5NzFhNWU4MWU4YzEzY2JmMmZjYjMyZDgxOWE4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVlsemx2dmhNQnhGRkIra3o3RXZyNTdhSDhkTUJsdHRYTjBhajFVSTc2Nkk9BjsARg%3D%3D--cfc2eacac59a02996a07bcd3b0d13e625c4bf293;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":66984,"name":"toppings"}}'
+      string: ! '{"success":true,"choice":{"id":67233,"name":"toppings","multiple":true,"min_qty":0,"max_qty":5}}'
     http_version: 
-  recorded_at: Wed, 09 Oct 2013 14:03:04 GMT
+  recorded_at: Wed, 16 Oct 2013 09:02:00 GMT
 recorded_with: VCR 2.5.0
