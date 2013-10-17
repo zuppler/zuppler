@@ -17,7 +17,7 @@ module Zuppler
   end
 
   class << self
-    attr_accessor :channel_key, :api_key, :test
+    attr_accessor :channel_key, :api_key, :test, :url
     
     def init(channel_key, api_key, test = true)
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
@@ -30,9 +30,14 @@ module Zuppler
       raise Zuppler::Error.new(':api_key cannot be blank') if api_key.blank?
     end
     
+    PRODUCTION_URL = 'http://api.zuppler.com'
+    STAGING_URL = 'http://api.biznettechnologies.com'
     def api_host
-      test? ? 'http://api.biznettechnologies.com' : 'http://api.zuppler.com'
-#      test? ? 'http://api.zuppler.dev' : 'http://api.zuppler.com'
+      if url.blank?
+        test? ? STAGING_URL : PRODUCTION_URL
+      else
+        url
+      end
     end
     def api_version
       '/v2'
