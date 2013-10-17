@@ -15,3 +15,6 @@ rake install
 
 echo "Uploading release package... $VERSION"
 fury push pkg/zuppler-$VERSION.gem
+
+echo "Pushing changes to upstream ..."
+git push
