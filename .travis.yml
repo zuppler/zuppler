@@ -1,0 +1,7 @@
+language: ruby
+cache: bundler
+rvm:
+  - 1.9.3
+notifications:
+  email:
+    - iulian.costan@zuppler.com
