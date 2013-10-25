@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants/demorestaurant.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 25 Oct 2013 07:33:31 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"4b9ee302f568bd6479d306ca85bb67f5"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d438a75fb01f48043904e13864439ff8
+      X-Runtime:
+      - '0.190095'
+      X-Rack-Cache:
+      - miss
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWYzMDdkZmUyNzI2YWE5NWVhZmU4NTE3MWYwNmE4NjEyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXZOYVNXV0ZQZFVYaXNQcHJlYjgxc0MrbFZhV3hYemt2eEFERnhoVjdOUDQ9BjsARg%3D%3D--f2edd0ef12055c031118e3c82b7d3de4668092e6;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{},"valid":true,"id":242,"name":"Demo Restaurant","permalink":"demorestaurant","description":"If
+        you would like to place a delivery order, select the delivery address as 1500
+        Market Street, Philadelphia PA.  \r\n","logo":"http://cdn.zuppler.com/images/pictures/files/000/007/292/medium/logo_demo.jpg?1312052575","cuisines":"Pizza,Seafood,Continental","amenities":"Online
+        Orders,Cocktail,Late Night,Coupons,Delivery,(Mon - Thu) Dinner Delivery Only,Carry
+        Out,Pick Up","owner":{"name":"Test Account","email":"test@zuppler.com","phone":"610
+        999 3803"},"address":{"id":174950,"street":"1500 Market Street","block":"","city":"Philadelphia","state":"PA","country":"","zip":"19103","lat":"39.952624","lng":"-75.165679"},"configuration":{"delivery":[{"data":"delivery","options":{},"block":{}},{"data":"pickup","options":{},"block":{}},{"data":{"pickup":"dinein"},"options":{},"block":{}}],"pickup":[{"data":"delivery","options":{},"block":{}},{"data":"pickup","options":{},"block":{}},{"data":{"pickup":"dinein"},"options":{},"block":{}}],"dinein":{"settings":{"description":"Come
+        to the express lane to pickup your order. Your order will be ready and waiting
+        for you to pickup :)"},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}},"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":""},"taxes":{"service_charge":"0.0","sales":"6.0"},"delivery":{"settings":{"description":"Weekday
+        deliveries for lunch only - 12pm - 3pm. All day delivery on weekends.","min_order_amount":15,"delivery_time":30,"delivery_charge":1.0},"area":{"distance":10},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}},"pickup":{"settings":{"description":"Come
+        to the express lane to pickup your order. Your order will be ready and waiting
+        for you to pickup :)","min_order_amount":0},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}}},"discounts":[{"id":756,"name":"Percent
+        discount","description":null,"title":"10% off on the order.","start_date":"2010-12-12","end_date":null},{"id":759,"name":"Percent
+        promo demo discount","description":null,"title":"10% off on orders more than
+        $10","start_date":"2010-12-12","end_date":null},{"id":904,"name":"Percent
+        discount","description":null,"title":"20% off on orders more than $30","start_date":"2011-11-03","end_date":null},{"id":1500,"name":"Fixed
+        price discount","description":null,"title":"$4 off on orders more than $35","start_date":"2013-01-23","end_date":null},{"id":1549,"name":"Fixed
+        price promo immissed discount","description":null,"title":"$5 off on orders
+        more than $25","start_date":"2013-02-10","end_date":null},{"id":2349,"name":"Fixed
+        price promo d5xy discount","description":null,"title":"$5 off on orders more
+        than $30","start_date":"2013-09-26","end_date":"2013-09-30"},{"id":2350,"name":"Fixed
+        price promo d5xy discount","description":null,"title":"$5 off on orders more
+        than $30","start_date":"2013-09-26","end_date":"2013-09-30"},{"id":2366,"name":"Percent
+        promo can20 discount","description":null,"title":"20% off on orders more than
+        $20","start_date":"2013-10-01","end_date":null},{"id":2389,"name":"Percent
+        discount","description":null,"title":"15% off on the order.","start_date":"2013-10-09","end_date":null},{"id":2367,"name":"Percent
+        promo can20 discount","description":null,"title":"20% off on orders more than
+        $20","start_date":"2013-10-01","end_date":null}],"pictures":[{"id":7304,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/304/medium/10.jpg?1312057299"},{"id":7305,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/305/medium/5.jpg?1312057301"},{"id":7306,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/306/medium/7.jpg?1312057322"},{"id":7308,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/308/medium/6.jpg?1312057346"},{"id":7309,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/309/medium/1.jpg?1312057948"},{"id":7310,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/310/medium/2.jpg?1312057958"},{"id":7312,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/312/medium/11.jpg?1312057987"},{"id":7313,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/313/medium/8.jpg?1312058161"},{"id":7314,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/314/medium/4.jpg?1312058163"},{"id":7315,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/315/medium/9.jpg?1312058199"},{"id":7316,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/316/medium/12.jpg?1312058257"},{"id":7317,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/317/medium/Desserts.jpg?1312058289"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Oct 2013 07:33:38 GMT
+recorded_with: VCR 2.5.0

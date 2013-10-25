@@ -29,6 +29,16 @@ module Zuppler
       end
     end
 
+    def self.find(permalink)
+      response = execute_find restaurant_url(permalink)
+      if success?(response)
+        @restaurant = Zuppler::Restaurant.new
+        @restaurant.id = response['id']
+        @restaurant.permalink = response['permalink']
+        @restaurant
+      end
+    end
+
     def save
       restaurant_attributes = filter_attributes attributes, 'id'
       response = execute_create restaurants_url, {:restaurant => restaurant_attributes}
@@ -48,9 +58,9 @@ module Zuppler
     def restaurants_url
       "#{Zuppler.api_url}/restaurants.json"
     end
-    
-    def success?(response)
-      response.success? and response['valid'] == true
+    def self.restaurant_url(permalink)
+      "#{Zuppler.api_url}/restaurants/#{permalink}.json"
     end
+
   end
 end

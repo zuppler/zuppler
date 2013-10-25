@@ -30,12 +30,21 @@ module Zuppler
       !!self.id
     end
 
-    def success?(response)
+    def self.success?(response)
       response.success? and response['valid'] == true
+    end
+    def success?(response)
+      self.class.success? response
     end
     def execute_create(url, body, headers = {})
       options = {:body => body, :headers => headers}
       response = self.class.post url, options
+      log response, options
+      response
+    end
+    def self.execute_find(url, headers = {})
+      options = {:headers => headers}
+      response = get url, options
       log response, options
       response
     end
