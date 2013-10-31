@@ -6,6 +6,7 @@ module Zuppler
     attribute :id
     attribute :name
     attribute :price, type: Float
+    attribute :size
 
     validates_presence_of :category, :name, :price
 

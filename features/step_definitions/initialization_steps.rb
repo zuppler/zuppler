@@ -7,6 +7,7 @@ When(/^I initialize with (.*) and (.*)$/) do |channel, key|
     config.channel_key = channel
     config.api_key = key
     config.test = true
+#    config.url = 'http://api.zuppler.dev'
   end
 end
 

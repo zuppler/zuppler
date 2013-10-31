@@ -1,5 +1,10 @@
 Given(/^Zuppler configured with (.*) and (.*)$/) do |channel, key|
-  Zuppler.init channel, key, true
+  Zuppler.config do |config|
+    config.channel_key = channel
+    config.api_key = key
+    config.test = true
+#    config.url = 'http://api.zuppler.dev'
+  end
 end
 Given(/^I have a restaurant "(.*?)","(.*?)"$/) do |id, permalink|
   @restaurant = Zuppler::Restaurant.new :id => id, :permalink => 'demorestaurant'

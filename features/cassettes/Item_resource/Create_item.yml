@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants/demorestaurant/categories/1713/items.json
+    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants/demorestaurant/categories/1712/items.json
     body:
       encoding: US-ASCII
-      string: item[name]=margherita&item[price]=9.99
+      string: item[name]=margherita&item[price]=9.99&item[size]=small
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 17 Sep 2013 12:06:14 GMT
+      - Thu, 31 Oct 2013 15:12:27 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"a6ca743552c4bc8c07bfe4752223839a"'
+      - ! '"43d26e82f25c57e944236c2878f27896"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b7fad2d2fa3a5111599560c623ab0a50
+      - 585589d9120451be36e3fee2de533bfb
       X-Runtime:
-      - '2.335450'
+      - '0.185697'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTFlZTRjZjQ3NmMxMmQ4MTc1N2RlYWUwNjlkYmFhNTViBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1tQU9ZNmVrSHVsb2s0d09aQktpVkxUSHFONjFMV2xLeHpFcm9ONFF1MHc9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--d84ebeb7a0a855cb70b9c2eecfaa79f8c12071e7;
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWE2NjBiYmUwZTFmYzM3ZTM2OWY3OTlhZjc5NDIzZjk3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXExUGZoc3JXWFNHVmVEN2NOQ3dUSVc4Z0VkSm5qYUxjTnhZWFYwckVFbmc9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--5e69fe174e49b716f53932ec5fae5accf328598b;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,8 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"image":"","items":[{"id":309330,"price":"9.99","size_name":"
-        Bowl","active":true,"coupon":null},{"id":309329,"price":"9.99","size_name":"Cup","active":true,"coupon":null}],"modifiers":[],"id":265169,"name":"margherita","description":null,"veg":null,"spicy":null}'
+      string: ! '{"errors":{},"valid":true,"image":"","items":[{"id":335640,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335639,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335638,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335637,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335636,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335635,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335634,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335633,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335632,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335631,"price":"9.99","size_name":"","active":true,"coupon":null},{"id":335630,"price":"9.99","size_name":"","active":true,"coupon":null}],"modifiers":[],"id":290449,"name":"margherita","description":null,"veg":null,"spicy":null}'
     http_version: 
-  recorded_at: Tue, 17 Sep 2013 12:09:01 GMT
+  recorded_at: Thu, 31 Oct 2013 15:12:41 GMT
 recorded_with: VCR 2.5.0
