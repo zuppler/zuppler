@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/choices/66913/modifiers.json
     body:
       encoding: US-ASCII
-      string: modifier[name]=cheese&modifier[price]=0.99
+      string: modifier[name]=cheese&modifier[price]=0.99&modifier[size]=small
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 09 Oct 2013 08:48:39 GMT
+      - Thu, 07 Nov 2013 10:55:08 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"86c8887fb3265ea7f99a3455e2e4cf66"'
+      - ! '"49daf1c9ea2319d9c3466fa87264d0c3"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 11e784e643ef17e28e97bfbbef7689a6
+      - a3a7cdf3dd5963a2792a26a3fcefdccf
       X-Runtime:
-      - '0.445350'
+      - '6.640138'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFmNjA3ZDVmNDAzY2E5YzBhZTAyMDFhYjcxY2I2NDgwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW9FLzZrbTgxQWkzWTYrUUlFSGt5L2oxOTVCM3F5VFVCeG5QZVZ2dkhCbTg9BjsARg%3D%3D--302ebcdae39056e1d83274bb272915087d72c472;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWU1NzRmY2VhODZmMTBmZmIwNjYzZDVlZmI1N2RkZDVmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVY2Uk9oeFFFOUhPakRuQ2dEZFJKZ2xvcUhTWkhpdkdVK0hDQUNScmZVekE9BjsARg%3D%3D--a5e3730df1624ff9cd1d68535cab04e64dce14ad;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"modifier":{"id":634900,"name":"cheese","price":"0.99","active":true}}'
+      string: ! '{"success":true,"modifier":{"id":700115,"name":"cheese","price":"0.99","active":true,"size_name":"small","parent_id":290642}}'
     http_version: 
-  recorded_at: Wed, 09 Oct 2013 08:50:50 GMT
+  recorded_at: Thu, 07 Nov 2013 10:55:20 GMT
 recorded_with: VCR 2.5.0

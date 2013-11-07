@@ -5,6 +5,7 @@ end
 
 Then(/^I should have modifier created$/) do
   @modifier.id.should_not be_nil
+  @modifier.parent_id.should_not be_nil
 end
 
 

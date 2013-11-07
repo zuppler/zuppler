@@ -17,6 +17,7 @@ module Zuppler
 
     class << self
       def log(response, options)
+        puts
         puts " ***** Zuppler Request: #{options}"
         puts " ***** Zuppler Response: #{response.body}"
       end

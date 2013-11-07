@@ -4,6 +4,7 @@ module Zuppler
 
     attribute :choice
     attribute :id
+    attribute :parent_id
     attribute :name
     attribute :price, type: Float
     attribute :size
@@ -11,10 +12,11 @@ module Zuppler
     validates_presence_of :choice, :name, :price
 
     def save
-      modifier_attributes = filter_attributes attributes, 'choice'
+      modifier_attributes = filter_attributes attributes, 'choice', 'parent_id'
       response = execute_create modifiers_url, :modifier => modifier_attributes
       if success? response
         self.id = response['modifier']['id']
+        self.parent_id = response['modifier']['parent_id']
       else
         #TODO handle errors
       end
