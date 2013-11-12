@@ -1,20 +1,45 @@
 #!/bin/bash
 
-VERSION=$1
+echo
+echo ' *** Running tests...'
+bundle exec rake
 
-if [ "$VERSION" == '' ]
+if [ $? != 0 ]
 then
-  echo ""
-  echo "usage: $0 VERSION"
-  echo ""
-  exit -1
+    echo
+    echo ' *** Test status: FAILED'
+    echo ' *** Exiting... Please fix the tests then release the module again.'
+    exit -1
+else
+    echo
+    echo ' *** Test status: SUCCESS'
 fi
 
-echo "Building and installing... $VERSION"
+if [ "$1" == 1 ]
+then
+    VERSION=$1
+else
+    VERSION='patch'
+fi
+
+echo
+echo " *** Bumping version... $VERSION"
+gem bump -v $VERSION --no-commit
+
+VERSION=`ruby -r ./lib/zuppler/version.rb -e 'puts Zuppler::VERSION'`    
+
+echo
+echo " *** Commit release changes ... $VERSION"
+bundle install
+git add .
+git ci -m "Release $VERSION"
+git push
+
+echo
+echo " *** Building and installing... $VERSION"
 rake install
 
-echo "Uploading release package... $VERSION"
-fury push pkg/zuppler-$VERSION.gem
+echo
+echo " *** Uploading release package... $VERSION"
+fury push pkg/zuppler-$VERSION.gem --as=zuppler
 
-echo "Pushing changes to upstream ..."
-git push
