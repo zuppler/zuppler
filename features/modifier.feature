@@ -8,5 +8,5 @@ Feature: Modifier resource
     And I have a menu "235"
     And I have a category "1713"
     And I have a choice "66913"
-    When I create modifier "cheese", "0.99", "small"
+    When I create modifier "cheese", "0.99", "small", "2"
     Then I should have modifier created

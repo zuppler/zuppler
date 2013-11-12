@@ -1,5 +1,6 @@
-When(/^I create item with "(.*?)","(.*?)","(.*?)"$/) do |name, price, size|
-  @item = Zuppler::Item.new :category => @category, :name => name, :price => price, :size => size
+When(/^I create item with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, price, size, priority|
+  @item = Zuppler::Item.new :category => @category, :name => name, :price => price, :size => size,
+  :priority => priority
   @item.save
 end
 

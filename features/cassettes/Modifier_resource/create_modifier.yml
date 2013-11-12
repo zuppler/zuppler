@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/choices/66913/modifiers.json
     body:
       encoding: US-ASCII
-      string: modifier[name]=cheese&modifier[price]=0.99&modifier[size]=small
+      string: modifier[name]=cheese&modifier[price]=0.99&modifier[size]=small%22&modifier[priority]=2
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 07 Nov 2013 10:55:08 GMT
+      - Tue, 12 Nov 2013 13:57:52 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"49daf1c9ea2319d9c3466fa87264d0c3"'
+      - ! '"a05ec57fda167650d5a01d994c15fc72"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a3a7cdf3dd5963a2792a26a3fcefdccf
+      - 07d5ba2f9a72674d41cca0fb6cb6e12e
       X-Runtime:
-      - '6.640138'
+      - '0.138838'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWU1NzRmY2VhODZmMTBmZmIwNjYzZDVlZmI1N2RkZDVmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVY2Uk9oeFFFOUhPakRuQ2dEZFJKZ2xvcUhTWkhpdkdVK0hDQUNScmZVekE9BjsARg%3D%3D--a5e3730df1624ff9cd1d68535cab04e64dce14ad;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFjMTU5ZWMzZjkwNDk1NzJlNmFjZjk3NTEyMWRmZmZiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVNlMGhzRmhQajZKNkZmNXROcE5kTjdTdS9GRUdncFJhaDFsTDBZdEttdDA9BjsARg%3D%3D--e63a26ef0afb3b75825227b6b778067427fcafad;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"modifier":{"id":700115,"name":"cheese","price":"0.99","active":true,"size_name":"small","parent_id":290642}}'
+      string: ! '{"success":true,"modifier":{"id":700120,"name":"cheese","price":"0.99","active":true,"size_name":"small\"","priority":2,"parent_id":290642}}'
     http_version: 
-  recorded_at: Thu, 07 Nov 2013 10:55:20 GMT
+  recorded_at: Tue, 12 Nov 2013 13:58:14 GMT
 recorded_with: VCR 2.5.0
