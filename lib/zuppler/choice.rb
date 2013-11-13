@@ -9,6 +9,7 @@ module Zuppler
     attribute :multiple, default: true
     attribute :min_qty, default: 0
     attribute :max_qty, default: 0
+    attribute :priority
 
     
     validates_presence_of :name

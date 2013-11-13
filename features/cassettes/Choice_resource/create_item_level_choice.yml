@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/categories/1713/choices.json
+    uri: http://api.biznettechnologies.com/v3/channels/demorestaurant/restaurants/demorestaurant/categories/1712/choices.json
     body:
       encoding: US-ASCII
-      string: choice[name]=toppings&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5
+      string: choice[name]=toppings&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 16 Oct 2013 08:59:41 GMT
+      - Wed, 13 Nov 2013 09:31:28 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"6df211243d1fec1b3211b8e6a7f641b4"'
+      - ! '"f91cc465ea480697820d40dd75d00695"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 15a2cfaa2aa02740adf8c4648d248403
+      - 74cbc1e1f4659f83b9483721cb27dcbf
       X-Runtime:
-      - '0.052924'
+      - '0.030849'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWI1MWI5NzFhNWU4MWU4YzEzY2JmMmZjYjMyZDgxOWE4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVlsemx2dmhNQnhGRkIra3o3RXZyNTdhSDhkTUJsdHRYTjBhajFVSTc2Nkk9BjsARg%3D%3D--cfc2eacac59a02996a07bcd3b0d13e625c4bf293;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTYzNmY0YTI5ZDY0YTAxODY3ZGU2N2NlMmNjZDlmYjkxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTVkbXVobzNNZkpPNWZRZFdnc3Y2OVNiTy9XZ2xxalI5THZRU3h5THhFdHc9BjsARg%3D%3D--985cd9f73db69e183b7c025712d57cb11f94db78;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":67233,"name":"toppings","multiple":true,"min_qty":0,"max_qty":5}}'
+      string: ! '{"success":true,"choice":{"id":72493,"name":"toppings","multiple":true,"min_qty":0,"max_qty":5,"priority":2}}'
     http_version: 
-  recorded_at: Wed, 16 Oct 2013 09:02:00 GMT
+  recorded_at: Wed, 13 Nov 2013 09:31:52 GMT
 recorded_with: VCR 2.5.0

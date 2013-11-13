@@ -6,8 +6,8 @@ Feature: Choice resource
     Given Zuppler configured with demorestaurant and qwe123
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
-    And I have a category "1713"
-    When I create choice "toppings"
+    And I have a category "1712"
+    When I create choice "toppings","true","5","2"
     Then I should have choice created
 
   @vcr
@@ -15,7 +15,7 @@ Feature: Choice resource
     Given Zuppler configured with demorestaurant and qwe123
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
-    And I have a category "1713"
+    And I have a category "1712"
     And I have an item "1234"
-    When I create choice "toppings"
+    When I create choice "toppings","true","5","2"
     Then I should have choice created
