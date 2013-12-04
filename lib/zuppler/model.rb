@@ -43,6 +43,12 @@ module Zuppler
       log response, options
       response
     end
+    def execute_update(url, body, headers = {})
+      options = {:body => body, :headers => headers}
+      response = self.class.put url, options
+      log response, options
+      response
+    end
     def self.execute_find(url, headers = {})
       options = {:headers => headers}
       response = get url, options

@@ -3,7 +3,7 @@ Feature: Choice resource
 
   @vcr
   Scenario: create category level choice
-    Given Zuppler configured with demorestaurant and qwe123
+    Given Zuppler configured with "zuppler" and "abcd"
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
     And I have a category "1712"
@@ -12,7 +12,7 @@ Feature: Choice resource
 
   @vcr
   Scenario: create item level choice
-    Given Zuppler configured with demorestaurant and qwe123
+    Given Zuppler configured with "zuppler" and "abcd"
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
     And I have a category "1712"

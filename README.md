@@ -62,6 +62,12 @@ options = {
 @modifier.save
 ```
 
+``` ruby
+@order = Zuppler::Order.find :uuid => 'abcd-1234-efgh-5678'
+@order.confirm
+@order.reject
+```
+
 ## Contributing
 
 1. Fork it

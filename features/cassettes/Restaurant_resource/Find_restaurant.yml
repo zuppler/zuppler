@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants/demorestaurant.json
+    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants/demorestaurant.json
     body:
       encoding: US-ASCII
       string: ''
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 25 Oct 2013 07:33:31 GMT
+      - Wed, 04 Dec 2013 13:54:34 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d438a75fb01f48043904e13864439ff8
+      - 0f78c01d61e76554ea4a7fa7ed3dd892
       X-Runtime:
-      - '0.190095'
+      - '0.420141'
       X-Rack-Cache:
       - miss
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWYzMDdkZmUyNzI2YWE5NWVhZmU4NTE3MWYwNmE4NjEyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXZOYVNXV0ZQZFVYaXNQcHJlYjgxc0MrbFZhV3hYemt2eEFERnhoVjdOUDQ9BjsARg%3D%3D--f2edd0ef12055c031118e3c82b7d3de4668092e6;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTEzOTQ3MDY0MDExNzMzYTE0N2RlZmNlODE5ZDc1MGY2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXRnRFFxT0UzZTZ2TzhncFBicFFNNUYvZEl5T2NIZGs0L29IekQzOWc2Y0k9BjsARg%3D%3D--e7dcbed15cbe7755d140b46265d51f59e4f0d856;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -73,5 +73,5 @@ http_interactions:
         promo can20 discount","description":null,"title":"20% off on orders more than
         $20","start_date":"2013-10-01","end_date":null}],"pictures":[{"id":7304,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/304/medium/10.jpg?1312057299"},{"id":7305,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/305/medium/5.jpg?1312057301"},{"id":7306,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/306/medium/7.jpg?1312057322"},{"id":7308,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/308/medium/6.jpg?1312057346"},{"id":7309,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/309/medium/1.jpg?1312057948"},{"id":7310,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/310/medium/2.jpg?1312057958"},{"id":7312,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/312/medium/11.jpg?1312057987"},{"id":7313,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/313/medium/8.jpg?1312058161"},{"id":7314,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/314/medium/4.jpg?1312058163"},{"id":7315,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/315/medium/9.jpg?1312058199"},{"id":7316,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/316/medium/12.jpg?1312058257"},{"id":7317,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/317/medium/Desserts.jpg?1312058289"}]}'
     http_version: 
-  recorded_at: Fri, 25 Oct 2013 07:33:38 GMT
+  recorded_at: Wed, 04 Dec 2013 13:55:51 GMT
 recorded_with: VCR 2.5.0

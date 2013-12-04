@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v2/channels/demorestaurant/restaurants.json
+    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Mraz%20Group&restaurant[remote_id]=1234%20-%20Mraz%20Group&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Iulian&restaurant[owner][email]=iulian.costan%40zuppler.com&restaurant[owner][phone]=0745586010
+      string: restaurant[name]=Restaurant%20-%20Koelpin%2C%20Cummerata%20and%20Cassin&restaurant[remote_id]=1234%20-%20Koelpin%2C%20Cummerata%20and%20Cassin&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Iulian&restaurant[owner][email]=iulian.costan%40zuppler.com&restaurant[owner][phone]=0745586010
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 17 Sep 2013 11:59:35 GMT
+      - Wed, 04 Dec 2013 13:54:33 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"00779344561694d99f06f5d3addcb9a9"'
+      - ! '"87d671e78c628f936e87457a3de7e15e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 04d492d30f580435ced70f35fcb20b72
+      - 2af90109b6843affd2f2c0aa86194d78
       X-Runtime:
-      - '14.549543'
+      - '13.747848'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTljM2IxMWIzODM1NzA1MTZlNGMzOGUzNjc1MzM2NDM3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWRONGsyN3NNcWFDTmdsUXFLMHJJVVBtaVBTbGZxZUM0eGlUelh0NDNXS2M9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--c5399298a542b2898bb77aea833f231906f172a4;
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTY3YWE0NzA0ZTA3MzA4ODAzMWVlMjU1ZDE4OTNlZjc0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXJWWHJ3N2pNeE8vcTZKdUx3WXZkZUJMU3NhQTRYbUIzenQ5WmZ5M0E3UW89BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--0a8b7f7e9b9f56a3c6a6e447fe9ee3cd30e6d5d6;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,8 +45,9 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":1835,"name":"Restaurant - Mraz Group","permalink":"restaurantmrazgroup","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/018/077/medium/open-uri20130917-30380-ud1sdn.?1379419163","cuisines":"","amenities":"","owner":{"name":"Iulian","email":"iulian.costan@zuppler.com","phone":"0745586010"},"address":{"id":228597,"street":"123
+      string: ! '{"errors":{},"valid":true,"id":2006,"name":"Restaurant - Koelpin,
+        Cummerata and Cassin","permalink":"restaurantkoelpincummerataandcassin","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/019/221/medium/open-uri20131204-24124-21ojnu.?1386165262","cuisines":"","amenities":"","owner":{"name":"Iulian","email":"iulian.costan@zuppler.com","phone":"0745586010"},"address":{"id":261255,"street":"123
         North Street","block":null,"city":"Rye","state":"NY","country":"US","zip":"10580","lat":"40.976753","lng":"-73.694657"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
     http_version: 
-  recorded_at: Tue, 17 Sep 2013 12:02:22 GMT
+  recorded_at: Wed, 04 Dec 2013 13:55:50 GMT
 recorded_with: VCR 2.5.0

@@ -11,13 +11,14 @@ require "zuppler/category"
 require "zuppler/item"
 require "zuppler/choice"
 require "zuppler/modifier"
+require "zuppler/order"
 
 module Zuppler
   class Error < RuntimeError
   end
 
   class << self
-    attr_accessor :channel_key, :api_key, :test, :url
+    attr_accessor :channel_key, :api_key, :test, :domain
     
     def init(channel_key, api_key, test = true)
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
@@ -30,13 +31,13 @@ module Zuppler
       raise Zuppler::Error.new(':api_key cannot be blank') if api_key.blank?
     end
     
-    PRODUCTION_URL = 'http://api.zuppler.com'
-    STAGING_URL = 'http://api.biznettechnologies.com'
-    def api_host
-      if url.blank?
-        test? ? STAGING_URL : PRODUCTION_URL
+    PRODUCTION_DOMAIN = 'zuppler.com'
+    STAGING_DOMAIN = 'biznettechnologies.com'
+    def api_domain
+      if domain.blank?
+        test? ? STAGING_DOMAIN : PRODUCTION_DOMAIN
       else
-        url
+        domain
       end
     end
     def api_version
@@ -46,7 +47,10 @@ module Zuppler
       "/channels/#{channel_key}"
     end
     def api_url(version = 'v2')
-      api_host + "/#{version}" + channels_uri
+      'http://api.' + api_domain + "/#{version}" + channels_uri
+    end
+    def secure_url(version = 'v3')
+      'http://secure.' + api_domain + "/#{version}"
     end
     
     def test?

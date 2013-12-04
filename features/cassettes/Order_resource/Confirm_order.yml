@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://secure.biznettechnologies.com/v3/orders/9ec79b04-580d-11e3-ac68-123138166518/confirm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 04 Dec 2013 13:07:24 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"a0f7c3a30287e9f5090c9a3a2a5e8f2c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2f4be492299db8e25c8fade9c6d86d79
+      X-Runtime:
+      - '0.713994'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zsecure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWZjNjhjZTEyODNmMWQ4YmEzZDQ0NjNlNWI1NzM1NmM1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXh4YzJQOGxaQTlBbXdyckpURllSN095cEpQeFprN013eDMwa2NDUXg2V3M9BjsARg%3D%3D--030976441ef7b88845e67aaef67c2926da473c7d;
+        path=/; HttpOnly
+      Via:
+      - 1.1 secure.biznettechnologies.com
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"order":{"uuid":"9ec79b04-580d-11e3-ac68-123138166518","id":362308}}'
+    http_version: 
+  recorded_at: Wed, 04 Dec 2013 13:08:41 GMT
+recorded_with: VCR 2.5.0
