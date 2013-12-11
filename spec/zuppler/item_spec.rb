@@ -10,8 +10,8 @@ describe Zuppler::Item do
     subject.name, subject.price = 'pizza', 9.99
     subject.should_receive(:items_url).and_return("http://example.com")
     subject.should_receive(:execute_create).with("http://example.com", :item=>{"name"=>'pizza',"price"=>9.99})
-    subject.should_receive(:success?).and_return(false)
-    subject.save.should eql(subject)
+    subject.should_receive(:success?).twice.and_return(false)
+    subject.save.should be_false
   end
   
 end

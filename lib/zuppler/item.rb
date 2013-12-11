@@ -11,15 +11,24 @@ module Zuppler
 
     validates_presence_of :category, :name, :price
 
+    def self.find(id, category)
+      new :id => id, :category => category
+    end
+
     def save
-      item_attributes = filter_attributes attributes, 'category'
-      response = execute_create items_url, {:item => item_attributes}
-      if success? response
-        self.id = response['items'].first['id']
+      if new?
+        item_attributes = filter_attributes attributes, 'category'
+        response = execute_create items_url, {:item => item_attributes}
+        self.id = response['items'].first['id'] if success?(response)
       else
-        # handle errors
+        item_attributes = filter_attributes attributes, 'category', 'id'
+        response = execute_update item_url, {:item => item_attributes}
       end
-      self
+      success? response
+    end
+
+    def new?
+      id.blank?
     end
 
     def restaurant
@@ -27,6 +36,10 @@ module Zuppler
     end
 
     protected
+
+    def item_url
+      "#{Zuppler.api_url}/restaurants/#{restaurant.permalink}/items/#{id}.json"
+    end
 
     def items_url
       "#{Zuppler.api_url}/restaurants/#{category.restaurant.permalink}/categories/#{category.id}/items.json"

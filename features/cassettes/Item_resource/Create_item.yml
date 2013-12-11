@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:55:59 GMT
+      - Wed, 11 Dec 2013 14:10:59 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"2f0df444fa240ab997205b0d3474e303"'
+      - ! '"dc56e23795494bd7fdb90a7678495d0a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 79a4012bf2e75689df0c2ce32e1d9192
+      - f97b23277b7f0fc01fc956bfd1e7f6e5
       X-Runtime:
-      - '2.749061'
+      - '2.651480'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTRmOWE5ZDRjZDBhNzE2NmIyZTY0MzY4YzAwZjVlM2MyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWM3TlNyOEJwd2hUbmhzVWRNbU5jNms3NGZvNXZtQmtZUjFVT1dXSkcreDA9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--fd40eb1bdc2735ba46a4711658d7471f51b0f4dc;
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTFmMmMyMTgzMTQ2MjBkYWMzNmM1ODA1MWZlZTI1MmM0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVMrVVJjQTlPblBFYlFnSlZKWUdHeXd2bEQxaElicDQ1NkZMWDZwTlM1K2M9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--2849a5284ca7ab36f49cce49764c2fa0fe7d3e2c;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"image":"","items":[{"id":335886,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335744,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335743,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335742,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335741,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":0},{"id":335740,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":0},{"id":335739,"price":"9.99","size_name":"small\"","active":true,"coupon":null,"priority":0},{"id":335640,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335639,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335638,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335637,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335636,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335635,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335634,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335633,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335632,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335631,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335630,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0}],"modifiers":[],"id":290449,"name":"margherita","description":null,"veg":null,"spicy":null}'
+      string: ! '{"errors":{},"valid":true,"image":"","items":[{"id":335887,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335886,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335744,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335743,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335742,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":1},{"id":335741,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":0},{"id":335740,"price":"9.99","size_name":"small","active":true,"coupon":null,"priority":0},{"id":335739,"price":"9.99","size_name":"small\"","active":true,"coupon":null,"priority":0},{"id":335640,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335639,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335638,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335637,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335636,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335635,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335634,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335633,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335632,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335631,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0},{"id":335630,"price":"9.99","size_name":"","active":true,"coupon":null,"priority":0}],"modifiers":[],"id":290449,"name":"margherita","description":null,"veg":null,"spicy":null}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:57:16 GMT
+  recorded_at: Wed, 11 Dec 2013 14:11:58 GMT
 recorded_with: VCR 2.5.0

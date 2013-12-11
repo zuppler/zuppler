@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants/demorestaurant/items/9898.json
+    body:
+      encoding: US-ASCII
+      string: item[name]=diavolo&item[price]=8.99&item[priority]=2
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Dec 2013 14:11:00 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"06eac9f9a9a2bd1f162fccdee2f80d03"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 34de885f0330978a24d128cacd032293
+      X-Runtime:
+      - '0.077233'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTY5NjUxZjkwMzcwNzgzODlkYWI2ZmMxMDQ4OGRmM2Y0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTlHMkx5NmJFQ09HS2E3UStxMkZoTFloV0thSGM1bzdmNkRHVHM1MFZmZjA9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--3a44e67247c9144084d217648b7e234fab5a6353;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{},"valid":true,"image":"http://cdn.zuppler.com/images/pictures/files/000/002/054/original/chicken%20tenders.jpg","items":[{"id":9898,"price":"8.99","size_name":"","active":true,"coupon":null,"priority":2}],"modifiers":[],"id":9458,"name":"diavolo","description":"fried
+        to perfection and served with French fries and your choice of sauce:  Dearg
+        Doom, Mild Stoke, Blast Furnace BBQ, Honey Mustard, or Ranch","veg":false,"spicy":0}'
+    http_version: 
+  recorded_at: Wed, 11 Dec 2013 14:11:59 GMT
+recorded_with: VCR 2.5.0
