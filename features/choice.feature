@@ -7,7 +7,7 @@ Feature: Choice resource
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
     And I have a category "1712"
-    When I create choice "toppings","true","5","2"
+    When I create choice "toppings","true","5","2","true"
     Then I should have choice created
 
   @vcr
@@ -17,5 +17,5 @@ Feature: Choice resource
     And I have a menu "235"
     And I have a category "1712"
     And I have an item "1234"
-    When I create choice "toppings","true","5","2"
+    When I create choice "toppings","true","5","2","false"
     Then I should have choice created

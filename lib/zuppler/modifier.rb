@@ -9,22 +9,34 @@ module Zuppler
     attribute :price, type: Float
     attribute :size
     attribute :priority
+    attribute :active
 
     validates_presence_of :choice, :name, :price
 
+    def self.find(id, choice)
+      new id: id, choice: choice
+    end
+
     def save
-      modifier_attributes = filter_attributes attributes, 'choice', 'parent_id'
-      response = execute_create modifiers_url, :modifier => modifier_attributes
-      if success? response
-        self.id = response['modifier']['id']
-        self.parent_id = response['modifier']['parent_id']
+      if new?
+        modifier_attributes = filter_attributes attributes, 'choice', 'parent_id'
+        response = execute_create modifiers_url, :modifier => modifier_attributes
+        if success? response
+          self.id = response['modifier']['id']
+          self.parent_id = response['modifier']['parent_id']
+        end
       else
-        #TODO handle errors
+        modifier_attributes = filter_attributes attributes, 'choice', 'id'
+        response = execute_update modifier_url, {:modifier => modifier_attributes}
       end
-      self
+      success? response
     end
 
     protected
+
+    def new?
+      id.blank?
+    end
 
     def success?(response)
       response.success? and response['success'] == true
@@ -32,6 +44,10 @@ module Zuppler
 
     def restaurant
       choice.restaurant
+    end
+
+    def modifier_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/modifiers/#{id}.json"
     end
 
     def modifiers_url

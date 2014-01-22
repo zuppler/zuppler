@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/696696.json
+    body:
+      encoding: US-ASCII
+      string: modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Jan 2014 13:49:44 GMT
+      Server:
+      - thin 1.5.1 codename Straight Razor
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"0a6774cf075c3bab3377ccd6256fe407"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 07b11d075c3df6724b18dfd74d8d13a4
+      X-Runtime:
+      - '0.053614'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTM5M2QxOTQ2YzA0N2VkNGIxYzJjYzg3NWFkMjcwMDllBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUxsUmxsc0F3aHlOTlAyU2drSFdUR1NNaWtNR1phZlpJYnFtTTU5aEExVWs9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--743363e7caaa24a288fd70f119c816deefdacd20;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"modifier":{"id":696696,"name":"cream","price":"1.99","active":true,"size_name":"","priority":1,"parent_id":290204}}'
+    http_version: 
+  recorded_at: Wed, 22 Jan 2014 13:51:50 GMT
+recorded_with: VCR 2.5.0

@@ -10,6 +10,7 @@ module Zuppler
     attribute :min_qty, default: 0
     attribute :max_qty, default: 0
     attribute :priority
+    attribute :order_by_priority
 
     
     validates_presence_of :name
@@ -44,7 +45,8 @@ module Zuppler
       if category
         "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/categories/#{category.id}/choices.json"
       else
-        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/items/#{item.id}/choices.json"         end
+        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/items/#{item.id}/choices.json"
+      end
     end
   end
 end

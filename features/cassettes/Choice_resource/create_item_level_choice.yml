@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/1712/choices.json
     body:
       encoding: US-ASCII
-      string: choice[name]=toppings&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2
+      string: choice[name]=toppings&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=false
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:57:04 GMT
+      - Wed, 22 Jan 2014 13:32:21 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"e8f87ff8f88bd1ded389604319ea497f"'
+      - ! '"4b6e5799f7168f6ee2917f40e71b89dd"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0a7b6138e859fb51069348952d14b036
+      - c954d0ca4b8c19125b92d605dd8b8c15
       X-Runtime:
-      - '0.060123'
+      - '0.037072'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWMzYzE2ODc1MzI4YjVkMTU0NWExNjA2ODc1ZGI3YmNiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXNmT0MyNWtZVkh3WGhqOGJqWTlGVXlDZ1g1NE5VMGZ4Zkp0L2liZU8wNWM9BjsARg%3D%3D--dee5c8d8bcfaabece4dd29310874c85be7791aa2;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWJiMjA0YmI0NjZkNWNhMjdiMWY1ZjJjZjdhMTg4ZjQ1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWMwM1F5ZjRnVEFVbkd0Q2FTT0lrRHgwTGE3MDRDeWRaQS9Jbmkzb0RrS009BjsARg%3D%3D--0563cdbf511b7a0a2035490038aff0cdee984940;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":72967,"name":"toppings","multiple":true,"min_qty":0,"max_qty":5,"priority":2}}'
+      string: ! '{"success":true,"choice":{"id":72971,"name":"toppings","multiple":true,"min_qty":0,"max_qty":5,"priority":2}}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:58:21 GMT
+  recorded_at: Wed, 22 Jan 2014 13:34:27 GMT
 recorded_with: VCR 2.5.0

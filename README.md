@@ -53,7 +53,7 @@ options = {
 ```
 
 ``` ruby
-@choice = Zuppler::Choice.new :category => @category, :name => 'toppings', :multiple => true, :min_qty => 2, :max_qty => 5
+@choice = Zuppler::Choice.new category: @category, name: 'toppings', multiple: true, min_qty: 2, max_qty: 5 , priority: 1, order_by_priority: true
 @choice.save
 ```
 
