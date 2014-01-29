@@ -21,14 +21,14 @@ module Zuppler
     def save
       choice_attributes = filter_attributes attributes, 'category', 'item'
       response = execute_create choices_url, {:choice => choice_attributes}
-      if success?(response)
+      if v3_success?(response)
         self.id = response['choice']['id']
       else
         response['errors'].each do |k,v|
           self.errors.add k, v
         end
       end
-      self
+      v3_success? response
     end
 
     def restaurant
@@ -36,10 +36,6 @@ module Zuppler
     end
 
     protected
-
-    def success?(response)
-      response.success? and response['success'] == true
-    end
 
     def choices_url
       if category

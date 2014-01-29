@@ -1,5 +1,6 @@
-When(/^I create category with "(.*?)"$/) do |name|
-  @category = Zuppler::Category.new :name => name, :menu => @menu
+When(/^I create category with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name,desc,priority,priced_by_size|
+  @category = Zuppler::Category.new name: name, menu: @menu, description: desc, 
+  priority: priority, priced_by_size: priced_by_size
   @category.save
 end
 

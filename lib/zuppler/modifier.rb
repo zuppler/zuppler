@@ -21,7 +21,7 @@ module Zuppler
       if new?
         modifier_attributes = filter_attributes attributes, 'choice', 'parent_id'
         response = execute_create modifiers_url, :modifier => modifier_attributes
-        if success? response
+        if v3_success? response
           self.id = response['modifier']['id']
           self.parent_id = response['modifier']['parent_id']
         end
@@ -29,17 +29,13 @@ module Zuppler
         modifier_attributes = filter_attributes attributes, 'choice', 'id'
         response = execute_update modifier_url, {:modifier => modifier_attributes}
       end
-      success? response
+      v3_success? response
     end
 
     protected
 
     def new?
       id.blank?
-    end
-
-    def success?(response)
-      response.success? and response['success'] == true
     end
 
     def restaurant

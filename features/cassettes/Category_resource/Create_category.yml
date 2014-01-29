@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants/demorestaurant/menus/235/categories.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21382/categories.json
     body:
       encoding: US-ASCII
-      string: category[name]=pizzas
+      string: category[name]=pizzas&category[description]=desc&category[priority]=1&category[priced_by_size]=true
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:55:27 GMT
+      - Wed, 29 Jan 2014 10:55:04 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"438626f8789ca4118728dda61ef2232c"'
+      - ! '"b0e7090c30151426166a0cdd4a379a68"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - baf2f0edb7a93529aecb121dedd45b44
+      - b4f87257bb2114f51f1c15f6d965bdee
       X-Runtime:
-      - '0.071999'
+      - '0.050559'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTZiNGRkOGIwNmM1YzA2M2RlNDZkN2JmYTMzY2E0NWRlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVhlREZzcThtSWgwY3l4cnZzTWJwd2ZvUDNQSXJuZWVoYmVIem4vM1pmQ1E9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--7327fe431cddd3417a1ca6142e1bc0fa53c2eb64;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTgzZTNhM2Q3MTU0Y2IwZThhOTgzZGQ1ZDAyYWUzOGU4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUJlQzdxMEhFQzJ3bHVYbG5tRzFONlpXZ2pVSm1Va0Y4NmdUTUp3dDduUEE9BjsARg%3D%3D--b525c06943cd46c0bd5254fe4359c745beea1e6d;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":34256,"name":"pizzas","priority":0,"active":true,"items":[],"modifiers":[]}'
+      string: ! '{"success":true,"category":{"id":34277,"name":"pizzas","description":"desc","priority":1,"active":true,"priced_by_size":true}}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:56:44 GMT
+  recorded_at: Wed, 29 Jan 2014 10:57:26 GMT
 recorded_with: VCR 2.5.0

@@ -5,11 +5,6 @@ module Zuppler
     attribute :id
     attribute :permalink
     attribute :name
-    attribute :remote_id
-    attribute :logo
-    attribute :location
-    attribute :owner
-    attribute :configuration
 
     class << self
       def create(options = {})
@@ -20,14 +15,7 @@ module Zuppler
     end
     include Zuppler::Macros
     
-    validates_presence_of :name, :remote_id, :logo, :location, :owner
-    validate do
-      if owner
-        errors[:owner] = "name is required" if owner[:name].blank?
-        errors[:owner] = "email is required" if owner[:email].blank?
-        errors[:owner] = "phone is required" if owner[:phone].blank?
-      end
-    end
+    validates_presence_of :name
 
     def self.find(permalink)
       response = execute_find restaurant_url(permalink)
@@ -42,9 +30,9 @@ module Zuppler
     def save
       restaurant_attributes = filter_attributes attributes, 'id'
       response = execute_create restaurants_url, {:restaurant => restaurant_attributes}
-      if success?(response)
-        self.id = response['id']
-        self.permalink = response['permalink']
+      if v3_success?(response)
+        self.id = response['restaurant']['id']
+        self.permalink = response['restaurant']['permalink']
       else
         response['errors'].each do |k,v|
           self.errors.add k, v
@@ -56,7 +44,7 @@ module Zuppler
     private
 
     def restaurants_url
-      "#{Zuppler.api_url}/restaurants.json"
+      "#{Zuppler.api_url('v3')}/restaurants.json"
     end
     def self.restaurant_url(permalink)
       "#{Zuppler.api_url}/restaurants/#{permalink}.json"

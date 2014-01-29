@@ -4,13 +4,11 @@ end
 
 
 
-When(/^I create (.*),(.*),(.*),(.*),(.*),(.*),(.*) restaurant$/) do |name,rid,logo,location,oname,oemail,ophone|
+When(/^I create "(.*?)" restaurant$/) do |name|
   company = Faker::Company.name
   name = "#{name} - #{company}"
-  rid = "#{rid} - #{company}"
   options = {
-    :name => name, :remote_id => rid, :logo => logo, :location => location,
-    :owner => {:name => oname, :email => oemail, :phone => ophone}
+    :name => name, 
   }
   @restaurant = Zuppler::Restaurant.create options
 end

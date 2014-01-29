@@ -31,6 +31,10 @@ module Zuppler
       !!self.id
     end
 
+    def v3_success?(response)
+      response.success? and response['success'] == true
+    end
+
     def self.success?(response)
       response.success? and response['valid'] == true
     end

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants/demorestaurant/menus.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus.json
     body:
       encoding: US-ASCII
-      string: menu[name]=lunch&menu[special]=true
+      string: menu[name]=lunch&menu[priority]=1
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:54:55 GMT
+      - Wed, 29 Jan 2014 10:56:41 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"5c281838dccf148ae8746780f102da6e"'
+      - ! '"fe116056e7c7ba0926f1b0eb1d64853a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 009c381ea588b53ca2e9d5c50e6cb27e
+      - c95bd9f5d621c201db4a5dc3ef9581f4
       X-Runtime:
-      - '0.156578'
+      - '0.080345'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWMwNWM5ZDQ0ZmFkMDljZWE2ZjVjMDAyZDAyNjRkMGQ4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWhhSXJVTG82VkVDZ1d6TmtDbVMvUmRUc0YxbkVYb0Q5RzR5cHU1UkNoWHM9BjsARg%3D%3D--28bfacb5b3deabfb953a378e2673ec5856fd58b5;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWE4NTRhOTU2ZGM0OTI5MzY1MWE0NWM0Nzc0NDM4NWY3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWpIVVVKenlaWnNOUkthdEU5UFJ4d0x0Z081NG1aWlY4eVhqTHVTUDArbWM9BjsARg%3D%3D--135ea388990d95dc27f3fb1a24961da8cb29f031;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,10 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":21376,"name":"lunch","categories":[]}'
+      string: ! '{"success":true,"menu":{"id":21384,"name":"lunch","description":null,"active":true,"default":null,"use_category_tabs":null,"available_on":"","available_at":"Sun:
+        5:00am  - 4:00pm <br/>Mon: 5:00am  - 4:00pm <br/>Tue: 5:00am  - 4:00pm <br/>Wed:
+        5:00am  - 4:00pm <br/>Thu: 5:00am  - 4:00pm <br/>Fri: 5:00am  - 4:00pm <br/>Sat:
+        5:00am  - 4:00pm ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21384.json","categories":[]}}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:56:12 GMT
+  recorded_at: Wed, 29 Jan 2014 10:59:03 GMT
 recorded_with: VCR 2.5.0

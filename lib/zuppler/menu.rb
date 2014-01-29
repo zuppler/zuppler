@@ -5,7 +5,7 @@ module Zuppler
     attribute :restaurant
     attribute :id
     attribute :name
-    attribute :special, default: true
+    attribute :priority
     
     validates_presence_of :restaurant, :name
     validate do
@@ -15,20 +15,20 @@ module Zuppler
     def save
       menu_attributes = filter_attributes attributes, 'restaurant'
       response = execute_create menus_url, {:menu => menu_attributes}
-      if success?(response)
-        self.id = response['id']
+      if v3_success?(response)
+        self.id = response['menu']['id']
       else
         response['errors'].each do |k,v|
           self.errors.add k, v
         end
       end
-      self
+      v3_success? response
     end
 
     protected
     
     def menus_url
-      "#{Zuppler.api_url}/restaurants/#{restaurant.permalink}/menus.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/menus.json"
     end
   end
 end

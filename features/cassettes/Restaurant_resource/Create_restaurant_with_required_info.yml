@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Koelpin%2C%20Cummerata%20and%20Cassin&restaurant[remote_id]=1234%20-%20Koelpin%2C%20Cummerata%20and%20Cassin&restaurant[logo]=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo4w.png&restaurant[location]=123%20North%20St%20New%20York&restaurant[owner][name]=Iulian&restaurant[owner][email]=iulian.costan%40zuppler.com&restaurant[owner][phone]=0745586010
+      string: restaurant[name]=Restaurant%20-%20Littel%2C%20Lind%20and%20Sanford
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:54:33 GMT
+      - Wed, 29 Jan 2014 11:02:29 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"87d671e78c628f936e87457a3de7e15e"'
+      - ! '"6ffcbc25ffcef7faebe07507ea6d903e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2af90109b6843affd2f2c0aa86194d78
+      - 8083f149b4820ae073a478455719b76c
       X-Runtime:
-      - '13.747848'
+      - '0.817875'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTY3YWE0NzA0ZTA3MzA4ODAzMWVlMjU1ZDE4OTNlZjc0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXJWWHJ3N2pNeE8vcTZKdUx3WXZkZUJMU3NhQTRYbUIzenQ5WmZ5M0E3UW89BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IGNyZWF0ZWQhBjsARjoJQG5vdzA%3D--0a8b7f7e9b9f56a3c6a6e447fe9ee3cd30e6d5d6;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWI3Mjg1N2I0NGViZjE5OTEyYjU4NGVmZjdmYjk0M2QyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUFFUENsM3ZtS0dDOEd2TnRuTk9WL3ZLNm1VNHA3OFFiR2xOTXBoamt5Mk09BjsARg%3D%3D--06be8c26389e17bb0669199861a20fa78b6fc8c6;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,9 +45,55 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":2006,"name":"Restaurant - Koelpin,
-        Cummerata and Cassin","permalink":"restaurantkoelpincummerataandcassin","description":null,"logo":"http://cdn.zuppler.com/images/pictures/files/000/019/221/medium/open-uri20131204-24124-21ojnu.?1386165262","cuisines":"","amenities":"","owner":{"name":"Iulian","email":"iulian.costan@zuppler.com","phone":"0745586010"},"address":{"id":261255,"street":"123
-        North Street","block":null,"city":"Rye","state":"NY","country":"US","zip":"10580","lat":"40.976753","lng":"-73.694657"},"configuration":{"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":false,"custom":""},"taxes":{"service_charge":"0.0","sales":"10.0"}},"discounts":[],"photos":[]}'
+      string: ! '{"success":true,"restaurant":{"id":2014,"name":"Restaurant - Littel,
+        Lind and Sanford","permalink":"restaurantlittellindandsanford","locale":"en","welcome_message":null,"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
+        - Sat</strong>: 6:00am  - 12:00pm , 12:00pm  - 6:00pm , 6:00pm  - 12:00am  (next
+        day)<br/>"},"messages":{"state":"State","zip":"Zip","user_anonymous":"Guest","item":"{1}
+        item","items":"{1} items","item_min":"You should select at least {1}","item_max":"You
+        should select at most {1}","item_min_max":"You should select between {1} and
+        {2}","item_fix":"You should select exactly {1}","item_err_at_least":"Please
+        select at least {1}","item_err_at_most":"Please select at most {1}","ordering_paused":"Online
+        Ordering is currently paused. Please check back later.","ordering_paused_restaurant_closed":"We
+        are not accepting online orders at this time.","add_address_button":"Add Address...","loading_menu":"Loading&hellip;<br/>
+        Please Wait","first_time_deal":"first time user discount, sign in to apply","first_time_deal_enabled":"first
+        time user discount, click to apply","first_time_deal_disabled":"applies only
+        for first time users","failed_load_core":"Failed to load menu. Please try
+        to reload page again later","failed_load_menu_item":"Failed to load menu item.
+        Please try again later","failed_load_cart_components":"Failed to initialize
+        cart. Please try to reload page again later","failed_cart_add":"Failed to
+        add item to cart. Please try again later","failed_cart_update":"Failed to
+        update item. Please try again later","failed_cart_remove":"Failed to remove
+        item from cart. Please try again later","failed_cart_discount_add":"Failed
+        to apply discount. Please try again later","failed_cart_discount_remove":"Failed
+        to remove discount. Please try again later","fail_add_address":"Failed to
+        add address. Please try again later","errors":"Errors","infos":"Infos","select_address":"Select
+        address...","select_an_address":"select an address...","add_address":"Add
+        address...","add_address_short":"+","enter_promo_code":"Enter promo code:","login_or_signup_for_discount":"Please
+        login or signup to apply this discount","apply":"Apply","login_apply":"Sign
+        in &amp; Apply","jump_to":"Go to&hellip;","private_mode_warn":"You are in
+        private browsing mode. In this mode your cart will not be available if you
+        reload or navigate back to this page.","unsupported_storage":"You are using
+        an old browser. Saving your cart items and settings is not persistent if you
+        reload this page or navigate back to it. Please upgrade your browser.","enter_deliver_address":"Enter
+        Delivery Address:","address_street":"Street:","address_cross_street":"* Cross
+        Street:","address_abf":"Apt, Building, Floor:","address_city":"City:","address_dinstr":"Delivery
+        instructions:","address_dinstr_hint":"e.g. specific room#, floor, department,
+        special loading area etc.","address_location_name":"Location Name:","address_location_hint":"e.g.
+        home, my office","cancel_btn":"Cancel","save_btn":"Save","close_btn":"Close","add_to_order_btn":"Add
+        to Order","add_btn":"Add","view_discounts_btn":"View available discounts","click_to_customize":"Click
+        to customize","done":"Done","qty":"Quantity:","short_qty":"Qty:","click_item_to_add":"Click
+        on a menu item to add to order","click_discount_to_apply":"Click on a discount
+        to apply:","sign_in":"Sign in","click_discount_to_apply_first_time":" and
+        apply your first time user discount:","read_more":"read more&hellip;","view_order":"Checkout","login":"Sign
+        in","hide_order":"Back to Menu","back_to_menu":"Back to Menu","promo":"Promo","enter_discount_promo_code":"Enter
+        Discount Promo Code","order_options":"Order Options","order_summary":"Your
+        Order","from":"from","more_dotdot":"more&hellip;","select_location":"select
+        a restaurant location...","click_to_map":"click to see location on map&hellip;","curbside_hint":"vehicle
+        make, model, color and type","buckid_hint":"enter #","payment":"Payment:","discount":"Discount:","order_total":"Order
+        Total:","edit_items":"Edit Items","time":"Time:","special_instr":"special
+        instructions","ok":"OK","map":"Map","redirect_responsive":"This site is not
+        optimized for mobile. Do you want to go the mobile optimized page?","sold_out":"Sold
+        Out","tip_select_address":" to select from your saved addresses","discounts":"Discounts","account_section":"Account"},"menu_messages":[],"gallery":[],"images":[],"locations":[],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0},"delivery":{"active":false,"settings":{"description":null,"min_order":15},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}}},"discounts":[],"events":[]}}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:55:50 GMT
+  recorded_at: Wed, 29 Jan 2014 11:04:51 GMT
 recorded_with: VCR 2.5.0
