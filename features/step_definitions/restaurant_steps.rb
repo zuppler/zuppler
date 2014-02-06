@@ -4,13 +4,10 @@ end
 
 
 
-When(/^I create "(.*?)" restaurant$/) do |name|
+When(/^I create "(.*?)", "(.*?)" restaurant$/) do |name, address|
   company = Faker::Company.name
   name = "#{name} - #{company}"
-  options = {
-    :name => name, 
-  }
-  @restaurant = Zuppler::Restaurant.create options
+  @restaurant = Zuppler::Restaurant.create name: name, address: address
 end
 When(/^I find restaurant "(.*?)"$/) do |permalink|
   @restaurant = Zuppler::Restaurant.find permalink

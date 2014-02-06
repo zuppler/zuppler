@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Littel%2C%20Lind%20and%20Sanford
+      string: restaurant[name]=Restaurant%20-%20Orn%2C%20Ferry%20and%20Okuneva&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jan 2014 11:02:29 GMT
+      - Thu, 06 Feb 2014 08:09:41 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"6ffcbc25ffcef7faebe07507ea6d903e"'
+      - ! '"ed62d92ea6c5ce712fe7c3ef3748fd1d"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8083f149b4820ae073a478455719b76c
+      - c5b062e67b6da7d8243a266d761f4739
       X-Runtime:
-      - '0.817875'
+      - '6.862359'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWI3Mjg1N2I0NGViZjE5OTEyYjU4NGVmZjdmYjk0M2QyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUFFUENsM3ZtS0dDOEd2TnRuTk9WL3ZLNm1VNHA3OFFiR2xOTXBoamt5Mk09BjsARg%3D%3D--06be8c26389e17bb0669199861a20fa78b6fc8c6;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWVlMmZjOWIwZjkxYjE5N2NiN2Q2YTgzNWZmNTA1OWEwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUM5RWh3NEt0YUZ0dW1DVHRtV1NNTXhZaFlsMmRwaFkzT0Q4aGEzWTNmc009BjsARg%3D%3D--1d3eb6ede6d55cfd59642f1861bbd2d4cb9ef120;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,8 +45,8 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"restaurant":{"id":2014,"name":"Restaurant - Littel,
-        Lind and Sanford","permalink":"restaurantlittellindandsanford","locale":"en","welcome_message":null,"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
+      string: ! '{"success":true,"restaurant":{"id":2017,"name":"Restaurant - Orn,
+        Ferry and Okuneva","permalink":"restaurantornferryandokuneva","locale":"en","welcome_message":null,"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
         - Sat</strong>: 6:00am  - 12:00pm , 12:00pm  - 6:00pm , 6:00pm  - 12:00am  (next
         day)<br/>"},"messages":{"state":"State","zip":"Zip","user_anonymous":"Guest","item":"{1}
         item","items":"{1} items","item_min":"You should select at least {1}","item_max":"You
@@ -80,7 +80,7 @@ http_interactions:
         instructions:","address_dinstr_hint":"e.g. specific room#, floor, department,
         special loading area etc.","address_location_name":"Location Name:","address_location_hint":"e.g.
         home, my office","cancel_btn":"Cancel","save_btn":"Save","close_btn":"Close","add_to_order_btn":"Add
-        to Order","add_btn":"Add","view_discounts_btn":"View available discounts","click_to_customize":"Click
+        to Order","add_btn":"Add","view_discounts_btn":"Apply Discounts","click_to_customize":"Click
         to customize","done":"Done","qty":"Quantity:","short_qty":"Qty:","click_item_to_add":"Click
         on a menu item to add to order","click_discount_to_apply":"Click on a discount
         to apply:","sign_in":"Sign in","click_discount_to_apply_first_time":" and
@@ -93,7 +93,28 @@ http_interactions:
         Total:","edit_items":"Edit Items","time":"Time:","special_instr":"special
         instructions","ok":"OK","map":"Map","redirect_responsive":"This site is not
         optimized for mobile. Do you want to go the mobile optimized page?","sold_out":"Sold
-        Out","tip_select_address":" to select from your saved addresses","discounts":"Discounts","account_section":"Account"},"menu_messages":[],"gallery":[],"images":[],"locations":[],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0},"delivery":{"active":false,"settings":{"description":null,"min_order":15},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}}},"discounts":[],"events":[]}}'
+        Out","tip_select_address":" to select from your saved addresses","discounts":"Discounts","account_section":"Account","repeat_order_btn":"Repeat
+        Order","repeat_your_orders":"Your Past Orders","repeat_please_wait_loading":"Please
+        wait while we are retrieving your previous orders.","repeat_please_wait_repeating":"Please
+        wait while we are adding adding all the items to your cart.","repeat_load_more_orders":"Load
+        More Orders","repeat_signin_title":"Sign in to Repeat Order","repeat_signin_description":"Sign
+        in to save your profile info, repeat past orders,<br /> store your credit
+        cards in our secure vault and much more.","repeat_order_type":"Order Type:","repeat_address":"Address:","repeat_payment":"Payment:","repeat_tip":"Tip:","repeat_repeat":"repeat","repeat_no_orders_info":"Sorry,
+        we could not find any recent orders for this restaurant.","err_repeat_no_modifier":"{1}
+        did not repeat: {2} for {1} not available.","err_repeat_no_item":"{1} did
+        not repeat: Not available.","err_repeat_different_price":"Note: {1} has a
+        different price now.","err_repeat_no_delivery":"Delivery is not currently
+        offered.","err_repeat_no_pickup":"Pickup is not currently offered.","err_repeat_no_curbside":"Curbside
+        is not currently offered.","err_repeat_no_dinein":"Eat In is not currently
+        offered.","err_repeat_no_card":"Card payment is not currently offered.","err_repeat_no_cash":"Cash
+        payment is not currently offered.","err_repeat_no_card_on_delivery":"Card
+        on delivery is not currently offered.","err_repeat_no_buckid":"This payment
+        type is not currently offered.","err_repeat_no_levelup":"Levelup payment is
+        not currently offered.","err_repeat_no_loyalty":"Loyalty points are not currently
+        offered.","err_repeat_no_discount":"Discount is no longer applicable: {1}
+        {2}"},"menu_messages":[],"gallery":[],"images":[],"locations":[{"id":2337,"name":"102
+        Church Avenue, College Station","address":"102 Church Avenue, College Station,
+        TX 77840","geo":{"lat":"30.616838","lng":"-96.348848"}}],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0},"delivery":{"active":false,"settings":{"description":null,"min_order":15},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}}},"discounts":[],"events":[]}}'
     http_version: 
-  recorded_at: Wed, 29 Jan 2014 11:04:51 GMT
+  recorded_at: Thu, 06 Feb 2014 08:12:23 GMT
 recorded_with: VCR 2.5.0

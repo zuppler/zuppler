@@ -9,7 +9,7 @@ Feature: Restaurant resource
   @vcr
   Scenario: Create restaurant with required info
     Given Zuppler configured with "zuppler" and "abcd"
-    When I create "Restaurant" restaurant
+    When I create "Restaurant", "102 Church Ave, College Station, 77840" restaurant
     Then I should have oscar restaurant
 
   @vcr

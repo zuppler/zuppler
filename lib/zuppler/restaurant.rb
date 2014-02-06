@@ -5,6 +5,7 @@ module Zuppler
     attribute :id
     attribute :permalink
     attribute :name
+    attribute :address
 
     class << self
       def create(options = {})
@@ -19,10 +20,10 @@ module Zuppler
 
     def self.find(permalink)
       response = execute_find restaurant_url(permalink)
-      if success?(response)
+      if v3_success?(response)
         @restaurant = Zuppler::Restaurant.new
-        @restaurant.id = response['id']
-        @restaurant.permalink = response['permalink']
+        @restaurant.id = response['restaurant']['id']
+        @restaurant.permalink = response['restaurant']['permalink']
         @restaurant
       end
     end
@@ -47,7 +48,7 @@ module Zuppler
       "#{Zuppler.api_url('v3')}/restaurants.json"
     end
     def self.restaurant_url(permalink)
-      "#{Zuppler.api_url}/restaurants/#{permalink}.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}.json"
     end
 
   end

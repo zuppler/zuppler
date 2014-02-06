@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants/demorestaurant.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant.json
     body:
       encoding: US-ASCII
       string: ''
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:54:34 GMT
+      - Thu, 06 Feb 2014 08:15:40 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"4b9ee302f568bd6479d306ca85bb67f5"'
+      - ! '"fdf8130a4d8009b74d2c0082672ca784"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0f78c01d61e76554ea4a7fa7ed3dd892
+      - 568bd1620b40b95fa3a3f2c28b79c601
       X-Runtime:
-      - '0.420141'
+      - '0.017700'
       X-Rack-Cache:
       - miss
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTEzOTQ3MDY0MDExNzMzYTE0N2RlZmNlODE5ZDc1MGY2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXRnRFFxT0UzZTZ2TzhncFBicFFNNUYvZEl5T2NIZGs0L29IekQzOWc2Y0k9BjsARg%3D%3D--e7dcbed15cbe7755d140b46265d51f59e4f0d856;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTBjNDdkOTU3ZDM3NGVkNGI3OGMzZmU2ZjE2MjFkYzZhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9EYlI3TDhaVmxUS2hpK05kcGFXeTlmVEczTTZmdVAvd1NwRXJFQ3lad2M9BjsARg%3D%3D--7083fefd475cb3d4233d72b3b24b74cbaef472e8;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,33 +45,114 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"id":242,"name":"Demo Restaurant","permalink":"demorestaurant","description":"If
+      string: ! '{"success":true,"restaurant":{"id":242,"name":"Demo Restaurant","permalink":"demorestaurant","locale":"en","welcome_message":"If
         you would like to place a delivery order, select the delivery address as 1500
-        Market Street, Philadelphia PA.  \r\n","logo":"http://cdn.zuppler.com/images/pictures/files/000/007/292/medium/logo_demo.jpg?1312052575","cuisines":"Pizza,Seafood,Continental","amenities":"Online
-        Orders,Cocktail,Late Night,Coupons,Delivery,(Mon - Thu) Dinner Delivery Only,Carry
-        Out,Pick Up","owner":{"name":"Test Account","email":"test@zuppler.com","phone":"610
-        999 3803"},"address":{"id":174950,"street":"1500 Market Street","block":"","city":"Philadelphia","state":"PA","country":"","zip":"19103","lat":"39.952624","lng":"-75.165679"},"configuration":{"delivery":[{"data":"delivery","options":{},"block":{}},{"data":"pickup","options":{},"block":{}},{"data":{"pickup":"dinein"},"options":{},"block":{}}],"pickup":[{"data":"delivery","options":{},"block":{}},{"data":"pickup","options":{},"block":{}},{"data":{"pickup":"dinein"},"options":{},"block":{}}],"dinein":{"settings":{"description":"Come
+        Market Street, Philadelphia PA. \n  ","logo":{"active":true,"id":7292,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/292/xlarge/logo_demo.jpg?1312052575","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/292/medium/logo_demo.jpg?1312052575","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/292/thumb/logo_demo.jpg?1312052575","tiny":"http://cdn.zuppler.com/images/pictures/files/000/007/292/tiny/logo_demo.jpg?1312052575","original":"http://cdn.zuppler.com/images/pictures/files/000/007/292/original/logo_demo.jpg?1312052575"},"amenities":"Online
+        Orders, Cocktail, Late Night, Coupons, Delivery, (Mon - Thu) Dinner Delivery
+        Only, Carry Out, Pick Up","cuisines":"Pizza, Seafood, Continental","address":{},"hours_of_operation":{"info":"<strong>Sun
+        - Sat</strong>: 5:00am  - 10:15am , 10:15am  - 3:00pm , 4:00pm  - 1:00am  (next
+        day)<br/><strong>Wed</strong>: 5:00am  - 10:15am , 4:00pm  - 1:00am  (next
+        day)<br/>"},"messages":{"state":"State","zip":"Zip","user_anonymous":"Guest","item":"{1}
+        item","items":"{1} items","item_min":"You should select at least {1}","item_max":"You
+        should select at most {1}","item_min_max":"You should select between {1} and
+        {2}","item_fix":"You should select exactly {1}","item_err_at_least":"Please
+        select at least {1}","item_err_at_most":"Please select at most {1}","ordering_paused":"Online
+        Ordering is currently paused. Please check back later.","ordering_paused_restaurant_closed":"We
+        are not accepting online orders at this time.","add_address_button":"Add Address...","loading_menu":"Loading&hellip;<br/>
+        Please Wait","first_time_deal":"first time user discount, sign in to apply","first_time_deal_enabled":"first
+        time user discount, click to apply","first_time_deal_disabled":"applies only
+        for first time users","failed_load_core":"Failed to load menu. Please try
+        to reload page again later","failed_load_menu_item":"Failed to load menu item.
+        Please try again later","failed_load_cart_components":"Failed to initialize
+        cart. Please try to reload page again later","failed_cart_add":"Failed to
+        add item to cart. Please try again later","failed_cart_update":"Failed to
+        update item. Please try again later","failed_cart_remove":"Failed to remove
+        item from cart. Please try again later","failed_cart_discount_add":"Failed
+        to apply discount. Please try again later","failed_cart_discount_remove":"Failed
+        to remove discount. Please try again later","fail_add_address":"Failed to
+        add address. Please try again later","errors":"Errors","infos":"Infos","select_address":"Select
+        address...","select_an_address":"select an address...","add_address":"Add
+        address...","add_address_short":"+","enter_promo_code":"Enter promo code:","login_or_signup_for_discount":"Please
+        login or signup to apply this discount","apply":"Apply","login_apply":"Sign
+        in &amp; Apply","jump_to":"Go to&hellip;","private_mode_warn":"You are in
+        private browsing mode. In this mode your cart will not be available if you
+        reload or navigate back to this page.","unsupported_storage":"You are using
+        an old browser. Saving your cart items and settings is not persistent if you
+        reload this page or navigate back to it. Please upgrade your browser.","enter_deliver_address":"Enter
+        Delivery Address:","address_street":"Street:","address_cross_street":"* Cross
+        Street:","address_abf":"Apt, Building, Floor:","address_city":"City:","address_dinstr":"Delivery
+        instructions:","address_dinstr_hint":"e.g. specific room#, floor, department,
+        special loading area etc.","address_location_name":"Location Name:","address_location_hint":"e.g.
+        home, my office","cancel_btn":"Cancel","save_btn":"Save","close_btn":"Close","add_to_order_btn":"Add
+        to Order","add_btn":"Add","view_discounts_btn":"Apply Discounts","click_to_customize":"Click
+        to customize","done":"Done","qty":"Quantity:","short_qty":"Qty:","click_item_to_add":"Click
+        on a menu item to add to order","click_discount_to_apply":"Click on a discount
+        to apply:","sign_in":"Sign in","click_discount_to_apply_first_time":" and
+        apply your first time user discount:","read_more":"read more&hellip;","view_order":"Checkout","login":"Sign
+        in","hide_order":"Back to Menu","back_to_menu":"Back to Menu","promo":"Promo","enter_discount_promo_code":"Enter
+        Discount Promo Code","order_options":"Order Options","order_summary":"Your
+        Order","from":"from","more_dotdot":"more&hellip;","select_location":"select
+        a restaurant location...","click_to_map":"click to see location on map&hellip;","curbside_hint":"vehicle
+        make, model, color and type","buckid_hint":"enter #","payment":"Payment:","discount":"Discount:","order_total":"Order
+        Total:","edit_items":"Edit Items","time":"Time:","special_instr":"special
+        instructions","ok":"OK","map":"Map","redirect_responsive":"This site is not
+        optimized for mobile. Do you want to go the mobile optimized page?","sold_out":"Sold
+        Out","tip_select_address":" to select from your saved addresses","discounts":"Discounts","account_section":"Account","repeat_order_btn":"Repeat
+        Order","repeat_your_orders":"Your Past Orders","repeat_please_wait_loading":"Please
+        wait while we are retrieving your previous orders.","repeat_please_wait_repeating":"Please
+        wait while we are adding adding all the items to your cart.","repeat_load_more_orders":"Load
+        More Orders","repeat_signin_title":"Sign in to Repeat Order","repeat_signin_description":"Sign
+        in to save your profile info, repeat past orders,<br /> store your credit
+        cards in our secure vault and much more.","repeat_order_type":"Order Type:","repeat_address":"Address:","repeat_payment":"Payment:","repeat_tip":"Tip:","repeat_repeat":"repeat","repeat_no_orders_info":"Sorry,
+        we could not find any recent orders for this restaurant.","err_repeat_no_modifier":"{1}
+        did not repeat: {2} for {1} not available.","err_repeat_no_item":"{1} did
+        not repeat: Not available.","err_repeat_different_price":"Note: {1} has a
+        different price now.","err_repeat_no_delivery":"Delivery is not currently
+        offered.","err_repeat_no_pickup":"Pickup is not currently offered.","err_repeat_no_curbside":"Curbside
+        is not currently offered.","err_repeat_no_dinein":"Eat In is not currently
+        offered.","err_repeat_no_card":"Card payment is not currently offered.","err_repeat_no_cash":"Cash
+        payment is not currently offered.","err_repeat_no_card_on_delivery":"Card
+        on delivery is not currently offered.","err_repeat_no_buckid":"This payment
+        type is not currently offered.","err_repeat_no_levelup":"Levelup payment is
+        not currently offered.","err_repeat_no_loyalty":"Loyalty points are not currently
+        offered.","err_repeat_no_discount":"Discount is no longer applicable: {1}
+        {2}"},"menu_messages":[],"gallery":[{"active":true,"id":7304,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/304/xlarge/10.jpg?1312057299","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/304/medium/10.jpg?1312057299","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/304/thumb/10.jpg?1312057299"},{"active":true,"id":7305,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/305/xlarge/5.jpg?1312057301","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/305/medium/5.jpg?1312057301","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/305/thumb/5.jpg?1312057301"},{"active":true,"id":7306,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/306/xlarge/7.jpg?1312057322","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/306/medium/7.jpg?1312057322","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/306/thumb/7.jpg?1312057322"},{"active":true,"id":7308,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/308/xlarge/6.jpg?1312057346","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/308/medium/6.jpg?1312057346","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/308/thumb/6.jpg?1312057346"},{"active":true,"id":7309,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/309/xlarge/1.jpg?1312057948","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/309/medium/1.jpg?1312057948","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/309/thumb/1.jpg?1312057948"},{"active":true,"id":7310,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/310/xlarge/2.jpg?1312057958","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/310/medium/2.jpg?1312057958","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/310/thumb/2.jpg?1312057958"},{"active":true,"id":7312,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/312/xlarge/11.jpg?1312057987","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/312/medium/11.jpg?1312057987","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/312/thumb/11.jpg?1312057987"},{"active":true,"id":7313,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/313/xlarge/8.jpg?1312058161","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/313/medium/8.jpg?1312058161","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/313/thumb/8.jpg?1312058161"},{"active":true,"id":7314,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/314/xlarge/4.jpg?1312058163","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/314/medium/4.jpg?1312058163","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/314/thumb/4.jpg?1312058163"},{"active":true,"id":7315,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/315/xlarge/9.jpg?1312058199","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/315/medium/9.jpg?1312058199","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/315/thumb/9.jpg?1312058199"},{"active":true,"id":7316,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/316/xlarge/12.jpg?1312058257","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/316/medium/12.jpg?1312058257","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/316/thumb/12.jpg?1312058257"},{"active":true,"id":7317,"xlarge":"http://cdn.zuppler.com/images/pictures/files/000/007/317/xlarge/Desserts.jpg?1312058289","medium":"http://cdn.zuppler.com/images/pictures/files/000/007/317/medium/Desserts.jpg?1312058289","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/317/thumb/Desserts.jpg?1312058289"}],"images":[],"locations":[{"id":1321,"name":"1500
+        Market Street, Philadelphia","address":"1500 Market Street, Philadelphia,
+        PA 19103","geo":{"lat":"39.952624","lng":"-75.165679"}}],"configuration":{"require_cross_street":false,"hide_comments":true,"sold_out":true,"ordering_paused":false,"payments":{"credit_card":true,"credit_card_on_delivery":true,"cash":true,"custom":"Call
+        610 999 3803"},"taxes":{"service_charge":0.0,"sales":6.0},"delivery":{"active":true,"settings":{"description":"Weekday
+        deliveries for lunch only - 12pm - 3pm. All day delivery on weekends.","min_order":15},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""},"rules":[]},"pickup":{"active":true,"settings":{"description":"Come
         to the express lane to pickup your order. Your order will be ready and waiting
-        for you to pickup :)"},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}},"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":""},"taxes":{"service_charge":"0.0","sales":"6.0"},"delivery":{"settings":{"description":"Weekday
-        deliveries for lunch only - 12pm - 3pm. All day delivery on weekends.","min_order_amount":15,"delivery_time":30,"delivery_charge":1.0},"area":{"distance":10},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}},"pickup":{"settings":{"description":"Come
+        for you to pickup :)","min_order":0},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}},"dinein":{"active":true,"settings":{"description":"Come
         to the express lane to pickup your order. Your order will be ready and waiting
-        for you to pickup :)","min_order_amount":0},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}}},"discounts":[{"id":756,"name":"Percent
-        discount","description":null,"title":"10% off on the order.","start_date":"2010-12-12","end_date":null},{"id":759,"name":"Percent
-        promo demo discount","description":null,"title":"10% off on orders more than
-        $10","start_date":"2010-12-12","end_date":null},{"id":904,"name":"Percent
-        discount","description":null,"title":"20% off on orders more than $30","start_date":"2011-11-03","end_date":null},{"id":1500,"name":"Fixed
-        price discount","description":null,"title":"$4 off on orders more than $35","start_date":"2013-01-23","end_date":null},{"id":1549,"name":"Fixed
-        price promo immissed discount","description":null,"title":"$5 off on orders
-        more than $25","start_date":"2013-02-10","end_date":null},{"id":2349,"name":"Fixed
-        price promo d5xy discount","description":null,"title":"$5 off on orders more
-        than $30","start_date":"2013-09-26","end_date":"2013-09-30"},{"id":2350,"name":"Fixed
-        price promo d5xy discount","description":null,"title":"$5 off on orders more
-        than $30","start_date":"2013-09-26","end_date":"2013-09-30"},{"id":2366,"name":"Percent
-        promo can20 discount","description":null,"title":"20% off on orders more than
-        $20","start_date":"2013-10-01","end_date":null},{"id":2389,"name":"Percent
-        discount","description":null,"title":"15% off on the order.","start_date":"2013-10-09","end_date":null},{"id":2367,"name":"Percent
-        promo can20 discount","description":null,"title":"20% off on orders more than
-        $20","start_date":"2013-10-01","end_date":null}],"pictures":[{"id":7304,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/304/medium/10.jpg?1312057299"},{"id":7305,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/305/medium/5.jpg?1312057301"},{"id":7306,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/306/medium/7.jpg?1312057322"},{"id":7308,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/308/medium/6.jpg?1312057346"},{"id":7309,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/309/medium/1.jpg?1312057948"},{"id":7310,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/310/medium/2.jpg?1312057958"},{"id":7312,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/312/medium/11.jpg?1312057987"},{"id":7313,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/313/medium/8.jpg?1312058161"},{"id":7314,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/314/medium/4.jpg?1312058163"},{"id":7315,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/315/medium/9.jpg?1312058199"},{"id":7316,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/316/medium/12.jpg?1312058257"},{"id":7317,"url":"http://cdn.zuppler.com/images/pictures/files/000/007/317/medium/Desserts.jpg?1312058289"}]}'
+        for you to pickup :)","min_order":0},"contact":{"name":"demo","email":"shiva.srinivasan@zuppler.com","phone":"6109993803","fax":""}},"curbside":{"active":true,"settings":{"description":"Please
+        call us when you reach the curbside lane. Please Note: You do not ave to get
+        out of your car.  We will come to you with your order.","min_order":0},"contact":{"name":"demo","email":"","phone":"8883917107","fax":""}}},"discounts":[{"id":1500,"start_date":"2013-01-23","end_date":null,"first_time":false,"type":"AmountDiscount","promo":false,"badge":"$3.50","title":"
+        off on orders more than $35","applicable_on":"","active":true},{"id":1549,"start_date":"2013-02-10","end_date":null,"first_time":true,"type":"AmountDiscount","promo":true,"badge":"$5.00","title":"
+        off on orders more than $25","applicable_on":"Mon, Tue, Wed, Thu","active":true},{"id":2367,"start_date":"2013-10-01","end_date":"2013-12-01","first_time":false,"type":"PercentDiscount","promo":true,"badge":"20%","title":"
+        off on orders more than $20","applicable_on":"","active":false},{"id":904,"start_date":"2011-11-03","end_date":"2013-12-01","first_time":true,"type":"PercentDiscount","promo":false,"badge":"20%","title":"
+        off on orders more than $30","applicable_on":"","active":false},{"id":756,"start_date":"2010-12-12","end_date":"2013-12-01","first_time":false,"type":"PercentDiscount","promo":false,"badge":"10%","title":"
+        off on the order.","applicable_on":"","active":false},{"id":2414,"start_date":"2013-12-12","end_date":"2013-12-01","first_time":false,"type":"PercentDiscount","promo":false,"badge":"10%","title":"
+        off on the order.","applicable_on":"Mon, Tue, Wed, Thu, Fri with delivery
+        only","active":false},{"id":759,"start_date":"2010-12-12","end_date":"2013-12-01","first_time":false,"type":"PercentDiscount","promo":true,"badge":"10%","title":"
+        off on orders more than $10","applicable_on":"","active":false},{"id":2349,"start_date":"2013-09-26","end_date":"2013-09-30","first_time":false,"type":"AmountDiscount","promo":true,"badge":"$5.00","title":"
+        off on orders more than $30","applicable_on":"Sun, Mon, Tue, Wed, Thu with
+        pickup only","active":false},{"id":2350,"start_date":"2013-09-26","end_date":"2013-09-30","first_time":false,"type":"AmountDiscount","promo":true,"badge":"$5.00","title":"
+        off on orders more than $30","applicable_on":"Sun, Mon, Tue, Wed, Thu with
+        pickup only","active":false},{"id":2366,"start_date":"2013-10-01","end_date":"2013-12-08","first_time":false,"type":"PercentDiscount","promo":true,"badge":"20%","title":"
+        off on orders more than $20","applicable_on":"","active":false},{"id":2389,"start_date":"2013-10-09","end_date":null,"first_time":true,"type":"PercentDiscount","promo":false,"badge":"15%","title":"
+        off on the order.","applicable_on":"","active":true}],"events":[{"id":234,"name":"Monday:
+        Kids eat free; Sat & Sun: Kid''s eat for a $1.00","description":"Monday: Kids
+        eat free with purchase of each adult entree.\r\n\r\nSat & Sun: Kids eat for
+        a $1.00 from 11:00 - 3:00.\r\n","start_date":"2009-07-18","end_date":null,"active":true,"picture":{"active":true,"id":7319,"medium":"http://cdn.zuppler.com/images/pictures/files/000/007/319/medium/kids%20eat%20free.jpg?1312315974","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/319/thumb/kids%20eat%20free.jpg?1312315974","tiny":"http://cdn.zuppler.com/images/pictures/files/000/007/319/tiny/kids%20eat%20free.jpg?1312315974"}},{"id":235,"name":"Happy
+        Hour: Mon thru Fri","description":"Enjoy 1/2 price off appetizers from 5:00
+        pm - 7:00 pm every day from Mon - Fri.","start_date":"2009-07-18","end_date":null,"active":true,"picture":{"active":true,"id":1816,"medium":"http://cdn.zuppler.com/images/pictures/files/000/001/816/medium/happy_hour_logo_cropped2.jpg","thumb":"http://cdn.zuppler.com/images/pictures/files/000/001/816/thumb/happy_hour_logo_cropped2.jpg","tiny":"http://cdn.zuppler.com/images/pictures/files/000/001/816/tiny/happy_hour_logo_cropped2.jpg"}},{"id":254,"name":"Traditional
+        Irish Sessions","description":"Come and enjoy traditional Irish music sessions
+        first Sunday of every month from 3:30 pm - 7:30 pm.","start_date":"2009-07-28","end_date":null,"active":true,"picture":{"active":true,"id":2291,"medium":"http://cdn.zuppler.com/images/pictures/files/000/002/291/medium/i_music.jpg","thumb":"http://cdn.zuppler.com/images/pictures/files/000/002/291/thumb/i_music.jpg","tiny":"http://cdn.zuppler.com/images/pictures/files/000/002/291/tiny/i_music.jpg"}},{"id":255,"name":"Live
+        Music Thu, Fri & Sat","description":"Enjoy live music at our restaurant every
+        Thu, Fri & Sat night. Check out the calendar of bands on our website.","start_date":"2009-07-28","end_date":null,"active":true,"picture":{"active":true,"id":7320,"medium":"http://cdn.zuppler.com/images/pictures/files/000/007/320/medium/live%20music.jpg?1312316445","thumb":"http://cdn.zuppler.com/images/pictures/files/000/007/320/thumb/live%20music.jpg?1312316445","tiny":"http://cdn.zuppler.com/images/pictures/files/000/007/320/tiny/live%20music.jpg?1312316445"}},{"id":256,"name":"Quizzo
+        every Wednesday","description":"Check your brain power with our Quizzo night
+        every Wednesday from 9:00 pm - 11:00 pm.\r\n\r\nTop 2 finishing teams win
+        exciting prizes.","start_date":"2009-07-28","end_date":null,"active":true,"picture":{"active":true,"id":2293,"medium":"http://cdn.zuppler.com/images/pictures/files/000/002/293/medium/quizzo.jpg","thumb":"http://cdn.zuppler.com/images/pictures/files/000/002/293/thumb/quizzo.jpg","tiny":"http://cdn.zuppler.com/images/pictures/files/000/002/293/tiny/quizzo.jpg"}}]}}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:55:51 GMT
+  recorded_at: Thu, 06 Feb 2014 08:18:21 GMT
 recorded_with: VCR 2.5.0
