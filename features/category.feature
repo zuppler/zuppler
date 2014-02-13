@@ -1,5 +1,5 @@
 Feature: Category resource
-  Create/Update category
+  Create/Update/Delete category
 
   @vcr
   Scenario: Create category
@@ -8,3 +8,21 @@ Feature: Category resource
     And I have a menu "21382"
     When I create category with "pizzas","desc","1","true"
     Then I should have category created
+
+  @vcr
+  Scenario: Update category
+    Given Zuppler configured with "zuppler" and "abcd"
+    And I have a restaurant "1","demorestaurant"
+    And I have a menu "21382"
+    And I have a category "33040"
+    When I update category "ccc","ddd","true","1"
+    Then I should get success response
+
+  @vcr
+  Scenario: Delete category
+    Given Zuppler configured with "zuppler" and "abcd"
+    And I have a restaurant "1","demorestaurant"
+    And I have a menu "21382"
+    And I have a category "33040"
+    When I delete category
+    Then I should get success response

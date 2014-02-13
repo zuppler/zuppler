@@ -32,11 +32,12 @@ module Zuppler
       v3_success? response
     end
 
-    protected
-
-    def new?
-      id.blank?
+    def destroy
+      self.active = false
+      save
     end
+
+    protected
 
     def restaurant
       choice.restaurant

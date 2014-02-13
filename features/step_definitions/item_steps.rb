@@ -1,6 +1,6 @@
-When(/^I create item with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, price, size, priority|
+When(/^I create item with "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, price, priority, size_name, size_priority|
   @item = Zuppler::Item.new category: @category, name: name, price: price,
-  size: size, priority: priority
+  priority: priority, size_name: size_name, size_priority: size_priority
   @item.save
 end
 
@@ -19,7 +19,6 @@ When(/^I update item "(.*?)" with "(.*?)","(.*?)","(.*?)"$/) do |id, name, price
   @item.priority = priority
   @success = @item.save
 end
-
-Then(/^I should have item updated$/) do
-  @success.should be_true
+When(/^I delete item$/) do
+  @success = @item.destroy
 end

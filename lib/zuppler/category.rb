@@ -7,6 +7,7 @@ module Zuppler
     attribute :name
     attribute :description
     attribute :priority
+    attribute :active
     attribute :priced_by_size
 
     validates_presence_of :menu, :name
@@ -15,16 +16,20 @@ module Zuppler
     end
 
     def save
-      category_attributes = filter_attributes attributes, 'menu'
-      response = execute_create categories_url, {:category => category_attributes}
-      if v3_success? response
-        self.id = response['category']['id']
+      if new?
+        category_attributes = filter_attributes attributes, 'menu'
+        response = execute_create categories_url, {category: category_attributes}
+        self.id = response['category']['id'] if v3_success? response
       else
-        response['errors'].each do |k,v|
-          self.errors.add k, v
-        end
+        category_attributes = filter_attributes attributes, 'menu', 'id'
+        response = execute_update category_url, {category: category_attributes}
       end
       v3_success? response
+    end
+
+    def destroy
+      self.active = false
+      save
     end
 
     def restaurant
@@ -32,6 +37,10 @@ module Zuppler
     end
 
     protected
+
+    def category_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/categories/#{id}.json"
+    end
 
     def categories_url
       "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/menus/#{menu.id}/categories.json"

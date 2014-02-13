@@ -16,19 +16,24 @@ module Zuppler
     include HTTParty
 
     class << self
-      def log(response, options)
+      def log(url, response, options)
         puts
+        puts " ***** Zuppler Url: #{url}"
         puts " ***** Zuppler Request: #{options}"
         puts " ***** Zuppler Response: #{response.body}"
       end
     end
 
-    def log(response, options)
-      self.class.log response, options
+    def log(url, response, options)
+      self.class.log url, response, options
     end
 
     def persisted?
       !!self.id
+    end
+
+    def new?
+      self.id.blank?
     end
 
     def self.v3_success?(response)
@@ -47,19 +52,19 @@ module Zuppler
     def execute_create(url, body, headers = {})
       options = {:body => body, :headers => headers}
       response = self.class.post url, options
-      log response, options
+      log url, response, options
       response
     end
     def execute_update(url, body, headers = {})
       options = {:body => body, :headers => headers}
       response = self.class.put url, options
-      log response, options
+      log url, response, options
       response
     end
     def self.execute_find(url, headers = {})
       options = {:headers => headers}
       response = get url, options
-      log response, options
+      log url, response, options
       response
     end
 

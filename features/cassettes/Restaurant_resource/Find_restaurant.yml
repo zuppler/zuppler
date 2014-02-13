@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 06 Feb 2014 08:15:40 GMT
+      - Thu, 06 Feb 2014 08:43:14 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 568bd1620b40b95fa3a3f2c28b79c601
+      - 5dad6c98c76918ca92c254f34efefe84
       X-Runtime:
-      - '0.017700'
+      - '0.012523'
       X-Rack-Cache:
       - miss
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTBjNDdkOTU3ZDM3NGVkNGI3OGMzZmU2ZjE2MjFkYzZhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9EYlI3TDhaVmxUS2hpK05kcGFXeTlmVEczTTZmdVAvd1NwRXJFQ3lad2M9BjsARg%3D%3D--7083fefd475cb3d4233d72b3b24b74cbaef472e8;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTlkYzc5ZjU2NDcwOGJmNDgyNDMzM2M1N2QyNzkzOTZiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUZPQU84b2RnZXAxTnFmMWhhOTlzdC9oOWFENzlXZGJwNHdGeG9CMm9YYzA9BjsARg%3D%3D--1e7682160aaa7c9bff5123e0072f308acd0b7328;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -154,5 +154,5 @@ http_interactions:
         every Wednesday from 9:00 pm - 11:00 pm.\r\n\r\nTop 2 finishing teams win
         exciting prizes.","start_date":"2009-07-28","end_date":null,"active":true,"picture":{"active":true,"id":2293,"medium":"http://cdn.zuppler.com/images/pictures/files/000/002/293/medium/quizzo.jpg","thumb":"http://cdn.zuppler.com/images/pictures/files/000/002/293/thumb/quizzo.jpg","tiny":"http://cdn.zuppler.com/images/pictures/files/000/002/293/tiny/quizzo.jpg"}}]}}'
     http_version: 
-  recorded_at: Thu, 06 Feb 2014 08:18:21 GMT
+  recorded_at: Thu, 06 Feb 2014 08:45:56 GMT
 recorded_with: VCR 2.5.0

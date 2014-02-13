@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Orn%2C%20Ferry%20and%20Okuneva&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
+      string: restaurant[name]=Restaurant%20-%20Flatley-Walker&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 06 Feb 2014 08:09:41 GMT
+      - Thu, 06 Feb 2014 08:43:13 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"ed62d92ea6c5ce712fe7c3ef3748fd1d"'
+      - ! '"2172259b68ca5e7c3035061d9579027f"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5b062e67b6da7d8243a266d761f4739
+      - 1e72175e23858d3253cda67cf5a3dc9b
       X-Runtime:
-      - '6.862359'
+      - '3.013200'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWVlMmZjOWIwZjkxYjE5N2NiN2Q2YTgzNWZmNTA1OWEwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUM5RWh3NEt0YUZ0dW1DVHRtV1NNTXhZaFlsMmRwaFkzT0Q4aGEzWTNmc009BjsARg%3D%3D--1d3eb6ede6d55cfd59642f1861bbd2d4cb9ef120;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWFmMWJkNTkxZGYwNDNmYTU5NGMyNzg3YTQwZDU2YWI4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUhJT3ZSUnVaVVI5UkZYM0hkdnVDUDZHRzcva21vKzN2bXpmRUVkR2NHbHc9BjsARg%3D%3D--b2408bf5cdb1bc0e6e01d0d07cc90a1f73ae3b0d;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,8 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"restaurant":{"id":2017,"name":"Restaurant - Orn,
-        Ferry and Okuneva","permalink":"restaurantornferryandokuneva","locale":"en","welcome_message":null,"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
+      string: ! '{"success":true,"restaurant":{"id":2018,"name":"Restaurant - Flatley-Walker","permalink":"restaurantflatleywalker","locale":"en","welcome_message":null,"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
         - Sat</strong>: 6:00am  - 12:00pm , 12:00pm  - 6:00pm , 6:00pm  - 12:00am  (next
         day)<br/>"},"messages":{"state":"State","zip":"Zip","user_anonymous":"Guest","item":"{1}
         item","items":"{1} items","item_min":"You should select at least {1}","item_max":"You
@@ -112,9 +111,9 @@ http_interactions:
         type is not currently offered.","err_repeat_no_levelup":"Levelup payment is
         not currently offered.","err_repeat_no_loyalty":"Loyalty points are not currently
         offered.","err_repeat_no_discount":"Discount is no longer applicable: {1}
-        {2}"},"menu_messages":[],"gallery":[],"images":[],"locations":[{"id":2337,"name":"102
+        {2}"},"menu_messages":[],"gallery":[],"images":[],"locations":[{"id":2338,"name":"102
         Church Avenue, College Station","address":"102 Church Avenue, College Station,
         TX 77840","geo":{"lat":"30.616838","lng":"-96.348848"}}],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0},"delivery":{"active":false,"settings":{"description":null,"min_order":15},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}}},"discounts":[],"events":[]}}'
     http_version: 
-  recorded_at: Thu, 06 Feb 2014 08:12:23 GMT
+  recorded_at: Thu, 06 Feb 2014 08:45:55 GMT
 recorded_with: VCR 2.5.0

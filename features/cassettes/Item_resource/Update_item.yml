@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v2/channels/zuppler/restaurants/demorestaurant/items/9898.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9898.json
     body:
       encoding: US-ASCII
       string: item[name]=diavolo&item[price]=8.99&item[priority]=2
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 21 Jan 2014 08:54:43 GMT
+      - Thu, 13 Feb 2014 08:41:00 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"06eac9f9a9a2bd1f162fccdee2f80d03"'
+      - ! '"f7df37057503228ccc9cf11ff9e65ccb"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d84a21fe12a0ca1033f47bb5c11714e8
+      - 3824333e87053a829e09c05f2c8a35e9
       X-Runtime:
-      - '1.463057'
+      - '0.057789'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTZlYjE4NDZhMmYwNzIyYWE1MTBkZTg4NGY4MmU3ZGY1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVNPeFFSNmQyRFU3S1dqT0E0TDM4RlBic0gyVWdhZ1ViVitISWxlenJSTXM9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--3a8593a67c98405cdf87022064874d070101915a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTQ2MGM0MDNjMzMzNDc2YjUyNmE1ZDNhN2E0YTNmOTViBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTVGYUVaem1OYWZ4eWErc3pJd1MzQ2dFamYvamx1MEdIQVBqblZJbzQvNEE9BjsARg%3D%3D--669cb96310297b4706fe1b0b47bcec363f0b5e57;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,9 +45,9 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"errors":{},"valid":true,"image":"http://cdn.zuppler.com/images/pictures/files/000/002/054/original/chicken%20tenders.jpg","items":[{"id":9898,"price":"8.99","size_name":"","active":true,"coupon":null,"priority":2}],"modifiers":[],"id":9458,"name":"diavolo","description":"fried
+      string: ! '{"success":true,"item":{"id":9898,"name":"diavolo","description":"fried
         to perfection and served with French fries and your choice of sauce:  Dearg
-        Doom, Mild Stoke, Blast Furnace BBQ, Honey Mustard, or Ranch","veg":false,"spicy":0}'
+        Doom, Mild Stoke, Blast Furnace BBQ, Honey Mustard, or Ranch","price":"8.99","coupon":null,"active":true,"parent_id":9458,"priority":2,"veg":false,"spicy":0,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Tue, 21 Jan 2014 08:56:46 GMT
+  recorded_at: Thu, 13 Feb 2014 08:43:56 GMT
 recorded_with: VCR 2.5.0

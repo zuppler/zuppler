@@ -34,12 +34,10 @@ module Zuppler
       if v3_success?(response)
         self.id = response['restaurant']['id']
         self.permalink = response['restaurant']['permalink']
+        self
       else
-        response['errors'].each do |k,v|
-          self.errors.add k, v
-        end
+        nil
       end
-      self
     end
     
     private

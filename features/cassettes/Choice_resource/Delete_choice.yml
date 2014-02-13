@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21382/categories.json
+    method: put
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/69212.json
     body:
       encoding: US-ASCII
-      string: category[name]=pizzas&category[description]=desc&category[priority]=1&category[priced_by_size]=true
+      string: choice[active]=false
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 08:33:49 GMT
+      - Thu, 13 Feb 2014 09:01:44 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"b64f364f9d590f634c33d1998c05bf44"'
+      - ! '"d6f48cedbcb146d15646c09687441e30"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0f6314174aad6d95612b41b711c0371d
+      - 3cf30d39e3593e74a97d8285eb73150e
       X-Runtime:
-      - '0.043697'
+      - '0.055764'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTYzNWJjODEyYWViYjY3OWE3YjA0N2VlMTk3YmRhMTQ2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXh4NEd2bjlCTGdyNDZTZ2crdHRFbmVUQm15LzFodUpIeVJZbExYcEdPUUU9BjsARg%3D%3D--6277564791a25f19c58fd117da7a7cf86fb12b62;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTJkYWU4N2QwNDBjZmI1ODY3NjVjMTc3NjBmZTk4ZjQxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWVFb1IwMFNWVm9YQ2ZqWWsrSjBCcGVTN3ppQ0VTY082Q00zUm1pSEo3Sk09BjsARg%3D%3D--cc5ea241eb26d1633349790c25f525736c890665;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"category":{"id":34324,"name":"pizzas","description":"desc","priority":1,"active":true,"priced_by_size":false}}'
+      string: ! '{"success":true,"choice":{"id":69212,"name":"ccc","multiple":true,"min_qty":3,"max_qty":5,"priority":3,"order_by_priority":false,"active":false}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 08:36:45 GMT
+  recorded_at: Thu, 13 Feb 2014 09:04:40 GMT
 recorded_with: VCR 2.5.0

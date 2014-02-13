@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21382/categories.json
+    method: put
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/1234.json
     body:
       encoding: US-ASCII
-      string: category[name]=pizzas&category[description]=desc&category[priority]=1&category[priced_by_size]=true
+      string: item[active]=false
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 08:33:49 GMT
+      - Thu, 13 Feb 2014 08:41:01 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"b64f364f9d590f634c33d1998c05bf44"'
+      - ! '"5003b15e79ff5bb797501cc8537f753b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0f6314174aad6d95612b41b711c0371d
+      - a45bd421eccce2cb317de90093a482db
       X-Runtime:
-      - '0.043697'
+      - '0.049563'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTYzNWJjODEyYWViYjY3OWE3YjA0N2VlMTk3YmRhMTQ2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXh4NEd2bjlCTGdyNDZTZ2crdHRFbmVUQm15LzFodUpIeVJZbExYcEdPUUU9BjsARg%3D%3D--6277564791a25f19c58fd117da7a7cf86fb12b62;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ5YWVlOGM5NDY2NDBmMWQ1MmZiNzAzZGI1OGNkODQzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMStmTnh6QVd6VFFTbmducUdrMmh0K0tKRkxHeEdZV0dRUkp2aml0ekRGQnM9BjsARg%3D%3D--cccb4d5f8218a24e00b1e9780368f30764ca2402;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,8 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"category":{"id":34324,"name":"pizzas","description":"desc","priority":1,"active":true,"priced_by_size":false}}'
+      string: ! '{"success":true,"item":{"id":1234,"name":"Calzone","description":"&nbsp;","price":"0.0","coupon":null,"active":false,"parent_id":2260,"priority":null,"veg":null,"spicy":null,"size_name":"
+        Large","size_priority":0}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 08:36:45 GMT
+  recorded_at: Thu, 13 Feb 2014 08:43:57 GMT
 recorded_with: VCR 2.5.0

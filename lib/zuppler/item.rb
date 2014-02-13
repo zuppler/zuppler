@@ -5,9 +5,12 @@ module Zuppler
     attribute :category
     attribute :id
     attribute :name
+    attribute :description
     attribute :price, type: Float
-    attribute :size
+    attribute :active
     attribute :priority
+    attribute :size_name
+    attribute :size_priority
 
     validates_presence_of :category, :name, :price
 
@@ -19,16 +22,18 @@ module Zuppler
       if new?
         item_attributes = filter_attributes attributes, 'category'
         response = execute_create items_url, {:item => item_attributes}
-        self.id = response['items'].first['id'] if success?(response)
+        self.id = response['item']['id'] if v3_success?(response)
+        v3_success? response
       else
         item_attributes = filter_attributes attributes, 'category', 'id'
         response = execute_update item_url, {:item => item_attributes}
+        v3_success? response
       end
-      success? response
     end
 
-    def new?
-      id.blank?
+    def destroy
+      self.active = false
+      save
     end
 
     def restaurant
@@ -38,11 +43,11 @@ module Zuppler
     protected
 
     def item_url
-      "#{Zuppler.api_url}/restaurants/#{restaurant.permalink}/items/#{id}.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/items/#{id}.json"
     end
 
     def items_url
-      "#{Zuppler.api_url}/restaurants/#{category.restaurant.permalink}/categories/#{category.id}/items.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{category.restaurant.permalink}/categories/#{category.id}/items.json"
     end
   end
 end

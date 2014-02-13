@@ -3,6 +3,13 @@ When(/^I create category with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name,desc,p
   priority: priority, priced_by_size: priced_by_size
   @category.save
 end
+When(/^I update category "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, active, priority|
+  @category.attributes = {name: name, description: description, active: active, priority: priority}
+  @success = @category.save
+end
+When(/^I delete category$/) do
+  @success = @category.destroy
+end
 
 Then(/^I should have category created$/) do
   @category.id.should_not be_nil

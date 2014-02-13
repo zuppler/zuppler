@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/696696.json
     body:
       encoding: US-ASCII
-      string: modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1
+      string: modifier[active]=false
     headers: {}
   response:
     status:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5f00fa4a3b9dea063825c47b402cb2af
+      - a945f5dc3091d50a037db95354a9845e
       X-Runtime:
-      - '0.037076'
+      - '0.043895'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWUxOGJiNjBjN2RjN2JjMjE0NjliMzMxNWU4OWVmOGZhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMStra3JjY1VVVGZoWjBzNmdGQ3VrRWdxVGpLRW9QV3RqcWFDRWlmbmkwWms9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--d42836d2efa9ccfee60709fc8d5a0617ea18b362;
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTQ0NjVjODliMjg3OTM1OGIwYmZhOWFiZGI5ZDhlNjc4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWdPODY2QkpUSDJUMWkxSWRzcVZTUXJJVmVXZ3lKaHdYS0U1RzZFRFR1RkU9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--1889f456f577aa2918862258908893198c5c6d62;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -47,5 +47,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"success":true,"modifier":{"id":696696,"name":"cream","price":"1.99","active":false,"size_name":"","priority":1,"parent_id":290204}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 09:13:20 GMT
+  recorded_at: Thu, 13 Feb 2014 09:13:21 GMT
 recorded_with: VCR 2.5.0
