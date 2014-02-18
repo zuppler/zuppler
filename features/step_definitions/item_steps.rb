@@ -13,9 +13,10 @@ Given(/^I have an item "(.*?)"$/) do |id|
   @item = Zuppler::Item.new :category => @category, :id => id
 end
 
-When(/^I update item "(.*?)" with "(.*?)","(.*?)","(.*?)"$/) do |id, name, price, priority|
+When(/^I update item "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |id, name, description, price, priority|
   @item = Zuppler::Item.find id, @category
   @item.name = name
+  @item.description = description
   @item.price = price
   @item.priority = priority
   @success = @item.save

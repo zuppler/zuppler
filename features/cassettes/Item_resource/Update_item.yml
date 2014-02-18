@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9898.json
     body:
       encoding: US-ASCII
-      string: item[name]=diavolo&item[price]=8.99&item[priority]=2
+      string: item[name]=diavolo&item[description]=dddd&item[price]=8.99&item[priority]=2
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 08:41:00 GMT
+      - Tue, 18 Feb 2014 09:36:57 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"f7df37057503228ccc9cf11ff9e65ccb"'
+      - ! '"f3ee620deabe37cfe3ba452955a55851"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3824333e87053a829e09c05f2c8a35e9
+      - ba03cf3cca348de1ab73b48eac007413
       X-Runtime:
-      - '0.057789'
+      - '0.111450'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTQ2MGM0MDNjMzMzNDc2YjUyNmE1ZDNhN2E0YTNmOTViBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTVGYUVaem1OYWZ4eWErc3pJd1MzQ2dFamYvamx1MEdIQVBqblZJbzQvNEE9BjsARg%3D%3D--669cb96310297b4706fe1b0b47bcec363f0b5e57;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTM0OTRkNTNhM2MyYzQzMDY2YzgxZDBjNGM3YTgzNmViBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUVuWUViU0d4K0liR3hKNmRMU2M1VDF6WlM3eGNXWklBTU9oUW1PM3ZvakE9BjsARg%3D%3D--f13252dcd00d4e048dc0d82d04bd72feb55c6e69;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,9 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"item":{"id":9898,"name":"diavolo","description":"fried
-        to perfection and served with French fries and your choice of sauce:  Dearg
-        Doom, Mild Stoke, Blast Furnace BBQ, Honey Mustard, or Ranch","price":"8.99","coupon":null,"active":true,"parent_id":9458,"priority":2,"veg":false,"spicy":0,"size_name":null,"size_priority":null}}'
+      string: ! '{"success":true,"item":{"id":9898,"name":"diavolo","description":"dddd","price":"8.99","coupon":null,"active":true,"parent_id":9458,"priority":2,"veg":false,"spicy":0,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 08:43:56 GMT
+  recorded_at: Tue, 18 Feb 2014 09:40:05 GMT
 recorded_with: VCR 2.5.0

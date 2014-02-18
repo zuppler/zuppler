@@ -16,7 +16,7 @@ Feature: Item resource
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
     And I have a category "1712"
-    When I update item "9898" with "diavolo","8.99","2"
+    When I update item "9898" with "diavolo","dddd","8.99","2"
     Then I should get success response
 
   @vcr
