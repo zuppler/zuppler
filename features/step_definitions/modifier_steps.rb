@@ -1,6 +1,6 @@
-When(/^I create modifier "(.*?)", "(.*?)", "(.*?)", "(.*?)"$/) do |name, price, size, priority|
-  @modifier = Zuppler::Modifier.new :choice => @choice, :name => name, :price => price, 
-  :size => size, :priority => priority
+When(/^I create modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, size, priority|
+  @modifier = Zuppler::Modifier.new choice: @choice, name: name, price: price, 
+  size: size, priority: priority, description: description
   @modifier.save
 end
 

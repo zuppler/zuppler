@@ -6,6 +6,7 @@ module Zuppler
     attribute :id
     attribute :name
     attribute :priority
+    attribute :description
     
     validates_presence_of :restaurant, :name
     validate do

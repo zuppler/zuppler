@@ -1,5 +1,5 @@
-When(/^I create choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, multiple, max_qty, priority, order_by_priority|
-  @choice = Zuppler::Choice.new category: @category, name: name, multiple: multiple, max_qty: max_qty, priority: priority, order_by_priority: order_by_priority
+When(/^I create choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, multiple, max_qty, priority, order_by_priority|
+  @choice = Zuppler::Choice.new category: @category, name: name, multiple: multiple, max_qty: max_qty, priority: priority, order_by_priority: order_by_priority, description: description
   @choice.save
 end
 When(/^I update choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, priority, active, multiple, min_qty, max_qty|

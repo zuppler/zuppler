@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/66913/modifiers.json
     body:
       encoding: US-ASCII
-      string: modifier[name]=cheese&modifier[price]=0.99&modifier[size]=small&modifier[priority]=2
+      string: modifier[name]=cheese&modifier[description]=desc&modifier[price]=0.99&modifier[size]=small&modifier[priority]=2
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 09:10:23 GMT
+      - Tue, 18 Feb 2014 09:31:40 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"cbbf91ede99e222a5e1cb4806753a3d6"'
+      - ! '"9a55d03caaab9699954ac8eae74015c5"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3b0ccbdc1468910346bc16d90d36cf03
+      - 4a550564443a45784899bd378fe45a49
       X-Runtime:
-      - '0.209048'
+      - '0.193108'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTQ4MTRmOGFjNDM2ZjkzNjRkZDVhN2NjYTgxODU3MzBlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1WUFkray9LS2JKRHFZYThqcWJQeHpDbnQrNEpVMnNpSSt2V1B2cGZCWWs9BjsARg%3D%3D--9539faeab2c0ae53043426fe2e4a2f76dfaaee4e;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk3ZTUxZDFjMTc4ZGNlNjJjOGVlOGJiMGI3ZDI3NzBiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9XWXZGZis0RG9PTS9kNVBVS2R3eC9zQnp0ek1VaWJxNFduVk9hb01PdkU9BjsARg%3D%3D--d4acb963ce4de004d637325df8459910b09a5466;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"modifier":{"id":704338,"name":"cheese","price":"0.99","active":true,"size_name":"small","priority":2,"parent_id":290642}}'
+      string: ! '{"success":true,"modifier":{"id":706309,"name":"cheese","price":"0.99","active":true,"size_name":"small","priority":2,"parent_id":290642}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 09:13:20 GMT
+  recorded_at: Tue, 18 Feb 2014 09:34:49 GMT
 recorded_with: VCR 2.5.0

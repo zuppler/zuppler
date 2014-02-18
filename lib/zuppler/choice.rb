@@ -6,13 +6,13 @@ module Zuppler
     attribute :item
     attribute :id
     attribute :name
+    attribute :description
     attribute :active
     attribute :multiple
     attribute :min_qty, default: 0
     attribute :max_qty
     attribute :priority
     attribute :order_by_priority
-
     
     validates_presence_of :name
     validate do

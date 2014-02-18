@@ -1,5 +1,6 @@
-When(/^I create menu "(.*?)","(.*?)"$/) do |name,priority|
-  @menu = Zuppler::Menu.new restaurant: @restaurant, name: name, priority: priority
+When(/^I create menu "(.*?)","(.*?)","(.*?)"$/) do |name,description, priority|
+  @menu = Zuppler::Menu.new restaurant: @restaurant, name: name, 
+  priority: priority, description: description
   @menu.save
 end
 

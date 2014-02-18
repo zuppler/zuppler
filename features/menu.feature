@@ -5,5 +5,5 @@ Feature: Menu resource
   Scenario: Create menu
     Given Zuppler configured with "zuppler" and "abcd"
     And I have a restaurant "1","demorestaurant"
-    When I create menu "lunch","1"
+    When I create menu "lunch","desc","1"
     Then I should have menu created

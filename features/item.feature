@@ -7,7 +7,7 @@ Feature: Item resource
     And I have a restaurant "1","demorestaurant"
     And I have a menu "235"
     And I have a category "1712"
-    When I create item with "margherita","9.99","1","small","2"
+    When I create item with "magio","desc","9.99","1","small","2"
     Then I should have item created
 
   @vcr

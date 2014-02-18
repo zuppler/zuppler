@@ -6,6 +6,7 @@ module Zuppler
     attribute :id
     attribute :parent_id
     attribute :name
+    attribute :description
     attribute :price, type: Float
     attribute :size
     attribute :priority

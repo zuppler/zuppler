@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/1712/choices.json
     body:
       encoding: US-ASCII
-      string: choice[name]=toppings&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=false
+      string: choice[name]=toppings%20item&choice[description]=desc&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=false
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 09:01:43 GMT
+      - Tue, 18 Feb 2014 09:28:42 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"e78a5461788324c25b144ae44279d3b4"'
+      - ! '"ef5c97a4be4d686229ff323e1c6b7a6c"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 758fb46bbad1dd0de3a980e913ccb4ea
+      - c806a2c60aec16684cae414ea390859e
       X-Runtime:
-      - '0.039222'
+      - '0.039722'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWZlNzgwNjgxMGQ2YjQ2ZmEzOGM2YzQ1NzM4OGJlNmZkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUJZUHRHc25zU2dJYk5ZaFFOSStaNUwwRUNUc3NtQkZCMzNwSUxRdXdjaEE9BjsARg%3D%3D--811ed4c0432c189d206cb154f8c4fda602e21ef0;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTJkYTkyYzE0OTE2OGRmM2NjNTNiNjgzM2Q4OGFjZWI5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWU0cHZqeVphZE5BMmZiZTVMMHpidWk3OUkvcTVvenlETEZ5NXV1Nk9GQ2s9BjsARg%3D%3D--9f36cf4926906f94fd64e2abdbc121fade747626;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":73135,"name":"toppings","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":false,"active":true}}'
+      string: ! '{"success":true,"choice":{"id":73338,"name":"toppings item","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":false,"active":true}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 09:04:39 GMT
+  recorded_at: Tue, 18 Feb 2014 09:31:50 GMT
 recorded_with: VCR 2.5.0
