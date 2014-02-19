@@ -14,8 +14,8 @@ module Zuppler
 
     validates_presence_of :choice, :name, :price
 
-    def self.find(id, choice)
-      new id: id, choice: choice
+    def self.find(id, restaurant_id)
+      new id: id, restaurant_id: restaurant_id
     end
 
     def save
@@ -40,16 +40,16 @@ module Zuppler
 
     protected
 
-    def restaurant
-      choice.restaurant
+    def restaurant_id
+      @restaurant_id || choice.restaurant_id
     end
 
     def modifier_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/modifiers/#{id}.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/modifiers/#{id}.json"
     end
 
     def modifiers_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/choices/#{choice.id}/modifiers.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/choices/#{choice.id}/modifiers.json"
     end
   end
 end

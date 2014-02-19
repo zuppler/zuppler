@@ -23,9 +23,6 @@ Feature: Choice resource
   @vcr
   Scenario: Update choice
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a restaurant "1","demorestaurant"
-    And I have a menu "235"
-    And I have a category "1712"
     And I have a choice "69212"
     When I update choice "ccc","3","true","true","3","5"
     Then I should get success response
@@ -33,9 +30,6 @@ Feature: Choice resource
   @vcr
   Scenario: Delete choice
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a restaurant "1","demorestaurant"
-    And I have a menu "235"
-    And I have a category "1712"
     And I have a choice "69212"
     When I delete choice
     Then I should get success response

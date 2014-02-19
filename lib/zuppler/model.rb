@@ -14,6 +14,7 @@ module Zuppler
 
   class Model
     include HTTParty
+    attr_writer :restaurant_id
 
     class << self
       def log(url, response, options)

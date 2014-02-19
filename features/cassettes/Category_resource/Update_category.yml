@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 08:33:49 GMT
+      - Wed, 19 Feb 2014 13:52:46 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c5e8e343fafe8fe9bf8953249a68258b
+      - 2dbfe8951d0b0e194340dda8f666451b
       X-Runtime:
-      - '0.033640'
+      - '0.047178'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTliMTRhMDcwMWM4M2E1YzQyOGFjNmVhM2E2ZGY5N2M2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXpUU1cyditYc0ZwQU1EaFJIeWR4d0tEWVByaXN6YmI1NURtcW02YW5vU1U9BjsARg%3D%3D--b78ca7640bfe16d63826f0c2b0b1b7e3237fa608;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZlNzhjZGY0YmRjY2ZmMTQxMmI5NGFlOTMyMDVjOWQzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXZ6dHE2em9kc2dzd21tendQZVJkSHh2czhYVVp1L25tWGNKSTdlaUJCVlU9BjsARg%3D%3D--9ad36d9dc2a41a7691ea8c4b9f4e4795af29578b;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -47,5 +47,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"success":true,"category":{"id":33040,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":true}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 08:36:46 GMT
+  recorded_at: Wed, 19 Feb 2014 13:55:17 GMT
 recorded_with: VCR 2.5.0

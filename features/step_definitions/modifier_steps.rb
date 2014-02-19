@@ -5,7 +5,6 @@ When(/^I create modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, de
 end
 
 When(/^I update modifier "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |id, name, price, priority,active|
-  @modifier = Zuppler::Modifier.find id, @choice
   @modifier.attributes = {name: name, price: price, priority: priority}
   @success = @modifier.save
 end
@@ -20,5 +19,5 @@ Then(/^I should have modifier created$/) do
 end
 
 Given(/^I have a modifier "(.*?)"$/) do |id|
-  @modifier = Zuppler::Modifier.find id, @choice
+  @modifier = Zuppler::Modifier.find id, 'demorestaurant'
 end

@@ -13,6 +13,10 @@ module Zuppler
       errors.add :restaurant, 'permalink is required' if restaurant and restaurant.permalink.blank?
     end
 
+    def self.find(id, restaurant_id)
+      new id: id, restaurant_id: restaurant_id
+    end
+
     def save
       menu_attributes = filter_attributes attributes, 'restaurant'
       response = execute_create menus_url, {:menu => menu_attributes}
@@ -26,10 +30,14 @@ module Zuppler
       v3_success? response
     end
 
+    def restaurant_id
+      @restaurant_id || restaurant.permalink
+    end
+
     protected
     
     def menus_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/menus.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/menus.json"
     end
   end
 end

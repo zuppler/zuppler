@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 13 Feb 2014 08:41:01 GMT
+      - Wed, 19 Feb 2014 13:20:20 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -31,13 +31,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a45bd421eccce2cb317de90093a482db
+      - d9c51467652b5187950af7a0a5270682
       X-Runtime:
-      - '0.049563'
+      - '0.049997'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ5YWVlOGM5NDY2NDBmMWQ1MmZiNzAzZGI1OGNkODQzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMStmTnh6QVd6VFFTbmducUdrMmh0K0tKRkxHeEdZV0dRUkp2aml0ekRGQnM9BjsARg%3D%3D--cccb4d5f8218a24e00b1e9780368f30764ca2402;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTJhNmMxNmQxNmYyY2ZmMTQxYTk5M2E4YzBhNTQ2ODIyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxTVlg5NXRndEVCMGp1eE9iZGMyY0FXSkFoTEY1eThjV2JUVEhvZjZIRWc9BjsARg%3D%3D--faeb52f820226bf8e374953feecec8b8976aa36a;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -48,5 +48,5 @@ http_interactions:
       string: ! '{"success":true,"item":{"id":1234,"name":"Calzone","description":"&nbsp;","price":"0.0","coupon":null,"active":false,"parent_id":2260,"priority":null,"veg":null,"spicy":null,"size_name":"
         Large","size_priority":0}}'
     http_version: 
-  recorded_at: Thu, 13 Feb 2014 08:43:57 GMT
+  recorded_at: Wed, 19 Feb 2014 13:22:51 GMT
 recorded_with: VCR 2.5.0

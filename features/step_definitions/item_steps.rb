@@ -10,11 +10,10 @@ Then(/^I should have item created$/) do
 end
 
 Given(/^I have an item "(.*?)"$/) do |id|
-  @item = Zuppler::Item.new :category => @category, :id => id
+  @item = Zuppler::Item.find id, 'demorestaurant'
 end
 
-When(/^I update item "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |id, name, description, price, priority|
-  @item = Zuppler::Item.find id, @category
+When(/^I update item with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, priority|
   @item.name = name
   @item.description = description
   @item.price = price

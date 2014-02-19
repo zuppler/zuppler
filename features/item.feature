@@ -13,18 +13,13 @@ Feature: Item resource
   @vcr
   Scenario: Update item
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a restaurant "1","demorestaurant"
-    And I have a menu "235"
-    And I have a category "1712"
-    When I update item "9898" with "diavolo","dddd","8.99","2"
+    And I have an item "9898"
+    When I update item with "diavolo","dddd","8.99","2"
     Then I should get success response
 
   @vcr
   Scenario: Delete item
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a restaurant "1","demorestaurant"
-    And I have a menu "235"
-    And I have a category "1712"
     And I have an item "1234"
     When I delete item
     Then I should get success response

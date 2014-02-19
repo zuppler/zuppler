@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 18 Feb 2014 09:22:43 GMT
+      - Wed, 19 Feb 2014 13:20:19 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"7fa34f2e7f5013c71f719994577bb8ea"'
+      - ! '"e4861ec348f4c9724e3a59015bdf40b3"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8f60fe029bd7a3874759a03677f7d154
+      - d7ad1a339cec3dfe2d746e00fcf7f9c0
       X-Runtime:
-      - '0.258268'
+      - '2.803627'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTg0NzVlNWYwZTgwM2Y2ODRjYTRkNjYwZGRkYzhlNjA3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXpZVWd1dEhoS0sxQVpmbjZmOU9VU1lnbDNSM2g5V0w3YXpYbUh3TTlGSW89BjsARg%3D%3D--20d74b566614691a129fdc71a73a929bfd41e770;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTU3NjQyODI5NTBmNTIwNjQzMjM0OTZmZTk3NmI5YWM4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUpRcVZGTnZHbHVxNlJ0SEdtMVl4TS9vSEIyMmlrRmY4ekk1dFUwOVQ5SUk9BjsARg%3D%3D--c217369e49f7e46cea975aad326e0ba8b36ba1ea;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"item":{"id":337062,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":292037,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
+      string: ! '{"success":true,"item":{"id":337064,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":292037,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
     http_version: 
-  recorded_at: Tue, 18 Feb 2014 09:25:51 GMT
+  recorded_at: Wed, 19 Feb 2014 13:22:50 GMT
 recorded_with: VCR 2.5.0

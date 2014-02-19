@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 18 Feb 2014 09:04:46 GMT
+      - Wed, 19 Feb 2014 13:53:08 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"b76c4dca9f9fd7328827774008d6ce4f"'
+      - ! '"4ae0a5d404c04e57bde15bf625215720"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0d6790e16e0ec48b2f0bbf007a1b8a71
+      - a301db7fcddb61970c5d4cf684289fc7
       X-Runtime:
-      - '0.387849'
+      - '0.497897'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTgxZDgzZWViMjRiNTRhNTYwZWQ1MzdjMWQ3NmVlZmEwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMURsQ0tLTlllUnA1L2k0clNUajJQOW5PeVJTSmFTblNPSWJDQ3R4MnArZEU9BjsARg%3D%3D--4b0ea5825841ca5d3c741482734242c132420a0b;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTdmMzViOWFkNDM5OGIxZDlmNmE1NzEyYWEyMTViZDQ3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUlNU09oa1lOWWRKVVBscHoxZWNEUHppNUhROWtUWlBGQWJ1NjNXbFpZNDg9BjsARg%3D%3D--86d3b460f49e41d844e6d337624f5a586ca8a125;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,10 +45,10 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"menu":{"id":21417,"name":"lunch","description":"desc","active":true,"default":null,"use_category_tabs":null,"available_on":"","available_at":"Sun:
+      string: ! '{"success":true,"menu":{"id":21419,"name":"lunch","description":"desc","active":true,"default":null,"use_category_tabs":null,"available_on":"","available_at":"Sun:
         5:00am  - 4:00pm <br/>Mon: 5:00am  - 4:00pm <br/>Tue: 5:00am  - 4:00pm <br/>Wed:
         5:00am  - 4:00pm <br/>Thu: 5:00am  - 4:00pm <br/>Fri: 5:00am  - 4:00pm <br/>Sat:
-        5:00am  - 4:00pm ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21417.json","categories":[]}}'
+        5:00am  - 4:00pm ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21419.json","categories":[]}}'
     http_version: 
-  recorded_at: Tue, 18 Feb 2014 09:07:54 GMT
+  recorded_at: Wed, 19 Feb 2014 13:55:39 GMT
 recorded_with: VCR 2.5.0

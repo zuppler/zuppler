@@ -14,8 +14,8 @@ module Zuppler
 
     validates_presence_of :category, :name, :price
 
-    def self.find(id, category)
-      new :id => id, :category => category
+    def self.find(id, restaurant_id)
+      new id: id, restaurant_id: restaurant_id
     end
 
     def save
@@ -36,18 +36,18 @@ module Zuppler
       save
     end
 
-    def restaurant
-      category.restaurant
+    def restaurant_id
+      @restaurant_id || category.restaurant_id
     end
 
     protected
 
     def item_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/items/#{id}.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/items/#{id}.json"
     end
 
     def items_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{category.restaurant.permalink}/categories/#{category.id}/items.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/categories/#{category.id}/items.json"
     end
   end
 end

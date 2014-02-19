@@ -12,17 +12,13 @@ Feature: Category resource
   @vcr
   Scenario: Update category
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a restaurant "1","demorestaurant"
-    And I have a menu "21382"
     And I have a category "33040"
-    When I update category "ccc","ddd","true","1"
+    When I update category with "ccc","ddd","true","1"
     Then I should get success response
 
   @vcr
   Scenario: Delete category
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a restaurant "1","demorestaurant"
-    And I have a menu "21382"
     And I have a category "33040"
     When I delete category
     Then I should get success response

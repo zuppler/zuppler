@@ -19,6 +19,10 @@ module Zuppler
       errors.add :restaurant, 'permalink is required' if restaurant and restaurant.permalink.blank?
     end
 
+    def self.find(id, restaurant_id)
+      new id: id, restaurant_id: restaurant_id
+    end
+
     def save
       if new?
         choice_attributes = filter_attributes attributes, 'category', 'item'
@@ -40,18 +44,25 @@ module Zuppler
     def restaurant
       category ? category.restaurant : item.restaurant
     end
+    def restaurant_id
+      @restaurant_id || parent_restaurant_id || restaurant.permalink
+    end
 
     protected
 
+    def parent_restaurant_id
+      category ? category.restaurant_id : item.restaurant_id
+    end
+
     def choice_url
-        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/choices/#{id}.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/choices/#{id}.json"
     end
 
     def choices_url
       if category
-        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/categories/#{category.id}/choices.json"
+        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/categories/#{category.id}/choices.json"
       else
-        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/items/#{item.id}/choices.json"
+        "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/items/#{item.id}/choices.json"
       end
     end
   end

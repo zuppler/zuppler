@@ -18,6 +18,6 @@ Then(/^I should have choice created$/) do
 end
 
 Given(/^I have a choice "(.*?)"$/) do |id|
-  @choice = Zuppler::Choice.new category: @category, id: id
+  @choice = Zuppler::Choice.find id, 'demorestaurant'
 end
 

@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 18 Feb 2014 09:28:41 GMT
+      - Wed, 19 Feb 2014 13:09:21 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"0e3e01a0e1a77ca3c90fe473ed592a40"'
+      - ! '"ac8c1f62e4bf3da8fd9ab78f9c1c81a4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bb0495ffaa1a01181b696797fe17c601
+      - 06bce600b41423968c3c83aaa8a0dfbd
       X-Runtime:
-      - '0.069150'
+      - '3.219771'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTc3ZTVmNjU5ZjFmNWNhMDc3Yzc1ZmJkMmNjZmJiYWFhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTVncTZMV1Q3L3ZIWld3Z2szOGdmTkd6TVhXZzMveUp5V1ROVDlCdDNtZHc9BjsARg%3D%3D--619117a2dff63be9b0a56c27cd4bf304243ba7b2;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWE2YmQyMGNmZDg5NzViMjlhYThkYjhlZmFhYWZhNmI4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWEvV3ptMGV5b1ZxbVoyZ1Fqb09iUDUxdHNEc0ZTd0ZDeENFU0pxaDNJUms9BjsARg%3D%3D--ea90a351037d1901e8513c110ba16f1fd7df4bbe;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":73337,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true}}'
+      string: ! '{"success":true,"choice":{"id":73350,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true}}'
     http_version: 
-  recorded_at: Tue, 18 Feb 2014 09:31:50 GMT
+  recorded_at: Wed, 19 Feb 2014 13:11:52 GMT
 recorded_with: VCR 2.5.0

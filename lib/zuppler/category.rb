@@ -15,6 +15,10 @@ module Zuppler
       errors.add :menu, 'id is missing' if menu and menu.id.blank?
     end
 
+    def self.find(id, restaurant_id)
+      new id: id, restaurant_id: restaurant_id
+    end
+
     def save
       if new?
         category_attributes = filter_attributes attributes, 'menu'
@@ -32,18 +36,18 @@ module Zuppler
       save
     end
 
-    def restaurant
-      menu.restaurant
+    def restaurant_id
+      @restaurant_id || menu.restaurant_id
     end
 
     protected
 
     def category_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/categories/#{id}.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/categories/#{id}.json"
     end
 
     def categories_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant.permalink}/menus/#{menu.id}/categories.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/menus/#{menu.id}/categories.json"
     end
   end
 end
