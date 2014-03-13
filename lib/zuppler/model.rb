@@ -22,7 +22,6 @@ module Zuppler
         puts " ***** Zuppler Url: #{url}"
         puts " ***** Zuppler Request: #{options}"
         puts " ***** Zuppler Response: #{response.body}"
-        Rails.logger.info " ***** Zuppler Url: #{url}"
       end
     end
 
