@@ -22,6 +22,7 @@ module Zuppler
         puts " ***** Zuppler Url: #{url}"
         puts " ***** Zuppler Request: #{options}"
         puts " ***** Zuppler Response: #{response.body}"
+        Rails.logger.info " ***** Zuppler Url: #{url}"
       end
     end
 
@@ -65,6 +66,16 @@ module Zuppler
     def self.execute_find(url, headers = {})
       options = {:headers => headers}
       response = get url, options
+      log url, response, options
+      response
+    end
+
+    def self.execute_post(url, body = nil, headers = {})
+      options = {:headers => headers}
+      if body
+        options[:body] = body
+      end
+      response = post url, options
       log url, response, options
       response
     end

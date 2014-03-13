@@ -19,7 +19,7 @@ module Zuppler
 
   class << self
     attr_accessor :channel_key, :api_key, :test, :domain
-    
+
     def init(channel_key, api_key, test = true)
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
     end
@@ -30,7 +30,7 @@ module Zuppler
       raise Zuppler::Error.new(':channel_key cannot be blank') if channel_key.blank?
       raise Zuppler::Error.new(':api_key cannot be blank') if api_key.blank?
     end
-    
+
     PRODUCTION_DOMAIN = 'zuppler.com'
     STAGING_DOMAIN = 'biznettechnologies.com'
     def api_domain
@@ -52,7 +52,7 @@ module Zuppler
     def secure_url(version = 'v3')
       'http://secure.' + api_domain + "/#{version}"
     end
-    
+
     def test?
       !!test
     end

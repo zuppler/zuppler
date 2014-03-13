@@ -15,7 +15,7 @@ module Zuppler
       end
     end
     include Zuppler::Macros
-    
+
     validates_presence_of :name
 
     def self.find(permalink)
@@ -26,6 +26,10 @@ module Zuppler
         @restaurant.permalink = response['restaurant']['permalink']
         @restaurant
       end
+    end
+
+    def self.publish restaurant_id
+      execute_post publish_url(restaurant_id)
     end
 
     def save
@@ -39,7 +43,7 @@ module Zuppler
         nil
       end
     end
-    
+
     private
 
     def restaurants_url
@@ -47,6 +51,10 @@ module Zuppler
     end
     def self.restaurant_url(permalink)
       "#{Zuppler.api_url('v3')}/restaurants/#{permalink}.json"
+    end
+
+    def self.publish_url(restaurant_id)
+      "#{Zuppler.api_url('v3')}zuppler/restaurants/#{restaurant_id}/publish.json"
     end
 
   end
