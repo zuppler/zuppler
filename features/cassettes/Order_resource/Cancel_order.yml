@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://secure.biznettechnologies.com/v3/orders/9ec79b04-580d-11e3-ac68-123138166518/reject
+    uri: http://secure.biznettechnologies.com/v3/orders/56b19cde-ac68-11e3-9088-123138166518/cancel
     body:
       encoding: US-ASCII
-      string: ''
+      string: reason=food%20was%20cold
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 04 Dec 2013 13:07:24 GMT
+      - Tue, 18 Mar 2014 15:46:48 GMT
       Server:
       - thin 1.5.1 codename Straight Razor
       Content-Type:
@@ -21,17 +21,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"a0f7c3a30287e9f5090c9a3a2a5e8f2c"'
+      - ! '"551613a621b01d524a24afbca2cac818"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e62fb5ebe0259b19efd7c66f630bef7b
+      - 46ab5cd5b5e752088f25648cdf58a35d
       X-Runtime:
-      - '0.019506'
+      - '0.010528'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zsecure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWEwYTRjNzc5OTQ4NDg4YmFmN2VkYzdiM2I1NmQyY2Q3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWZhekZPT2MrN2RVcUZjZUNYUm84U29QdTNqWU1MdDVxVHZnTnNMSEpCOXc9BjsARg%3D%3D--4e1e36fcd652e2509fe0b35b5c2d73df7dee9f25;
+      - _zsecure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNmYmRmYjE2YjQ0ZTBmNTMwM2VjMjFiOTE3ZDBkY2FhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWltSDFiMERjcjFLY2l3OHZCL3I0RldESXgzMTU0d2hhbXJXb3lFODlxVTQ9BjsARg%3D%3D--cd7bc082a04cbe24e004294871655a6a3ea936e1;
         path=/; HttpOnly
       Via:
       - 1.1 secure.biznettechnologies.com
@@ -41,7 +41,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"order":{"uuid":"9ec79b04-580d-11e3-ac68-123138166518","id":362308}}'
+      string: ! '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Wed, 04 Dec 2013 13:08:41 GMT
+  recorded_at: Tue, 18 Mar 2014 15:47:08 GMT
 recorded_with: VCR 2.5.0

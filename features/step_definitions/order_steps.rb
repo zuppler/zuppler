@@ -3,16 +3,16 @@ Given(/^I have an order "(.*?)"$/) do |uuid|
 end
 
 When(/^I confirm order$/) do
-  @success = @order.confirm
+  @success = @order.confirm time: '2014-03-18 17:45', duration: 20
 end
-When(/^I reject order$/) do
-  @success = @order.reject
+When(/^I cancel order$/) do
+  @success = @order.cancel reason: 'food was cold'
+end  
+When(/^I miss order$/) do
+  @success = @order.miss
 end  
 
 
-Then(/^I should have order confirmed$/) do
-  @success.should be_true
-end
-Then(/^I should have order rejected$/) do
+Then(/^I should have order accepted$/) do
   @success.should be_true
 end

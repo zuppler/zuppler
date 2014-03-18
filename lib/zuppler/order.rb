@@ -3,8 +3,9 @@ module Zuppler
     include ActiveAttr::Model
 
     attribute :uuid
-    attribute :message
+    attribute :reason
     attribute :time
+    attribute :duration
 
     validates_presence_of :uuid
 
@@ -19,10 +20,17 @@ module Zuppler
       success? response
     end
 
-    def reject(options = {})
+    def cancel(options = {})
       update_attributes options
       order_attributes = filter_attributes attributes, 'uuid'
-      response = execute_update reject_url, order_attributes, {}
+      response = execute_update cancel_url, order_attributes, {}
+      success? response
+    end
+
+    def miss(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update miss_url, order_attributes, {}
       success? response
     end
 
@@ -41,9 +49,11 @@ module Zuppler
     def confirm_url
       "#{order_url}/confirm"
     end
-
-    def reject_url
-      "#{order_url}/reject"
+    def cancel_url
+      "#{order_url}/cancel"
+    end
+    def miss_url
+      "#{order_url}/miss"
     end
 
     def order_url
