@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/696696.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/1.json
     body:
       encoding: US-ASCII
       string: modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1
@@ -13,9 +13,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 Feb 2014 13:53:51 GMT
-      Server:
-      - thin 1.5.1 codename Straight Razor
+      - Tue, 18 Mar 2014 16:30:52 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"4d13e0a2b4e8f304eb1c711aaf394791"'
+      - ! '"466cfa624cdbf4c4c2997ffd27f8656b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 98bdba7ceb43bb93d29f5c963077b337
+      - b2f19325924c9b207d311f7622cb867f
       X-Runtime:
-      - '0.022524'
+      - '0.043276'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWYzZTc3M2M0YzU2ZTZjNzNlNWU2MDRkOTFhZWJkNGJlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXRqNnBMdWtRa09uVUFnM2s4Z3lvTmlZZnRrUFQ3WjFFVkorQWJMT05QeVU9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--d66e689505b579f96fa98ed5d77f095682c58004;
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWM0MzNkMzExNGRhNzhlOWM5ZjQxYjgyODYzZWE2YTlkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWhSRFhjZFphWENoMnVyRHRWOG1FUDZzNERqbml2UzlKazY5WTZkVlB4VXM9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--76912b58c9d12a9262515ab522a93a75caeda93c;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"modifier":{"id":696696,"name":"cream","price":"1.99","active":false,"size_name":"","priority":1,"parent_id":290204}}'
+      string: ! '{"success":true,"modifier":{"id":1,"name":"cream","price":"1.99","active":true,"size_name":"","priority":1,"parent_id":461}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:56:23 GMT
+  recorded_at: Tue, 18 Mar 2014 16:31:12 GMT
 recorded_with: VCR 2.5.0

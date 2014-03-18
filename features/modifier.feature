@@ -14,13 +14,13 @@ Feature: Modifier resource
   @vcr
   Scenario: Update modifier
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a modifier "696696"
-    When I update modifier "696696" with "cream","1.99","1","true"
+    And I have a modifier "1"
+    When I update modifier "1" with "cream","1.99","1","true"
     Then I should get success response
 
   @vcr
   Scenario: Delete modifier
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a modifier "696696"
+    And I have a modifier "1"
     When I delete modifier
     Then I should get success response
