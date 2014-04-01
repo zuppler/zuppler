@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/69212.json
     body:
       encoding: US-ASCII
-      string: choice[name]=ccc&choice[active]=true&choice[multiple]=true&choice[min_qty]=3&choice[max_qty]=5&choice[priority]=3
+      string: choice[name]=ddd&choice[active]=true&choice[multiple]=true&choice[min_qty]=3&choice[max_qty]=5&choice[priority]=3
     headers: {}
   response:
     status:
@@ -13,9 +13,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 Feb 2014 13:09:22 GMT
-      Server:
-      - thin 1.5.1 codename Straight Razor
+      - Mon, 31 Mar 2014 15:31:34 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"c6582a2faba15a8e3d0e1abba6f24564"'
+      - ! '"bc909d483f75d3773650ba953b4f7d70"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c9ecfb0f4f6f153ce5ff825e44442f82
+      - 2bb7683c661956878b878dd28c4523f8
       X-Runtime:
-      - '0.070489'
+      - '0.275860'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTg5NDNmMzZiYjZhYjg5ODgzN2FlOWJlN2EzMzQ4YmNjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1VTGtEWVhvV2c0bndtZmFXUUl2VlNRU3FFeWlpZGIvOFFtWTllNmxrUzg9BjsARg%3D%3D--12cb3890857496156bff9d39bc39d9094aa198e5;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQzOWZmNWEyYjgyNGU0N2FmNzkxYTFlZTRiYjY5ZTgwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWRnWVVNdkNBbzlmQkpzeld3N3JZaHVoeEc0SUc3OUVvTkpBeHpRVktERTQ9BjsARg%3D%3D--82d7d74c4ba2cb8a14bf70bf42d7beca36e9c175;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":69212,"name":"ccc","multiple":true,"min_qty":3,"max_qty":5,"priority":3,"order_by_priority":false,"active":true}}'
+      string: ! '{"success":true,"choice":{"id":69212,"name":"ddd","multiple":true,"min_qty":3,"max_qty":5,"priority":3,"order_by_priority":false,"active":true}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:11:53 GMT
+  recorded_at: Mon, 31 Mar 2014 15:32:17 GMT
 recorded_with: VCR 2.5.0

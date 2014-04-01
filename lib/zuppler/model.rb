@@ -50,6 +50,7 @@ module Zuppler
     def success?(response)
       self.class.success? response
     end
+
     def execute_create(url, body, headers = {})
       options = {:body => body, :headers => headers}
       response = self.class.post url, options
@@ -65,16 +66,6 @@ module Zuppler
     def self.execute_find(url, headers = {})
       options = {:headers => headers}
       response = get url, options
-      log url, response, options
-      response
-    end
-
-    def self.execute_post(url, body = nil, headers = {})
-      options = {:headers => headers}
-      if body
-        options[:body] = body
-      end
-      response = post url, options
       log url, response, options
       response
     end

@@ -21,30 +21,37 @@ module Zuppler
     def self.find(permalink)
       response = execute_find restaurant_url(permalink)
       if v3_success?(response)
-        @restaurant = Zuppler::Restaurant.new
-        @restaurant.id = response['restaurant']['id']
-        @restaurant.permalink = response['restaurant']['permalink']
-        @restaurant
+        unmarshal Zuppler::Restaurant.new, response
       end
     end
 
-    def self.publish restaurant_id
-      execute_post publish_url(restaurant_id)
+    def self.publish(permalink)
+      restaurant = find permalink
+      restaurant.publish
+    end
+
+    def publish
+      response = execute_create publish_url, nil
+      response.success?
     end
 
     def save
       restaurant_attributes = filter_attributes attributes, 'id'
       response = execute_create restaurants_url, {:restaurant => restaurant_attributes}
       if v3_success?(response)
-        self.id = response['restaurant']['id']
-        self.permalink = response['restaurant']['permalink']
-        self
+        self.class.unmarshal self, response
       else
         nil
       end
     end
 
     private
+
+    def self.unmarshal(restaurant, response)
+      restaurant.id = response['restaurant']['id']
+      restaurant.permalink = response['restaurant']['permalink']
+      restaurant
+    end
 
     def restaurants_url
       "#{Zuppler.api_url('v3')}/restaurants.json"
@@ -53,9 +60,8 @@ module Zuppler
       "#{Zuppler.api_url('v3')}/restaurants/#{permalink}.json"
     end
 
-    def self.publish_url(restaurant_id)
-      "#{Zuppler.api_url('v3')}zuppler/restaurants/#{restaurant_id}/publish.json"
+    def publish_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/publish.json"
     end
-
   end
 end

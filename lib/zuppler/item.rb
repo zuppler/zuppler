@@ -11,6 +11,7 @@ module Zuppler
     attribute :priority
     attribute :size_name
     attribute :size_priority
+    attribute :image_url
 
     validates_presence_of :category, :name, :price
 

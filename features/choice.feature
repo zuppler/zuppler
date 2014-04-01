@@ -24,7 +24,7 @@ Feature: Choice resource
   Scenario: Update choice
     Given Zuppler configured with "zuppler" and "abcd"
     And I have a choice "69212"
-    When I update choice "ccc","3","true","true","3","5"
+    When I update choice "ddd","3","true","true","3","5"
     Then I should get success response
 
   @vcr

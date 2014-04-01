@@ -10,12 +10,19 @@ Feature: Restaurant resource
   Scenario: Create restaurant
     Given Zuppler configured with "zuppler" and "abcd"
     When I create "Restaurant", "102 Church Ave, College Station, 77840" restaurant
-    Then I should have oscar restaurant
+    Then I should have "oscar" restaurant
 
   @vcr
   Scenario: Find restaurant
+    Given Zuppler configured with "zuppler" and "abcd"
     When I find restaurant "demorestaurant"
     Then I should have "demorestaurant" restaurant
+
+  @vcr
+  Scenario: Publish restaurant
+    Given Zuppler configured with "zuppler" and "abcd"
+    When I publish restaurant "demorestaurant"
+    Then I should get success response
     
 
 
