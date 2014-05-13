@@ -5,3 +5,5 @@ rvm:
 notifications:
   email:
     - iulian.costan@zuppler.com
+script:
+  - CODECLIMATE_REPO_TOKEN= bundle exec rake

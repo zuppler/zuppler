@@ -28,44 +28,42 @@ end
 ```
 
 ``` ruby
-options = {
-  :name => 'Oscar Pizza', :remote_id => '123456',
-  :logo => 'http://example.com/logo.png', :location => '123 North St New York',
-  :owner => {:name => 'John', :email => 'doe@example.com', :phone => '123-456-789'}
-}
-@restaurant = Zuppler::Restaurant.new options
+@restaurant = Zuppler::Restaurant.new name: 'Oscar Pizza', address: '21 Wall St, New York'
 @restaurant.save
+@restaurant = Zuppler::Restaurant.find 'oscarpizza'
+@restaurant.publish
 ```
 
 ``` ruby
-@menu = Zuppler::Menu.new :restaurant => @restaurant, :name => 'pizzas special'
+@menu = Zuppler::Menu.new restaurant: @restaurant, name: 'pizzas special'
 @menu.save
 ```
 
 ``` ruby
-@category = Zuppler::Category.new :menu => @menu, :name => 'pizzas'
+@category = Zuppler::Category.new menu: @menu, name: 'pizzas'
 @category.save
 ```
 
 ``` ruby
-@item = Zuppler::Item.new :category => @category, :name => 'margerita', :price => 9.99
+@item = Zuppler::Item.new category: @category, name: 'margerita', price: 9.99
 @item.save
 ```
 
 ``` ruby
-@choice = Zuppler::Choice.new category: @category, name: 'toppings', multiple: true, min_qty: 2, max_qty: 5 , priority: 1, order_by_priority: true
+@choice = Zuppler::Choice.new category: @category, name: 'toppings', multiple: true, min_qty: 2, max_qty: 5, priority: 1
 @choice.save
 ```
 
 ``` ruby
-@modifier = Zuppler::Modifier.new :choice => @choice, :name => 'cheese', :price => 0.99
+@modifier = Zuppler::Modifier.new choice: @choice, name: 'cheese', price: 0.99
 @modifier.save
 ```
 
 ``` ruby
-@order = Zuppler::Order.find :uuid => 'abcd-1234-efgh-5678'
+@order = Zuppler::Order.find 'abcd-1234-efgh-5678'
 @order.confirm
-@order.reject
+@order.cancel
+@order.miss
 ```
 
 ## Contributing

@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "httparty"
   spec.add_dependency "active_attr"
-
+  
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "cucumber"
@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "faker"
   spec.add_development_dependency "shoulda-matchers"
+  spec.add_development_dependency "codeclimate-test-reporter"
 end
