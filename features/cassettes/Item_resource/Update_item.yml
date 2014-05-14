@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9898.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/898.json
     body:
       encoding: US-ASCII
       string: item[name]=diavolo&item[description]=dddd&item[price]=8.99&item[priority]=2&item[image_url]=http%3A%2F%2Fs3.amazonaws.com%2Fcrunchbase_prod_assets%2Fassets%2Fimages%2Fresized%2F0016%2F4291%2F164291v2-max-250x250.png
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 Apr 2014 05:09:04 GMT
+      - Wed, 14 May 2014 07:49:47 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"f3ee620deabe37cfe3ba452955a55851"'
+      - ! '"45668208cbf2d58a48fd5d7f638b80ec"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 95fd21a4c5c4d5715090c86a36075c93
+      - 1cd35190e348f1025643b758f17b5e6c
       X-Runtime:
-      - '0.102633'
+      - '12.715755'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTIxMDYzYmU4NTNkMTdiMjdkODVlNTJjZDkxODY1YTk1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTB4b3FlaWNxcU15aVI3blpCSDQxTGVoYnlxdHRNc25PbFNqRHZqN29LWkE9BjsARg%3D%3D--4bc1283ba83b4acd5144e10b3280e0cde1a86529;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFlNzQxYzE2ZDMyN2M5ZDVjOWQ2ZGFlN2FhZjJjOWJlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUhaZUlOY21RdHF2TmJCdGNnUGx1SFROc2VmM3E4eEhIZlQvQkxYYXRzUU09BjsARg%3D%3D--186b3cbe9429d11c060211d8810446594509cfc4;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"item":{"id":9898,"name":"diavolo","description":"dddd","price":"8.99","coupon":null,"active":true,"parent_id":9458,"priority":2,"veg":false,"spicy":0,"size_name":null,"size_priority":null}}'
+      string: ! '{"success":true,"item":{"id":898,"name":"diavolo","description":"dddd","price":"8.99","coupon":null,"active":false,"parent_id":1768,"priority":2,"veg":null,"spicy":null,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Tue, 01 Apr 2014 05:09:48 GMT
+  recorded_at: Wed, 14 May 2014 07:51:11 GMT
 recorded_with: VCR 2.5.0

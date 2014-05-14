@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/1234.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/455.json
     body:
       encoding: US-ASCII
       string: item[active]=false
@@ -13,9 +13,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 Feb 2014 13:20:20 GMT
-      Server:
-      - thin 1.5.1 codename Straight Razor
+      - Wed, 14 May 2014 07:49:47 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"5003b15e79ff5bb797501cc8537f753b"'
+      - ! '"f5086aa0c0d7bca44e2de5d98799a983"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d9c51467652b5187950af7a0a5270682
+      - f6205c2886ec8a0b2a15a26dc6c50c4f
       X-Runtime:
-      - '0.049997'
+      - '0.095787'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTJhNmMxNmQxNmYyY2ZmMTQxYTk5M2E4YzBhNTQ2ODIyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxTVlg5NXRndEVCMGp1eE9iZGMyY0FXSkFoTEY1eThjV2JUVEhvZjZIRWc9BjsARg%3D%3D--faeb52f820226bf8e374953feecec8b8976aa36a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWJiMWNlYjNlYWMyYzg2ZGYyNGZiNzllYTg4ZTkzMDY2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1PN3lQODFnTk9RblBNbHJ2RVppSHZSZC9Bc2JIUHYweUxaRjM4alVKVnM9BjsARg%3D%3D--c2ea8b3f11a0b8d1bfb141359ce98e7564596e15;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,8 +45,8 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"item":{"id":1234,"name":"Calzone","description":"&nbsp;","price":"0.0","coupon":null,"active":false,"parent_id":2260,"priority":null,"veg":null,"spicy":null,"size_name":"
-        Large","size_priority":0}}'
+      string: ! '{"success":true,"item":{"id":455,"name":"K10. Asparagus &amp; Ingen","description":"&nbsp;with
+        chicken asparagus &amp; string bean with chicken hibachi","price":"12.0","coupon":null,"active":false,"parent_id":770,"priority":0,"veg":null,"spicy":null,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:22:51 GMT
+  recorded_at: Wed, 14 May 2014 07:51:12 GMT
 recorded_with: VCR 2.5.0

@@ -13,14 +13,14 @@ Feature: Item resource
   @vcr
   Scenario: Update item
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have an item "9898"
+    And I have an item "898"
     When I update item with "diavolo","dddd","8.99","2"
     Then I should get success response
 
   @vcr
   Scenario: Delete item
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have an item "1234"
+    And I have an item "455"
     When I delete item
     Then I should get success response
     

@@ -13,9 +13,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 Feb 2014 13:20:19 GMT
-      Server:
-      - thin 1.5.1 codename Straight Razor
+      - Wed, 14 May 2014 07:49:33 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,17 +27,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"e4861ec348f4c9724e3a59015bdf40b3"'
+      - ! '"cbc8e74d22fbaf03481e9785adfa616b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d7ad1a339cec3dfe2d746e00fcf7f9c0
+      - bad89ea63c126997a805cd1860bec27e
       X-Runtime:
-      - '2.803627'
+      - '0.045981'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTU3NjQyODI5NTBmNTIwNjQzMjM0OTZmZTk3NmI5YWM4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUpRcVZGTnZHbHVxNlJ0SEdtMVl4TS9vSEIyMmlrRmY4ekk1dFUwOVQ5SUk9BjsARg%3D%3D--c217369e49f7e46cea975aad326e0ba8b36ba1ea;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWIzYzc3ODE2YTM4MzUwNGJlMDZiYzQ1MGU3ZmVmZTA5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1hNUlHVUlQUE40dTRKTTYxMlBZVjhsWko1U1lqZzB0Vk5JRiswOC9wN1E9BjsARg%3D%3D--873e6e475ae9f4b1113a0f5ec92712014da33718;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -45,7 +45,7 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"item":{"id":337064,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":292037,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
+      string: ! '{"success":true,"item":{"id":415407,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":370481,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:22:50 GMT
+  recorded_at: Wed, 14 May 2014 07:50:58 GMT
 recorded_with: VCR 2.5.0
