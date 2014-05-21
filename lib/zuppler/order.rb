@@ -6,6 +6,7 @@ module Zuppler
     attribute :reason
     attribute :time
     attribute :duration
+    attribute :sender
 
     validates_presence_of :uuid
 
