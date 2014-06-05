@@ -18,7 +18,7 @@ end
 
 
 Then(/^I should have order accepted$/) do
-  @success.should be_true
+  @success.should be_truthy
 end
 Then(/^I should have order details$/) do
   @order.customer.email.should eq('vinit100@gmail.com')
