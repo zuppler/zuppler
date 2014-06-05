@@ -1,6 +1,8 @@
 require 'active_model'
 require 'active_attr'
 require 'httparty'
+require 'multi_json'
+require 'hashie'
 
 require "zuppler/version"
 require "zuppler/model"
@@ -49,7 +51,7 @@ module Zuppler
     def api_url(version = 'v2')
       'http://api.' + api_domain + "/#{version}" + channels_uri
     end
-    def secure_url(version = 'v3')
+    def secure_url(version = 'v4')
       'http://secure.' + api_domain + "/#{version}"
     end
 

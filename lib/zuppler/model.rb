@@ -63,6 +63,12 @@ module Zuppler
       log url, response, options
       response
     end
+    def execute_get(url, body, headers = {})
+      options = {:body => body, :headers => headers}
+      response = self.class.get url, options
+      log url, response, options
+      response
+    end
     def self.execute_find(url, headers = {})
       options = {:headers => headers}
       response = get url, options

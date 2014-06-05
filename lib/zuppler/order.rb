@@ -35,6 +35,18 @@ module Zuppler
       success? response
     end
 
+    def method_missing(m, *args, &blk)
+      if @order.nil?
+        response = execute_get order_url, {}, {}
+        if success? response
+          @order = Hashie::Mash.new response['order']
+        else
+          raise 'orders#show failed.'
+        end
+      end
+      @order.send m, args, &blk
+    end
+
     protected
 
     def success?(response)
@@ -48,16 +60,19 @@ module Zuppler
     end
 
     def confirm_url
-      "#{order_url}/confirm"
+      "#{resource_url}/confirm.json"
     end
     def cancel_url
-      "#{order_url}/cancel"
+      "#{resource_url}/cancel.json"
     end
     def miss_url
-      "#{order_url}/miss"
+      "#{resource_url}/miss.json"
+    end
+    def order_url
+      "#{resource_url}.json"
     end
 
-    def order_url
+    def resource_url
       "#{Zuppler.secure_url}/orders/#{uuid}"
     end
   end

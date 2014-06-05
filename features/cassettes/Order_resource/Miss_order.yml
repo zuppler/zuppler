@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://secure.biznettechnologies.com/v3/orders/56b19cde-ac68-11e3-9088-123138166518/miss
+    uri: http://secure.biznettechnologies.com/v4/orders/56b19cde-ac68-11e3-9088-123138166518/miss.json
     body:
       encoding: US-ASCII
       string: ''
@@ -13,9 +13,9 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 18 Mar 2014 15:46:48 GMT
-      Server:
-      - thin 1.5.1 codename Straight Razor
+      - Thu, 05 Jun 2014 17:05:34 GMT
+      Status:
+      - 200 OK
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
@@ -25,13 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 157214f3a1e91c4f629c80d1bf36d4d1
+      - 1ecf0cb76ae136b7cd47faa055de1c4c
       X-Runtime:
-      - '0.009451'
+      - '0.009221'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zsecure_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWNhZjY0MjZjNzE4NTUyZTlhYjgzYTllYzMyZWM1NzE5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUIrWUtQNzhPSGpod0ZUY2JWd0ZyZHVhVjFEb0pYZjhCS1FDeThDTjVheDQ9BjsARg%3D%3D--09870453469c1e42b5217ad4f2290318ee90e054;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZjNGZjMWMxZmNjNzE3ZDlhODMwZTM4MDI3ZmMwNDJkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUR3MmREbndFNEZ1MEsrcTFWeCtPY3BiWklXaHY0Zm4vMkJzT3dqbVhHVUk9BjsARg%3D%3D--7171a3576ec10a271fdd401bdd0cd321877ffbf2;
         path=/; HttpOnly
       Via:
       - 1.1 secure.biznettechnologies.com
@@ -43,5 +43,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Tue, 18 Mar 2014 15:47:08 GMT
+  recorded_at: Thu, 05 Jun 2014 17:05:37 GMT
 recorded_with: VCR 2.5.0

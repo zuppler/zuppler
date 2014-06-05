@@ -64,6 +64,9 @@ end
 @order.confirm
 @order.cancel
 @order.miss
+@order.customer.name
+@order.carts.first.items.first.name
+@order.totals.tax
 ```
 
 ## Contributing
