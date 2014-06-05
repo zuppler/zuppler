@@ -8,7 +8,7 @@ describe Zuppler::Menu do
   it 'validates restaurant' do
     subject.name = 'lunch'
     subject.restaurant = Zuppler::Restaurant.new
-    subject.valid?.should be_false
-    subject.errors[:restaurant].should eql(['permalink is required'])
+    expect(subject.valid?).to eql(false)
+    expect(subject.errors[:restaurant]).to eql(['permalink is required'])
   end
 end

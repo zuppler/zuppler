@@ -7,7 +7,7 @@ describe Zuppler::Category do
   it 'validates menu' do
     subject.name = 'pizzas'
     subject.menu = Zuppler::Menu.new
-    subject.valid?.should be_false
-    subject.errors[:menu].should eql(['id is missing'])
+    expect(subject.valid?).to eql(false)
+    expect(subject.errors[:menu]).to eql(['id is missing'])
   end
 end
