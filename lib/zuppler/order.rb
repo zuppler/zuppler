@@ -35,6 +35,15 @@ module Zuppler
       success? response
     end
 
+    def notify(type, options)
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update notification_url(type), order_attributes, {}
+      success? response
+    end
+
+    private
+
     def method_missing(m, *args, &blk)
       if @order.nil?
         response = execute_get order_url, {}, {}
@@ -46,8 +55,6 @@ module Zuppler
       end
       @order.send m, args, &blk
     end
-
-    protected
 
     def success?(response)
       response.success? and response['success'] == true
@@ -70,6 +77,9 @@ module Zuppler
     end
     def order_url
       "#{resource_url}.json"
+    end
+    def notification_url(type)
+      "#{resource_url}/notifications/#{type}/execute.json"
     end
 
     def resource_url

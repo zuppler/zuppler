@@ -59,14 +59,26 @@ end
 @modifier.save
 ```
 
+Order actions:
 ``` ruby
 @order = Zuppler::Order.find 'abcd-1234-efgh-5678'
-@order.confirm
-@order.cancel
-@order.miss
+@order.confirm duration: 30, sender: 'tablet app'
+@order.cancel reason: 'too busy'
+@order.miss reason: 'restaurant does not respond'
+```
+
+Order info:
+``` ruby
+@order = Zuppler::Order.find 'abcd-1234-efgh-5678'
 @order.customer.name
 @order.carts.first.items.first.name
 @order.totals.tax
+```
+
+Order notifications:
+``` ruby
+@order = Zuppler::Order.find 'abcd-1234-efgh-5678'
+@order.notify :email, sender: 'control panel'
 ```
 
 ## Contributing
