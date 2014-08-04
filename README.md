@@ -70,9 +70,9 @@ Order actions:
 Order info:
 ``` ruby
 @order = Zuppler::Order.find 'abcd-1234-efgh-5678'
-@order.customer.name
-@order.carts.first.items.first.name
-@order.totals.tax
+@order.details.customer.name
+@order.details.carts.first.items.first.name
+@order.details.totals.tax
 ```
 
 Order notifications:

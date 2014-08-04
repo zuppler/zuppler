@@ -42,18 +42,21 @@ module Zuppler
       success? response
     end
 
+    def details
+      if @details.nil?
+        response = execute_get order_url, {}, {}
+        if success? response
+          @details = Hashie::Mash.new response['order']
+        else
+          raise 'orders#details failed.'
+        end
+      end
+      @details
+    end
+
     private
 
     def method_missing(m, *args, &blk)
-      if @order.nil?
-        response = execute_get order_url, {}, {}
-        if success? response
-          @order = Hashie::Mash.new response['order']
-        else
-          raise 'orders#show failed.'
-        end
-      end
-      @order.send m, args, &blk
     end
 
     def success?(response)

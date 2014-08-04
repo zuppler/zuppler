@@ -3,7 +3,7 @@ Given(/^I have an order "(.*?)"$/) do |uuid|
 end
 
 When(/^I fetch order details$/) do
-  @order.totals
+  @order.details
 end
 
 When(/^I confirm order$/) do
@@ -23,12 +23,15 @@ Then(/^I should have order accepted$/) do
   @success.should be_truthy
 end
 Then(/^I should have order details$/) do
-  @order.customer.email.should eq('vinit100@gmail.com')
-  @order.channel.name.should eq('Nalley Fresh')
-  @order.restaurant.name.should eq('Nalley Fresh - Baltimore')
+  @order.details.customer.email.should eq('vinit100@gmail.com')
+  @order.details.channel.name.should eq('Nalley Fresh')
+  @order.details.restaurant.name.should eq('Nalley Fresh - Baltimore')
 
-  @order.carts.first.items.first.name.should eq('Build Your Own... Nalley Salad')
+  @order.details.carts.first.items.first.name.should eq('Build Your Own... Nalley Salad')
 
-  @order.totals.tax.should eq(48)
-  @order.totals.total.should eq(848)
+  @order.details.totals.tax.should eq(48)
+  @order.details.totals.total.should eq(848)
+
+  @order.details.time.id.should eq('SCHEDULE')
+  @order.details.time.value.should eq('2014-04-10T11:40:00-04:00')
 end
