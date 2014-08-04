@@ -12,7 +12,9 @@ require "zuppler/menu"
 require "zuppler/category"
 require "zuppler/item"
 require "zuppler/choice"
+require "zuppler/ingredient"
 require "zuppler/modifier"
+require "zuppler/option"
 require "zuppler/order"
 
 module Zuppler
@@ -20,12 +22,12 @@ module Zuppler
   end
 
   class << self
-    attr_accessor :channel_key, :api_key, :test, :domain
+    attr_accessor :channel_key, :restaurant_key, :api_key, :test, :domain
 
     def init(channel_key, api_key, test = true)
       self.channel_key, self.api_key, self.test = channel_key, api_key, test
     end
-    def config
+    def configure
       yield self
     end
     def check
@@ -53,6 +55,13 @@ module Zuppler
     end
     def secure_url(version = 'v4')
       'http://secure.' + api_domain + "/#{version}"
+    end
+
+    def restaurants_api_url(version = 'v4')
+      'http://api.' + api_domain + "/#{version}"
+    end
+    def orders_api_url(version = 'v4')
+      'http://orders.api.' + api_domain + "/#{version}"
     end
 
     def test?

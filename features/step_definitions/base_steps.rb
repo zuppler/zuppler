@@ -1,3 +1,3 @@
 Then(/^I should get success response$/) do
-  @success.should be_truthy
+  expect(@success).to be_truthy
 end

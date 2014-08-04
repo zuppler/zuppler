@@ -37,6 +37,13 @@ module Zuppler
       self.id.blank?
     end
 
+    def self.v4_success?(response)
+      response.success? and response['success'] == true
+    end
+    def v4_success?(response)
+      self.class.v4_success? response
+    end
+
     def self.v3_success?(response)
       response.success? and response['success'] == true
     end

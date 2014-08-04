@@ -1,18 +1,19 @@
 module Zuppler
   class Modifier < Model
     include ActiveAttr::Model
+    
+    attribute :restaurant
 
-    attribute :choice
     attribute :id
-    attribute :parent_id
     attribute :name
     attribute :description
-    attribute :price, type: Float
-    attribute :size
+    attribute :multiple
+    attribute :min_qty, default: 0
+    attribute :max_qty
     attribute :priority
     attribute :active
 
-    validates_presence_of :choice, :name, :price
+    validates_presence_of :restaurant, :name
 
     def self.find(id, restaurant_id)
       new id: id, restaurant_id: restaurant_id
@@ -20,36 +21,38 @@ module Zuppler
 
     def save
       if new?
-        modifier_attributes = filter_attributes attributes, 'choice', 'parent_id'
-        response = execute_create modifiers_url, :modifier => modifier_attributes
-        if v3_success? response
-          self.id = response['modifier']['id']
-          self.parent_id = response['modifier']['parent_id']
-        end
+        modifier_attributes = filter_attributes attributes, 'restaurant'
+        response = execute_create modifiers_url, {modifier: modifier_attributes}
+        self.id = resource_id(response) if v4_success?(response)
       else
-        modifier_attributes = filter_attributes attributes, 'choice', 'id'
-        response = execute_update modifier_url, {:modifier => modifier_attributes}
+        modifier_attributes = filter_attributes attributes, 'restaurant'
+        response = execute_update modifier_url, {modifier: modifier_attributes}
       end
-      v3_success? response
+      v4_success? response
     end
 
     def destroy
       self.active = false
+      self.min_qty = nil
       save
+    end
+
+    def restaurant_id
+      @restaurant_id || restaurant.permalink
     end
 
     protected
 
-    def restaurant_id
-      @restaurant_id || choice.restaurant_id
+    def resource_id(response)
+      $1 if response.headers['Location'] =~ /\/modifiers\/(\d+).json/
     end
 
     def modifier_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/modifiers/#{id}.json"
+      "#{Zuppler.restaurants_api_url('v4')}/restaurants/#{restaurant_id}/modifiers/#{id}.json"
     end
 
     def modifiers_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/choices/#{choice.id}/modifiers.json"
+      "#{Zuppler.restaurants_api_url('v4')}/restaurants/#{restaurant_id}/modifiers.json"
     end
   end
 end

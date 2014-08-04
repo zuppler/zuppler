@@ -2,7 +2,7 @@ Given(/^Zuppler is loaded$/) do
   Zuppler.is_a?(Module).should be_truthy
 end
 Given(/^Zuppler configured with "(.*)" and "(.*)"$/) do |channel, key|
-  Zuppler.config do |config|
+  Zuppler.configure do |config|
     config.channel_key = channel
     config.api_key = key
     config.test = true
@@ -12,7 +12,7 @@ end
 
 
 When(/^I initialize with (.*) and (.*)$/) do |channel, key|
-  Zuppler.config do |config|
+  Zuppler.configure do |config|
     config.channel_key = channel
     config.api_key = key
     config.test = true
