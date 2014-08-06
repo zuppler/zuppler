@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers.json
+    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1/options.json
     body:
       encoding: US-ASCII
-      string: modifier[name]=toppings&modifier[description]=desc&modifier[multiple]=true&modifier[min_qty]=0&modifier[max_qty]=5&modifier[priority]=2
+      string: option[name]=cheese&option[description]=desc&option[price]=99&option[priority]=2
     headers: {}
   response:
     status:
@@ -13,7 +13,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 04 Aug 2014 15:11:54 GMT
+      - Mon, 04 Aug 2014 15:10:20 GMT
       Server:
       - thin 1.6.2 codename Doc Brown
       Access-Control-Allow-Origin:
@@ -23,7 +23,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - ! '*'
       Location:
-      - http://api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/7.json
+      - http://api.biznettechnologies.com/v4/restaurants/demorestaurant/options/3.json
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
@@ -33,13 +33,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1021f8d48297f362abc28255e2d3080c
+      - 94d8e2badc49fc71e94808018bbf1313
       X-Runtime:
-      - '0.020685'
+      - '0.125511'
       X-Rack-Cache:
       - invalidate, pass
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTBlZjlhMzZjMTcyZTZlMzNjZDg0NGEyMDE4YzllYTdmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXR0ZlppaCtvRVRZM2tTSHBjVzZmOC9iM05SL01QSFIxckxYajJLNGtML2s9BjsARg%3D%3D--843933d2878dadebf8a3908de80d2f4f48b6d520;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3ODk5Mzc0MzBlZWIwYTdlMTg0OWNhY2I0NTAwZDFkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW9EeEVyNk96Qy8yYThWZlRBQ3RBRWU1ZHlYZW9mQnFtbXdkWkZPYWxQSDA9BjsARg%3D%3D--105ab82f5c2fa1e54eb10eae067af063c2f1adff;
         path=/; HttpOnly
       Via:
       - 1.1 api.biznettechnologies.com
@@ -49,5 +49,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"success":true,"status":{"code":201,"message":"Created"}}'
     http_version: 
-  recorded_at: Mon, 04 Aug 2014 15:12:59 GMT
+  recorded_at: Mon, 04 Aug 2014 15:11:25 GMT
 recorded_with: VCR 2.9.2

@@ -5,17 +5,14 @@ Feature: Modifier resource
   Scenario: Create modifier
     Given Zuppler configured with "zuppler" and "abcd"
     And I have a restaurant "1","demorestaurant"
-    And I have a menu "235"
-    And I have a category "1713"
-    And I have a choice "66913"
-    When I create modifier "cheese","desc","0.99","small","2"
+    When I create modifier "toppings","desc","true","5","2"
     Then I should have modifier created
 
   @vcr
   Scenario: Update modifier
     Given Zuppler configured with "zuppler" and "abcd"
     And I have a modifier "1"
-    When I update modifier "1" with "cream","1.99","1","true"
+    When I update modifier "updated","true","3","5","1"
     Then I should get success response
 
   @vcr

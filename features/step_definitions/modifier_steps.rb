@@ -1,23 +1,25 @@
-When(/^I create modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, size, priority|
-  @modifier = Zuppler::Modifier.new choice: @choice, name: name, price: price, 
-  size: size, priority: priority, description: description
+When(/^I create modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, multiple, max_qty, priority|
+  @modifier = Zuppler::Modifier.new restaurant: @restaurant, 
+  name: name, description: description, priority: priority,
+  multiple: multiple, max_qty: max_qty
   @modifier.save
 end
-
-When(/^I update modifier "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |id, name, price, priority,active|
-  @modifier.attributes = {name: name, price: price, priority: priority}
+When(/^I update modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, multiple, min_qty, max_qty, priority|
+  @modifier.attributes = {
+    name: name, priority: priority,
+    multiple: multiple, min_qty: min_qty, max_qty: max_qty
+  }
   @success = @modifier.save
 end
-
 When(/^I delete modifier$/) do
   @success = @modifier.destroy
 end
 
 Then(/^I should have modifier created$/) do
-  @modifier.id.should_not be_nil
-  @modifier.parent_id.should_not be_nil
+  expect(@modifier.id).not_to be_nil
 end
 
 Given(/^I have a modifier "(.*?)"$/) do |id|
   @modifier = Zuppler::Modifier.find id, 'demorestaurant'
 end
+

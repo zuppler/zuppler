@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/1.json
+    body:
+      encoding: US-ASCII
+      string: modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 04 Aug 2014 11:48:15 GMT
+      Server:
+      - thin 1.6.2 codename Doc Brown
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"466cfa624cdbf4c4c2997ffd27f8656b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f0d81363bf2f68928d659c48497fdb00
+      X-Runtime:
+      - '0.035300'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTY3ZWY5NjVkMWE4MzFlMmZlZmFiMGQ1MDVmNzVjYTU3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTczTno3NWdTTnNuT3dpQjJGSWxRTlNlMzUyMEVwcllvK0dWejlUeklXMUE9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--9f8925265b4431fc01f99975da12f43be9b77975;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"modifier":{"id":1,"name":"cream","price":"1.99","active":true,"size_name":"","priority":1,"parent_id":461}}'
+    http_version: 
+  recorded_at: Mon, 04 Aug 2014 11:49:21 GMT
+recorded_with: VCR 2.9.2
