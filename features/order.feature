@@ -29,10 +29,3 @@ Feature: Order resource
     When I miss order
     Then I should have order accepted
     
-  @vcr
-  Scenario: Notify
-    Given Zuppler configured with "zuppler" and "qwe123"
-    And I have an order "962635ae-d752-11e3-8584-123138166518"
-    When I execute "pos" notification
-    Then I should have order accepted
-    

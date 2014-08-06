@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://secure.biznettechnologies.com/v4/orders/962635ae-d752-11e3-8584-123138166518/notifications/pos/execute.json
+    body:
+      encoding: US-ASCII
+      string: sender=cucumber
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Aug 2014 09:32:32 GMT
+      Server:
+      - thin 1.6.2 codename Doc Brown
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"551613a621b01d524a24afbca2cac818"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 45cc310b76e60979f2a97c2d7a72dde4
+      X-Runtime:
+      - '0.972094'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk2OWZkY2VkOGNjZGEwMzhkNDViMjBlOGFjYjI3ZTU5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWNEbUFpRHRqL0U3cWRjSXVEa3QvYkJKRkZrMG1zdVhyRHRXNlpLQ3NwU0k9BjsARg%3D%3D--790886976c84fd8c8916075e405502b7ecaf224e;
+        path=/; HttpOnly
+      Via:
+      - 1.1 secure.biznettechnologies.com
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"status":{"code":202,"message":"Accepted"}}'
+    http_version: 
+  recorded_at: Wed, 06 Aug 2014 09:33:40 GMT
+recorded_with: VCR 2.9.2

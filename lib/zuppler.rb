@@ -6,6 +6,7 @@ require 'hashie'
 
 require "zuppler/version"
 require "zuppler/model"
+
 require "zuppler/channel"
 require "zuppler/restaurant"
 require "zuppler/menu"
@@ -13,7 +14,9 @@ require "zuppler/category"
 require "zuppler/item"
 require "zuppler/choice"
 require "zuppler/modifier"
+
 require "zuppler/order"
+require "zuppler/notification"
 
 module Zuppler
   class Error < RuntimeError

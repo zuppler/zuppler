@@ -15,9 +15,6 @@ end
 When(/^I miss order$/) do
   @success = @order.miss
 end  
-When(/^I execute "(.*?)" notification$/) do |notification|
-  @success = @order.notify notification, sender: 'cucumber'
-end
 
 Then(/^I should have order accepted$/) do
   @success.should be_truthy

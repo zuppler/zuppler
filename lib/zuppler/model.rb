@@ -37,6 +37,13 @@ module Zuppler
       self.id.blank?
     end
 
+    def self.v4_success?(response)
+      response.success? and response['success'] == true
+    end
+    def v4_success?(response)
+      self.class.v4_success? response
+    end
+
     def self.v3_success?(response)
       response.success? and response['success'] == true
     end
@@ -74,6 +81,12 @@ module Zuppler
       response = get url, options
       log url, response, options
       response
+    end
+
+    def update_attributes(options)
+      options.each do |key, value|
+        send "#{key}=", value
+      end
     end
 
     def filter_attributes(attrs, *keys)

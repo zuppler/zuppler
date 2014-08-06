@@ -77,8 +77,9 @@ Order info:
 
 Order notifications:
 ``` ruby
-@order = Zuppler::Order.find 'abcd-1234-efgh-5678'
-@order.notify :email, sender: 'control panel'
+notification = @order.notification :email
+notification.execute sender: 'control panel'
+notification.confirm sender: 'control panel'
 ```
 
 ## Contributing
