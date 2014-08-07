@@ -33,6 +33,8 @@ module Zuppler
     def configure
       yield self
     end
+    alias :config :configure
+
     def check
       raise Zuppler::Error.new(':channel_key cannot be blank') if channel_key.blank?
       raise Zuppler::Error.new(':api_key cannot be blank') if api_key.blank?

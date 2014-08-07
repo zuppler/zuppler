@@ -3,6 +3,7 @@ module Zuppler
     include ActiveAttr::Model
 
     attribute :choice
+    attribute :option_id
     attribute :id
     attribute :parent_id
     attribute :name

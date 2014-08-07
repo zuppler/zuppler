@@ -4,6 +4,7 @@ module Zuppler
     
     attribute :category
     attribute :item
+    attribute :modifier_id
     attribute :id
     attribute :name
     attribute :description

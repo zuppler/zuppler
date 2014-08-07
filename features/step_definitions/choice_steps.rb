@@ -5,7 +5,8 @@ end
 When(/^I update choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, priority, active, multiple, min_qty, max_qty|
   @choice.attributes = {
     name: name, priority: priority, active: active,
-    multiple: multiple, min_qty: min_qty, max_qty: max_qty
+    multiple: multiple, min_qty: min_qty, max_qty: max_qty,
+    modifier_id: 1
   }
   @success = @choice.save
 end

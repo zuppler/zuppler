@@ -25,7 +25,7 @@ module Zuppler
         response = execute_create modifiers_url, {modifier: modifier_attributes}
         self.id = resource_id(response) if v4_success?(response)
       else
-        modifier_attributes = filter_attributes attributes, 'restaurant'
+        modifier_attributes = filter_attributes attributes, 'restaurant', 'id'
         response = execute_update modifier_url, {modifier: modifier_attributes}
       end
       v4_success? response

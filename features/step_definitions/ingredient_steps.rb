@@ -5,7 +5,7 @@ When(/^I create ingredient "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, 
 end
 
 When(/^I update ingredient "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |id, name, price, priority,active|
-  @ingredient.attributes = {name: name, price: price, priority: priority}
+  @ingredient.attributes = {name: name, price: price, priority: priority, option_id: 1}
   @success = @ingredient.save
 end
 
