@@ -7,6 +7,7 @@ module Zuppler
     attribute :name
     attribute :priority
     attribute :description
+    attribute :locked, default: true
     
     validates_presence_of :restaurant, :name
     validate do
@@ -19,7 +20,7 @@ module Zuppler
 
     def save
       menu_attributes = filter_attributes attributes, 'restaurant'
-      response = execute_create menus_url, {:menu => menu_attributes}
+      response = execute_create menus_url, {menu: menu_attributes}
       if v3_success?(response)
         self.id = response['menu']['id']
       else
