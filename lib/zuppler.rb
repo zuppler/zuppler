@@ -19,6 +19,7 @@ require "zuppler/option"
 
 require "zuppler/order"
 require "zuppler/notification"
+require "zuppler/discount"
 
 module Zuppler
   class Error < RuntimeError

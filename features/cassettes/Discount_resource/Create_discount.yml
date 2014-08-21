@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/discounts.json
+    body:
+      encoding: US-ASCII
+      string: discount[name]=savings&discount[amount]=15&discount[min_order_amount]=99&discount[promo_code]=abcd
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 21 Aug 2014 12:58:36 GMT
+      Server:
+      - thin 1.6.2 codename Doc Brown
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - ! '*'
+      Location:
+      - http://api.biznettechnologies.com/v4/restaurants/demorestaurant/discounts/3209.json
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"758510ce843407be006bf0715bfeadf1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ef9280829292c9e4b40e933f536e7bc6
+      X-Runtime:
+      - '3.081943'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk4M2I1MTkwNzQyOTEzYTU4NWEyMjFmM2Q4ZTIwNzhkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW40aHNqQXU0dksrd3B2NmtYVU1KK1EwSWVBMkxyK053YlRDSXd1SGxsVDQ9BjsARg%3D%3D--9eff8b5888614adcb6113515047198cb1af47991;
+        path=/; HttpOnly
+      Via:
+      - 1.1 api.biznettechnologies.com
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":true,"status":{"code":201,"message":"Created"}}'
+    http_version: 
+  recorded_at: Thu, 21 Aug 2014 12:59:58 GMT
+recorded_with: VCR 2.9.2
