@@ -39,13 +39,6 @@ module Zuppler
       Zuppler::Notification.new self, type
     end
 
-    def notify(type, options)
-      update_attributes options
-      order_attributes = filter_attributes attributes, 'uuid'
-      response = execute_update notification_url(type), order_attributes, {}
-      v4_success? response
-    end
-
     def details
       if @details.nil?
         response = execute_get order_url, {}, {}
