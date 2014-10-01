@@ -37,12 +37,24 @@ module Zuppler
 
     def save
       restaurant_attributes = filter_attributes attributes, 'id'
-      response = execute_create restaurants_url, {:restaurant => restaurant_attributes}
+      response = execute_create restaurants_url, {restaurant: restaurant_attributes}
       if v3_success?(response)
         self.class.unmarshal self, response
       else
         nil
       end
+    end
+
+    def details
+      if @details.nil?
+        response = execute_get restaurant_url, {}, {}
+        if v4_success? response
+          @details = Hashie::Mash.new response['restaurant']
+        else
+          fail 'restaurants#details failed.'
+        end
+      end
+      @details
     end
 
     private
@@ -56,8 +68,13 @@ module Zuppler
     def restaurants_url
       "#{Zuppler.api_url('v3')}/restaurants.json"
     end
+
     def self.restaurant_url(permalink)
       "#{Zuppler.api_url('v3')}/restaurants/#{permalink}.json"
+    end
+
+    def restaurant_url
+      self.class.restaurant_url permalink
     end
 
     def publish_url

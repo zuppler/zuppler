@@ -19,6 +19,13 @@ Feature: Restaurant resource
     Then I should have "demorestaurant" restaurant
 
   @vcr
+  Scenario: Show restaurant
+    Given Zuppler configured with "zuppler" and "qwe123"
+    When I find restaurant "demorestaurant"
+    When I fetch restaurant details
+    Then I should have restaurant details
+
+  @vcr
   Scenario: Publish restaurant
     Given Zuppler configured with "zuppler" and "abcd"
     When I publish restaurant "demorestaurant"
