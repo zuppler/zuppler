@@ -11,13 +11,22 @@ When(/^I confirm order$/) do
 end
 When(/^I cancel order$/) do
   @success = @order.cancel reason: 'food was cold'
-end  
+end
 When(/^I miss order$/) do
   @success = @order.miss
-end  
+end
+When(/^I open order$/) do
+  @success = @order.open reason: 'out of fish'
+end
+When(/^I close order$/) do
+  @success = @order.close
+end
 
 Then(/^I should have order accepted$/) do
   @success.should be_truthy
+end
+Then(/^I should have order not accepted$/) do
+  @success.should_not be_truthy
 end
 Then(/^I should have order details$/) do
   @order.details.customer.email.should eq('vinit100@gmail.com')

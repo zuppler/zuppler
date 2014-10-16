@@ -28,4 +28,18 @@ Feature: Order resource
     And I have an order "56b19cde-ac68-11e3-9088-123138166518"
     When I miss order
     Then I should have order accepted
+
+  @vcr
+  Scenario: Open order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
+    When I open order
+    Then I should have order not accepted
+
+  @vcr
+  Scenario: Close order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
+    When I close order
+    Then I should have order not accepted
     

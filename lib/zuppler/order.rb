@@ -35,6 +35,20 @@ module Zuppler
       v4_success? response
     end
 
+    def open(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update open_url, order_attributes, {}
+      v4_success? response
+    end
+
+    def close(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update close_url, order_attributes, {}
+      v4_success? response
+    end
+
     def notification(type)
       Zuppler::Notification.new self, type
     end
@@ -45,7 +59,7 @@ module Zuppler
         if v4_success? response
           @details = Hashie::Mash.new response['order']
         else
-          raise 'orders#details failed.'
+          fail 'orders#details failed.'
         end
       end
       @details
@@ -60,12 +74,23 @@ module Zuppler
     def confirm_url
       "#{resource_url}/confirm.json"
     end
+
     def cancel_url
       "#{resource_url}/cancel.json"
     end
+
     def miss_url
       "#{resource_url}/miss.json"
     end
+
+    def open_url
+      "#{resource_url}/open.json"
+    end
+
+    def close_url
+      "#{resource_url}/close.json"
+    end
+
     def order_url
       "#{resource_url}.json"
     end

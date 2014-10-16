@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://secure.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 Oct 2014 17:01:12 GMT
+      Server:
+      - thin
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"1ccc5f287f888d3b376143c25a88bed0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cc35707749aa5fab2602d9a9de057f83
+      X-Runtime:
+      - '0.616177'
+      X-Rack-Cache:
+      - invalidate, pass
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk4MjY1MmY0NjE5NDllOTk2YTU1OWRkNTg1NjYzYzA3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTlLMUI0TmRadzdUWGtsMEZDRWhMZjZhL1hkdGxadHBFWVFqL3FTblAySjQ9BjsARg%3D%3D--b6a7f85870e7bfb68226c52d20d2d69f675dd2ff;
+        path=/; HttpOnly
+      Via:
+      - 1.1 secure.biznettechnologies.com
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":false,"status":{"code":500,"message":"Event ''close''
+        cannot transition from ''confirmed''"}}'
+    http_version: 
+  recorded_at: Thu, 16 Oct 2014 17:03:35 GMT
+recorded_with: VCR 2.9.3
