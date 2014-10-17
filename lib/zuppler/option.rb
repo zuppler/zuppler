@@ -24,7 +24,7 @@ module Zuppler
         self.id = resource_id response if v4_success? response
       else
         option_attributes = filter_attributes attributes, 'modifier', 'id'
-        response = execute_update option_url, {option: option_attributes}
+        response = execute_update option_url, option: option_attributes
       end
       v4_success? response
     end

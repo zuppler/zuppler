@@ -18,11 +18,11 @@ module Zuppler
     def save
       if new?
         discount_attributes = filter_attributes attributes, 'restaurant'
-        response = execute_create discounts_url, {discount: discount_attributes}
+        response = execute_create discounts_url, discount: discount_attributes
         self.id = resource_id(response) if v4_success?(response)
       else
         discount_attributes = filter_attributes attributes, 'restaurant', 'id'
-        response = execute_update discount_url, {discount: discount_attributes}
+        response = execute_update discount_url, discount: discount_attributes
       end
       v4_success? response
     end

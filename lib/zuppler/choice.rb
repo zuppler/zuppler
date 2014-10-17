@@ -1,7 +1,7 @@
 module Zuppler
   class Choice < Model
     include ActiveAttr::Model
-    
+
     attribute :category
     attribute :item
     attribute :modifier_id
@@ -14,10 +14,12 @@ module Zuppler
     attribute :max_qty
     attribute :priority
     attribute :order_by_priority
-    
+
     validates_presence_of :name
     validate do
-      errors.add :restaurant, 'permalink is required' if restaurant and restaurant.permalink.blank?
+      if restaurant && restaurant.permalink.blank?
+        errors.add :restaurant, 'permalink is required'
+      end
     end
 
     def self.find(id, restaurant_id)
@@ -27,11 +29,11 @@ module Zuppler
     def save
       if new?
         choice_attributes = filter_attributes attributes, 'category', 'item'
-        response = execute_create choices_url, {:choice => choice_attributes}
+        response = execute_create choices_url, choice: choice_attributes
         self.id = response['choice']['id'] if v3_success?(response)
       else
         choice_attributes = filter_attributes attributes, 'category', 'item', 'id'
-        response = execute_update choice_url, {:choice => choice_attributes}
+        response = execute_update choice_url, choice: choice_attributes
       end
       v3_success? response
     end
@@ -45,6 +47,7 @@ module Zuppler
     def restaurant
       category ? category.restaurant : item.restaurant
     end
+
     def restaurant_id
       @restaurant_id || parent_restaurant_id || restaurant.permalink
     end

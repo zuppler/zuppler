@@ -3,13 +3,13 @@ module Zuppler
     include HTTParty
 
     class << self
-      def find(cid)
-        response = get resource_url(cid)
+      def find(id)
+        response = get resource_url(id)
         response
       end
 
-      def resource_url(cid)
-        Zuppler.api_url + ".json"
+      def resource_url(_cid)
+        Zuppler.api_url + '.json'
       end
     end
 

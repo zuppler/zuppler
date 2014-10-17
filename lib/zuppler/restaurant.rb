@@ -37,7 +37,7 @@ module Zuppler
 
     def save
       restaurant_attributes = filter_attributes attributes, 'id'
-      response = execute_create restaurants_url, {restaurant: restaurant_attributes}
+      response = execute_create restaurants_url, restaurant: restaurant_attributes
       if v3_success?(response)
         self.class.unmarshal self, response
       else

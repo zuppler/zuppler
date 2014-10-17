@@ -12,7 +12,7 @@ module Zuppler
 
     validates_presence_of :menu, :name
     validate do
-      errors.add :menu, 'id is missing' if menu and menu.id.blank?
+      errors.add :menu, 'id is missing' if menu && menu.id.blank?
     end
 
     def self.find(id, restaurant_id)
@@ -22,11 +22,11 @@ module Zuppler
     def save
       if new?
         category_attributes = filter_attributes attributes, 'menu'
-        response = execute_create categories_url, {category: category_attributes}
+        response = execute_create categories_url, category: category_attributes
         self.id = response['category']['id'] if v3_success? response
       else
         category_attributes = filter_attributes attributes, 'menu', 'id'
-        response = execute_update category_url, {category: category_attributes}
+        response = execute_update category_url, category: category_attributes
       end
       v3_success? response
     end

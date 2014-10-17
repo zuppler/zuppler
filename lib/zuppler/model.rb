@@ -30,54 +30,59 @@ module Zuppler
     end
 
     def persisted?
-      !!self.id
+      !new?
     end
 
     def new?
-      self.id.blank?
+      id.blank?
     end
 
     def self.v4_success?(response)
-      response.success? and response['success'] == true
+      response.success? && response['success'] == true
     end
     def v4_success?(response)
       self.class.v4_success? response
     end
 
     def self.v3_success?(response)
-      response.success? and response['success'] == true
+      response.success? && response['success'] == true
     end
+
     def v3_success?(response)
       self.class.v3_success? response
     end
 
     def self.success?(response)
-      response.success? and response['valid'] == true
+      response.success? && response['valid'] == true
     end
+
     def success?(response)
       self.class.success? response
     end
 
     def execute_create(url, body, headers = {})
-      options = {:body => body, :headers => headers}
+      options = { body: body, headers: headers }
       response = self.class.post url, options
       log url, response, options
       response
     end
+
     def execute_update(url, body, headers = {})
-      options = {:body => body, :headers => headers}
+      options = { body: body, headers: headers }
       response = self.class.put url, options
       log url, response, options
       response
     end
+
     def execute_get(url, body, headers = {})
-      options = {:body => body, :headers => headers}
+      options = { body: body, headers: headers }
       response = self.class.get url, options
       log url, response, options
       response
     end
+
     def self.execute_find(url, headers = {})
-      options = {:headers => headers}
+      options = { headers: headers }
       response = get url, options
       log url, response, options
       response
@@ -90,7 +95,7 @@ module Zuppler
     end
 
     def filter_attributes(attrs, *keys)
-      attrs.reject{|k,v| keys.include?(k) or v.nil?}
+      attrs.reject { |k, v| keys.include?(k) || v.nil? }
     end
   end
 end

@@ -14,6 +14,7 @@ module Zuppler
       response = execute_update notification_url('execute'), attributes, {}
       v4_success? response
     end
+
     def confirm(options = {})
       update_attributes options
       response = execute_update notification_url('confirm'), attributes, {}
