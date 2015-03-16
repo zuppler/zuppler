@@ -26,16 +26,18 @@ module Zuppler
   end
 
   class << self
-    attr_accessor :channel_key, :restaurant_key, :api_key, :test, :domain
+    attr_accessor :channel_key, :restaurant_key, :api_key
+    attr_accessor :test, :domain, :logger
 
-    def init(channel_key, api_key, test = true)
-      self.channel_key, self.api_key, self.test = channel_key, api_key, test
+    def init(channel_key, api_key, test = true, logger = nil)
+      self.channel_key, self.api_key = channel_key, api_key
+      self.test, self.logger = test, logger
     end
 
     def configure
       yield self
     end
-    alias :config :configure
+    alias_method :config, :configure
 
     def check
       fail Zuppler::Error, ':channel_key cannot be blank' if channel_key.blank?

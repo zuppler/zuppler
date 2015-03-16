@@ -18,10 +18,12 @@ module Zuppler
 
     class << self
       def log(url, response, options)
-        puts
-        puts " ***** Zuppler Url: #{url}"
-        puts " ***** Zuppler Request: #{options}"
-        puts " ***** Zuppler Response: #{response.body}"
+        return if Zuppler.logger.nil?
+
+        Zuppler.logger.info ''
+        Zuppler.logger.info " ***** Zuppler Url: #{url}"
+        Zuppler.logger.debug " ***** Zuppler Request: #{options}"
+        Zuppler.logger.debug " ***** Zuppler Response: #{response.body}"
       end
     end
 
