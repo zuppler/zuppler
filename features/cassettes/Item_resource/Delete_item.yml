@@ -12,8 +12,12 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
       Date:
-      - Wed, 14 May 2014 07:49:47 GMT
+      - Mon, 16 Mar 2015 09:22:02 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -30,23 +34,21 @@ http_interactions:
       - ! '"f5086aa0c0d7bca44e2de5d98799a983"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNjOWE0NTg4MDU5N2ZlYjU3ZWEzMGRiYmY4ZGQ1OTY0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUhXM1FrK2k3UmJmSmpQV2ZUVk41aWVHOWFERzMrejh0YXBTc1RubWFXbzg9BjsARg%3D%3D--6beb55af66a09b6e0b206e4a8c465185cb29554a;
+        path=/; HttpOnly
       X-Request-Id:
-      - f6205c2886ec8a0b2a15a26dc6c50c4f
+      - 56ae34ad-c212-4d6f-a37c-2039164b2c81
       X-Runtime:
-      - '0.095787'
+      - '0.171565'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWJiMWNlYjNlYWMyYzg2ZGYyNGZiNzllYTg4ZTkzMDY2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1PN3lQODFnTk9RblBNbHJ2RVppSHZSZC9Bc2JIUHYweUxaRjM4alVKVnM9BjsARg%3D%3D--c2ea8b3f11a0b8d1bfb141359ce98e7564596e15;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
       string: ! '{"success":true,"item":{"id":455,"name":"K10. Asparagus &amp; Ingen","description":"&nbsp;with
         chicken asparagus &amp; string bean with chicken hibachi","price":"12.0","coupon":null,"active":false,"parent_id":770,"priority":0,"veg":null,"spicy":null,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Wed, 14 May 2014 07:51:12 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:22:02 GMT
+recorded_with: VCR 2.9.3

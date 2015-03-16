@@ -12,8 +12,12 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
       Date:
-      - Thu, 05 Jun 2014 17:05:34 GMT
+      - Mon, 16 Mar 2015 09:21:07 GMT
       Status:
       - 200 OK
       Content-Type:
@@ -24,24 +28,20 @@ http_interactions:
       - ! '"551613a621b01d524a24afbca2cac818"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTkwODY3NzAwYjJjZjM0OThjMjc4NzkzZjQ2ZjA1ZjdkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWhtQzJmRkhmNkJSclpEaDZQMmxiZ2J4QXNQZ1VVQ0pJNzlLOFgzc01MdVE9BjsARg%3D%3D--629cba3cc2d3f25dcf4d21819f337f37dc37eb95;
+        path=/; HttpOnly
       X-Request-Id:
-      - 1ecf0cb76ae136b7cd47faa055de1c4c
+      - b9bca16b-6ee4-45c3-af95-067372601879
       X-Runtime:
-      - '0.009221'
+      - '0.012692'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZjNGZjMWMxZmNjNzE3ZDlhODMwZTM4MDI3ZmMwNDJkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUR3MmREbndFNEZ1MEsrcTFWeCtPY3BiWklXaHY0Zm4vMkJzT3dqbVhHVUk9BjsARg%3D%3D--7171a3576ec10a271fdd401bdd0cd321877ffbf2;
-        path=/; HttpOnly
       Via:
-      - 1.1 secure.biznettechnologies.com
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
       string: ! '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Thu, 05 Jun 2014 17:05:37 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:21:07 GMT
+recorded_with: VCR 2.9.3

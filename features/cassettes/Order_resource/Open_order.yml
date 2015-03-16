@@ -12,37 +12,37 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 16 Oct 2014 17:01:11 GMT
       Server:
-      - thin
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:21:07 GMT
+      Status:
+      - 200 OK
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"8f4db6ba545fbd332a851209c69123f6"'
+      - ! '"358bdc1971ee30aaf7c38ad94c94fbf2"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWIwODJlZjBiZjJjYjMzNjhlZmQwMmVhNjQzODgyNDdlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWRoTGNxVGRieTdGbTAvVFU2V1pJYXBKMi9hVVpMcnZZRHZWMkhaZTd5cHM9BjsARg%3D%3D--5f83a0c5553b7d9c0073e2a60a2c0261b4163a57;
+        path=/; HttpOnly
       X-Request-Id:
-      - bcfdb0ec798bbb61a4ae267e4a4e5894
+      - d764ecdf-8d65-4201-8d1a-061ff43d9b49
       X-Runtime:
-      - '0.842322'
+      - '0.479550'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTIyNmM5ZDhhN2Q3MDUyOTVhM2M5NzQ3NDlkMDZjNjYwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTd3WE92L2p3Z3NSOGgyYldIdDJFM1ZBb0luS2lueVJFeHZhdXpIZzVtOTA9BjsARg%3D%3D--d8e7ae389dbb05ca235be6c8fd16bdf4b9390646;
-        path=/; HttpOnly
       Via:
-      - 1.1 secure.biznettechnologies.com
-      Access-Control-Allow-Origin:
-      - ! '*'
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
       string: ! '{"success":false,"status":{"code":500,"message":"Event ''open'' cannot
-        transition from ''confirmed''"}}'
+        transition from ''invoiced''"}}'
     http_version: 
-  recorded_at: Thu, 16 Oct 2014 17:03:34 GMT
+  recorded_at: Mon, 16 Mar 2015 09:21:07 GMT
 recorded_with: VCR 2.9.3

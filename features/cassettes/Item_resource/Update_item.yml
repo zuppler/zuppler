@@ -12,8 +12,12 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
       Date:
-      - Wed, 14 May 2014 07:49:47 GMT
+      - Mon, 16 Mar 2015 09:22:01 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -30,22 +34,20 @@ http_interactions:
       - ! '"45668208cbf2d58a48fd5d7f638b80ec"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTkxYmJjNDU3NmI4YzdjMGYwM2U5MTNjYjMxM2QxZDJkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTlTY0RUQ1lUTytzamEyMXNYQ0dKVXB4TmhPNk9hTGZYQ003L1k0WHVPdDg9BjsARg%3D%3D--0e7b9069a4ac8f476da7fd068a2ddaa9aa50300d;
+        path=/; HttpOnly
       X-Request-Id:
-      - 1cd35190e348f1025643b758f17b5e6c
+      - 312e0c42-789d-4620-9bab-8d55782518c9
       X-Runtime:
-      - '12.715755'
+      - '0.168131'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFlNzQxYzE2ZDMyN2M5ZDVjOWQ2ZGFlN2FhZjJjOWJlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUhaZUlOY21RdHF2TmJCdGNnUGx1SFROc2VmM3E4eEhIZlQvQkxYYXRzUU09BjsARg%3D%3D--186b3cbe9429d11c060211d8810446594509cfc4;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
       string: ! '{"success":true,"item":{"id":898,"name":"diavolo","description":"dddd","price":"8.99","coupon":null,"active":false,"parent_id":1768,"priority":2,"veg":null,"spicy":null,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Wed, 14 May 2014 07:51:11 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:22:02 GMT
+recorded_with: VCR 2.9.3

@@ -12,10 +12,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 19 Feb 2014 13:09:22 GMT
       Server:
-      - thin 1.5.1 codename Straight Razor
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:21:48 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,25 +31,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"c6582a2faba15a8e3d0e1abba6f24564"'
+      - ! '"dccfc589c7f27c715ea27d66c30aac25"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3MzZiYWY0M2MxOGM1MmQxYWJjNGNhNzNlZmVjNzBhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVJmVXdwckMrclc3QzExWGs5QzNEc1RraTBBR2xYNmwyNC8rZG9vZXdENk09BjsARg%3D%3D--78bf76d781a3bbff02428cb80cbcaca0dc570f1a;
+        path=/; HttpOnly
       X-Request-Id:
-      - 9612f16f31d08700ce731c1285f95184
+      - 7f3e1b38-4470-4dfe-9fd7-238bc7de20ab
       X-Runtime:
-      - '0.047831'
+      - '0.150481'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTVlZjVlMjM5Yzk3MjUyM2VlOGViZDI0MDU4MWYyNzcxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXZJODA5c3daMXNSR3lvU0gzYjlqSEJvcHkwamVZdndTaXgzTTJyTnpwdnc9BjsARg%3D%3D--be8218772a5ee8b51459d2775f6087b3fd299375;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":69212,"name":"ccc","multiple":true,"min_qty":3,"max_qty":5,"priority":3,"order_by_priority":false,"active":true}}'
+      string: ! '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":false,"active":true,"description":null}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:11:54 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:21:48 GMT
+recorded_with: VCR 2.9.3

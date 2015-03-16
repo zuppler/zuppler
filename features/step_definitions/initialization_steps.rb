@@ -1,3 +1,13 @@
+class CucumberLogger
+  def info(message)
+    puts message
+  end
+
+  def debug(message)
+    puts message
+  end
+end
+
 Given(/^Zuppler is loaded$/) do
   Zuppler.is_a?(Module).should be_truthy
 end
@@ -6,6 +16,7 @@ Given(/^Zuppler configured with "(.*)" and "(.*)"$/) do |channel, key|
     config.channel_key = channel
     config.api_key = key
     config.test = true
+    config.logger = CucumberLogger.new
     # config.domain = 'zuppler.dev'
   end
 end
@@ -15,6 +26,7 @@ When(/^I initialize with (.*) and (.*)$/) do |channel, key|
     config.channel_key = channel
     config.api_key = key
     config.test = true
+    config.logger = CucumberLogger.new
     # config.domain = 'zuppler.dev'
   end
 end

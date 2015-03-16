@@ -5,17 +5,21 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants.json
     body:
       encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Flatley-Walker&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
+      string: restaurant[name]=Restaurant%20-%20Altenwerth%20LLC&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
     headers: {}
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 06 Feb 2014 08:43:13 GMT
       Server:
-      - thin 1.5.1 codename Straight Razor
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:38:27 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,93 +31,29 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"2172259b68ca5e7c3035061d9579027f"'
+      - ! '"14a0f3fc5225dfc98c0bf23688282ec3"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTM5NzkxNTVmNjJmYTE2NzhlMDdjYjBiMDE1Y2Q2M2NhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWV5ZXdTVW9YK3lpMEJOQzlVU25TVGJzQThBcnJZYWphUWtyZWlaV3BoTUE9BjsARg%3D%3D--9d89a624e8511aa7f5e76b272b2ac383c8cf596f;
+        path=/; HttpOnly
       X-Request-Id:
-      - 1e72175e23858d3253cda67cf5a3dc9b
+      - f2517292-2e7b-4d91-860d-82442aac594b
       X-Runtime:
-      - '3.013200'
+      - '1.036642'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWFmMWJkNTkxZGYwNDNmYTU5NGMyNzg3YTQwZDU2YWI4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUhJT3ZSUnVaVVI5UkZYM0hkdnVDUDZHRzcva21vKzN2bXpmRUVkR2NHbHc9BjsARg%3D%3D--b2408bf5cdb1bc0e6e01d0d07cc90a1f73ae3b0d;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"restaurant":{"id":2018,"name":"Restaurant - Flatley-Walker","permalink":"restaurantflatleywalker","locale":"en","welcome_message":null,"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
+      string: ! '{"success":true,"restaurant":{"id":3611,"name":"Restaurant - Altenwerth
+        LLC","permalink":"restaurantaltenwerthllc","locale":"en","welcome_message":null,"locations":[{"id":4259,"name":"102
+        Church Avenue, College Station","address":"102 Church Ave, College Station,
+        77840","geo":{"lat":"30.6168383","lng":"-96.3488479"}}],"loyalty_services":[],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"disable_group_ordering":null,"disable_quantity":null,"catering":null,"napkins":true,"delivery":{"active":false,"settings":{"description":null,"min_order":"15.0"},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0}},"discounts":[],"events":[],"timezone":{"name":"Eastern
+        Time (US & Canada)","offset":-240},"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
         - Sat</strong>: 6:00am  - 12:00pm , 12:00pm  - 6:00pm , 6:00pm  - 12:00am  (next
-        day)<br/>"},"messages":{"state":"State","zip":"Zip","user_anonymous":"Guest","item":"{1}
-        item","items":"{1} items","item_min":"You should select at least {1}","item_max":"You
-        should select at most {1}","item_min_max":"You should select between {1} and
-        {2}","item_fix":"You should select exactly {1}","item_err_at_least":"Please
-        select at least {1}","item_err_at_most":"Please select at most {1}","ordering_paused":"Online
-        Ordering is currently paused. Please check back later.","ordering_paused_restaurant_closed":"We
-        are not accepting online orders at this time.","add_address_button":"Add Address...","loading_menu":"Loading&hellip;<br/>
-        Please Wait","first_time_deal":"first time user discount, sign in to apply","first_time_deal_enabled":"first
-        time user discount, click to apply","first_time_deal_disabled":"applies only
-        for first time users","failed_load_core":"Failed to load menu. Please try
-        to reload page again later","failed_load_menu_item":"Failed to load menu item.
-        Please try again later","failed_load_cart_components":"Failed to initialize
-        cart. Please try to reload page again later","failed_cart_add":"Failed to
-        add item to cart. Please try again later","failed_cart_update":"Failed to
-        update item. Please try again later","failed_cart_remove":"Failed to remove
-        item from cart. Please try again later","failed_cart_discount_add":"Failed
-        to apply discount. Please try again later","failed_cart_discount_remove":"Failed
-        to remove discount. Please try again later","fail_add_address":"Failed to
-        add address. Please try again later","errors":"Errors","infos":"Infos","select_address":"Select
-        address...","select_an_address":"select an address...","add_address":"Add
-        address...","add_address_short":"+","enter_promo_code":"Enter promo code:","login_or_signup_for_discount":"Please
-        login or signup to apply this discount","apply":"Apply","login_apply":"Sign
-        in &amp; Apply","jump_to":"Go to&hellip;","private_mode_warn":"You are in
-        private browsing mode. In this mode your cart will not be available if you
-        reload or navigate back to this page.","unsupported_storage":"You are using
-        an old browser. Saving your cart items and settings is not persistent if you
-        reload this page or navigate back to it. Please upgrade your browser.","enter_deliver_address":"Enter
-        Delivery Address:","address_street":"Street:","address_cross_street":"* Cross
-        Street:","address_abf":"Apt, Building, Floor:","address_city":"City:","address_dinstr":"Delivery
-        instructions:","address_dinstr_hint":"e.g. specific room#, floor, department,
-        special loading area etc.","address_location_name":"Location Name:","address_location_hint":"e.g.
-        home, my office","cancel_btn":"Cancel","save_btn":"Save","close_btn":"Close","add_to_order_btn":"Add
-        to Order","add_btn":"Add","view_discounts_btn":"Apply Discounts","click_to_customize":"Click
-        to customize","done":"Done","qty":"Quantity:","short_qty":"Qty:","click_item_to_add":"Click
-        on a menu item to add to order","click_discount_to_apply":"Click on a discount
-        to apply:","sign_in":"Sign in","click_discount_to_apply_first_time":" and
-        apply your first time user discount:","read_more":"read more&hellip;","view_order":"Checkout","login":"Sign
-        in","hide_order":"Back to Menu","back_to_menu":"Back to Menu","promo":"Promo","enter_discount_promo_code":"Enter
-        Discount Promo Code","order_options":"Order Options","order_summary":"Your
-        Order","from":"from","more_dotdot":"more&hellip;","select_location":"select
-        a restaurant location...","click_to_map":"click to see location on map&hellip;","curbside_hint":"vehicle
-        make, model, color and type","buckid_hint":"enter #","payment":"Payment:","discount":"Discount:","order_total":"Order
-        Total:","edit_items":"Edit Items","time":"Time:","special_instr":"special
-        instructions","ok":"OK","map":"Map","redirect_responsive":"This site is not
-        optimized for mobile. Do you want to go the mobile optimized page?","sold_out":"Sold
-        Out","tip_select_address":" to select from your saved addresses","discounts":"Discounts","account_section":"Account","repeat_order_btn":"Repeat
-        Order","repeat_your_orders":"Your Past Orders","repeat_please_wait_loading":"Please
-        wait while we are retrieving your previous orders.","repeat_please_wait_repeating":"Please
-        wait while we are adding adding all the items to your cart.","repeat_load_more_orders":"Load
-        More Orders","repeat_signin_title":"Sign in to Repeat Order","repeat_signin_description":"Sign
-        in to save your profile info, repeat past orders,<br /> store your credit
-        cards in our secure vault and much more.","repeat_order_type":"Order Type:","repeat_address":"Address:","repeat_payment":"Payment:","repeat_tip":"Tip:","repeat_repeat":"repeat","repeat_no_orders_info":"Sorry,
-        we could not find any recent orders for this restaurant.","err_repeat_no_modifier":"{1}
-        did not repeat: {2} for {1} not available.","err_repeat_no_item":"{1} did
-        not repeat: Not available.","err_repeat_different_price":"Note: {1} has a
-        different price now.","err_repeat_no_delivery":"Delivery is not currently
-        offered.","err_repeat_no_pickup":"Pickup is not currently offered.","err_repeat_no_curbside":"Curbside
-        is not currently offered.","err_repeat_no_dinein":"Eat In is not currently
-        offered.","err_repeat_no_card":"Card payment is not currently offered.","err_repeat_no_cash":"Cash
-        payment is not currently offered.","err_repeat_no_card_on_delivery":"Card
-        on delivery is not currently offered.","err_repeat_no_buckid":"This payment
-        type is not currently offered.","err_repeat_no_levelup":"Levelup payment is
-        not currently offered.","err_repeat_no_loyalty":"Loyalty points are not currently
-        offered.","err_repeat_no_discount":"Discount is no longer applicable: {1}
-        {2}"},"menu_messages":[],"gallery":[],"images":[],"locations":[{"id":2338,"name":"102
-        Church Avenue, College Station","address":"102 Church Avenue, College Station,
-        TX 77840","geo":{"lat":"30.616838","lng":"-96.348848"}}],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0},"delivery":{"active":false,"settings":{"description":null,"min_order":15},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}}},"discounts":[],"events":[]}}'
+        day)<br/>","days":{"Sun":["06:00-12:00","12:00-18:00","18:00-24:00"],"Mon":["06:00-12:00","12:00-18:00","18:00-24:00"],"Tue":["06:00-12:00","12:00-18:00","18:00-24:00"],"Wed":["06:00-12:00","12:00-18:00","18:00-24:00"],"Thu":["06:00-12:00","12:00-18:00","18:00-24:00"],"Fri":["06:00-12:00","12:00-18:00","18:00-24:00"],"Sat":["06:00-12:00","12:00-18:00","18:00-24:00"]},"machine":[[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]]]},"messages":{},"localization_resource_url":"http://api.biznettechnologies.com/v3/menu_localizations/en.json","menus_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantaltenwerthllc/menus.json","menu_messages":[],"gallery":[],"images":[],"collaborations":{"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantaltenwerthllc/collaborations.json"},"orders":{"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantaltenwerthllc/orders.json"}}}'
     http_version: 
-  recorded_at: Thu, 06 Feb 2014 08:45:55 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:38:27 GMT
+recorded_with: VCR 2.9.3

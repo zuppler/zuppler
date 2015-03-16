@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/33040.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/43069.json
     body:
       encoding: US-ASCII
       string: category[active]=false
@@ -12,10 +12,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 19 Feb 2014 13:52:46 GMT
       Server:
-      - thin 1.5.1 codename Straight Razor
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:13:24 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,25 +31,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"b51387ad5ff4cf03e0a999a31fc21342"'
+      - ! '"bd3d7557574a2c7401ffa4d9c3eefe14"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWU5NjJiMmI0MWU5YjNiMDI1YWNlOGM0Y2E0Yzk5ZDk5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTdrM0p6cWUyRHY1WjZXbG1FbGFSV2E4VlNBYXh1bVRVWUdkaFRtM2YvVWM9BjsARg%3D%3D--af4f3a330a17eec95fd56b1140c171e8b630c391;
+        path=/; HttpOnly
       X-Request-Id:
-      - 08f5ab35734885fb9ffd37f399647953
+      - f10667d4-e648-4144-bcba-69599da80982
       X-Runtime:
-      - '0.028496'
+      - '0.166567'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ3NGIwMDA0MGMwMjI5NTFkMWMwMmYxMWI2YjlhNTEyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXF4eTNxdlhqVEEvTDJiQVU5My9XR0M3QXovNVRUcVlweE9aWnZzbk5tMzg9BjsARg%3D%3D--a1bd0e63e8e6b9988037c33c96a50ce92b7e5ae9;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"category":{"id":33040,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":true}}'
+      string: ! '{"success":true,"category":{"id":43069,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":false}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:55:18 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:13:24 GMT
+recorded_with: VCR 2.9.3

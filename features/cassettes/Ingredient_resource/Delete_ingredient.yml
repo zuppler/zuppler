@@ -12,10 +12,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Mon, 04 Aug 2014 11:48:21 GMT
       Server:
-      - thin 1.6.2 codename Doc Brown
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:13:55 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,25 +31,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"5586df49ee88ebaaa51a893839505506"'
+      - ! '"1de0b39c77aa8c24037be2451399eee6"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWVkYTQ2MmIwYzAzNzFiNzcyZjNkMjhhZTFjNDBjNGU3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXNSUW5qeWhwcVR3aStUeU96K3ppV3k3bDVYZEkvMXdraUVqWnZsMGdsOGM9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--0813edef37f7b61bd58259ec9f8cd98eb085420b;
+        path=/; HttpOnly
       X-Request-Id:
-      - be7841aa100b818a65631924b3a410e3
+      - 9508ab6a-1657-49b7-b6ec-9a5a78c8a078
       X-Runtime:
-      - '0.260869'
+      - '0.164947'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJWQzYWZkYzZiZGYwMDE5YzE5YmViYzUwNWViNGFmODQ2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWhoajQwQ0l4cTZsNVBWZ3pnaVRWMWltYUlkeGhsK3Y0Y2FkMkk0UEg3SVk9BjsARkkiCmZsYXNoBjsARm86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsARjoJQG5vdzA%3D--1bd3ca7de2bd77bbfb665d4e14c59913125df4af;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"modifier":{"id":1,"name":"cream","price":"1.99","active":false,"size_name":"","priority":1,"parent_id":461}}'
+      string: ! '{"success":true,"modifier":{"id":1,"size_name":"","name":"bacon","price":0.0,"priority":7,"active":true,"parent_id":461}}'
     http_version: 
-  recorded_at: Mon, 04 Aug 2014 11:49:26 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Mon, 16 Mar 2015 09:13:55 GMT
+recorded_with: VCR 2.9.3

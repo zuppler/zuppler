@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1/options.json
+    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1218/options.json
     body:
       encoding: US-ASCII
       string: option[name]=cheese&option[description]=desc&option[price]=99&option[priority]=2
@@ -12,10 +12,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Mon, 04 Aug 2014 15:10:20 GMT
       Server:
-      - thin 1.6.2 codename Doc Brown
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:41:22 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -23,7 +27,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - ! '*'
       Location:
-      - http://api.biznettechnologies.com/v4/restaurants/demorestaurant/options/3.json
+      - http://api.biznettechnologies.com/v4/restaurants/demorestaurant/options/7805.json
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
@@ -32,22 +36,20 @@ http_interactions:
       - ! '"758510ce843407be006bf0715bfeadf1"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTU4YTIxODM0MTJhN2Q4YmNmZjYyZDdkZGJhMTYxYmVjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXZ0cTZDRTJEZlVRcjFMdDNhblVhQmpJY25DcUVWRG0vbnBWeko2SW10MjA9BjsARg%3D%3D--c1bbe5cf8e1d80d0488629d9c33cd8b9a96b2ef3;
+        path=/; HttpOnly
       X-Request-Id:
-      - 94d8e2badc49fc71e94808018bbf1313
+      - b616c269-358a-467d-9784-fb3057554236
       X-Runtime:
-      - '0.125511'
+      - '0.204181'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3ODk5Mzc0MzBlZWIwYTdlMTg0OWNhY2I0NTAwZDFkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW9EeEVyNk96Qy8yYThWZlRBQ3RBRWU1ZHlYZW9mQnFtbXdkWkZPYWxQSDA9BjsARg%3D%3D--105ab82f5c2fa1e54eb10eae067af063c2f1adff;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
       string: ! '{"success":true,"status":{"code":201,"message":"Created"}}'
     http_version: 
-  recorded_at: Mon, 04 Aug 2014 15:11:25 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Mon, 16 Mar 2015 09:41:22 GMT
+recorded_with: VCR 2.9.3

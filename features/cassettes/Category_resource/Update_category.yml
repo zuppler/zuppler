@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/33040.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/43069.json
     body:
       encoding: US-ASCII
       string: category[name]=ccc&category[description]=ddd&category[priority]=1&category[active]=true
@@ -12,10 +12,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 19 Feb 2014 13:52:46 GMT
       Server:
-      - thin 1.5.1 codename Straight Razor
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Mar 2015 09:13:24 GMT
+      Status:
+      - 200 OK
       Access-Control-Allow-Origin:
       - ! '*'
       Access-Control-Allow-Methods:
@@ -27,25 +31,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"b51387ad5ff4cf03e0a999a31fc21342"'
+      - ! '"bd3d7557574a2c7401ffa4d9c3eefe14"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFkNzliZDIyZGZmNTZiOWVmMmJhNDgxMDE5MTM4ZmFlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUt3V2VGendPTFhzYVVlbk1XekdkSnpObUpUQTRMbFdNNml3OGF0RWtUZ2M9BjsARg%3D%3D--1062bdb6c0b13e9c6166a91394413eb0bf1df2e7;
+        path=/; HttpOnly
       X-Request-Id:
-      - 2dbfe8951d0b0e194340dda8f666451b
+      - 18ad97fc-4286-4f8a-accb-4b61e36613d2
       X-Runtime:
-      - '0.047178'
+      - '0.169718'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZlNzhjZGY0YmRjY2ZmMTQxMmI5NGFlOTMyMDVjOWQzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXZ6dHE2em9kc2dzd21tendQZVJkSHh2czhYVVp1L25tWGNKSTdlaUJCVlU9BjsARg%3D%3D--9ad36d9dc2a41a7691ea8c4b9f4e4795af29578b;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"category":{"id":33040,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":true}}'
+      string: ! '{"success":true,"category":{"id":43069,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":false}}'
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 13:55:17 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:13:24 GMT
+recorded_with: VCR 2.9.3

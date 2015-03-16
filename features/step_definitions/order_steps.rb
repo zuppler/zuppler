@@ -39,5 +39,5 @@ Then(/^I should have order details$/) do
   @order.details.totals.total.should eq(848)
 
   @order.details.time.id.should eq('SCHEDULE')
-  @order.details.time.value.should eq('2014-04-10T11:40:00-04:00')
+  @order.details.time.value.should eq('2014-04-10 11:40 -0400')
 end

@@ -12,8 +12,12 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
       Date:
-      - Wed, 14 May 2014 07:49:33 GMT
+      - Mon, 16 Mar 2015 09:22:01 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -27,25 +31,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"cbc8e74d22fbaf03481e9785adfa616b"'
+      - ! '"33eb3fc54966b0e0bedf497d19c9b6c1"'
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJThlN2VhMDJkMGY4ZTRjNzM3NjY4N2NjMDUzMjdlNGM1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXNRZkF2U0NPbVVwWkI3MmlwWUxkQnZYYzJQWlRoTU80clVPNjBjMkxVU1E9BjsARg%3D%3D--591c38148862b8730e732b005aee2094ca26ac9d;
+        path=/; HttpOnly
       X-Request-Id:
-      - bad89ea63c126997a805cd1860bec27e
+      - eb32b72f-c896-44f6-951b-0aecd05e1c68
       X-Runtime:
-      - '0.045981'
+      - '0.186530'
       X-Rack-Cache:
       - invalidate, pass
-      Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWIzYzc3ODE2YTM4MzUwNGJlMDZiYzQ1MGU3ZmVmZTA5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1hNUlHVUlQUE40dTRKTTYxMlBZVjhsWko1U1lqZzB0Vk5JRiswOC9wN1E9BjsARg%3D%3D--873e6e475ae9f4b1113a0f5ec92712014da33718;
-        path=/; HttpOnly
       Via:
-      - 1.1 api.biznettechnologies.com
-      Transfer-Encoding:
-      - chunked
+      - 1.1 vegur
     body:
       encoding: US-ASCII
-      string: ! '{"success":true,"item":{"id":415407,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":370481,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
+      string: ! '{"success":true,"item":{"id":607379,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":549279,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
     http_version: 
-  recorded_at: Wed, 14 May 2014 07:50:58 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Mon, 16 Mar 2015 09:22:01 GMT
+recorded_with: VCR 2.9.3
