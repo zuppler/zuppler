@@ -1,7 +1,7 @@
 When(/^I create modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, multiple, max_qty, priority|
-  @modifier = Zuppler::Modifier.new restaurant: @restaurant, 
-  name: name, description: description, priority: priority,
-  multiple: multiple, max_qty: max_qty
+  @modifier = Zuppler::Modifier.new restaurant: @restaurant,
+                                    name: name, description: description, priority: priority,
+                                    multiple: multiple, max_qty: max_qty
   @modifier.save
 end
 When(/^I update modifier "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, multiple, min_qty, max_qty, priority|
@@ -22,4 +22,3 @@ end
 Given(/^I have a modifier "(.*?)"$/) do |id|
   @modifier = Zuppler::Modifier.find id, 'demorestaurant'
 end
-

@@ -1,4 +1,4 @@
-Given(/^I have a restaurant "(.*?)","(.*?)"$/) do |id, permalink|
+Given(/^I have a restaurant "(.*?)","(.*?)"$/) do |id, _permalink|
   @restaurant = Zuppler::Restaurant.new id: id, permalink: 'demorestaurant'
 end
 
@@ -18,7 +18,7 @@ When(/^I fetch restaurant details$/) do
   @restaurant.details
 end
 
-Then(/^I should have "(.*)" restaurant$/) do |permalink|
+Then(/^I should have "(.*)" restaurant$/) do |_permalink|
   @restaurant.id.should_not be_nil
   @restaurant.permalink.should_not be_nil
 end

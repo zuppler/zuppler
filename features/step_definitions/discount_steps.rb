@@ -1,6 +1,6 @@
 When(/^I create discount "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, amount, min_order_amount, promo_code|
   @discount = Zuppler::Discount.new restaurant: @restaurant,
-  name: name, amount: amount, min_order_amount: min_order_amount, promo_code: promo_code
+                                    name: name, amount: amount, min_order_amount: min_order_amount, promo_code: promo_code
   @discount.save
 end
 When(/^I update discount "(.*?)","(.*?)","(.*?)"$/) do |name, amount, min_order_amount|

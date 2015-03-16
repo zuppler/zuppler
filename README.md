@@ -3,6 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/zuppler/zuppler/badge.png)](https://coveralls.io/r/zuppler/zuppler) 
 [![Code Climate](https://codeclimate.com/github/zuppler/zuppler.png)](https://codeclimate.com/github/zuppler/zuppler) 
 [![Dependency Status](https://gemnasium.com/zuppler/zuppler.png)](https://gemnasium.com/zuppler/zuppler)
+[![PullReview stats](https://www.pullreview.com/github/zuppler/zuppler/badges/master.svg?)](https://www.pullreview.com/github/zuppler/zuppler/reviews/master)
 
 # Zuppler 
 

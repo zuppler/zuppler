@@ -1,7 +1,6 @@
-require "spec_helper"
+require 'spec_helper'
 
 describe Zuppler::Channel do
-
   it 'should get channel', :vcr do
     Zuppler.init 'zuppler', ''
     channel = Zuppler::Channel.find 'zuppler'
@@ -10,5 +9,4 @@ describe Zuppler::Channel do
     channel['permalink'].should eq('zuppler')
     channel['logo'].should_not be_nil
   end
-  
 end

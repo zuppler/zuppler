@@ -1,7 +1,7 @@
 When(/^I create item with "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, priority, size_name, size_priority|
   @item = Zuppler::Item.new category: @category, name: name, price: price,
-  priority: priority, size_name: size_name, size_priority: size_priority,
-  description: description
+                            priority: priority, size_name: size_name, size_priority: size_priority,
+                            description: description
   @item.save
 end
 

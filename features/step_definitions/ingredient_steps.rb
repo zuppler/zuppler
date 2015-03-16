@@ -1,11 +1,11 @@
 When(/^I create ingredient "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, size, priority|
-  @ingredient = Zuppler::Ingredient.new choice: @choice, name: name, price: price, 
-  size: size, priority: priority, description: description
+  @ingredient = Zuppler::Ingredient.new choice: @choice, name: name, price: price,
+                                        size: size, priority: priority, description: description
   @ingredient.save
 end
 
-When(/^I update ingredient "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |id, name, price, priority,active|
-  @ingredient.attributes = {name: name, price: price, priority: priority, option_id: 1}
+When(/^I update ingredient "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |_id, name, price, priority, _active|
+  @ingredient.attributes = { name: name, price: price, priority: priority, option_id: 1 }
   @success = @ingredient.save
 end
 

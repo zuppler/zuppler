@@ -21,4 +21,3 @@ end
 Given(/^I have a choice "(.*?)"$/) do |id|
   @choice = Zuppler::Choice.find id, 'demorestaurant'
 end
-

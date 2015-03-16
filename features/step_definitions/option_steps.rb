@@ -1,11 +1,11 @@
 When(/^I create option "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, priority|
-  @option = Zuppler::Option.new modifier: @modifier, name: name, 
-  description: description, price: price, priority: priority
+  @option = Zuppler::Option.new modifier: @modifier, name: name,
+                                description: description, price: price, priority: priority
   @option.save
 end
 
-When(/^I update option with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, price, priority, active|
-  @option.attributes = {name: name, price: price, priority: priority}
+When(/^I update option with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, price, priority, _active|
+  @option.attributes = { name: name, price: price, priority: priority }
   @success = @option.save
 end
 

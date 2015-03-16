@@ -1,10 +1,9 @@
-require "spec_helper"
+require 'spec_helper'
 
 describe 'Zuppler::Model' do
-  
   it 'should wrap create' do
     class R
-      def self.create(options = {})
+      def self.create(_options = {})
         'create'
       end
       include Zuppler::Macros
@@ -12,5 +11,4 @@ describe 'Zuppler::Model' do
     Zuppler.should_receive(:check)
     R.create.should eq('create')
   end
-  
 end

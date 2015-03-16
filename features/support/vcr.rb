@@ -7,5 +7,5 @@ VCR.configure do |c|
 end
 
 VCR.cucumber_tags do |t|
-  t.tag  '@vcr', :use_scenario_name => true
+  t.tag '@vcr', use_scenario_name: true
 end

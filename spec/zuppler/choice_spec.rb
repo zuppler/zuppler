@@ -1,4 +1,4 @@
-require "spec_helper"
+require 'spec_helper'
 
 describe Zuppler::Choice do
   describe '#find' do
