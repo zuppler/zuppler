@@ -4,6 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/zuppler/zuppler.png)](https://codeclimate.com/github/zuppler/zuppler) 
 [![Dependency Status](https://gemnasium.com/zuppler/zuppler.png)](https://gemnasium.com/zuppler/zuppler)
 [![PullReview stats](https://www.pullreview.com/github/zuppler/zuppler/badges/master.svg?)](https://www.pullreview.com/github/zuppler/zuppler/reviews/master)
+[![security](https://hakiri.io/github/zuppler/zuppler/master.svg)](https://hakiri.io/github/zuppler/zuppler/master)
 
 # Zuppler 
 
