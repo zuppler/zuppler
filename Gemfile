@@ -4,5 +4,5 @@ ruby '2.2.2'
 # Specify your gem's dependencies in zuppler.gemspec
 gemspec
 
-gem 'coveralls', :require => false
-gem "codeclimate-test-reporter", group: :test, require: nil
+gem 'coveralls', require: false, group: :test
+gem 'codeclimate-test-reporter', require: nil, group: :test
