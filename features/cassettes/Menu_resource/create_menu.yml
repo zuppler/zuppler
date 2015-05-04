@@ -4,7 +4,7 @@ http_interactions:
     method: post
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: menu[name]=lunch&menu[priority]=1&menu[description]=desc&menu[locked]=true
     headers: {}
   response:
@@ -17,40 +17,42 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:38:47 GMT
+      - Mon, 04 May 2015 05:44:28 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"1b96d2680d83aece7a63d0608996852b"'
+      - '"ac991d0bcf1e31118aa20e4266b32e2b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWY0NTI1YzMzNTljYTkwYmY3ODhlZTc1YjkxMzE1MmI1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXhpQ3NKSDB5Z3hBOStTUDRpUUQ5MXBhWlE2SGwvV1FwZGpmRG85S09GclU9BjsARg%3D%3D--d1a4e5cc9cf661dfd64c801d4807cea5f492b414;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThkZDJhOTFjNzViYjcwOTM5YjM5ZmE5Mzg3Zjc5MzQzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWtuSUEvbWwzalV2MnRGVytGdm9XaUhyZmIwTEI4VEZWNk40eUt4M1JYQ2s9BjsARg%3D%3D--b07f64c7e1194dc9c7d71bae73d56070f190ae83;
         path=/; HttpOnly
       X-Request-Id:
-      - e8c751a3-d555-46f3-bcab-7441740eb4dc
+      - 4ce59ca6-353e-4fe9-9751-7148676c4d90
       X-Runtime:
-      - '0.190792'
+      - '0.494180'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"menu":{"id":24883,"name":"lunch","description":"desc","active":false,"default":null,"use_category_tabs":null,"available_on":"","available_at":"Sun:
+      encoding: UTF-8
+      string: '{"success":true,"menu":{"id":24924,"name":"lunch","description":"desc","active":false,"default":null,"use_category_tabs":null,"available_on":"","available_at":"Sun:
         10:00am  - 10:00am <br/>Mon: 10:00am  - 10:00am <br/>Tue: 10:00am  - 10:00am
         <br/>Wed: 10:00am  - 10:00am <br/>Thu: 10:00am  - 10:00am <br/>Fri: 10:00am  -
-        10:00am <br/>Sat: 10:00am  - 10:00am ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/24883.json","categories":[]}}'
+        10:00am <br/>Sat: 10:00am  - 10:00am ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/24924.json","categories":[]}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:38:47 GMT
+  recorded_at: Mon, 04 May 2015 05:44:28 GMT
 recorded_with: VCR 2.9.3

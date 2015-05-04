@@ -4,7 +4,7 @@ http_interactions:
     method: post
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/1712/choices.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: choice[name]=toppings%20cat&choice[description]=desc&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=true
     headers: {}
   response:
@@ -17,37 +17,39 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:21:47 GMT
+      - Mon, 04 May 2015 05:44:10 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"d7dc83b974855c7a0c35fa66fe760898"'
+      - '"eb236364f1a1de45de237eb47e0da8a5"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTkwM2JhYjMyYjBhYjRmYTY1ZjdjNjBhMDE1N2I1NDk1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWl1SUJZSnJVemtYQUtHaURYOXFOaUVZQXdQRGlrS2wyaDduQ2dQUEFvdkU9BjsARg%3D%3D--8773269dd72c7cf803822e12e76dbff6be42467f;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWQzMDM2NDdkZjE1YWE4NDY3YTNiNmIxNGM0ZGU2YzA4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWlVZE1seWk5L1BaNSt5Wi80SjllWno5bzNVa25mcDBkNnJnYm00UXBNQ2c9BjsARg%3D%3D--8d6030301c470ec62e94bbfbf72e22bd3486d24f;
         path=/; HttpOnly
       X-Request-Id:
-      - 888725ab-680f-4b66-9809-d9c99215119f
+      - 70219f9b-0461-4c01-bd45-2a74294f6d72
       X-Runtime:
-      - '0.169271'
+      - '0.863288'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":181035,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true,"description":"desc"}}'
+      encoding: UTF-8
+      string: '{"success":true,"choice":{"id":181259,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true,"description":"desc"}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:21:47 GMT
+  recorded_at: Mon, 04 May 2015 05:44:11 GMT
 recorded_with: VCR 2.9.3

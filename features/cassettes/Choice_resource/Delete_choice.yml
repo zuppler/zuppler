@@ -4,7 +4,7 @@ http_interactions:
     method: put
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/69212.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: choice[active]=false
     headers: {}
   response:
@@ -17,37 +17,39 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:21:48 GMT
+      - Mon, 04 May 2015 05:44:15 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"dccfc589c7f27c715ea27d66c30aac25"'
+      - '"dccfc589c7f27c715ea27d66c30aac25"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTI3MzZiYWY0M2MxOGM1MmQxYWJjNGNhNzNlZmVjNzBhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVJmVXdwckMrclc3QzExWGs5QzNEc1RraTBBR2xYNmwyNC8rZG9vZXdENk09BjsARg%3D%3D--78bf76d781a3bbff02428cb80cbcaca0dc570f1a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThmMDM0YjhlZDgxZjk4NjBmOTQ2YWNhMDM2OTliNjhiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTEzcHVNUWNNcWxyTEp6OTJvQjE3TU1IWFBweTl0bk9tNUZXUk5rUGZqYWc9BjsARg%3D%3D--911c91cf6b0345290362ac6b6bc5482eda5e51d7;
         path=/; HttpOnly
       X-Request-Id:
-      - 7f3e1b38-4470-4dfe-9fd7-238bc7de20ab
+      - 891b392a-e77c-45be-8b05-0b28fdbaf914
       X-Runtime:
-      - '0.150481'
+      - '0.110622'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":false,"active":true,"description":null}}'
+      encoding: UTF-8
+      string: '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":false,"active":true,"description":null}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:21:48 GMT
+  recorded_at: Mon, 04 May 2015 05:44:15 GMT
 recorded_with: VCR 2.9.3

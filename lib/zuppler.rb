@@ -66,12 +66,8 @@ module Zuppler
       'http://api.' + api_domain + "/#{version}" + channels_uri
     end
 
-    def secure_url(version = 'v4')
-      'http://secure.' + api_domain + "/#{version}"
-    end
-
     def restaurants_api_url(version = 'v4')
-      'http://api.' + api_domain + "/#{version}"
+      'http://restaurants.api.' + api_domain + "/#{version}"
     end
 
     def orders_api_url(version = 'v4')

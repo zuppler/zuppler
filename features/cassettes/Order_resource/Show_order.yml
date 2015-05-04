@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://secure.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json
+    uri: http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,31 +17,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:21:05 GMT
+      - Mon, 04 May 2015 05:47:33 GMT
       Status:
       - 200 OK
       Content-Type:
       - application/json; charset=utf-8
+      Vary:
+      - Origin
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"8f15936c1ea46c36df8c2c1d6b329f6c"'
+      - '"5289c3688a21bac37563166ee4d71f86"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWI5OWEwYzE4NTdiZTM3OGE2MDk0NTUzMGNiZjU0Njg3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTFScFF4VlphWXZ2VmV6N2N3dEJmSjJhV0Mxck9zZDNUbXhoUEJ6Y3d6R1k9BjsARg%3D%3D--12cd3d050d7fc007089086b8ad9d68e570c2a126;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTY0NzIxNDI2MjQ3MDVjYzRmN2M3MzIyMThmYzc5YTIyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUFvUWRPWkwvTVZWZVV1cXRudmNWZWxYUWU4dXZQY0VicGt5ZlpJZU9kOUk9BjsARg%3D%3D--d566252fd39d379a354cac20a87768ead92eb3d7;
         path=/; HttpOnly
       X-Request-Id:
-      - 844e19ed-0d35-4728-8f84-db9b3fde7469
+      - 4ea25c69-8af1-4cbc-abf3-7f6d905a8266
       X-Runtime:
-      - '0.088968'
+      - '1.288692'
       X-Rack-Cache:
       - miss
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"status":{"code":200,"message":"OK"},"order":{"id":"793c50d8-c0bc-11e3-8cc3-22000a98a19e","code":"7447","carts":[{"uuid":"a3ae524a-c0bb-11e3-9321-12313931488a","version":0,"member":{"name":"Vinit
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"order":{"id":"793c50d8-c0bc-11e3-8cc3-22000a98a19e","code":"7447","carts":[{"uuid":"a3ae524a-c0bb-11e3-9321-12313931488a","version":0,"member":{"name":"Vinit
         Agrawal"},"items":[{"id":2495619,"quantity":1,"name":"Build Your Own... Nalley
         Salad","groups":[{"name":"Protein choice","modifiers":[{"id":2433063,"quantity":1,"name":"Falafel
         Baked - Gluten-Free","alias":"","price":0,"tax":0,"total":0}]},{"name":"Greens
@@ -55,14 +57,14 @@ http_interactions:
         Quinoa","alias":"QUIN","price":0,"tax":0,"total":0},{"id":2433068,"quantity":1,"name":"Cucumber","alias":"CUK","price":0,"tax":0,"total":0}]},{"name":"Salad
         Dressings","modifiers":[{"id":2433073,"quantity":1,"name":"Cucumber-Yogurt
         dairy","alias":"CY","price":0,"tax":0,"total":0}]}],"menu":"Menu","category":"Nalley
-        Salads","barcode":"","alias":"Build a SALAD","price":800,"tax":48,"item_total":800,"total":800,"comments":null,"resource_url":""}],"discounts":[],"adjustments":[]}],"resource_url":"http://secure.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json","placed_at":"2014-04-10
+        Salads","barcode":"","alias":"Build a SALAD","price":800,"tax":48,"item_total":800,"total":800,"comments":null,"resource_url":""}],"discounts":[],"adjustments":[]}],"tracking":"","resource_url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json","placed_at":"2014-04-10
         10:29 -0400","comments":null,"customer":{"name":"Vinit Agrawal","email":"vinit100@gmail.com","phone":"8608816246","address":null,"resource_url":""},"channel":{"id":32,"permalink":"nalleyfresh","name":"Nalley
-        Fresh","resource_url":"http://api.biznettechnologies.com/v3/channels/nalleyfresh.json"},"restaurant":{"id":623,"permalink":"nalleyfresh","name":"Nalley
+        Fresh","resource_url":"http://api.biznettechnologies.com/v3/channels/nalleyfresh.json","integration":"site"},"restaurant":{"id":623,"permalink":"nalleyfresh","name":"Nalley
         Fresh - Baltimore","address":{"lat":"39.289646","lng":"-76.612896","delivery_instructions":null,"full":"120
         E Baltimore St, Baltimore, MD 21202"},"locale":"en","resource_url":"http://api.biznettechnologies.com/v3/channels/nalleyfresh/restaurants/nalleyfresh.json"},"service":{"id":"PICKUP","label":"Pickup","value":{"location":"120
         E Baltimore St, Baltimore, MD 21202"}},"time":{"id":"SCHEDULE","label":"Schedule","value":"2014-04-10
         11:40 -0400"},"tender":{"id":"CARD","label":"Card","value":{"paid":true,"type":"1513","last_4_digits":"discover","as":"Zuppler
         Food Order"}},"tip":{"id":"PERCENT","label":"Percent","value":0},"settings":{"catering":null,"extra_fields":[]},"totals":{"subtotal":800,"discount":0,"charges":{"delivery":0,"service":0},"tax":48,"tip":0,"total":848},"rewards":{"bucks":64,"points":8000}}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:21:05 GMT
+  recorded_at: Mon, 04 May 2015 05:47:33 GMT
 recorded_with: VCR 2.9.3

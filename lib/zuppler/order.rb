@@ -66,7 +66,7 @@ module Zuppler
     end
 
     def resource_url
-      "#{Zuppler.secure_url}/orders/#{uuid}"
+      "#{Zuppler.orders_api_url}/orders/#{uuid}"
     end
 
     private

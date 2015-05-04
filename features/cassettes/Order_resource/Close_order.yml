@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://secure.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,32 +17,34 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:21:08 GMT
+      - Mon, 04 May 2015 05:47:35 GMT
       Status:
       - 200 OK
       Content-Type:
       - application/json; charset=utf-8
+      Vary:
+      - Origin
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"6df9170a179a03db79a1afa08f9e0d4e"'
+      - '"6df9170a179a03db79a1afa08f9e0d4e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTE2YWI3NjBjM2RlNDA0NThmYjdkOWVmYTc3Y2Q2NjVkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXBRNjZ1VS8wZ2EvTHhpeTY4bHFzS1lvVDhJUDRmSVRDcHFLdGFoMnF1Z1k9BjsARg%3D%3D--fea2e6393819aaeb0d9959cca26b1e1b1586b276;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBkN2QyNWUwN2VlN2JlZmY3N2Q1NmZkN2I1Y2ZlM2U4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9xZll4UTFrNGFvSnk3UC93akFjMklQTXZMQU1vNGJRRmhsbzA2T2g1b1U9BjsARg%3D%3D--669f8c53792ad557ad54ee539dca5e7a1e78b671;
         path=/; HttpOnly
       X-Request-Id:
-      - bde57f00-f36c-47b4-8d85-f1b893501513
+      - f50a9f5a-3f51-49f4-982f-baaf59078d47
       X-Runtime:
-      - '0.424902'
+      - '0.090941'
       X-Rack-Cache:
       - invalidate, pass
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":false,"status":{"code":500,"message":"Event ''close''
-        cannot transition from ''invoiced''"}}'
+      encoding: UTF-8
+      string: '{"success":false,"status":{"code":500,"message":"Event ''close'' cannot
+        transition from ''invoiced''"}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:21:08 GMT
+  recorded_at: Mon, 04 May 2015 05:47:35 GMT
 recorded_with: VCR 2.9.3

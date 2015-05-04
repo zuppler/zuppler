@@ -4,7 +4,7 @@ http_interactions:
     method: put
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/43069.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: category[name]=ccc&category[description]=ddd&category[priority]=1&category[active]=true
     headers: {}
   response:
@@ -17,37 +17,39 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:13:24 GMT
+      - Mon, 04 May 2015 05:44:08 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"bd3d7557574a2c7401ffa4d9c3eefe14"'
+      - '"bd3d7557574a2c7401ffa4d9c3eefe14"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTFkNzliZDIyZGZmNTZiOWVmMmJhNDgxMDE5MTM4ZmFlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUt3V2VGendPTFhzYVVlbk1XekdkSnpObUpUQTRMbFdNNml3OGF0RWtUZ2M9BjsARg%3D%3D--1062bdb6c0b13e9c6166a91394413eb0bf1df2e7;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTkzOTVkZjI3Nzc2YTAzZTVmNzIzYjJhZjIyNTZjMmRjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXlhRkVLbjVsZnVyeDFTclowMGVUQXh1OFEzdVNZYVBlQkVOM1pWR0c2dW89BjsARg%3D%3D--6b270a2ac0819b28c1622130b8af53217f17d59e;
         path=/; HttpOnly
       X-Request-Id:
-      - 18ad97fc-4286-4f8a-accb-4b61e36613d2
+      - 8db393de-4a05-4cc4-8a12-58dce5f35882
       X-Runtime:
-      - '0.169718'
+      - '0.716118'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"category":{"id":43069,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":false}}'
+      encoding: UTF-8
+      string: '{"success":true,"category":{"id":43069,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":false}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:13:24 GMT
+  recorded_at: Mon, 04 May 2015 05:44:08 GMT
 recorded_with: VCR 2.9.3

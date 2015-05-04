@@ -4,7 +4,7 @@ http_interactions:
     method: post
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/21761/categories.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: category[name]=pizzas&category[description]=desc&category[priority]=1&category[priced_by_size]=true
     headers: {}
   response:
@@ -17,37 +17,39 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:13:23 GMT
+      - Mon, 04 May 2015 05:44:07 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"0a54ff548f82de19e72691976826d46d"'
+      - '"c4898b0aa0bc5e9731c5b783eb7804be"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWFkNTc0ZmE4MWIxMGU5ZDkzODlmNTU1YzNjM2JkMzk0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW5JbFNUMEovZC9Zak1DQ1pva2c1V2dFMTdPc0tQelBqanpRS25reFFDTnc9BjsARg%3D%3D--c491adc3992f19babb5b88832bad6567edb2192a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMyNWQ3MmI4NjlhYTkxZjc3Zjc4MGJjZjQ5MmE3YzQ4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVJYWXhGVjVCeXFnUHluQ29rRzdSZDlqbldXUEo0UTI2SWs4SDk2T3F1MEU9BjsARg%3D%3D--a53deb7c80eac48e14e2ad184a2d498adafca39e;
         path=/; HttpOnly
       X-Request-Id:
-      - 961d3470-c41b-4aa5-85c8-cff5147b46cd
+      - 93176766-4251-48a4-b0b2-02ee655b1e25
       X-Runtime:
-      - '0.402719'
+      - '4.970872'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"category":{"id":63633,"name":"pizzas","description":"desc","priority":1,"active":true,"priced_by_size":false}}'
+      encoding: UTF-8
+      string: '{"success":true,"category":{"id":63674,"name":"pizzas","description":"desc","priority":1,"active":true,"priced_by_size":false}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:13:23 GMT
+  recorded_at: Mon, 04 May 2015 05:44:07 GMT
 recorded_with: VCR 2.9.3

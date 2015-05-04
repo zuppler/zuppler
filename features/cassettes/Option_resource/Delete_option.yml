@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/options/7804.json
+    uri: http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/options/7804.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: option[active]=false
     headers: {}
   response:
@@ -17,37 +17,37 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:41:23 GMT
+      - Mon, 04 May 2015 05:44:31 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"b33bbeaf1ac7492b153ddf701593b79a"'
+      - '"b33bbeaf1ac7492b153ddf701593b79a"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWM0YmY2YWEzMWQyNTVlNjJhMWNhZTQ2NjJiNTI1OGU4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWRLRjdGRUNoN3lEbzBNc1hCamR4VDBFQ2VndFA0Yk9PT2xwblQ2ZXQxVDg9BjsARg%3D%3D--9a18442032c0a09384ba3da9d55cb065716df20a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTk0ODQ4MWU4MjQ0YjY4MWMxODZlYjk1NWYyNjMxNDBiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWhBR3h2a1ZmaVQ5UDUwa1VCUy9UZ3h6VlFabGVGMHFEakcwL3REZ2ZlK2c9BjsARg%3D%3D--43e51d485569a1a3cc85c1f2fc88239d29041fac;
         path=/; HttpOnly
       X-Request-Id:
-      - f1b2a0df-3552-4b56-861a-91a8f51d0564
+      - 31e52d83-5531-48f3-b6a6-a5fabd861b0f
       X-Runtime:
-      - '0.159169'
+      - '0.050282'
       X-Rack-Cache:
       - invalidate, pass
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"status":{"code":200,"message":"OK"},"option":{"id":7804,"name":"updated","price":9}}'
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"option":{"id":7804,"name":"updated","price":9}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:41:23 GMT
+  recorded_at: Mon, 04 May 2015 05:44:31 GMT
 recorded_with: VCR 2.9.3

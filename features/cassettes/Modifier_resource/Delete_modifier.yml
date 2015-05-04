@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1218.json
+    uri: http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1218.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: modifier[active]=false
     headers: {}
   response:
@@ -17,37 +17,37 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:20:49 GMT
+      - Mon, 04 May 2015 05:44:29 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"c1b2ea46ef0719529bf2ebb32e184b95"'
+      - '"c5d869ec6b8d10960fd73f16d4e6577f"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTZkMDFlZDdkYTQ0ZjllNzM2YTZhNTA4YjgwNTE2ZTBkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUNySVZwcjNvMWtOYjVDenY4akVGR0phVVdTQjgvRE5aSmxyQ0V3UWY1c009BjsARg%3D%3D--c0d45c9785669ca92aae063bd2929c7c039c338b;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWI4NmE0YjllNGViYjIyYTFmZWFhMTVhNTZmNDAwYjkyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWx0dGpiSlNMM0ZvZXYwbHdWOEw2eG1JWjhOTTFuaWgrRDZmajBHUENDRTg9BjsARg%3D%3D--eecfca81f724148e1b895e575a7a3031ee08d3ea;
         path=/; HttpOnly
       X-Request-Id:
-      - d4d33f65-3646-4819-9c6a-754704d7d87a
+      - 796aeace-c5a9-4d47-be53-91d2190221d4
       X-Runtime:
-      - '0.162588'
+      - '0.030196'
       X-Rack-Cache:
       - invalidate, pass
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"status":{"code":200,"message":"OK"},"modifier":{"id":1218,"name":"updated","multiple":true,"min_qty":3,"max_qty":5,"priority":1,"active":true}}'
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"modifier":{"id":1218,"name":"updated","multiple":true,"min_qty":3,"max_qty":5,"priority":1,"active":false}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:20:49 GMT
+  recorded_at: Mon, 04 May 2015 05:44:29 GMT
 recorded_with: VCR 2.9.3

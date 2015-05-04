@@ -4,8 +4,8 @@ http_interactions:
     method: post
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants.json
     body:
-      encoding: US-ASCII
-      string: restaurant[name]=Restaurant%20-%20Altenwerth%20LLC&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
+      encoding: UTF-8
+      string: restaurant[name]=Restaurant%20-%20Cronin%20Group&restaurant[address]=102%20Church%20Ave%2C%20College%20Station%2C%2077840
     headers: {}
   response:
     status:
@@ -17,43 +17,45 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:38:27 GMT
+      - Mon, 04 May 2015 05:44:37 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"14a0f3fc5225dfc98c0bf23688282ec3"'
+      - '"8c218762119f1a7cb58b328bdf4395ea"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTM5NzkxNTVmNjJmYTE2NzhlMDdjYjBiMDE1Y2Q2M2NhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWV5ZXdTVW9YK3lpMEJOQzlVU25TVGJzQThBcnJZYWphUWtyZWlaV3BoTUE9BjsARg%3D%3D--9d89a624e8511aa7f5e76b272b2ac383c8cf596f;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA1ZmE2NWQ3MzNmNzA0YjlkZTZlMzQ0NWI4OTcxN2JkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUxRUnVXYWdFY3YzOUlqOUZWMTBtTy91TW1jM201NUZPTXh6MHZjQ0Z3L1U9BjsARg%3D%3D--7a183e8ab40708ac9f5d6b6ccd75f571cb52ddfe;
         path=/; HttpOnly
       X-Request-Id:
-      - f2517292-2e7b-4d91-860d-82442aac594b
+      - 40969351-a2cb-4fee-806e-1b2650a8174b
       X-Runtime:
-      - '1.036642'
+      - '3.428737'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"restaurant":{"id":3611,"name":"Restaurant - Altenwerth
-        LLC","permalink":"restaurantaltenwerthllc","locale":"en","welcome_message":null,"locations":[{"id":4259,"name":"102
+      encoding: UTF-8
+      string: '{"success":true,"restaurant":{"id":3614,"name":"Restaurant - Cronin
+        Group","permalink":"restaurantcroningroup","locale":"en","welcome_message":null,"locations":[{"id":4261,"name":"102
         Church Avenue, College Station","address":"102 Church Ave, College Station,
         77840","geo":{"lat":"30.6168383","lng":"-96.3488479"}}],"loyalty_services":[],"configuration":{"require_cross_street":false,"hide_comments":null,"sold_out":null,"ordering_paused":false,"disable_group_ordering":null,"disable_quantity":null,"catering":null,"napkins":true,"delivery":{"active":false,"settings":{"description":null,"min_order":"15.0"},"contact":{"name":null,"email":null,"phone":null,"fax":null},"rules":[]},"pickup":{"active":false,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"dinein":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"curbside":{"active":null,"settings":{"description":null,"min_order":0},"contact":{"name":null,"email":null,"phone":null,"fax":null}},"payments":{"credit_card":true,"credit_card_on_delivery":false,"cash":true,"custom":null},"taxes":{"service_charge":0.0,"sales":10.0}},"discounts":[],"events":[],"timezone":{"name":"Eastern
         Time (US & Canada)","offset":-240},"logo":{"active":false},"amenities":"","cuisines":"","address":{},"hours_of_operation":{"info":"<strong>Sun
         - Sat</strong>: 6:00am  - 12:00pm , 12:00pm  - 6:00pm , 6:00pm  - 12:00am  (next
-        day)<br/>","days":{"Sun":["06:00-12:00","12:00-18:00","18:00-24:00"],"Mon":["06:00-12:00","12:00-18:00","18:00-24:00"],"Tue":["06:00-12:00","12:00-18:00","18:00-24:00"],"Wed":["06:00-12:00","12:00-18:00","18:00-24:00"],"Thu":["06:00-12:00","12:00-18:00","18:00-24:00"],"Fri":["06:00-12:00","12:00-18:00","18:00-24:00"],"Sat":["06:00-12:00","12:00-18:00","18:00-24:00"]},"machine":[[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]]]},"messages":{},"localization_resource_url":"http://api.biznettechnologies.com/v3/menu_localizations/en.json","menus_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantaltenwerthllc/menus.json","menu_messages":[],"gallery":[],"images":[],"collaborations":{"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantaltenwerthllc/collaborations.json"},"orders":{"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantaltenwerthllc/orders.json"}}}'
+        day)<br/>","days":{"Sun":["06:00-12:00","12:00-18:00","18:00-24:00"],"Mon":["06:00-12:00","12:00-18:00","18:00-24:00"],"Tue":["06:00-12:00","12:00-18:00","18:00-24:00"],"Wed":["06:00-12:00","12:00-18:00","18:00-24:00"],"Thu":["06:00-12:00","12:00-18:00","18:00-24:00"],"Fri":["06:00-12:00","12:00-18:00","18:00-24:00"],"Sat":["06:00-12:00","12:00-18:00","18:00-24:00"]},"machine":[[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]],[[360,720],[720,1080],[1080,1440]]]},"messages":{},"localization_resource_url":"http://api.biznettechnologies.com/v3/menu_localizations/en.json","menus_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantcroningroup/menus.json","menu_messages":[],"gallery":[],"images":[],"collaborations":{"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantcroningroup/collaborations.json"},"orders":{"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/restaurantcroningroup/orders.json"}}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:38:27 GMT
+  recorded_at: Mon, 04 May 2015 05:44:37 GMT
 recorded_with: VCR 2.9.3

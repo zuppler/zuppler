@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v4/restaurants/demorestaurant/discounts/904.json
+    uri: http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/discounts/904.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: discount[name]=updated&discount[amount]=25&discount[min_order_amount]=50
     headers: {}
   response:
@@ -17,38 +17,38 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:38:37 GMT
+      - Mon, 04 May 2015 05:44:18 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
-      - ! '*'
+      - "*"
       Access-Control-Allow-Methods:
       - POST, GET, OPTIONS
       Access-Control-Allow-Headers:
-      - ! '*'
+      - "*"
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"a8344fe787a346d7d472ddac2854ecff"'
+      - '"a8344fe787a346d7d472ddac2854ecff"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWRhNmRkZGVjZGNjZmU1MjllYjRhMWQ0ZjhiMTgzZGFiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTZpT21ickx1OWcwdzEzbldtaUVmdmJzQkI2ZVhXUlp1dVRtV3B2UHVtckk9BjsARg%3D%3D--1952f1deb6004cde8e6a47ec0c71eeb7f0215801;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWY1Y2FkY2Q4OTBiNTE0ODBhMTI3MmQyZWYzZmNiZGJlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVplUWYvQXJmT2o2YU5kaWVpdkNLODBiMHd6bysxRlpzaEpERm82UC9vUEE9BjsARg%3D%3D--db3b93a4eb021a2699c6b7e243ca8d224f326194;
         path=/; HttpOnly
       X-Request-Id:
-      - 58732725-f99a-4d30-a01b-e98cc69150dc
+      - fc4527dc-4dc0-4f36-8b56-878aa4a82b76
       X-Runtime:
-      - '0.177103'
+      - '0.757115'
       X-Rack-Cache:
       - invalidate, pass
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"status":{"code":200,"message":"OK"},"discount":{"id":904,"title":"20%
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"discount":{"id":904,"title":"20%
         off on orders more than $50","amount":"25.0","percent":"20.0","start_date":"2011-11-03","end_date":null}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:38:37 GMT
+  recorded_at: Mon, 04 May 2015 05:44:18 GMT
 recorded_with: VCR 2.9.3

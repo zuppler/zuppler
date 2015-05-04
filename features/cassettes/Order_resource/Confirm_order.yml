@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: put
-    uri: http://secure.biznettechnologies.com/v4/orders/56b19cde-ac68-11e3-9088-123138166518/confirm.json
+    uri: http://orders.api.biznettechnologies.com/v4/orders/56b19cde-ac68-11e3-9088-123138166518/confirm.json
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: time=2014-03-18%2017%3A45&duration=20
     headers: {}
   response:
@@ -17,31 +17,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Mar 2015 09:21:06 GMT
+      - Mon, 04 May 2015 05:47:33 GMT
       Status:
       - 200 OK
       Content-Type:
       - application/json; charset=utf-8
+      Vary:
+      - Origin
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - ! '"551613a621b01d524a24afbca2cac818"'
+      - '"551613a621b01d524a24afbca2cac818"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNjYTg0ZDQ1ZjUzOTczNzEyZmNhNDNkYmU1N2Y2MzNjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxkZWdTUEJNdUpUczJITndSUTRJbUZSTHdJajAxcjFid1E0cUc2TDRjN0U9BjsARg%3D%3D--7b4baa665bf1ec25f6d8431127f2be7f28c13cf5;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWI2MDExZjhkOGY2N2M5M2I3ZWVkYjE5YjdhNjg1MGQ4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU96dGIwZHdPRTlGMU5wVlVZNUhnSVZhYndTaFNCSEgzNUwxSUtMVEllL3M9BjsARg%3D%3D--44a29021ec7d53f607266d0993359327b916cfe2;
         path=/; HttpOnly
       X-Request-Id:
-      - 31ed2967-0d62-4a7d-8f86-0da63f8885c0
+      - ee25130b-6c75-4140-83a0-b962b31b2ed0
       X-Runtime:
-      - '0.151690'
+      - '0.120129'
       X-Rack-Cache:
       - invalidate, pass
       Via:
       - 1.1 vegur
     body:
-      encoding: US-ASCII
-      string: ! '{"success":true,"status":{"code":202,"message":"Accepted"}}'
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 09:21:06 GMT
+  recorded_at: Mon, 04 May 2015 05:47:33 GMT
 recorded_with: VCR 2.9.3
