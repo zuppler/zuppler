@@ -1,7 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/zuppler/zuppler.png?label=ready&title=Ready)](https://waffle.io/zuppler/zuppler)
-[![Build Status](https://travis-ci.org/zuppler/zuppler.png?branch=master)](https://travis-ci.org/zuppler/zuppler)
-[![Circle CI](https://circleci.com/gh/zuppler/zuppler.svg?style=svg&circle-token=a9ce89c5e22a22321427ec961467bc7849db17fa)](https://circleci.com/gh/zuppler/zuppler)
-[![Coverage Status](https://coveralls.io/repos/zuppler/zuppler/badge.png)](https://coveralls.io/r/zuppler/zuppler) 
+[![Build Status](https://travis-ci.org/zuppler/zuppler-ruby.svg?branch=master)](https://travis-ci.org/zuppler/zuppler-ruby)
 [![Code Climate](https://codeclimate.com/github/zuppler/zuppler/badges/gpa.svg)](https://codeclimate.com/github/zuppler/zuppler)
 [![Test Coverage](https://codeclimate.com/github/zuppler/zuppler/badges/coverage.svg)](https://codeclimate.com/github/zuppler/zuppler)
 [![Dependency Status](https://gemnasium.com/zuppler/zuppler.png)](https://gemnasium.com/zuppler/zuppler)
