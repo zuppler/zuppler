@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://users.api.biznettechnologies.com/v1/users/current.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 7fb06228598aeb82347b5f76dbebfffc99028936cdccd95ad4970de55057e054
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Mon, 25 May 2015 11:21:35 GMT
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, Accept, Authorization, Token
+      Access-Control-Max-Age:
+      - '1728000'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7f3112fb83dac17cab3f28ea85929fae"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2c1de7a6-8dbb-4608-ae98-249a0dd104b7
+      X-Runtime:
+      - '0.023380'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"user":{"id":14802,"name":"Test Account","email":"test@zuppler.com","phone":"610
+        999 3803","created_at":"2012-01-25 18:27:22 UTC","roles":["restaurant"],"zuppler_bucks":2211,"zuppler_points":1122,"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","resource_url":"/v1/users/14802.json","vaults_url":"/v1/users/14802/vaults.json","orders_url":"http://secure.zuppler.com/v4/users/14802/orders.json"}}'
+    http_version: 
+  recorded_at: Mon, 25 May 2015 11:21:35 GMT
+recorded_with: VCR 2.9.3

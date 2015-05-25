@@ -20,6 +20,7 @@ require 'zuppler/option'
 require 'zuppler/order'
 require 'zuppler/notification'
 require 'zuppler/discount'
+require 'zuppler/user'
 
 module Zuppler
   class Error < RuntimeError
@@ -72,6 +73,10 @@ module Zuppler
 
     def orders_api_url(version = 'v4')
       'http://orders.api.' + api_domain + "/#{version}"
+    end
+
+    def users_api_url(version = 'v1')
+      'http://users.api.' + api_domain + "/#{version}"
     end
 
     def test?
