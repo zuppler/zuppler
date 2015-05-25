@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.3.10)
+    zuppler (0.4.0)
       active_attr
       hashie
       httparty
