@@ -25,6 +25,8 @@ require 'zuppler/user'
 module Zuppler
   class Error < RuntimeError
   end
+  class NotAuthorized < Error
+  end
 
   class << self
     attr_accessor :channel_key, :restaurant_key, :api_key

@@ -39,6 +39,14 @@ module Zuppler
       id.blank?
     end
 
+    def self.v4_response_code(response)
+      response['status']['code'].to_i
+    end
+
+    def v4_response_code(response)
+      self.class.v4_response_code response
+    end
+
     def self.v4_success?(response)
       response.success? && response['success'] == true
     end
