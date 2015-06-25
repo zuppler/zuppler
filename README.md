@@ -6,7 +6,7 @@
 [![PullReview stats](https://www.pullreview.com/github/zuppler/zuppler/badges/master.svg?)](https://www.pullreview.com/github/zuppler/zuppler/reviews/master)
 [![security](https://hakiri.io/github/zuppler/zuppler/master.svg)](https://hakiri.io/github/zuppler/zuppler/master)
 
-# Zuppler 
+# Zuppler
 
 Ruby wrapper for Zuppler API.
 
@@ -35,11 +35,13 @@ Zuppler.config do |config|
 end
 ```
 
+
 ``` ruby
 @restaurant = Zuppler::Restaurant.new name: 'Oscar Pizza', address: '21 Wall St, New York'
 @restaurant.save
 @restaurant = Zuppler::Restaurant.find 'oscarpizza'
-@restaurant.publish
+@restaurant.publish only_profile: true # updates only restaurant profile and configuration data
+@restaurant.publish # publishes restaurant and menus
 ```
 
 ``` ruby

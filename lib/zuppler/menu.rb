@@ -22,7 +22,7 @@ module Zuppler
 
     def save
       menu_attributes = filter_attributes attributes, 'restaurant'
-      response = execute_create menus_url, menu: menu_attributes
+      response = execute_post menus_url, menu: menu_attributes
       if v3_success?(response)
         self.id = response['menu']['id']
       else

@@ -20,7 +20,7 @@ module Zuppler
     def save
       if new?
         option_attributes = filter_attributes attributes, 'modifier'
-        response = execute_create options_url, option: option_attributes
+        response = execute_post options_url, option: option_attributes
         self.id = resource_id response if v4_success? response
       else
         option_attributes = filter_attributes attributes, 'modifier', 'id'

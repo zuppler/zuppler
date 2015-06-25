@@ -25,19 +25,19 @@ module Zuppler
       end
     end
 
-    def self.publish(permalink)
+    def self.publish(permalink, options = {})
       restaurant = find permalink
-      restaurant.publish
+      restaurant.publish options
     end
 
-    def publish
-      response = execute_create publish_url, nil
+    def publish options = {}
+      response = execute_post publish_url, options
       response.success?
     end
 
     def save
       restaurant_attributes = filter_attributes attributes, 'id'
-      response = execute_create restaurants_url, restaurant: restaurant_attributes
+      response = execute_post restaurants_url, restaurant: restaurant_attributes
       if v3_success?(response)
         self.class.unmarshal self, response
       else

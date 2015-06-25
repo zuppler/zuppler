@@ -22,7 +22,7 @@ module Zuppler
     def save
       if new?
         modifier_attributes = filter_attributes attributes, 'restaurant'
-        response = execute_create modifiers_url, modifier: modifier_attributes
+        response = execute_post modifiers_url, modifier: modifier_attributes
         self.id = resource_id(response) if v4_success?(response)
       else
         modifier_attributes = filter_attributes attributes, 'restaurant', 'id'

@@ -22,7 +22,7 @@ module Zuppler
     def save
       if new?
         modifier_attributes = filter_attributes attributes, 'choice', 'parent_id'
-        response = execute_create modifiers_url, modifier: modifier_attributes
+        response = execute_post modifiers_url, modifier: modifier_attributes
         if v3_success? response
           self.id = response['modifier']['id']
           self.parent_id = response['modifier']['parent_id']

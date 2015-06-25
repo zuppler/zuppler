@@ -22,7 +22,7 @@ module Zuppler
     def save
       if new?
         category_attributes = filter_attributes attributes, 'menu'
-        response = execute_create categories_url, category: category_attributes
+        response = execute_post categories_url, category: category_attributes
         self.id = response['category']['id'] if v3_success? response
       else
         category_attributes = filter_attributes attributes, 'menu', 'id'

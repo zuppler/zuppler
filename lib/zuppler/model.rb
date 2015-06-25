@@ -70,7 +70,7 @@ module Zuppler
       self.class.success? response
     end
 
-    def execute_create(url, body, headers = {})
+    def execute_post(url, body, headers = {})
       options = { body: body, headers: headers }
       response = self.class.post url, options
       log url, response, options
