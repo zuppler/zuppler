@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://orders.api.biznettechnologies.com/v4/orders/56b19cde-ac68-11e3-9088-123138166518/touch.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 21 Aug 2015 11:41:37 GMT
+      Status:
+      - 200 OK
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"551613a621b01d524a24afbca2cac818"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRmNGU2NzZhYmU4YjY2ZjUxNmQwMDY2OTVlZTkyODc3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXVJcDlFSEd6Q3Bjelg5d01MZUtmMnhZeU04WTNVbVZaeklkazZFVklzS2c9BjsARg%3D%3D--1d9f79cdc53c050ad64dcf6b9af287bf4631084e;
+        path=/; HttpOnly
+      X-Request-Id:
+      - bce4b0c6-3fb1-4e7f-902f-410030168afd
+      X-Runtime:
+      - '0.149527'
+      X-Rack-Cache:
+      - invalidate, pass
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
+    http_version: 
+  recorded_at: Fri, 21 Aug 2015 11:43:59 GMT
+recorded_with: VCR 2.9.3

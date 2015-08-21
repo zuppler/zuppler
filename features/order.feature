@@ -42,4 +42,11 @@ Feature: Order resource
     And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
     When I close order
     Then I get hash response
+
+  @vcr
+  Scenario: Touch order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "56b19cde-ac68-11e3-9088-123138166518"
+    When I touch order
+    Then I should have order accepted
     

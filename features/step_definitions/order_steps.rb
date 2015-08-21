@@ -21,6 +21,9 @@ end
 When(/^I close order$/) do
   @response = @order.close
 end
+When(/^I touch order$/) do
+  @success = @order.touch
+end
 
 Then(/^I should have order accepted$/) do
   @success.should be_truthy

@@ -49,6 +49,13 @@ module Zuppler
       JSON.parse response.body
     end
 
+    def touch(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update touch_url, order_attributes, {}
+      JSON.parse response.body
+    end
+
     def notification(type)
       Zuppler::Notification.new self, type
     end
@@ -89,6 +96,10 @@ module Zuppler
 
     def close_url
       "#{resource_url}/close.json"
+    end
+
+    def touch_url
+      "#{resource_url}/touch.json"
     end
 
     def order_url
