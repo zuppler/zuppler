@@ -7,6 +7,7 @@ module Zuppler
     attribute :name
     attribute :priority
     attribute :description
+    attribute :active
     attribute :locked, default: true
 
     validates_presence_of :restaurant, :name
