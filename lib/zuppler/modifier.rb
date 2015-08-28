@@ -28,7 +28,7 @@ module Zuppler
         modifier_attributes = filter_attributes attributes, 'restaurant', 'id'
         response = execute_update modifier_url, modifier: modifier_attributes
       end
-      v4_success? response
+      handle response, 'v4'
     end
 
     def destroy

@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:25 GMT
+      - Fri, 28 Aug 2015 10:06:10 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -31,16 +31,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"b78ad5adefe5d19ca75e36da3e12204c"'
+      - '"faaef1bcb4cca187bf9142969ba78b5e"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBlNDk4MmZlODZlMTFkZThjMTkwM2Q3YWY3OTg4Yzg1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWEzbCtTa29kZDU5VmoyRFpSUVVkTnk5VzNLNGV0bHpVaUg4MUN5Nmhxc1k9BjsARg%3D%3D--6a28d5baed2d129cd198fc3dedbf7bb4bfc77805;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFmM2VlNWZhZTY1ZGY0NGIwZDkyNTkyYTFmOTJiZGFhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTBZZzZ3WUZWWXdjOXRvbk1jMFJmMnRENW50ZlZlQzkvWkhFck8wcVkwQkE9BjsARg%3D%3D--0985b622835d9e71526def477ffa24a7e1589bc1;
         path=/; HttpOnly
       X-Request-Id:
-      - 1f6f85a2-83b2-44a7-8b27-83aed2d8edc3
+      - cc6bb67c-2aec-4735-bebc-c1ee778724d4
       X-Runtime:
-      - '6.279379'
+      - '0.140698'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"modifier":{"id":1762110,"size_name":"small","name":"cheese","price":"0.99","priority":2,"active":true,"parent_id":549278}}'
+      string: '{"success":true,"modifier":{"id":1762134,"size_name":"small","name":"cheese","price":"0.99","priority":2,"active":true,"parent_id":549278}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:25 GMT
+  recorded_at: Fri, 28 Aug 2015 10:08:50 GMT
 recorded_with: VCR 2.9.3

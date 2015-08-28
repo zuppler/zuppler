@@ -28,7 +28,7 @@ module Zuppler
         category_attributes = filter_attributes attributes, 'menu', 'id'
         response = execute_update category_url, category: category_attributes
       end
-      v3_success? response
+      handle response
     end
 
     def destroy

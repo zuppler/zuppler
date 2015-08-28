@@ -24,12 +24,11 @@ module Zuppler
         item_attributes = filter_attributes attributes, 'category'
         response = execute_post items_url, item: item_attributes
         self.id = response['item']['id'] if v3_success?(response)
-        v3_success? response
       else
         item_attributes = filter_attributes attributes, 'category', 'id'
         response = execute_update item_url, item: item_attributes
-        v3_success? response
       end
+      handle response
     end
 
     def destroy

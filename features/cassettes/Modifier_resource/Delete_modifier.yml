@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:29 GMT
+      - Fri, 28 Aug 2015 10:06:48 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -35,19 +35,21 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWI4NmE0YjllNGViYjIyYTFmZWFhMTVhNTZmNDAwYjkyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWx0dGpiSlNMM0ZvZXYwbHdWOEw2eG1JWjhOTTFuaWgrRDZmajBHUENDRTg9BjsARg%3D%3D--eecfca81f724148e1b895e575a7a3031ee08d3ea;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNmOWNkMmM4OGRiYTE4ZGY4ZWFmYTMwYTEwZTdlNTdhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU1CaDlqaGgzMjdQSFQrYkd6STJQcXA4S29iQ0NvMFVqOElkV2JkUTdTVXc9BjsARg%3D%3D--08c8cb3f1a22c486a55d264a6e5f27e283b10f5d;
         path=/; HttpOnly
       X-Request-Id:
-      - 796aeace-c5a9-4d47-be53-91d2190221d4
+      - 57f86c15-01e9-47e8-a22d-3d2b23e5cf49
       X-Runtime:
-      - '0.030196'
+      - '0.073093'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"modifier":{"id":1218,"name":"updated","multiple":true,"min_qty":3,"max_qty":5,"priority":1,"active":false}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:29 GMT
+  recorded_at: Fri, 28 Aug 2015 10:09:28 GMT
 recorded_with: VCR 2.9.3

@@ -22,16 +22,20 @@ module Zuppler
     end
 
     def save
-      menu_attributes = filter_attributes attributes, 'restaurant'
-      response = execute_post menus_url, menu: menu_attributes
-      if v3_success?(response)
-        self.id = response['menu']['id']
+      if new?
+        menu_attributes = filter_attributes attributes, 'restaurant'
+        response = execute_post menus_url, menu: menu_attributes
+        self.id = response['menu']['id'] if v3_success? response
       else
-        response['errors'].each do |k, v|
-          errors.add k, v
-        end
+        menu_attributes = filter_attributes attributes, 'restaurant', 'id'
+        response = execute_update menu_url, menu: menu_attributes
       end
-      v3_success? response
+      handle response
+    end
+
+    def destroy
+      self.active = false
+      save
     end
 
     def restaurant_id
@@ -42,6 +46,10 @@ module Zuppler
 
     def menus_url
       "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/menus.json"
+    end
+
+    def menu_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{restaurant_id}/menus/#{id}.json"
     end
   end
 end

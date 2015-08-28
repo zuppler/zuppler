@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:26 GMT
+      - Fri, 28 Aug 2015 10:03:10 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -31,16 +31,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"2b51f2683af6635ca20e1498f4c96973"'
+      - '"6d931c29b27b305565920a4d2c20a2e4"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTU4NmVkZTVlNjIyNDhmMzYwNDEwMmYxYzg4N2I5Y2QwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVRrdThBdWFLM2twUU5hM0xDRStCRWZoQ3lacUhZRmtUbWJKaXQvc3MyMmM9BjsARg%3D%3D--ca2671596c0cc6f51904b0d517df35030ec390c8;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWNiYmQ5MzU0NGMxMWYyNGZjZTNmMzVkYjYxZWZmMTE2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTd5aGYvSWdEdjcvSS8rdG9sRytvVTVTaVBtaDFVVUpnc2pORWM3TVc5R1E9BjsARg%3D%3D--56be71c2658ba12ec5bc0c9d52425787d0e3c3cc;
         path=/; HttpOnly
       X-Request-Id:
-      - 516a3b4c-d44c-47d1-8521-1d23b37e042f
+      - 9e8b221c-0471-43ba-8597-c52e3c1d7f99
       X-Runtime:
-      - '0.373557'
+      - '0.068392'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +49,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"item":{"id":607652,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":549279,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
+      string: '{"success":true,"item":{"id":607664,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":549279,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:27 GMT
+  recorded_at: Fri, 28 Aug 2015 10:05:50 GMT
 recorded_with: VCR 2.9.3

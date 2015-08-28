@@ -31,7 +31,7 @@ module Zuppler
         modifier_attributes = filter_attributes attributes, 'choice', 'id'
         response = execute_update modifier_url, modifier: modifier_attributes
       end
-      v3_success? response
+      handle response
     end
 
     def destroy

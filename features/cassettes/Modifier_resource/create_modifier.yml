@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:29 GMT
+      - Fri, 28 Aug 2015 10:06:47 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -27,7 +27,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       Location:
-      - http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1252.json
+      - http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1285.json
       Content-Type:
       - application/json; charset=utf-8
       X-Ua-Compatible:
@@ -37,19 +37,21 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTgyMTc0NGU2OWU4ZTNlYWFmOWIwMjM4ZmQ4ZDMyNDg5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXBFM2NnZEVoU0dtckNmRVNMNVJIYmhWTy9EWjBkQk00UzIxK3dhdXM0VVk9BjsARg%3D%3D--91221b07909e0945f7508464716534a50973a320;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA0ZTBlMjBjYTRmY2I5MmQ2MWRiMWZjYmE5MmQ2YTljBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVNlZE8zQkZKMkJzdXhkd212NFBKQWg2MEx4a3dLanppVzRCbUNMblQxY3M9BjsARg%3D%3D--1ff871b5fc578b9539ab92924b703aa20cc900d3;
         path=/; HttpOnly
       X-Request-Id:
-      - 1a715997-a756-4277-9238-4566ea105d50
+      - bfa2a0b8-34e8-4f17-8993-cefaf11128f5
       X-Runtime:
-      - '0.042494'
+      - '0.247694'
       X-Rack-Cache:
       - invalidate, pass
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":201,"message":"Created"}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:29 GMT
+  recorded_at: Fri, 28 Aug 2015 10:09:27 GMT
 recorded_with: VCR 2.9.3

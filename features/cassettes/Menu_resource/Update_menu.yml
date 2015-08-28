@@ -1,0 +1,142 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/22418.json
+    body:
+      encoding: UTF-8
+      string: menu[name]=mmm&menu[priority]=1&menu[description]=ddd&menu[active]=true&menu[locked]=true
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 28 Aug 2015 09:53:59 GMT
+      Status:
+      - 200 OK
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"0a176415591fcfd3b33aa54bc6f0a497"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQzMTNiYWM2ZDM2MmFkOGRiNWRjZTQxMjkzNGE1NTUzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVNQKzdMTFpmY3hCYXJpVWdPQXdUQkprRFIvZEp2VkEzK1RncXAyNVJNOWM9BjsARg%3D%3D--95ce8e0c2ccfbce7333cb7d01a06f82ce7c540af;
+        path=/; HttpOnly
+      X-Request-Id:
+      - c1a5bdd9-b255-40b2-a662-b2424b279e86
+      X-Runtime:
+      - '1.298484'
+      X-Rack-Cache:
+      - invalidate, pass
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"menu":{"id":22418,"name":"mmm","description":"ddd","active":true,"default":false,"use_category_tabs":true,"available_on":"","available_at":"Sun:
+        8:00am  - 12:00pm ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/22418.json","categories":[{"id":1718,"name":"Entrees","description":"","active":true,"priority":1,"items":[{"id":19055,"name":"New
+        York Strip","description":"grilled 10 oz center cut steak topped with a hint
+        of seasoned butter and an onion ring garnish.  Served with mashed potatoes
+        and vegetables ","price":24.99,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":2,"image":{"active":true,"id":2108,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/108/xlarge/Strip
+        Steak1.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/108/medium/Strip
+        Steak1.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/108/thumb/Strip
+        Steak1.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/108/tiny/Strip
+        Steak1.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/108/original/Strip
+        Steak1.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/19055.json"},{"id":19057,"name":"Grilled
+        Chicken Skewers","description":"skewered chicken breast marinated in Caribbean
+        Jerk seasonings, grilled and drizzled with a mango rum glaze. Served with
+        rice pilaf and vegetables","price":15.0,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":10,"image":{"active":true,"id":3562,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/562/xlarge/Grilled
+        Vegetable Salad.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/562/medium/Grilled
+        Vegetable Salad.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/562/thumb/Grilled
+        Vegetable Salad.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/562/tiny/Grilled
+        Vegetable Salad.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/562/original/Grilled
+        Vegetable Salad.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/19057.json"},{"id":414871,"name":"Cobb
+        Salad","description":"mixed greens topped with avocado, bacon, tomatoes, blue
+        cheese crumbles, and serves with a balsamic vinaigrette","price":10.0,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":0,"image":{"active":true,"id":4543,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/004/543/xlarge/cobb
+        salad.JPG","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/004/543/medium/cobb
+        salad.JPG","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/004/543/thumb/cobb
+        salad.JPG","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/004/543/tiny/cobb
+        salad.JPG","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/004/543/original/cobb
+        salad.JPG"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/414871.json"},{"id":22765,"name":"Blackened
+        Salmon","description":"fresh salmon filet served with mango salsa, rice pilaf
+        and vegetables","price":21.95,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":11,"image":{"active":true,"id":3525,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/xlarge/Smoked
+        Salmon.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/medium/Smoked
+        Salmon.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/thumb/Smoked
+        Salmon.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/tiny/Smoked
+        Salmon.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/original/Smoked
+        Salmon.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/22765.json"},{"id":9939,"name":"Homemade
+        Barbeque Ribs","description":"Half rack of ribs served with french fries and
+        coleslaw","price":22.0,"multiple_sizes":false,"featured":true,"coupon":false,"coupon_code":null,"priority":5,"image":{"active":true,"id":2131,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/131/xlarge/v.JPG","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/131/medium/v.JPG","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/131/thumb/v.JPG","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/131/tiny/v.JPG","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/131/original/v.JPG"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9939.json"},{"id":9936,"name":"Crab
+        Cakes","description":"pan seared Maryland-style crab cakes served with cilantro-lime
+        cream sauce.  Accompanied by rice and vegetables","price":21.95,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":4,"image":{"active":true,"id":2124,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/124/xlarge/Royal
+        Crab Cakes.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/124/medium/Royal
+        Crab Cakes.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/124/thumb/Royal
+        Crab Cakes.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/124/tiny/Royal
+        Crab Cakes.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/124/original/Royal
+        Crab Cakes.jpg"},"active":false,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9936.json"},{"id":22776,"name":"Galway
+        Bay Medley in Scampi-Style Sauce","description":"sauteed blend of shrimp,
+        mussels, crab meat, spinach, and tomatoes, tossed with linguini in a scampi-style
+        sauce","price":17.95,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":1,"image":{"active":true,"id":3473,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/473/xlarge/Fried
+        Bean Curd Thai Style.JPG","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/473/medium/Fried
+        Bean Curd Thai Style.JPG","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/473/thumb/Fried
+        Bean Curd Thai Style.JPG","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/473/tiny/Fried
+        Bean Curd Thai Style.JPG","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/473/original/Fried
+        Bean Curd Thai Style.JPG"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/22776.json"},{"id":9941,"name":"Galway
+        Bay Medley in Red Sauce","description":"sauteed blend of shrimp, mussels,
+        crabmeat, spinach and tomatoes, tossed with linguini in a red sauce","price":21.0,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":7,"image":{"active":true,"id":2060,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/060/xlarge/Royal
+        Crab Cakes 1.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/060/medium/Royal
+        Crab Cakes 1.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/060/thumb/Royal
+        Crab Cakes 1.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/060/tiny/Royal
+        Crab Cakes 1.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/060/original/Royal
+        Crab Cakes 1.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9941.json"},{"id":9943,"name":"Kilkenny
+        Crackling Chicken","description":"Frenched chicken breast marinated in Bushmill''s
+        whiskey and seared to a crispy golden brown with pan jus. Served with mashed
+        potatoes and vegetables","price":15.95,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":8,"image":{"active":true,"id":2137,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/137/xlarge/Kilkenny
+        Crackling Chicken.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/137/medium/Kilkenny
+        Crackling Chicken.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/137/thumb/Kilkenny
+        Crackling Chicken.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/137/tiny/Kilkenny
+        Crackling Chicken.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/137/original/Kilkenny
+        Crackling Chicken.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9943.json"},{"id":9938,"name":"Molly''s
+        Mac & Cheese","description":"penne pasta baked with rashers and creamy aged
+        cheddar cheese, topped with toasted bread crumbs","price":13.99,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":0,"image":{"active":true,"id":2129,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/129/xlarge/mac_cheese_lg.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/129/medium/mac_cheese_lg.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/129/thumb/mac_cheese_lg.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/129/tiny/mac_cheese_lg.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/129/original/mac_cheese_lg.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9938.json"},{"id":19056,"name":"Pan
+        Seared Salmon","description":"fresh salmon filet served with mango salsa,
+        rice pilaf and vegetables","price":21.95,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":9,"image":{"active":true,"id":3525,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/xlarge/Smoked
+        Salmon.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/medium/Smoked
+        Salmon.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/thumb/Smoked
+        Salmon.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/tiny/Smoked
+        Salmon.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/003/525/original/Smoked
+        Salmon.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/19056.json"},{"id":9940,"name":"Pan
+        Seared Scallops","description":"pan seared sea scallops with an apple cider
+        demi- glaze. Served with a potato cake and vegetables","price":21.95,"multiple_sizes":false,"featured":true,"coupon":false,"coupon_code":null,"priority":6,"image":{"active":true,"id":2134,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/134/xlarge/Pan
+        Seared Scallops.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/134/medium/Pan
+        Seared Scallops.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/134/thumb/Pan
+        Seared Scallops.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/134/tiny/Pan
+        Seared Scallops.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/134/original/Pan
+        Seared Scallops.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9940.json"},{"id":9942,"name":"Wild
+        Mushroom Pasta","description":"sauteed blend of crimini, shitake, oyster and
+        portabella mushrooms tossed with roasted red peppers and penne pasta in a
+        creamy Parmesan sauce","price":13.95,"multiple_sizes":false,"featured":false,"coupon":false,"coupon_code":null,"priority":3,"image":{"active":true,"id":2136,"xlarge":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/136/xlarge/Wild
+        Mushroom Pasta.jpg","medium":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/136/medium/Wild
+        Mushroom Pasta.jpg","thumb":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/136/thumb/Wild
+        Mushroom Pasta.jpg","tiny":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/136/tiny/Wild
+        Mushroom Pasta.jpg","original":"http://dbgcbnch6yz43.cloudfront.net/images/pictures/files/000/002/136/original/Wild
+        Mushroom Pasta.jpg"},"active":true,"resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/9942.json"}],"image":{"active":false},"resource_url":""}]}}'
+    http_version: 
+  recorded_at: Fri, 28 Aug 2015 09:56:40 GMT
+recorded_with: VCR 2.9.3

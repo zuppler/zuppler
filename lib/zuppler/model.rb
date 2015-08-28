@@ -62,6 +62,16 @@ module Zuppler
       self.class.v3_success? response
     end
 
+    def handle(response, version = 'v3')
+      success = send "#{version}_success?", response
+
+      response['error'].each do |k, v|
+        errors.add k, v
+      end unless success
+
+      success
+    end
+
     def self.success?(response)
       response.success? && response['valid'] == true
     end
