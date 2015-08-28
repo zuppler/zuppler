@@ -65,10 +65,10 @@ module Zuppler
     def handle(response, version = 'v3')
       success = send "#{version}_success?", response
 
-      errors = response['error'] || response['errors'] || []
-      errors.each do |k, v|
-        errors.add k, v
-      end unless success
+      # errors = response['error'] || response['errors'] || []
+      # errors.each do |k, v|
+      #   errors.add k, v
+      # end unless success
 
       success
     end
