@@ -81,6 +81,18 @@ module Zuppler
       'http://users.api.' + api_domain + "/#{version}"
     end
 
+    def users_url
+      "#{scheme}://users.#{api_domain}"
+    end
+
+    def scheme
+      ssl? ? 'https' : 'http'
+    end
+
+    def ssl?
+      !api_domain.include? '.dev'
+    end
+
     def test?
       !!test
     end
@@ -90,3 +102,6 @@ module Zuppler
     end
   end
 end
+
+require 'omniauth-oauth2'
+require 'omniauth_users'

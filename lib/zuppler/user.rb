@@ -2,13 +2,25 @@ module Zuppler
   class User < Model
     include ActiveAttr::Model
 
+    attribute :id
     attribute :name
     attribute :email
     attribute :phone
     attribute :access_token
+    attribute :provider
 
     def self.find(access_token)
       Zuppler::User.new access_token: access_token
+    end
+
+    def self.from_omniauth(omniauth)
+      info = omniauth['info']
+      Zuppler::User.new id: info['id'],
+                        name: info['name'],
+                        email: info['email'],
+                        phone: info['phone'],
+                        provider: info['extra']['provider'],
+                        access_token: info['credentials']['token']
     end
 
     def details
@@ -16,19 +28,16 @@ module Zuppler
         response = execute_get user_url, {}, headers
         if v4_success? response
           @details = Hashie::Mash.new response['user']
+          self.id = @details.id
         else
           if v4_response_code(response) == 401
             fail Zuppler::NotAuthorized, 'not authorized'
           else
-            fail 'Zuppler::User#details failed.'
+            fail Zuppler::Error, response.message
           end
         end
       end
       @details
-    end
-
-    def id
-      details.id
     end
 
     def role?(role)
