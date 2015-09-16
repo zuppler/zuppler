@@ -15,12 +15,14 @@ module Zuppler
 
     def self.from_omniauth(omniauth)
       info = omniauth['info']
+      extra = omniauth['extra']
+      credentials = omniauth['credentials']
       Zuppler::User.new id: info['id'],
                         name: info['name'],
                         email: info['email'],
                         phone: info['phone'],
-                        provider: info['extra']['provider'],
-                        access_token: info['credentials']['token']
+                        provider: extra['provider'],
+                        access_token: credentials['token']
     end
 
     def details

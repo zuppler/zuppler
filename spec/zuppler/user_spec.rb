@@ -5,9 +5,9 @@ RSpec.describe Zuppler::User do
     it 'gets attributes' do
       omniauth = {
         'info' => { 'id' => '1', 'name' => 'n',
-                    'email' => 'a@b.c', 'phone' => '1234',
-                    'extra' => { 'provider' => 'p' },
-                    'credentials' => { 'token' => 'at' } }
+                    'email' => 'a@b.c', 'phone' => '1234' },
+        'extra' => { 'provider' => 'p' },
+        'credentials' => { 'token' => 'at' }
       }
       zu = Zuppler::User.from_omniauth omniauth
       expect(zu.id).to eq '1'
