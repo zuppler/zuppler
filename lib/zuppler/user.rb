@@ -6,6 +6,7 @@ module Zuppler
     attribute :name
     attribute :email
     attribute :phone
+    attribute :roles
     attribute :access_token
     attribute :provider
 
@@ -21,6 +22,7 @@ module Zuppler
                         name: info['name'],
                         email: info['email'],
                         phone: info['phone'],
+                        roles: info['roles'],
                         provider: extra['provider'],
                         access_token: credentials['token']
     end

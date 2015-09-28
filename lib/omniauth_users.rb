@@ -11,7 +11,8 @@ module OmniAuth
           id: data['info']['id'],
           name: data['info']['name'],
           email: data['info']['email'],
-          phone: data['info']['phone']
+          phone: data['info']['phone'],
+          roles: raw_info['info']['roles']
         }
       end
 
