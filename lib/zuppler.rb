@@ -90,7 +90,7 @@ module Zuppler
     end
 
     def ssl?
-      !api_domain.include? '.dev'
+      !api_domain.include? 'dev'
     end
 
     def test?
