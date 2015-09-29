@@ -47,13 +47,19 @@ module Zuppler
       fail Zuppler::Error, ':api_key cannot be blank' if api_key.blank?
     end
 
-    PRODUCTION_DOMAIN = 'zuppler.com'
-    STAGING_DOMAIN = 'biznettechnologies.com'
+    DOMAINS = {
+      production: 'zuppler.com',
+      staging: 'biznettechnologies.com',
+      development: 'zuppler.dev',
+      test: 'biznettechnologies.com'
+    }
     def api_domain
-      if domain.blank?
-        test? ? STAGING_DOMAIN : PRODUCTION_DOMAIN
+      if defined? Rails
+        DOMAINS[Rails.env.to_sym]
+      elsif test?
+        DOMAINS[:test]
       else
-        domain
+        DOMAINS[:production]
       end
     end
 
