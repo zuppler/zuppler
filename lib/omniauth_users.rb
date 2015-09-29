@@ -12,7 +12,7 @@ module OmniAuth
           name: data['info']['name'],
           email: data['info']['email'],
           phone: data['info']['phone'],
-          roles: raw_info['info']['roles']
+          roles: data['info']['roles']
         }
       end
 
