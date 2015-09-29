@@ -26,13 +26,13 @@ echo
 echo " *** Bumping version... $VERSION"
 gem bump -v $VERSION --no-commit
 
-VERSION=`ruby -r ./lib/zuppler/version.rb -e 'puts Zuppler::VERSION'`    
+VERSION=`ruby -r ./lib/zuppler/version.rb -e 'puts Zuppler::VERSION'`
 
 echo
 echo " *** Commit release changes ... $VERSION"
 bundle install
 git add .
-git ci -m "Release $VERSION"
+git commit -m "Release $VERSION"
 git push
 
 echo
