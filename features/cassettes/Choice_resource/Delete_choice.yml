@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:05:57 GMT
+      - Tue, 06 Oct 2015 20:05:57 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -35,12 +35,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE3Yjk0NzhmYWViYjEzYTk2YTYxZjY4NjQ3ZjljOWFhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTNWRkEwRXFqdGVOQ0huclZMTW1CY1NETitQTTRiRU1ZeVdVMldza2VZSDQ9BjsARg%3D%3D--bfa4542016c318551b3e82a06334857ff8174571;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTUwZDA3MDg1MmJkZjU3NGZmMWZiYzUwOTI0Mzk2Mzg5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU1oeGg0Tm10U3J6UnJVUDBMck8yNzE4NDczVmVCWllhUjNUS04rTTE1Mkk9BjsARg%3D%3D--8b076f48ca8bcda4cc03ddca48f21a56b60725b3;
         path=/; HttpOnly
       X-Request-Id:
-      - c7a0c974-5f18-4e88-9d80-18bcaa61de98
+      - 6ca05916-6569-421a-8d92-ba9c454be4fb
       X-Runtime:
-      - '0.254002'
+      - '0.034694'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -51,5 +51,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":false,"active":true,"description":null}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:08:38 GMT
+  recorded_at: Tue, 06 Oct 2015 20:10:18 GMT
 recorded_with: VCR 2.9.3

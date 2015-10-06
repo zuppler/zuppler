@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/69212.json
     body:
       encoding: UTF-8
-      string: choice[modifier_id]=1&choice[name]=ddd&choice[active]=true&choice[multiple]=true&choice[min_qty]=3&choice[max_qty]=5&choice[priority]=3
+      string: choice[modifier_id]=1&choice[name]=ddd&choice[active]=true&choice[multiple]=true&choice[min_qty]=3&choice[max_qty]=5&choice[priority]=3&choice[multiple_ingredients]=true
     headers: {}
   response:
     status:
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:05:56 GMT
+      - Tue, 06 Oct 2015 20:05:57 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -35,12 +35,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTVhOGM5NzMwZDMxZWY4YzEzODA5NGJlZjMxYWM4YTVjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW43RnJSTGJmYW9ZZjFCWHE3Y3g5RlNmR0drZzVrQ050R1lPU2lTb1VEM2M9BjsARg%3D%3D--09ea2ff442134bc6ec8970441ef678c33c0ad93a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWJhMjk0ZTA1MDQ3OGJjNTUwOTIxMjA1ZTVkOTI1MWQxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVRYZ1phSGVFSG1IVmxHTk1QZEdhV2Y5eTdpNytSNlQwZTV1WWZPd250MzA9BjsARg%3D%3D--ac26c0337c0a1ce65c4e63291c9bad494025ec8f;
         path=/; HttpOnly
       X-Request-Id:
-      - e3c84898-bd19-4b8a-9790-b4a85c17c3c7
+      - 640279a9-6505-4151-9814-4257793f5cd4
       X-Runtime:
-      - '0.166922'
+      - '0.042572'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -51,5 +51,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":false,"active":true,"description":null}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:08:37 GMT
+  recorded_at: Tue, 06 Oct 2015 20:10:18 GMT
 recorded_with: VCR 2.9.3

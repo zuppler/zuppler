@@ -14,6 +14,7 @@ module Zuppler
     attribute :max_qty
     attribute :priority
     attribute :order_by_priority
+    attribute :multiple_ingredients
 
     validates_presence_of :name
     validate do
