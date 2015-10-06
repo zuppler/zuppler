@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/1712/items.json
     body:
       encoding: UTF-8
-      string: item[name]=magio&item[description]=desc&item[price]=9.99&item[priority]=1&item[size_name]=small&item[size_priority]=2
+      string: item[name]=magio&item[description]=desc&item[price]=9.99&item[priority]=1&item[size_name]=small&item[size_priority]=2&item[min_qty]=5
     headers: {}
   response:
     status:
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:03:10 GMT
+      - Tue, 06 Oct 2015 19:52:04 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -31,16 +31,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"6d931c29b27b305565920a4d2c20a2e4"'
+      - '"a7ddcd5a573d1d3c0c14412be14b9f25"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWNiYmQ5MzU0NGMxMWYyNGZjZTNmMzVkYjYxZWZmMTE2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTd5aGYvSWdEdjcvSS8rdG9sRytvVTVTaVBtaDFVVUpnc2pORWM3TVc5R1E9BjsARg%3D%3D--56be71c2658ba12ec5bc0c9d52425787d0e3c3cc;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA5NGQzMTJiOTc3MjJiMzlhMmUwMmRkYjBhMDY1ZWYyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWpJYWR5bkt5SzJLbSt4bkRCVTk5V3JjT2lXcklac0lLR1VabVdadVBnOXc9BjsARg%3D%3D--8bf5fc207d20f80ecdfe5cc4ad59b53c6ad210d6;
         path=/; HttpOnly
       X-Request-Id:
-      - 9e8b221c-0471-43ba-8597-c52e3c1d7f99
+      - b593c108-1ea3-4eff-99ca-4fb663372839
       X-Runtime:
-      - '0.068392'
+      - '0.055208'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +49,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"item":{"id":607664,"name":"magio","description":"desc","price":"9.99","coupon":null,"active":true,"parent_id":549279,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
+      string: '{"success":true,"item":{"id":607667,"name":"magio","description":"desc
+        * 5 items minimum.","price":"9.99","coupon":null,"active":true,"parent_id":549279,"priority":1,"veg":null,"spicy":null,"size_name":"small","size_priority":2}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:05:50 GMT
+  recorded_at: Tue, 06 Oct 2015 19:56:26 GMT
 recorded_with: VCR 2.9.3

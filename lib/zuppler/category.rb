@@ -9,6 +9,7 @@ module Zuppler
     attribute :priority
     attribute :active
     attribute :priced_by_size
+    attribute :min_qty
 
     validates_presence_of :menu, :name
     validate do

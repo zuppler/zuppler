@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/43069.json
     body:
       encoding: UTF-8
-      string: category[name]=ccc&category[description]=ddd&category[priority]=1&category[active]=true
+      string: category[name]=ccc&category[description]=ddd&category[priority]=1&category[active]=true&category[min_qty]=1
     headers: {}
   response:
     status:
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:01:14 GMT
+      - Tue, 06 Oct 2015 19:28:30 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -31,16 +31,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"bd3d7557574a2c7401ffa4d9c3eefe14"'
+      - '"f87c7498dfd369334006ff88ae60b176"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWU5MTZiNjBhNzYyNDhjOWYwNDRjN2ZhYTAzZmU2ZmM4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUQvNW1iRnZzY2Q2MGpoOE5ZbHhkMnNvTkFqejduRmFBcXk2N2Z1TEpkNlk9BjsARg%3D%3D--bc8f320820c95c11e7e9626eedf3f75f1da04dcf;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTI2NDVmODZjYTJlY2JlZDIwYWY5ZDlkMDVhMTk3MTY4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUhpNHZyZzdWZnJ6NXhLTzFsRUlydjIwLzU3U3JOWnQzajJUUTFTSlJaSTA9BjsARg%3D%3D--de7519359777047de09bea12cd6e73cc6ac4e139;
         path=/; HttpOnly
       X-Request-Id:
-      - 3c0da417-cf3e-4e7a-b805-d9cdccb63226
+      - c23cffa2-e338-4c64-8561-f1d467ce20fe
       X-Runtime:
-      - '0.165419'
+      - '0.170987'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +49,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"category":{"id":43069,"name":"ccc","description":"ddd","priority":1,"active":true,"priced_by_size":false}}'
+      string: '{"success":true,"category":{"id":43069,"name":"ccc","description":"ddd
+        * 1 items minimum.","priority":1,"active":true,"priced_by_size":false}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:03:54 GMT
+  recorded_at: Tue, 06 Oct 2015 19:32:51 GMT
 recorded_with: VCR 2.9.3

@@ -6,14 +6,14 @@ Feature: Category resource
     Given Zuppler configured with "zuppler" and "abcd"
     And I have a restaurant "1","demorestaurant"
     And I have a menu "21761"
-    When I create category with "pizzas","desc","1","true"
+    When I create category with "pizzas","desc","1","true","2"
     Then I should have category created
 
   @vcr
   Scenario: Update category
     Given Zuppler configured with "zuppler" and "abcd"
     And I have a category "43069"
-    When I update category with "ccc","ddd","true","1"
+    When I update category with "ccc","ddd","true","1","1"
     Then I should get success response
 
   @vcr

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/898.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/items/448591.json
     body:
       encoding: UTF-8
-      string: item[name]=diavolo&item[description]=dddd&item[price]=8.99&item[priority]=2&item[image_url]=http%3A%2F%2Fs3.amazonaws.com%2Fcrunchbase_prod_assets%2Fassets%2Fimages%2Fresized%2F0016%2F4291%2F164291v2-max-250x250.png
+      string: item[name]=diavolo&item[description]=dddd&item[price]=8.99&item[priority]=2&item[image_url]=http%3A%2F%2Fs3.amazonaws.com%2Fcrunchbase_prod_assets%2Fassets%2Fimages%2Fresized%2F0016%2F4291%2F164291v2-max-250x250.png&item[min_qty]=5
     headers: {}
   response:
     status:
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:27 GMT
+      - Tue, 06 Oct 2015 19:52:05 GMT
       Status:
       - 200 OK
       Access-Control-Allow-Origin:
@@ -31,16 +31,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"45668208cbf2d58a48fd5d7f638b80ec"'
+      - '"26902cacdbceffbaf60750ad5e82449f"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTMzMTY2MjZiYWViNzE3OWI3YjlhZjI4YzI4MzgyNWYxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVF2Uml5YlFMUGMyZUcrbkNOMzUydUI2N3RnclFmMzNWeFpFQkpTUzVzNTQ9BjsARg%3D%3D--eb1472721ef18d208685b86f6872e8636397f0e8;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWQ1ZGJkNjQxY2MzOTdmNWFiZTY1M2UwNjVhOTc5NTViBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUtQLzBJcUpRbWJFYnVkMWVUTnFyUk9FVUt3cGlsSEhCQ1pMVmgzeGx6SUU9BjsARg%3D%3D--43509170a0ba655c32556857cb3ccc052058a7dd;
         path=/; HttpOnly
       X-Request-Id:
-      - 8a6be68b-abb5-4151-b426-281c497fb132
+      - 3e01cfca-da45-4a66-865c-e86eff15d39e
       X-Runtime:
-      - '0.054286'
+      - '0.052053'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +49,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"item":{"id":898,"name":"diavolo","description":"dddd","price":"8.99","coupon":null,"active":false,"parent_id":1768,"priority":2,"veg":null,"spicy":null,"size_name":null,"size_priority":null}}'
+      string: '{"success":true,"item":{"id":448591,"name":"diavolo","description":"dddd
+        * 5 items minimum.","price":"8.99","coupon":true,"active":false,"parent_id":405489,"priority":2,"veg":null,"spicy":0,"size_name":null,"size_priority":null}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:27 GMT
+  recorded_at: Tue, 06 Oct 2015 19:56:26 GMT
 recorded_with: VCR 2.9.3
