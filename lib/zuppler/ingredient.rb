@@ -12,6 +12,7 @@ module Zuppler
     attribute :size
     attribute :priority
     attribute :active
+    attribute :default
 
     validates_presence_of :choice, :name, :price
 
