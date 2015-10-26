@@ -14,6 +14,7 @@ Given(/^I have an item "(.*?)"$/) do |id|
 end
 
 When(/^I update item with "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, price, priority, min_qty|
+  @item.category = @category
   @item.name = name
   @item.description = description
   @item.price = price

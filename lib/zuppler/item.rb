@@ -27,6 +27,7 @@ module Zuppler
         self.id = response['item']['id'] if v3_success?(response)
       else
         item_attributes = filter_attributes attributes, 'category', 'id'
+        item_attributes[:category_id] = category.id if category
         response = execute_update item_url, item: item_attributes
       end
       handle response

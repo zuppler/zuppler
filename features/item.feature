@@ -13,6 +13,7 @@ Feature: Item resource
   @vcr
   Scenario: Update item
     Given Zuppler configured with "zuppler" and "abcd"
+    And I have a category "1712"
     And I have an item "448591"
     When I update item with "diavolo","dddd","8.99","2","5"
     Then I should get success response
