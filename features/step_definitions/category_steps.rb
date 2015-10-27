@@ -5,8 +5,11 @@ When(/^I create category with "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |nam
   @category.save
 end
 When(/^I update category with "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, active, priority, min_qty|
-  @category.attributes = { name: name, description: description, active: active,
-                           priority: priority, min_qty: min_qty }
+  @category.attributes = {
+    name: name, description: description, active: active,
+    priority: priority, min_qty: min_qty
+  }
+  @category.menu = @menu
   @success = @category.save
 end
 When(/^I delete category$/) do
