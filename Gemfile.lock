@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.5.10)
+    zuppler (0.5.11)
       active_attr
       hashie
       httparty
@@ -82,7 +82,7 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
     json (1.8.3)
-    jwt (1.5.1)
+    jwt (1.5.2)
     listen (3.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
