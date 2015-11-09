@@ -30,6 +30,7 @@ module Zuppler
         end
       else
         modifier_attributes = filter_attributes attributes, 'choice', 'id'
+        modifier_attributes[:customization_id] = choice.id if choice
         response = execute_update modifier_url, modifier: modifier_attributes
       end
       handle response

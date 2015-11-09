@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/1.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/812695.json
     body:
       encoding: UTF-8
-      string: modifier[option_id]=1&modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1
+      string: modifier[option_id]=1&modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1&modifier[default]=true&modifier[customization_id]=85100
     headers: {}
   response:
     status:
@@ -17,9 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:25 GMT
-      Status:
-      - 200 OK
+      - Mon, 09 Nov 2015 16:26:47 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -31,16 +29,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"1de0b39c77aa8c24037be2451399eee6"'
+      - '"f65ae1d265fd8fe5f26772a75bdc20b6"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWU2NGJlMzRjYWJhNGUzZjRmMjA3ZjA4YTk0ZDYxMGU1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVRTWE95Wmo5RWRCY09LTzZPVXQ4ZzJ6NzhrUTZnTjJtWFI4OGZrYXFrTVU9BjsARkkiCmZsYXNoBjsAVG86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsAVDoJQG5vdzA%3D--11bd5bc8a80d06f35abb28816caf40131cbccf0a;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBjZGYxYzhhNmZjYzAyNGM2YjE2YzljOTEzMTEzYWZjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVZhcmFrRERNUlhrQ1U2ekZ5NHNMNiswc0lHUGtVTzFsMnVRSmZZRzZTNVU9BjsARg%3D%3D--321f4e76e33c5a3d3d5711429fc1bc216451778c;
         path=/; HttpOnly
       X-Request-Id:
-      - 83df497f-8a2f-4ff3-9654-73a02fbade46
+      - fa44a5c9-5f4f-49d3-ae2f-6ca08a35ebd5
       X-Runtime:
-      - '0.104411'
+      - '0.513409'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,7 +47,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"modifier":{"id":1,"size_name":"","name":"bacon","price":0.0,"priority":7,"active":true,"parent_id":461}}'
+      string: '{"success":true,"modifier":{"customization_id":85100,"id":812695,"size_name":"Extra-Large","name":"bacon","price":0.0,"priority":7,"active":true,"default":true,"parent_id":330875}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:26 GMT
+  recorded_at: Mon, 09 Nov 2015 16:32:26 GMT
 recorded_with: VCR 2.9.3

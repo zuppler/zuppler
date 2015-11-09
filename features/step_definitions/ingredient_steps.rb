@@ -9,6 +9,7 @@ When(/^I update ingredient "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |_
   @ingredient.attributes = {
     name: name, price: price, priority: priority, default: true, option_id: 1
   }
+  @ingredient.choice = @choice
   @success = @ingredient.save
 end
 

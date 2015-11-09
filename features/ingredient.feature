@@ -14,8 +14,9 @@ Feature: Ingredient resource
   @vcr
   Scenario: Update ingredient
     Given Zuppler configured with "zuppler" and "abcd"
-    And I have a ingredient "1"
-    When I update ingredient "1" with "cream","1.99","1","true"
+    And I have a choice "85100"
+    And I have a ingredient "812695"
+    When I update ingredient "812695" with "cream","1.99","1","true"
     Then I should get success response
 
   @vcr
