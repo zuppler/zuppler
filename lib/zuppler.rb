@@ -30,7 +30,14 @@ module Zuppler
 
   class << self
     attr_accessor :channel_key, :restaurant_key, :api_key
-    attr_accessor :test, :domain, :logger
+    attr_accessor :test, :domains, :logger
+
+    DEFAULT_DOMAINS = {
+      production: 'zuppler.com',
+      staging: 'biznettechnologies.com',
+      development: 'zuppler.dev',
+      test: 'biznettechnologies.com'
+    }
 
     def init(channel_key, api_key, test = true, logger = nil)
       self.channel_key, self.api_key = channel_key, api_key
@@ -47,19 +54,14 @@ module Zuppler
       fail Zuppler::Error, ':api_key cannot be blank' if api_key.blank?
     end
 
-    DOMAINS = {
-      production: 'zuppler.com',
-      staging: 'biznettechnologies.com',
-      development: 'zuppler.dev',
-      test: 'biznettechnologies.com'
-    }
     def api_domain
+      api_domains = DEFAULT_DOMAINS.merge(domains || {})
       if defined? Rails
-        DOMAINS[Rails.env.to_sym]
+        api_domains[Rails.env.to_sym]
       elsif test?
-        DOMAINS[:test]
+        api_domains[:test]
       else
-        DOMAINS[:production]
+        api_domains[:production]
       end
     end
 
