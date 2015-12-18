@@ -14,12 +14,19 @@ When(/^I publish restaurant "(.*?)"$/) do |permalink|
   @restaurant = Zuppler::Restaurant.find permalink
   @success = @restaurant.publish
 end
+When(/^I pause restaurant "(.*?)"$/) do |permalink|
+  @restaurant = Zuppler::Restaurant.find permalink
+  @success = @restaurant.pause
+end
+When(/^I resume restaurant "(.*?)"$/) do |permalink|
+  @restaurant = Zuppler::Restaurant.find permalink
+  @success = @restaurant.resume
+end
 When(/^I fetch restaurant details$/) do
   @restaurant.details
 end
 
 Then(/^I should have "(.*)" restaurant$/) do |_permalink|
-  @restaurant.id.should_not be_nil
   @restaurant.permalink.should_not be_nil
 end
 Then(/^Restaurants should raise error$/) do

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/publish.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/pause.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 18 Dec 2015 09:30:00 GMT
+      - Fri, 18 Dec 2015 09:28:04 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -33,12 +33,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTk4NzdiYTM3MmE2MzI3MGI5MDRmMzU4ZWM2MjlkODk5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWI0OTd6SWU3U2pXOXI0T0lFMDlBSWRwMUEzMFBPL2x0eWZ2RVlnOEZUZmM9BjsARg%3D%3D--01f61c96e798b8187fb90e7909888123ccf03c56;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTVlYjJiMDkxM2UyMDljMGU4NTZiNDFiMzFhZjc1MGY0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxpdU1EZjA3MjA2eFpVazlMbjJPS3ZuSExjOWFsV0hiYUYwUUNWb25LbVk9BjsARg%3D%3D--5a1a4c388b6687439c350b116c3b845761d505e9;
         path=/; HttpOnly
       X-Request-Id:
-      - a24723b2-e5d3-42ff-b417-291db2525cbf
+      - 991427b8-419b-4c0f-8fa9-bc8ec6f2e396
       X-Runtime:
-      - '0.022913'
+      - '0.068626'
       X-Rack-Cache:
       - invalidate, pass
       Vary:
@@ -49,5 +49,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true}'
     http_version: 
-  recorded_at: Fri, 18 Dec 2015 09:30:41 GMT
+  recorded_at: Fri, 18 Dec 2015 09:28:45 GMT
 recorded_with: VCR 2.9.3

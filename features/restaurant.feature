@@ -30,6 +30,18 @@ Feature: Restaurant resource
     Given Zuppler configured with "zuppler" and "abcd"
     When I publish restaurant "demorestaurant"
     Then I should get success response
+
+  @vcr
+  Scenario: Pause restaurant
+    Given Zuppler configured with "zuppler" and "abcd"
+    When I pause restaurant "demorestaurant"
+    Then I should get success response
+
+  @vcr
+  Scenario: Resume restaurant
+    Given Zuppler configured with "zuppler" and "abcd"
+    When I resume restaurant "demorestaurant"
+    Then I should get success response
     
 
 

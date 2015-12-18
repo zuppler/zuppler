@@ -19,19 +19,21 @@ module Zuppler
     validates_presence_of :name
 
     def self.find(permalink)
-      response = execute_find restaurant_url(permalink)
-      if v3_success?(response)
-        unmarshal Zuppler::Restaurant.new, response
-      end
+      Zuppler::Restaurant.new permalink: permalink
     end
 
-    def self.publish(permalink, options = {})
-      restaurant = find permalink
-      restaurant.publish options
+    def publish(options = {})
+      response = execute_update publish_url, options
+      response.success?
     end
 
-    def publish options = {}
-      response = execute_post publish_url, options
+    def pause(options = {})
+      response = execute_update pause_url, options
+      response.success?
+    end
+
+    def resume(options = {})
+      response = execute_update resume_url, options
       response.success?
     end
 
@@ -40,18 +42,22 @@ module Zuppler
       response = execute_post restaurants_url, restaurant: restaurant_attributes
       if v3_success?(response)
         self.class.unmarshal self, response
-      else
-        nil
       end
     end
 
     def details
       if @details.nil?
-        response = execute_get restaurant_url, {}, {}
-        if v4_success? response
-          @details = Hashie::Mash.new response['restaurant']
-        else
-          fail 'restaurants#details failed.'
+        Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
+          response = execute_get restaurant_url, {}, {}
+          if v4_success? response
+            @details = Hashie::Mash.new response['restaurant']
+          else
+            if v4_response_code(response) > 500
+              fail Zuppler::RetryError, response.message
+            else
+              fail Zuppler::ServerError, response.message
+            end
+          end
         end
       end
       @details
@@ -79,6 +85,14 @@ module Zuppler
 
     def publish_url
       "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/publish.json"
+    end
+
+    def pause_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/pause.json"
+    end
+
+    def resume_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/pause.json"
     end
   end
 end
