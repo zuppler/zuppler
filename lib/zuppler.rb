@@ -3,6 +3,7 @@ require 'active_attr'
 require 'httparty'
 require 'multi_json'
 require 'hashie'
+require 'retriable'
 
 require 'zuppler/version'
 require 'zuppler/model'
@@ -23,7 +24,11 @@ require 'zuppler/discount'
 require 'zuppler/user'
 
 module Zuppler
-  class Error < RuntimeError
+  class Error < StandardError
+  end
+  class RetryError < Error
+  end
+  class ServerError < Error
   end
   class NotAuthorized < Error
   end

@@ -50,6 +50,7 @@ module Zuppler
     def self.v4_success?(response)
       response.success? && response['success'] == true
     end
+
     def v4_success?(response)
       self.class.v4_success? response
     end

@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'multi_json'
   spec.add_dependency 'hashie'
   spec.add_dependency 'omniauth-oauth2'
+  spec.add_dependency 'retriable'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'

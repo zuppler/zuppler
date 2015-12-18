@@ -29,15 +29,19 @@ module Zuppler
 
     def details
       if @details.nil?
-        response = execute_get user_url, {}, headers
-        if v4_success? response
-          @details = Hashie::Mash.new response['user']
-          self.id = @details.id
-        else
-          if v4_response_code(response) == 401
-            fail Zuppler::NotAuthorized, 'not authorized'
+        Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
+          response = execute_get user_url, {}, headers
+          if v4_success? response
+            @details = Hashie::Mash.new response['user']
+            self.id = @details.id
           else
-            fail Zuppler::Error, response.message
+            if v4_response_code(response) == 401
+              fail Zuppler::NotAuthorized, 'not authorized'
+            elsif v4_response_code(response) > 500
+              fail Zuppler::RetryError, response.message
+            else
+              fail Zuppler::ServerError, response.message
+            end
           end
         end
       end
