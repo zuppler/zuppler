@@ -58,13 +58,13 @@ module Zuppler
       if @details.nil?
         Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
           response = execute_get restaurant_url, {}, {}
-          if v4_success? response
+          if v3_success? response
             @details = Hashie::Mash.new response['restaurant']
           else
-            if v4_response_code(response) > 500
+            if v3_response_code(response) > 500
               fail Zuppler::RetryError, response.message
-            else
-              fail Zuppler::ServerError, response.message
+            # else
+            #   fail Zuppler::ServerError, response.message
             end
           end
         end

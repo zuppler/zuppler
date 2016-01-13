@@ -63,6 +63,14 @@ module Zuppler
       self.class.v3_success? response
     end
 
+    def self.v3_response_code(response)
+      response['error']['code'].to_i
+    end
+
+    def v3_response_code(response)
+      self.class.v3_response_code response
+    end
+
     def handle(response, version = 'v3')
       success = send "#{version}_success?", response
 

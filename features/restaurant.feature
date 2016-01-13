@@ -19,6 +19,14 @@ Feature: Restaurant resource
     Then I should have "demorestaurant" restaurant
 
   @vcr
+  Scenario: Exist restaurant
+    Given Zuppler configured with "zuppler" and "abcd"
+    When I check if restaurant "demorestaurant" exists
+    Then I should get success response
+    When I check if restaurant "notfound" exists
+    Then I should get failed response
+  
+  @vcr
   Scenario: Update restaurant
     Given Zuppler configured with "zuppler" and "abcd"
     When I update restaurant "demorestaurant" with "demo"

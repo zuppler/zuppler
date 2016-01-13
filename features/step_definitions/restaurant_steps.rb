@@ -15,6 +15,10 @@ When(/^I update restaurant "(.*?)" with "(.*?)"$/) do |permalink, name|
   @restaurant.name = name
   @success = @restaurant.save
 end
+When(/^I check if restaurant "([^"]*)" exists$/) do |permalink|
+  @restaurant = Zuppler::Restaurant.find permalink
+  @success = @restaurant.exists?
+end
 When(/^I publish restaurant "(.*?)"$/) do |permalink|
   @restaurant = Zuppler::Restaurant.find permalink
   @success = @restaurant.publish
