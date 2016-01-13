@@ -13,7 +13,7 @@ end
 When(/^I update restaurant "(.*?)" with "(.*?)"$/) do |permalink, name|
   @restaurant = Zuppler::Restaurant.find permalink
   @restaurant.name = name
-  @restaurant.save
+  @success = @restaurant.save
 end
 When(/^I publish restaurant "(.*?)"$/) do |permalink|
   @restaurant = Zuppler::Restaurant.find permalink

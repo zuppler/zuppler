@@ -12,6 +12,7 @@ module Zuppler
         restaurant = new options
         yield restaurant if block_given?
         restaurant.save
+        restaurant
       end
     end
     include Zuppler::Macros
@@ -46,6 +47,11 @@ module Zuppler
         response = execute_update restaurant_url, restaurant: restaurant_attributes
       end
       self.class.unmarshal self, response if v3_success?(response)
+      handle response
+    end
+
+    def exists?
+      details && details['id']
     end
 
     def details
