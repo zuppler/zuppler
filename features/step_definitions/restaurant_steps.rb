@@ -10,6 +10,11 @@ end
 When(/^I find restaurant "(.*?)"$/) do |permalink|
   @restaurant = Zuppler::Restaurant.find permalink
 end
+When(/^I update restaurant "(.*?)" with "(.*?)"$/) do |permalink, name|
+  @restaurant = Zuppler::Restaurant.find permalink
+  @restaurant.name = name
+  @restaurant.save
+end
 When(/^I publish restaurant "(.*?)"$/) do |permalink|
   @restaurant = Zuppler::Restaurant.find permalink
   @success = @restaurant.publish

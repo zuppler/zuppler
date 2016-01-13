@@ -38,11 +38,14 @@ module Zuppler
     end
 
     def save
-      restaurant_attributes = filter_attributes attributes, 'id'
-      response = execute_post restaurants_url, restaurant: restaurant_attributes
-      if v3_success?(response)
-        self.class.unmarshal self, response
+      if new?
+        restaurant_attributes = filter_attributes attributes, 'id'
+        response = execute_post restaurants_url, restaurant: restaurant_attributes
+      else
+        restaurant_attributes = filter_attributes attributes, 'id', 'permalink'
+        response = execute_update restaurant_url, restaurant: restaurant_attributes
       end
+      self.class.unmarshal self, response if v3_success?(response)
     end
 
     def details
@@ -64,6 +67,10 @@ module Zuppler
     end
 
     private
+
+    def new?
+      permalink.blank?
+    end
 
     def self.unmarshal(restaurant, response)
       restaurant.id = response['restaurant']['id']
