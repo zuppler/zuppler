@@ -51,7 +51,7 @@ module Zuppler
     end
 
     def exists?
-      details && details['id']
+      !details.nil?
     end
 
     def details
