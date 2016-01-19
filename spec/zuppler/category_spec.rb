@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Zuppler::Category do
+describe Zuppler::Category, type: :model do
   it { should validate_presence_of(:menu) }
   it { should validate_presence_of(:name) }
 

@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'active_attr/rspec'
 
-describe Zuppler::Menu do
+describe Zuppler::Menu, type: :model do
   it { should validate_presence_of(:restaurant) }
   it { should validate_presence_of(:name) }
 
