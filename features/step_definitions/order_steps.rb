@@ -24,6 +24,9 @@ end
 When(/^I touch order$/) do
   @success = @order.touch
 end
+When(/^I update order$/) do
+  @success = @order.save metadata: {rds: {market_id: 12}}
+end
 
 Then(/^I should have order accepted$/) do
   @success.should be_truthy

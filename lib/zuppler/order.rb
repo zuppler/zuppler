@@ -7,6 +7,7 @@ module Zuppler
     attribute :time
     attribute :duration
     attribute :sender
+    attribute :metadata
 
     validates_presence_of :uuid
 
@@ -54,6 +55,13 @@ module Zuppler
       order_attributes = filter_attributes attributes, 'uuid'
       response = execute_update touch_url, order_attributes, {}
       JSON.parse response.body
+    end
+
+    def save(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update order_url, { order: order_attributes }, {}
+      v4_success? response
     end
 
     def notification(type)
