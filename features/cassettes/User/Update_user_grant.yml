@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://users.api.biznettechnologies.com/v1/users/current.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer fc1c261b82768137b36822b380d29289d82c05c0c4b9ee9bcfab720214ae9e6e
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 12 Feb 2016 13:17:57 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4cdf756358e2883c01d5458eaad56f5e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f8406b3d-d1b4-4002-93c6-a3b6f14802bd
+      X-Runtime:
+      - '0.033268'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"user":{"id":3370,"name":"Silviu Rosu","email":"silviu.rosu@gmail.com","phone":"0757220488","created_at":"2011-01-18
+        08:15:22 UTC","roles":["admin"],"access_grants":{"market":[1]},"zuppler_bucks":186.67,"zuppler_points":27808.0,"gravatar_id":"d38b3ac02140944a5dc29691dad2a808","links":[{"name":"self","methods":["get"],"url":"/v1/users/3370.json"},{"name":"vaults","method":"get","url":"/v1/users/3370/vaults.json"},{"name":"orders","method":"get","url":"/v1/users/3370/orders.json"},{"name":"grant","method":"put","url":"/v1/users/3370/grant.json"},{"name":"revoke","method":"put","url":"/v1/users/3370/revoke.json"}]}}'
+    http_version: 
+  recorded_at: Fri, 12 Feb 2016 13:17:57 GMT
+- request:
+    method: put
+    uri: http://users.api.biznettechnologies.com/v1/users/3370/grant.json
+    body:
+      encoding: UTF-8
+      string: access_grants[market][]=1
+    headers:
+      Authorization:
+      - Bearer fc1c261b82768137b36822b380d29289d82c05c0c4b9ee9bcfab720214ae9e6e
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 12 Feb 2016 13:17:57 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e4088f0d3eceb8370781280553cb55f8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c29c3dc5-7cbd-477f-aa86-0d97b239f754
+      X-Runtime:
+      - '0.060871'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"user":{"links":[{"name":"self","methods":["get"],"url":"/v1/users/3370.json"},{"name":"vaults","method":"get","url":"/v1/users/3370/vaults.json"},{"name":"orders","method":"get","url":"/v1/users/3370/orders.json"},{"name":"grant","method":"put","url":"/v1/users/3370/grant.json"},{"name":"revoke","method":"put","url":"/v1/users/3370/revoke.json"}]}}'
+    http_version: 
+  recorded_at: Fri, 12 Feb 2016 13:17:57 GMT
+recorded_with: VCR 3.0.1

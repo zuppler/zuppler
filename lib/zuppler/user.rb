@@ -9,6 +9,7 @@ module Zuppler
     attribute :roles
     attribute :access_token
     attribute :provider
+    attribute :access_grants
 
     def self.find(access_token)
       Zuppler::User.new access_token: access_token
@@ -84,6 +85,16 @@ module Zuppler
       role? 'admin'
     end
 
+    def grant(options = {})
+      response = execute_update user_grant_url, { access_grants: options }, headers
+      v4_success? response
+    end
+
+    def revoke(options = {})
+      response = execute_update user_revoke_url, { access_grants: options }, headers
+      v4_success? response
+    end
+
     private
 
     def headers
@@ -92,6 +103,14 @@ module Zuppler
 
     def user_url
       "#{Zuppler.users_api_url}/users/current.json"
+    end
+
+    def user_grant_url
+      "#{Zuppler.users_api_url}/users/#{id}/grant.json"
+    end
+
+    def user_revoke_url
+      "#{Zuppler.users_api_url}/users/#{id}/revoke.json"
     end
   end
 end
