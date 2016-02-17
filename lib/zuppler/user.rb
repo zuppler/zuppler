@@ -24,6 +24,7 @@ module Zuppler
                         email: info['email'],
                         phone: info['phone'],
                         roles: info['roles'],
+                        acls: info['acls'],
                         provider: extra['provider'],
                         access_token: credentials['token']
     end
