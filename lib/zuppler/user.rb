@@ -9,7 +9,7 @@ module Zuppler
     attribute :roles
     attribute :access_token
     attribute :provider
-    attribute :access_grants
+    attribute :acls
 
     def self.find(access_token)
       Zuppler::User.new access_token: access_token
@@ -86,12 +86,12 @@ module Zuppler
     end
 
     def grant(options = {})
-      response = execute_update user_grant_url, { access_grants: options }, headers
+      response = execute_update user_grant_url, { acls: options }, headers
       v4_success? response
     end
 
     def revoke(options = {})
-      response = execute_update user_revoke_url, { access_grants: options }, headers
+      response = execute_update user_revoke_url, { acls: options }, headers
       v4_success? response
     end
 
