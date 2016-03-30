@@ -86,6 +86,10 @@ module Zuppler
       role? 'admin'
     end
 
+    def acls(param = nil)
+      param ? details.acls[param] : details.acls
+    end
+
     def grant(options = {})
       response = execute_update user_grant_url, { acls: options }, headers
       v4_success? response
