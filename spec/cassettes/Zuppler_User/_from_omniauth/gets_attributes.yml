@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://users.api.zuppler.com/v1/users/current.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Wed, 30 Mar 2016 14:10:21 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Www-Authenticate:
+      - Bearer realm="Doorkeeper", error="invalid_token", error_description="The access
+        token is invalid"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Request-Id:
+      - 390e2474-c6e2-4958-b8c8-189e9da2f569
+      X-Runtime:
+      - '0.007131'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success": false, "status": {"code": 401, "message": "401 Unauthorized"}}'
+    http_version: 
+  recorded_at: Wed, 30 Mar 2016 14:10:21 GMT
+recorded_with: VCR 3.0.1

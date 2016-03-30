@@ -2,10 +2,12 @@ require 'spec_helper'
 
 RSpec.describe Zuppler::User do
   describe '.from_omniauth' do
-    it 'gets attributes' do
+    it 'gets attributes', :vcr do
       omniauth = {
         'info' => { 'id' => '1', 'name' => 'n',
-                    'email' => 'a@b.c', 'phone' => '1234', 'roles' => %w(admin config) },
+                    'email' => 'a@b.c', 'phone' => '1234',
+                    'roles' => %w(admin config), 'acls' => { 'delivery_service' => [1, 2] }
+                  },
         'extra' => { 'provider' => 'p' },
         'credentials' => { 'token' => 'at' }
       }

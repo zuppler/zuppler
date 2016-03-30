@@ -9,7 +9,6 @@ module Zuppler
     attribute :roles
     attribute :access_token
     attribute :provider
-    attribute :acls
 
     def self.find(access_token)
       Zuppler::User.new access_token: access_token
