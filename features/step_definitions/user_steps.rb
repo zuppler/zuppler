@@ -18,7 +18,7 @@ When(/^I update access grant$/) do
   expect do
     @user.details
   end.not_to raise_error
-  @result = @user.grant(market: [1])
+  @result = @user.grant(@user.id, market: [1])
 end
 
 Then(/I should receive not enough roles$/) do
