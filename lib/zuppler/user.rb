@@ -89,13 +89,13 @@ module Zuppler
       param ? details.acls[param] : details.acls
     end
 
-    def grant(options = {})
-      response = execute_update user_grant_url, { acls: options }, headers
+    def grant(user_id, options = {})
+      response = execute_update user_grant_url(user_id), { acls: options }, headers
       v4_success? response
     end
 
-    def revoke(options = {})
-      response = execute_update user_revoke_url, { acls: options }, headers
+    def revoke(user_id, options = {})
+      response = execute_update user_revoke_url(user_id), { acls: options }, headers
       v4_success? response
     end
 
@@ -109,11 +109,11 @@ module Zuppler
       "#{Zuppler.users_api_url}/users/current.json"
     end
 
-    def user_grant_url
+    def user_grant_url(id)
       "#{Zuppler.users_api_url}/users/#{id}/grant.json"
     end
 
-    def user_revoke_url
+    def user_revoke_url(id)
       "#{Zuppler.users_api_url}/users/#{id}/revoke.json"
     end
   end
