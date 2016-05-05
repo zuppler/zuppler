@@ -99,6 +99,11 @@ module Zuppler
       v4_success? response
     end
 
+    def touch(user_id)
+      response = execute_update user_touch_url(user_id), headers
+      v4_success? response
+    end
+
     private
 
     def headers
@@ -115,6 +120,10 @@ module Zuppler
 
     def user_revoke_url(id)
       "#{Zuppler.users_api_url}/users/#{id}/revoke.json"
+    end
+
+    def user_touch_url(id)
+      "#{Zuppler.users_api_url}/users/#{id}/touch.json"
     end
   end
 end
