@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.5.23)
+    zuppler (0.5.24)
       active_attr
       hashie
       httparty
@@ -187,3 +187,6 @@ DEPENDENCIES
   vcr
   webmock
   zuppler!
+
+BUNDLED WITH
+   1.11.2
