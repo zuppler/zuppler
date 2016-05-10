@@ -100,7 +100,7 @@ module Zuppler
     end
 
     def touch(user_id)
-      response = execute_update user_touch_url(user_id), headers
+      response = execute_update user_touch_url(user_id), {}, headers
       v4_success? response
     end
 
