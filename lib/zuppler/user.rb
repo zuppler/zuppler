@@ -10,8 +10,8 @@ module Zuppler
     attribute :access_token
     attribute :provider
 
-    def self.find(access_token)
-      Zuppler::User.new access_token: access_token
+    def self.find(access_token, id: nil)
+      Zuppler::User.new access_token: access_token, id: id
     end
 
     def self.from_omniauth(omniauth)
@@ -111,7 +111,8 @@ module Zuppler
     end
 
     def user_url
-      "#{Zuppler.users_api_url}/users/current.json"
+      user_id = id || 'current'
+      "#{Zuppler.users_api_url}/users/#{user_id}.json"
     end
 
     def user_grant_url(id)
