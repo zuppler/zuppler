@@ -1,5 +1,5 @@
 When(/^I initialize user with "([^"]*)"$/) do |access_token|
-  @user = Zuppler::User.find access_token
+  @user = Zuppler::User.find access_token, 'current'
 end
 
 Then(/^I should have user details$/) do

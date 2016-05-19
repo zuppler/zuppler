@@ -10,7 +10,7 @@ module Zuppler
     attribute :access_token
     attribute :provider
 
-    def self.find(access_token, id: nil)
+    def self.find(access_token, id = nil)
       Zuppler::User.new access_token: access_token, id: id
     end
 
