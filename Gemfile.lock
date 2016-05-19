@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.5.26)
+    zuppler (0.5.27)
       active_attr
       hashie
       httparty
@@ -79,7 +79,7 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     hashdiff (0.2.3)
-    hashie (3.4.3)
+    hashie (3.4.4)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     httparty (0.13.7)
@@ -188,5 +188,8 @@ DEPENDENCIES
   webmock
   zuppler!
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.11.2
+   1.12.3
