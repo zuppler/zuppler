@@ -22,6 +22,7 @@ require 'zuppler/order'
 require 'zuppler/notification'
 require 'zuppler/discount'
 require 'zuppler/user'
+require 'zuppler/application'
 
 module Zuppler
   class Error < StandardError
@@ -36,17 +37,20 @@ module Zuppler
   class << self
     attr_accessor :channel_key, :restaurant_key, :api_key
     attr_accessor :test, :domains, :logger
+    attr_writer :cache
 
     DEFAULT_DOMAINS = {
       production: 'zuppler.com',
       staging: 'biznettechnologies.com',
       development: 'zuppler.dev',
       test: 'biznettechnologies.com'
-    }
+    }.freeze
+    DEFAULT_CACHE = {}
 
     def init(channel_key, api_key, test = true, logger = nil)
       self.channel_key, self.api_key = channel_key, api_key
       self.test, self.logger = test, logger
+      self.cache = DEFAULT_CACHE
     end
 
     def configure
@@ -55,8 +59,8 @@ module Zuppler
     alias_method :config, :configure
 
     def check
-      fail Zuppler::Error, ':channel_key cannot be blank' if channel_key.blank?
-      fail Zuppler::Error, ':api_key cannot be blank' if api_key.blank?
+      raise Zuppler::Error, ':channel_key cannot be blank' if channel_key.blank?
+      raise Zuppler::Error, ':api_key cannot be blank' if api_key.blank?
     end
 
     def api_domain
@@ -68,6 +72,10 @@ module Zuppler
       else
         api_domains[:production]
       end
+    end
+
+    def cache
+      @cache || DEFAULT_CACHE
     end
 
     def api_version
