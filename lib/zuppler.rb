@@ -45,7 +45,7 @@ module Zuppler
       development: 'zuppler.dev',
       test: 'biznettechnologies.com'
     }.freeze
-    DEFAULT_CACHE = {}
+    DEFAULT_CACHE = {}.freeze
 
     def init(channel_key, api_key, test = true, logger = nil)
       self.channel_key, self.api_key = channel_key, api_key

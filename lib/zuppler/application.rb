@@ -3,10 +3,9 @@ module Zuppler
     attr_reader :client_id, :client_secret
 
     def initialize(client_id = ENV['CLIENT_ID'], client_secret = ENV['CLIENT_SECRET'])
+      raise ArgumentError, 'client_id/client_secret params are required' if client_id.blank? || client_secret.blank?
       @client_id = client_id
       @client_secret = client_secret
-      raise 'client_id is required' if @client_id.blank?
-      raise 'client_secret is required' if @client_secret.blank?
     end
 
     def access_token(scope)

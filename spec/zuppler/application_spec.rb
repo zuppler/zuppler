@@ -4,7 +4,7 @@ RSpec.describe Zuppler::Application do
   subject { Zuppler::Application.new 'ak', 'as' }
 
   it '#access_token' do
-    url = 'https://users.zuppler.com/oauth/token'
+    url = 'http://users.biznettechnologies.com/oauth/token'
     body = { body: { client_id: 'ak', client_secret: 'as',
                      grant_type: 'client_credentials', scope: 'test' } }
     response = double(success?: true, '[]' => 'at')
