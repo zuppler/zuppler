@@ -76,9 +76,9 @@ module Zuppler
             @details = Hashie::Mash.new response['order']
           else
             if v4_response_code(response) > 500
-              fail Zuppler::RetryError, response.message
+              raise Zuppler::RetryError, response.message
             else
-              fail Zuppler::ServerError, response.message
+              raise Zuppler::ServerError, response.message
             end
           end
         end

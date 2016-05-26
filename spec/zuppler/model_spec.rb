@@ -8,8 +8,8 @@ describe 'Zuppler::Model' do
       end
       include Zuppler::Macros
     end
-    Zuppler.should_receive(:check)
-    R.create.should eq('create')
+    expect(Zuppler).to receive(:check)
+    expect(R.create).to eq('create')
   end
 
   describe '#log' do
