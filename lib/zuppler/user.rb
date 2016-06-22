@@ -104,6 +104,22 @@ module Zuppler
       v4_success? response
     end
 
+    def providers(user_id)
+      if @providers.nil?
+        response = execute_get user_providers_url(user_id), {}, headers
+        if v4_success? response
+          @providers = Hashie::Mash.new response['providers']
+        elsif v4_response_code(response) == 401
+          raise Zuppler::NotAuthorized, 'not authorized'
+        elsif v4_response_code(response) > 500
+          raise Zuppler::RetryError, response.message
+        else
+          raise Zuppler::ServerError, response.message
+        end
+      end
+      @providers
+    end
+
     private
 
     def headers
@@ -125,6 +141,10 @@ module Zuppler
 
     def user_touch_url(id)
       "#{Zuppler.users_api_url}/users/#{id}/touch.json"
+    end
+
+    def user_providers_url(id)
+      "#{Zuppler.users_api_url}/users/#{id}/providers.json"
     end
   end
 end
