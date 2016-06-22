@@ -85,6 +85,22 @@ module Zuppler
       role? 'admin'
     end
 
+    def providers
+      if @providers.nil?
+        response = execute_get user_providers_url(id), {}, headers
+        if v4_success? response
+          @providers = Hashie::Mash.new response['providers']
+        elsif v4_response_code(response) == 401
+          raise Zuppler::NotAuthorized, 'not authorized'
+        elsif v4_response_code(response) > 500
+          raise Zuppler::RetryError, response.message
+        else
+          raise Zuppler::ServerError, response.message
+        end
+      end
+      @providers
+    end
+
     def acls(param = nil)
       param ? details.acls[param] : details.acls
     end
@@ -102,22 +118,6 @@ module Zuppler
     def touch(user_id)
       response = execute_update user_touch_url(user_id), {}, headers
       v4_success? response
-    end
-
-    def providers(user_id)
-      if @providers.nil?
-        response = execute_get user_providers_url(user_id), {}, headers
-        if v4_success? response
-          @providers = Hashie::Mash.new response['providers']
-        elsif v4_response_code(response) == 401
-          raise Zuppler::NotAuthorized, 'not authorized'
-        elsif v4_response_code(response) > 500
-          raise Zuppler::RetryError, response.message
-        else
-          raise Zuppler::ServerError, response.message
-        end
-      end
-      @providers
     end
 
     private
