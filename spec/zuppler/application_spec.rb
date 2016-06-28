@@ -3,6 +3,8 @@ require 'spec_helper'
 RSpec.describe Zuppler::Application do
   subject { Zuppler::Application.new 'ak', 'as' }
 
+  before { Zuppler.init 'key', 'key' }
+
   it '#access_token' do
     url = 'http://users.biznettechnologies.com/oauth/token'
     body = { body: { client_id: 'ak', client_secret: 'as',
