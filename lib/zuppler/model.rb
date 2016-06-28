@@ -15,6 +15,7 @@ module Zuppler
   class Model
     include HTTParty
     attr_writer :restaurant_id
+    attr_accessor :disable_blank_filter
 
     class << self
       def log(url, response, options)
@@ -125,7 +126,7 @@ module Zuppler
     end
 
     def filter_attributes(attrs, *keys)
-      attrs.reject { |k, v| keys.include?(k) || v.nil? }
+      attrs.reject { |k, v| keys.include?(k) || (!disable_blank_filter && v.nil?) }
     end
   end
 end

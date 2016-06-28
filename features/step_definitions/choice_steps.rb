@@ -13,6 +13,7 @@ When(/^I update choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/
   @success = @choice.save
 end
 When(/^I delete choice$/) do
+  @choice.disable_blank_filter = true
   @success = @choice.destroy
 end
 
