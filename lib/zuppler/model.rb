@@ -41,6 +41,7 @@ module Zuppler
     end
 
     def self.v4_response_code(response)
+      return 0 unless response['status'] && response['status']['code']
       response['status']['code'].to_i
     end
 

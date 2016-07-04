@@ -42,4 +42,3 @@ rake install
 echo
 echo " *** Uploading release package... $VERSION"
 fury push pkg/zuppler-$VERSION.gem --as=zuppler
-
