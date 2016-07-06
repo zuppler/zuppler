@@ -89,7 +89,7 @@ module Zuppler
       if @providers.nil?
         response = execute_get user_providers_url(id), {}, headers
         if v4_success? response
-          @providers = Hashie::Mash.new response['providers']
+          @providers = response['providers']
         elsif v4_response_code(response) == 401
           raise Zuppler::NotAuthorized, 'not authorized'
         elsif v4_response_code(response) > 500
