@@ -17,8 +17,19 @@ module Zuppler
 
     def confirm(options = {})
       update_attributes options
-      response = execute_update notification_url('confirm'), attributes, {}
-      v4_success? response
+      success = false
+
+      Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
+        response = execute_update notification_url('confirm'), attributes, {}
+        if v4_success? response
+          success = true
+        elsif v4_response_code(response) >= 500
+          raise Zuppler::RetryError, response.message
+        else
+          raise Zuppler::ServerError, response.message
+        end
+      end
+      success
     end
 
     private
