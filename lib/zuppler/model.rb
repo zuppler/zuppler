@@ -101,14 +101,40 @@ module Zuppler
 
     def execute_update(url, body, headers = {})
       options = { body: body, headers: headers }
-      response = self.class.put url, options
+      response = nil
+      Retriable.retriable on: Zuppler::RetryError, base_interval: 1, tries: 3 do
+        response = self.class.put url, options
+
+        unless v4_success? response
+          if v4_response_code(response) >= 500
+            raise Zuppler::RetryError, response.message
+          else
+            raise Zuppler::ServerError, response.message
+          end
+        end
+      end
+
       log url, response, options
       response
     end
 
     def execute_get(url, body, headers = {})
       options = { body: body, headers: headers }
-      response = self.class.get url, options
+      response = nil
+      Retriable.retriable on: Zuppler::RetryError, base_interval: 1, tries: 3 do
+        response = self.class.get url, options
+
+        unless v4_success? response
+          if v4_response_code(response) == 401
+            raise Zuppler::NotAuthorized, 'not authorized'
+          elsif v4_response_code(response) >= 500
+            raise Zuppler::RetryError, response.message
+          else
+            raise Zuppler::ServerError, response.message
+          end
+        end
+      end
+
       log url, response, options
       response
     end

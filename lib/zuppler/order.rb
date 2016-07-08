@@ -70,18 +70,8 @@ module Zuppler
 
     def details
       if @details.nil?
-        Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
-          response = execute_get order_url, {}, {}
-          if v4_success? response
-            @details = Hashie::Mash.new response['order']
-          else
-            if v4_response_code(response) > 500
-              raise Zuppler::RetryError, response.message
-            else
-              raise Zuppler::ServerError, response.message
-            end
-          end
-        end
+        response = execute_get order_url, {}, {}
+        @details = Hashie::Mash.new(response['order']) if v4_success? response
       end
       @details
     end

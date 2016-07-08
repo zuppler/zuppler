@@ -30,20 +30,10 @@ module Zuppler
 
     def details
       if @details.nil?
-        Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
-          response = execute_get user_url, {}, headers
-          if v4_success? response
-            @details = Hashie::Mash.new response['user']
-            self.id = @details.id
-          else
-            if v4_response_code(response) == 401
-              fail Zuppler::NotAuthorized, 'not authorized'
-            elsif v4_response_code(response) > 500
-              fail Zuppler::RetryError, response.message
-            else
-              fail Zuppler::ServerError, response.message
-            end
-          end
+        response = execute_get user_url, {}, headers
+        if v4_success? response
+          @details = Hashie::Mash.new response['user']
+          self.id = @details.id
         end
       end
       @details
@@ -88,15 +78,7 @@ module Zuppler
     def providers
       if @providers.nil?
         response = execute_get user_providers_url(id), {}, headers
-        if v4_success? response
-          @providers = response['providers']
-        elsif v4_response_code(response) == 401
-          raise Zuppler::NotAuthorized, 'not authorized'
-        elsif v4_response_code(response) > 500
-          raise Zuppler::RetryError, response.message
-        else
-          raise Zuppler::ServerError, response.message
-        end
+        @providers = response['providers'] if v4_success? response
       end
       @providers
     end
