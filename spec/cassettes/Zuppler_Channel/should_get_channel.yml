@@ -23,7 +23,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 30 Mar 2016 14:09:10 GMT
+      - Fri, 08 Jul 2016 08:47:13 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTgwN2MzNWNhYTYxODc4YzRiNzZjOWYxYzYwODg0MTI4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU1PMEZ0OC9QQWpGdGd1clhET0JsYk9OcWdNaGphb3dOdTlBcHRna3VnamM9BjsARg%3D%3D--7756c0941e3bf1ec4dad0248e00af33d616ff720;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTk5YzAwZTYxMWJjNTRhNGNkMmNiNDU4MDg2YTc0NWQxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUNRenY2c1kraU5zOVBBU01wVVJxdkJWOGszdjJCdld3UnJUOWFEZDcxUmc9BjsARg%3D%3D--6e99f6281cfdf7557bbbc91902172e44406b15c6;
         path=/; HttpOnly
       X-Request-Id:
-      - bb61a243-35bd-49ec-b5b0-7fcc1d4cc431
+      - e8dcbdaa-898a-4138-bfbb-ccef20443892
       X-Runtime:
-      - '0.170946'
+      - '0.010861'
       X-Rack-Cache:
       - miss
       Via:
@@ -53,5 +53,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":1,"permalink":"zuppler","name":"Zuppler","logo":"http://dbgcbnch6yz43.cloudfront.net/images/channels/logos/000/000/001/original/zuppler-logo.png?1378812024"}'
     http_version: 
-  recorded_at: Wed, 30 Mar 2016 14:09:10 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 08 Jul 2016 08:48:44 GMT
+recorded_with: VCR 3.0.3

@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 10 Feb 2016 08:23:34 GMT
+      - Mon, 11 Jul 2016 14:48:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -29,12 +29,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA5N2U5MGZhMDY0NzNiMDcwMmY5YTAwY2FlNTJjYzM1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWRsL3BQZGVzWE10Yk1qYTM3VmU4cXdnenRNMW9DM0N0QVZ4R1R2U1EreXc9BjsARg%3D%3D--125f7e4e39c7234d3c4dc76d0c02f055ad37904b;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTIwMGY4ZjgxZmQyMzhhODFmMjUxMzkwMzEwNjA4NmY1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUYvZFZtOVpkQ0RSbGd3T1orZms1dlA3RDd5Wi8yMDhIbG15OXV5Q2dDNjA9BjsARg%3D%3D--ba82d6dbeecc79034910bfab76545dc084e03e37;
         path=/; HttpOnly
       X-Request-Id:
-      - 83b58d0a-41fa-4c6c-bd65-b914b3440b06
+      - bbaa44f7-65b8-490f-9836-87f0a741b26f
       X-Runtime:
-      - '1.430360'
+      - '0.040547'
       X-Rack-Cache:
       - invalidate, pass
       Via:
@@ -43,5 +43,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"}}'
     http_version: 
-  recorded_at: Wed, 10 Feb 2016 08:23:34 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Mon, 11 Jul 2016 14:48:31 GMT
+recorded_with: VCR 3.0.3

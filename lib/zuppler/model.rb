@@ -102,16 +102,20 @@ module Zuppler
     def execute_update(url, body, headers = {})
       options = { body: body, headers: headers }
       response = nil
-      Retriable.retriable on: Zuppler::RetryError, base_interval: 1, tries: 3 do
-        response = self.class.put url, options
 
-        unless v4_success? response
-          if v4_response_code(response) >= 500
-            raise Zuppler::RetryError, response.message
-          else
-            raise Zuppler::ServerError, response.message
+      begin
+        Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
+          response = self.class.put url, options
+
+          unless v4_success? response
+            if v4_response_code(response) >= 500
+              raise Zuppler::RetryError, response.message
+            end
           end
         end
+
+      rescue Zuppler::RetryError => e
+        Zuppler.logger.info "Put Request retry failed for: #{url} with message: #{e.message}"
       end
 
       log url, response, options
@@ -121,18 +125,21 @@ module Zuppler
     def execute_get(url, body, headers = {})
       options = { body: body, headers: headers }
       response = nil
-      Retriable.retriable on: Zuppler::RetryError, base_interval: 1, tries: 3 do
-        response = self.class.get url, options
+      begin
+        Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
+          response = self.class.get url, options
 
-        unless v4_success? response
-          if v4_response_code(response) == 401
-            raise Zuppler::NotAuthorized, 'not authorized'
-          elsif v4_response_code(response) >= 500
-            raise Zuppler::RetryError, response.message
-          else
-            raise Zuppler::ServerError, response.message
+          unless v4_success? response
+            if v4_response_code(response) == 401
+              raise Zuppler::NotAuthorized, 'not authorized'
+            elsif v4_response_code(response) >= 500
+              raise Zuppler::RetryError, response.message
+            end
           end
         end
+
+      rescue Zuppler::RetryError
+        Zuppler.logger.info "Get Request retry failed for: #{url}"
       end
 
       log url, response, options
@@ -155,5 +162,7 @@ module Zuppler
     def filter_attributes(attrs, *keys)
       attrs.reject { |k, v| keys.include?(k) || (!disable_blank_filter && v.nil?) }
     end
+
+
   end
 end

@@ -11,21 +11,21 @@ Feature: Order resource
   @vcr
   Scenario: Confirm order
     Given Zuppler configured with "zuppler" and "qwe123"
-    And I have an order "56b19cde-ac68-11e3-9088-123138166518"
+    And I have an order "11e25cc8-78e1-11e5-bd0f-4e2ac2a314c1"
     When I confirm order
     Then I should have order accepted
 
   @vcr
   Scenario: Cancel order
     Given Zuppler configured with "zuppler" and "qwe123"
-    And I have an order "56b19cde-ac68-11e3-9088-123138166518"
+    And I have an order "11e25cc8-78e1-11e5-bd0f-4e2ac2a314c1"
     When I cancel order
     Then I should have order accepted
 
   @vcr
   Scenario: Miss order
     Given Zuppler configured with "zuppler" and "qwe123"
-    And I have an order "56b19cde-ac68-11e3-9088-123138166518"
+    And I have an order "11e25cc8-78e1-11e5-bd0f-4e2ac2a314c1"
     When I miss order
     Then I should have order accepted
 
@@ -46,7 +46,7 @@ Feature: Order resource
   @vcr
   Scenario: Touch order
     Given Zuppler configured with "zuppler" and "qwe123"
-    And I have an order "56b19cde-ac68-11e3-9088-123138166518"
+    And I have an order "11e25cc8-78e1-11e5-bd0f-4e2ac2a314c1"
     When I touch order
     Then I should have order accepted
 

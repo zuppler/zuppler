@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/56b19cde-ac68-11e3-9088-123138166518/confirm.json
+    uri: http://orders.api.biznettechnologies.com/v4/orders/11e25cc8-78e1-11e5-bd0f-4e2ac2a314c1/confirm.json
     body:
       encoding: UTF-8
       string: time=2014-03-18%2017%3A45&duration=20
@@ -17,9 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:47:33 GMT
-      Status:
-      - 200 OK
+      - Mon, 11 Jul 2016 14:48:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -27,23 +25,23 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"551613a621b01d524a24afbca2cac818"'
+      - '"99914b932bd37a50b983c5e7c90ae93b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWI2MDExZjhkOGY2N2M5M2I3ZWVkYjE5YjdhNjg1MGQ4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU96dGIwZHdPRTlGMU5wVlVZNUhnSVZhYndTaFNCSEgzNUwxSUtMVEllL3M9BjsARg%3D%3D--44a29021ec7d53f607266d0993359327b916cfe2;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMyNDRiN2ViMTY4ODM2ZmEzYjdlZGY5NTJjMzRmNDRkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU1IOHlqVEVYbXNhUWVYT0lUYlZKVXRZZmFUTndLMWs0TWx2VDQ0eWN0czA9BjsARg%3D%3D--0a89adaa4d3f8e2f704c09023cbe3ae85e4de1c6;
         path=/; HttpOnly
       X-Request-Id:
-      - ee25130b-6c75-4140-83a0-b962b31b2ed0
+      - 1bcbc258-005a-49dc-96e9-219a7384dc95
       X-Runtime:
-      - '0.120129'
+      - '0.015885'
       X-Rack-Cache:
       - invalidate, pass
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
+      string: "{}"
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:47:33 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Mon, 11 Jul 2016 14:48:20 GMT
+recorded_with: VCR 3.0.3
