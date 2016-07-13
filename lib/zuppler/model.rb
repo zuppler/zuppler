@@ -139,7 +139,7 @@ module Zuppler
         end
 
       rescue Zuppler::RetryError
-        Zuppler.logger.info "Get Request retry failed for: #{url}"
+        Zuppler.logger.debug "Get Request retry failed for: #{url}"
       end
 
       log url, response, options
