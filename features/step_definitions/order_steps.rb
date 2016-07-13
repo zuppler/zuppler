@@ -7,25 +7,25 @@ When(/^I fetch order details$/) do
 end
 
 When(/^I confirm order$/) do
-  @success = @order.confirm time: '2014-03-18 17:45', duration: 20
+  @success = @order.confirm time: '2016-07-12 11:23', duration: 20, sender: 'test'
 end
 When(/^I cancel order$/) do
-  @success = @order.cancel reason: 'food was cold'
+  @success = @order.cancel reason: 'food was cold', sender: 'test'
 end
 When(/^I miss order$/) do
-  @success = @order.miss
+  @success = @order.miss sender: 'test'
 end
 When(/^I open order$/) do
-  @response = @order.open reason: 'out of fish'
+  @response = @order.open reason: 'out of fish', sender: 'test'
 end
 When(/^I close order$/) do
-  @response = @order.close
+  @response = @order.close sender: 'test'
 end
 When(/^I touch order$/) do
-  @success = @order.touch
+  @success = @order.touch sender: 'test'
 end
 When(/^I update order$/) do
-  @success = @order.save metadata: {rds: {market_id: 12}}
+  @success = @order.save metadata: { rds: { market_id: 12 } }
 end
 
 Then(/^I should have order accepted$/) do
