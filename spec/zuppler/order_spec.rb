@@ -16,6 +16,5 @@ describe Zuppler::Order do
       expect(Zuppler::Model).to receive(:get).once.and_return(response)
       expect(order.details).to be_an_instance_of(Hashie::Mash)
     end
-
   end
 end

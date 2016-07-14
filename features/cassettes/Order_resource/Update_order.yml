@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e.json
+    body:
+      encoding: UTF-8
+      string: order[metadata][rds][market_id]=12
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Thu, 14 Jul 2016 11:29:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"6db8ce9acfb2afbe25e042572c95774e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWQwMTk1MTdlOWNiZTZjMTQzNDc4M2VmOWE4MDg2YzAxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxpSEdjNkl3ekhOeWxJQk9STUdHWnRkWlE3MkNoMmNiTVFIUGZxQUtlbzg9BjsARg%3D%3D--bb3880d070a8599eb33270a9ca2ee2f8be0a3fa9;
+        path=/; HttpOnly
+      X-Request-Id:
+      - b3ef65dd-bdba-4e79-8c0e-1f341721ed41
+      X-Runtime:
+      - '0.035877'
+      X-Rack-Cache:
+      - invalidate, pass
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"}}'
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 11:29:08 GMT
+recorded_with: VCR 3.0.3

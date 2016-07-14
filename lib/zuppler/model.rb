@@ -162,7 +162,5 @@ module Zuppler
     def filter_attributes(attrs, *keys)
       attrs.reject { |k, v| keys.include?(k) || (!disable_blank_filter && v.nil?) }
     end
-
-
   end
 end

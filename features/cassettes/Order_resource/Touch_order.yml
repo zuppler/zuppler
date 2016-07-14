@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/e692b248-57f7-11e5-99a6-927284b3d77a/confirm.json
+    uri: http://orders.api.biznettechnologies.com/v4/orders/fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1/touch.json
     body:
       encoding: UTF-8
-      string: time=2016-07-12%2011%3A23&duration=20&sender=test
+      string: sender=test
     headers: {}
   response:
     status:
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 14 Jul 2016 11:28:57 GMT
+      - Thu, 14 Jul 2016 11:29:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Vary:
@@ -29,12 +29,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMzYzcxZDVkNjhiYjJmNjQ1MTIwZDU2NTllNTA3ODJhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVhMOVhuNGt1c3RJZllnajk0Z0VTOENjOXNPUURJV1g3c1Nzd3NkVS9rV2s9BjsARg%3D%3D--2e0f5fa030de85afbf355430cfeea339a8dabfc4;
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTgwMjI0MjcxYmZlZDg5NWU3N2E3ZjQ3ZjU0YzU4NDVhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXJNOU50SDVTd29MN05VR0N4WEUwbVEzWnVSLzNJSmQ5WDgrY0lpblpwcnM9BjsARg%3D%3D--b72c5adb3f0da9d19705ef2f552c1ecb19390be2;
         path=/; HttpOnly
       X-Request-Id:
-      - 92bd368d-987a-4213-9519-c641e3447337
+      - 0611fa81-ea7d-4691-94e3-d2027a37926a
       X-Runtime:
-      - '0.008530'
+      - '0.011666'
       X-Rack-Cache:
       - invalidate, pass
       Via:
@@ -43,5 +43,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 11:28:58 GMT
+  recorded_at: Thu, 14 Jul 2016 11:29:08 GMT
 recorded_with: VCR 3.0.3

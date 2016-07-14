@@ -78,7 +78,10 @@ module Zuppler
     def providers
       if @providers.nil?
         response = execute_get user_providers_url(id), {}, headers
-        @providers = response['providers'] if v4_success? response
+        if v4_success? response
+          providers = response['providers']
+          @response = (providers && providers.any?) ? providers.map { |p| Hashie::Mash.new(p) } : []
+        end
       end
       @providers
     end

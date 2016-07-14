@@ -15,46 +15,44 @@ Feature: Order resource
     When I confirm order
     Then I should have order accepted
 
-  # @vcr
-  # Scenario: Cancel order
-  #   Given Zuppler configured with "zuppler" and "qwe123"
-  #   And I have an order "fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1"
-  #   When I cancel order
-  #   Then I should have order accepted
+  @vcr
+  Scenario: Cancel order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1"
+    When I cancel order
+    Then I should have order accepted
 
-  # @vcr
-  # Scenario: Miss order
-  #   Given Zuppler configured with "zuppler" and "qwe123"
-  #   And I have an order "fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1"
-  #   When I miss order
-  #   Then I should have order accepted
+  @vcr
+  Scenario: Miss order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1"
+    When I miss order
+    Then I should have order accepted
 
-  # @vcr
-  # Scenario: Open order
-  #   Given Zuppler configured with "zuppler" and "qwe123"
-  #   And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
-  #   When I open order
-  #   Then I get hash response
+  @vcr
+  Scenario: Open order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
+    When I open order
+    Then I get hash response
 
-  # @vcr
-  # Scenario: Close order
-  #   Given Zuppler configured with "zuppler" and "qwe123"
-  #   And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
-  #   When I close order
-  #   Then I get hash response
+  @vcr
+  Scenario: Close order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
+    When I close order
+    Then I get hash response
 
-  # @vcr
-  # Scenario: Touch order
-  #   Given Zuppler configured with "zuppler" and "qwe123"
-  #   And I have an order "fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1"
-  #   When I touch order
-  #   Then I should have order accepted
+  @vcr
+  Scenario: Touch order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1"
+    When I touch order
+    Then I should have order accepted
 
-  # @vcr
-  # Scenario: Update order
-  #   Given Zuppler configured with "zuppler" and "qwe123"
-  #   And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
-  #   When I update order
-  #   Then I should have order accepted
-
-
+  @vcr
+  Scenario: Update order
+    Given Zuppler configured with "zuppler" and "qwe123"
+    And I have an order "faf1ff3c-c0b8-11e3-8cc3-22000a98a19e"
+    When I update order
+    Then I should have order accepted

@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    body:
+      encoding: UTF-8
+      string: sender=test
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Thu, 14 Jul 2016 11:29:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"f16431cbdbf7ed2128a127aeef743a40"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQ5ZDE2ZTBlNmE2ZWVmZDVjNTdkNmI5YzZhNGI4YTY1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUlHZTBBTythYUs2blA0WnNXZHNXbTE1cnZVbnlrUkVHa1RXNVV1SElqZ2M9BjsARg%3D%3D--a1f687d003536a2a6a44abc2dd0a927dfdaaeac2;
+        path=/; HttpOnly
+      X-Request-Id:
+      - ad5712b4-22a5-40f5-b6f9-71b45a7cafa7
+      X-Runtime:
+      - '0.352136'
+      X-Rack-Cache:
+      - invalidate, pass
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"status":{"code":500,"message":"undefined method `in_time_zone''
+        for nil:NilClass"}}'
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 11:29:04 GMT
+- request:
+    method: put
+    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    body:
+      encoding: UTF-8
+      string: sender=test
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Thu, 14 Jul 2016 11:29:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"f16431cbdbf7ed2128a127aeef743a40"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRjNWY2NTM3ZmJlYzE4Nzk1YmQ5NTE0NDk5M2FmMGVlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWJJVjBOV202YklkWUpBdmpSK3Y2OE4zSDJtd3BqcGxVMnE3bE9UWWEweU09BjsARg%3D%3D--af4c041eae5dfeafdaf1c8b5b2cb98ae61996984;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 0f964dc7-fcda-4527-8b1d-99ebf81eda6f
+      X-Runtime:
+      - '0.223662'
+      X-Rack-Cache:
+      - invalidate, pass
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"status":{"code":500,"message":"undefined method `in_time_zone''
+        for nil:NilClass"}}'
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 11:29:05 GMT
+- request:
+    method: put
+    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    body:
+      encoding: UTF-8
+      string: sender=test
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Thu, 14 Jul 2016 11:29:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"f16431cbdbf7ed2128a127aeef743a40"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE4ZDVlNDhiZGQ0NDQwM2YxZDMwNmQ1YmEwZWU1ZmY2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVQ1SEtRV1JPTlZRNFZkRVNhbUp4V0RJc3Q2TEY0ZUtDNmxxYzJTck9WdWs9BjsARg%3D%3D--7b42ad39e7f967c0781054818a605a3e9783b630;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 27914a9a-25b1-4d95-83ab-a20c6dad0f15
+      X-Runtime:
+      - '0.227058'
+      X-Rack-Cache:
+      - invalidate, pass
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"status":{"code":500,"message":"undefined method `in_time_zone''
+        for nil:NilClass"}}'
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 11:29:08 GMT
+recorded_with: VCR 3.0.3
