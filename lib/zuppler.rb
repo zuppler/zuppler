@@ -23,6 +23,7 @@ require 'zuppler/notification'
 require 'zuppler/discount'
 require 'zuppler/user'
 require 'zuppler/application'
+require 'zuppler/provider'
 
 module Zuppler
   class Error < StandardError

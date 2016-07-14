@@ -2,33 +2,40 @@ module Zuppler
   class Provider < Model
     include ActiveAttr::Model
 
-    attribute :id
-    attribute :user_id
+    attr_accessor :provider_id
+    attr_accessor :user_id
+    attr_accessor :token
 
-    def self.find(user_id, id)
-      Zuppler::Provider.new user_id: user_id, id: id
+    def self.find(token, user_id, id)
+      zu = Zuppler::Provider.new token: token, user_id: user_id, provider_id: id
+      Rails.logger.debug "#{zu.provider_id}, #{zu.token}"
+      zu
     end
 
     def details
       if @details.nil?
-        response = execute_get provider_url, {}, {}
+        response = execute_get provider_url, {}, headers
         @details = Hashie::Mash.new(response['provider']) if v4_success?(response)
       end
       @details
     end
 
     def provider
-      details.provider
+      @details.provider
     end
 
-    def token
-      details.token
+    def id
+      @details.id
     end
 
     private
 
     def provider_url
-      "#{Zuppler.users_api_url}/users/#{user_id}/providers/#{id}.json"
+      "#{Zuppler.users_api_url}/users/#{user_id}/providers/#{provider_id}.json"
+    end
+
+    def headers
+      { 'Authorization' => " Bearer #{token}" }
     end
   end
 end

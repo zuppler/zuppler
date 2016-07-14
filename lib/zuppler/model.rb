@@ -124,11 +124,11 @@ module Zuppler
 
     def execute_get(url, body, headers = {})
       options = { body: body, headers: headers }
+
       response = nil
       begin
         Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
           response = self.class.get url, options
-
           unless v4_success? response
             if v4_response_code(response) == 401
               raise Zuppler::NotAuthorized, 'not authorized'

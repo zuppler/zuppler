@@ -80,7 +80,7 @@ module Zuppler
         response = execute_get user_providers_url(id), {}, headers
         if v4_success? response
           providers = response['providers']
-          @response = (providers && providers.any?) ? providers.map { |p| Hashie::Mash.new(p) } : []
+          @providers = (providers && providers.any?) ? providers.map { |p| Hashie::Mash.new(p) } : []
         end
       end
       @providers
