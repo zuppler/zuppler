@@ -115,7 +115,7 @@ module Zuppler
         end
 
       rescue Zuppler::RetryError => e
-        Zuppler.logger.info "Put Request retry failed for: #{url} with message: #{e.message}"
+        Zuppler.logger.info "Put Request retry failed for: #{url} with message: #{e.message}" if Zuppler.logger
       end
 
       log url, response, options
@@ -139,7 +139,7 @@ module Zuppler
         end
 
       rescue Zuppler::RetryError
-        Zuppler.logger.debug "Get Request retry failed for: #{url}"
+        Zuppler.logger.debug "Get Request retry failed for: #{url}" if Zuppler.logger
       end
 
       log url, response, options
