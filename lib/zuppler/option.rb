@@ -26,7 +26,9 @@ module Zuppler
         option_attributes = filter_attributes attributes, 'modifier', 'id'
         response = execute_update option_url, option: option_attributes
       end
-      handle response, 'v4'
+      success = handle response, 'v4'
+      yield success, response if block_given?
+      success
     end
 
     def destroy

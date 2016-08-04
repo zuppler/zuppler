@@ -30,7 +30,9 @@ module Zuppler
         item_attributes[:category_id] = category.id if category
         response = execute_update item_url, item: item_attributes
       end
-      handle response
+      success = handle response
+      yield success, response if block_given?
+      success
     end
 
     def destroy

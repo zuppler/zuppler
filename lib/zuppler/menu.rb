@@ -30,7 +30,9 @@ module Zuppler
         menu_attributes = filter_attributes attributes, 'restaurant', 'id'
         response = execute_update menu_url, menu: menu_attributes
       end
-      handle response
+      success = handle response
+      yield success, response if block_given?
+      success
     end
 
     def destroy

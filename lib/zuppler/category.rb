@@ -30,7 +30,9 @@ module Zuppler
         category_attributes[:categorizable_id] = menu.id if menu
         response = execute_update category_url, category: category_attributes
       end
-      handle response
+      success = handle response
+      yield success, response if block_given?
+      success
     end
 
     def destroy

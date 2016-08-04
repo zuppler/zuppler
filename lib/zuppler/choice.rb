@@ -36,7 +36,9 @@ module Zuppler
         choice_attributes = filter_attributes attributes, 'category', 'item', 'id'
         response = execute_update choice_url, choice: choice_attributes
       end
-      handle response
+      success = handle response
+      yield success, response if block_given?
+      success
     end
 
     def destroy

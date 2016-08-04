@@ -33,7 +33,9 @@ module Zuppler
         modifier_attributes[:customization_id] = choice.id if choice
         response = execute_update modifier_url, modifier: modifier_attributes
       end
-      handle response
+      success = handle response
+      yield success, response if block_given?
+      success
     end
 
     def destroy
