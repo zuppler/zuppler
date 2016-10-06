@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/812695.json
     body:
       encoding: UTF-8
-      string: modifier[option_id]=1&modifier[name]=cream&modifier[price]=1.99&modifier[priority]=1&modifier[default]=true&modifier[customization_id]=85100
+      string: modifier[name]=cream&modifier[description]=up%20up&modifier[price]=1.99&modifier[priority]=1&modifier[default]=true&modifier[customization_id]=85100
     headers: {}
   response:
     status:
@@ -17,7 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 09 Nov 2015 16:26:47 GMT
+      - Thu, 06 Oct 2016 15:39:39 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -26,28 +32,25 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"f65ae1d265fd8fe5f26772a75bdc20b6"'
+      - W/"70a1539c0ebf5418512d3b446727bf26"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBjZGYxYzhhNmZjYzAyNGM2YjE2YzljOTEzMTEzYWZjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVZhcmFrRERNUlhrQ1U2ekZ5NHNMNiswc0lHUGtVTzFsMnVRSmZZRzZTNVU9BjsARg%3D%3D--321f4e76e33c5a3d3d5711429fc1bc216451778c;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThkMjQwMDgyZjhlOTM2ZjNkOGU5MGJhMGMxMWQzYThkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVVkeFlaN25YcU1XZStkdUxZVnZjbkxEdWU0T0toSm55UjA0WE1jZFRkb1E9BjsARg%3D%3D--5acf3f0a84735b132780f3c3331e41211e65b8cf;
         path=/; HttpOnly
       X-Request-Id:
-      - fa44a5c9-5f4f-49d3-ae2f-6ca08a35ebd5
+      - 5c36213b-ffe8-4a3b-8bbb-ed22c8db350f
       X-Runtime:
-      - '0.513409'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.075166'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"modifier":{"customization_id":85100,"id":812695,"size_name":"Extra-Large","name":"bacon","price":0.0,"priority":7,"active":true,"default":true,"parent_id":330875}}'
+      string: '{"success":true,"modifier":{"customization_id":85100,"id":812695,"size_name":"Extra-Large","name":"cream","description":"up
+        up","price":"1.99","priority":1,"active":true,"default":true,"parent_id":330875}}'
     http_version: 
-  recorded_at: Mon, 09 Nov 2015 16:32:26 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Thu, 06 Oct 2016 15:39:39 GMT
+recorded_with: VCR 3.0.3

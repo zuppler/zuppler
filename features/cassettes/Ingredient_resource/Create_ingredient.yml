@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/66913/modifiers.json
     body:
       encoding: UTF-8
-      string: modifier[name]=cheese&modifier[description]=desc&modifier[price]=0.99&modifier[size]=small&modifier[priority]=2
+      string: modifier[name]=cheese&modifier[description]=desc&modifier[price]=0.99&modifier[size]=small&modifier[priority]=2&modifier[default]=true
     headers: {}
   response:
     status:
@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:06:10 GMT
-      Status:
-      - 200 OK
+      - Thu, 06 Oct 2016 15:37:35 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -28,28 +32,24 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"faaef1bcb4cca187bf9142969ba78b5e"'
+      - W/"f62b42bb4d500a437cc8167ac5525f78"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFmM2VlNWZhZTY1ZGY0NGIwZDkyNTkyYTFmOTJiZGFhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTBZZzZ3WUZWWXdjOXRvbk1jMFJmMnRENW50ZlZlQzkvWkhFck8wcVkwQkE9BjsARg%3D%3D--0985b622835d9e71526def477ffa24a7e1589bc1;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWFkODQ4NGNmZmUyMjRjY2U3Njg2OGVkZjk5NWZjNDg5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXpFVGNTTmRYVTdxKzRUbC8yU1hiejRZZTE5TjZzVjh5V3FaNG15d24yM1E9BjsARg%3D%3D--dd59f30161c921d28dc1e2d8b2309e52edc9ad1b;
         path=/; HttpOnly
       X-Request-Id:
-      - cc6bb67c-2aec-4735-bebc-c1ee778724d4
+      - 7683ed2e-b60e-4b2e-a3ad-ca1fa0973e0d
       X-Runtime:
-      - '0.140698'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.129728'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"modifier":{"id":1762134,"size_name":"small","name":"cheese","price":"0.99","priority":2,"active":true,"parent_id":549278}}'
+      string: '{"success":true,"modifier":{"customization_id":66913,"id":1779288,"size_name":"small","name":"cheese","description":null,"price":"0.99","priority":2,"active":true,"default":true,"parent_id":549278}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:08:50 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Thu, 06 Oct 2016 15:37:36 GMT
+recorded_with: VCR 3.0.3
