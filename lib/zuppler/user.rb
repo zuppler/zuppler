@@ -1,4 +1,5 @@
 require 'zuppler/user_utils/search'
+
 module Zuppler
   class User < Model
     include ActiveAttr::Model
@@ -88,6 +89,17 @@ module Zuppler
       @providers
     end
 
+    def vaults
+      if @vaults.nil?
+        response = execute_get user_vaults_url(id), {}, headers
+        if v4_success? response
+          vaults = response['vaults']
+          @vaults = vaults && vaults.any? ? vaults.map { |p| Hashie::Mash.new(p) } : []
+        end
+      end
+      @vaults
+    end
+
     def acls(param = nil)
       param ? details.acls[param] : details.acls
     end
@@ -152,6 +164,10 @@ module Zuppler
 
     def user_providers_url(id)
       "#{Zuppler.users_api_url}/users/#{id}/providers.json"
+    end
+
+    def user_vaults_url(id)
+      "#{Zuppler.users_api_url}/users/#{id}/vaults.json"
     end
 
     def user_print_params_url(id)
