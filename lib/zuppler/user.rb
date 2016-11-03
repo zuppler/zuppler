@@ -1,6 +1,8 @@
+require 'zuppler/user_utils/search'
 module Zuppler
   class User < Model
     include ActiveAttr::Model
+    include Zuppler::UserUtils::Search
 
     attribute :id
     attribute :name
