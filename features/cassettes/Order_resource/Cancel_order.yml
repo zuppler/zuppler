@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1/cancel.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1/cancel.json
     body:
       encoding: UTF-8
       string: reason=food%20was%20cold&sender=test
@@ -17,31 +17,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 14 Jul 2016 11:28:58 GMT
+      - Thu, 03 Nov 2016 09:35:52 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Content-Type:
       - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"551613a621b01d524a24afbca2cac818"'
+      - W/"551613a621b01d524a24afbca2cac818"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWMyNTBjN2I4YWRkM2I0MGY4ODEyMzMxMDlkODdjZjdlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVQxR2Zha0dOMjhqODNNN2dicm4wRzlIVks1RVE3c3gwQUh6YkNDMzArQmc9BjsARg%3D%3D--b82ee9f620727f41c0ecc4c0e53042bdafaf5a6f;
+      - _zs_session=OTNmZmpGN1lEWGhXSmZqYjFHa2J6UVY0UzZGQWxZZDRhQm1zNU1KeXJ0YU02amkxYk1RZVFidUo3VE1RTGszYjYrMU9NWGgwUHd3ekNlNXR6N3ppdldVVmQ0dkZrbmZKUURBRmpkTjNxZmxnWk1rOEdNMHBEQ3d0TWQ1ckk1bzdEYlNIZjVMcENJTEhYMHkyc2VaeGJtd2M1RjAvdythRVhOaG9RcXc2TkNFMWhnQzFrSnZQRHBINFBtR25qcWFGLS1XTjR4YkVMaEJnbk1DaHdBNjVJUVdBPT0%3D--8828b23e687ce33c30aabb9b37dc7d72d0786e7e;
         path=/; HttpOnly
       X-Request-Id:
-      - 1af6cd01-5fb2-444c-889a-9824ebb0cd04
+      - 25e2a2d8-50c2-410a-a399-7eb75eca07ac
       X-Runtime:
-      - '0.007878'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.022169'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 11:28:58 GMT
+  recorded_at: Thu, 03 Nov 2016 09:35:53 GMT
 recorded_with: VCR 3.0.3

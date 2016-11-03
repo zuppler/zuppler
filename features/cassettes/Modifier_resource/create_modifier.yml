@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers.json
+    uri: http://restaurants-api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers.json
     body:
       encoding: UTF-8
       string: modifier[name]=toppings&modifier[description]=desc&modifier[multiple]=true&modifier[min_qty]=0&modifier[max_qty]=5&modifier[priority]=2
@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:06:47 GMT
-      Status:
-      - 200 OK
+      - Thu, 03 Nov 2016 09:42:03 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -27,24 +31,20 @@ http_interactions:
       Access-Control-Allow-Headers:
       - "*"
       Location:
-      - http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1285.json
+      - http://restaurants-api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1505.json
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"758510ce843407be006bf0715bfeadf1"'
+      - W/"758510ce843407be006bf0715bfeadf1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTA0ZTBlMjBjYTRmY2I5MmQ2MWRiMWZjYmE5MmQ2YTljBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVNlZE8zQkZKMkJzdXhkd212NFBKQWg2MEx4a3dLanppVzRCbUNMblQxY3M9BjsARg%3D%3D--1ff871b5fc578b9539ab92924b703aa20cc900d3;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWZmYjY3NWJjMDQxMTZmNmJlMzNmMTA2OWJjZTljNzc1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWx6VG8rVjZsUGs2NnFocU9jWUFOazRyVXVvcGtnT0hvOHd0alUxcHJlT009BjsARg%3D%3D--e4fe0a4264889bd146b98f1362a343b0278147be;
         path=/; HttpOnly
       X-Request-Id:
-      - bfa2a0b8-34e8-4f17-8993-cefaf11128f5
+      - 86bdb70a-71ec-4a69-8ac1-e5f1b2f18478
       X-Runtime:
-      - '0.247694'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.044098'
       Vary:
       - Origin
       Via:
@@ -53,5 +53,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":201,"message":"Created"}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:09:27 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Thu, 03 Nov 2016 09:42:03 GMT
+recorded_with: VCR 3.0.3

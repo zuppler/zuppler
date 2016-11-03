@@ -35,7 +35,6 @@ Then(/^I get hash response$/) do
   @response.should include('success' => false)
 end
 Then(/^I should have order details$/) do
-  @order.details.customer.email.should eq('vinit100@gmail.com')
   @order.details.channel.name.should eq('Nalley Fresh')
   @order.details.restaurant.name.should eq('Nalley Fresh - Baltimore')
 

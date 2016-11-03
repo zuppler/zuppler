@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e.json
     body:
       encoding: UTF-8
       string: order[metadata][rds][market_id]=12
@@ -17,31 +17,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 14 Jul 2016 11:29:08 GMT
+      - Thu, 03 Nov 2016 09:36:04 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Content-Type:
       - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"6db8ce9acfb2afbe25e042572c95774e"'
+      - W/"1ee08f12cf6009217a4b7c582f3706eb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWQwMTk1MTdlOWNiZTZjMTQzNDc4M2VmOWE4MDg2YzAxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxpSEdjNkl3ekhOeWxJQk9STUdHWnRkWlE3MkNoMmNiTVFIUGZxQUtlbzg9BjsARg%3D%3D--bb3880d070a8599eb33270a9ca2ee2f8be0a3fa9;
+      - _zs_session=ZHJxNzNDY2FZRDVjazdPdE5OZFFXYVgrdHVQTEFCemVtWGh3Y2U3UHdpMmVFMjVycDg4enVzSWxCUGVYRXhlYjB1bjgvUnhuL016R0lhSSswK3NrQ0JaZlZXQVJaUzNiVG4xa2dFN3d4cWpJbEppV0VJVDJsdTVsSEZKc210T2I0a3M2SENFREFnSW1aK2JlaERmMkxZZlFLTjF5ZEhRcXpOaHdMbEg5dHoydGIvOFI4K05RZllWeWRpeTJuV0pmLS1uOVZUWlZkaWtxMjMzWWtmUGJXRUVBPT0%3D--1fac25fe22085e1eed70a899621b129e31f03787;
         path=/; HttpOnly
       X-Request-Id:
-      - b3ef65dd-bdba-4e79-8c0e-1f341721ed41
+      - 40bb9c24-e77b-4ddf-a8e8-3907022f35c2
       X-Runtime:
-      - '0.035877'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.148810'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"status":{"code":200,"message":"OK"}}'
+      string: '{"success":true,"status":{"code":200,"message":"Updated"},"order":{"id":"faf1ff3c-c0b8-11e3-8cc3-22000a98a19e","favorite":null,"metadata":{"rds":{"market_id":"12"},"pos":null}}}'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 11:29:08 GMT
+  recorded_at: Thu, 03 Nov 2016 09:36:05 GMT
 recorded_with: VCR 3.0.3

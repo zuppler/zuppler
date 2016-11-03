@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/4d81ba6c-9507-11e4-a48a-22000b5d9596/notifications/pos/confirm.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/4d81ba6c-9507-11e4-a48a-22000b5d9596/notifications/pos/confirm.json
     body:
       encoding: UTF-8
       string: sender=cucumber
@@ -17,33 +17,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:47:31 GMT
-      Status:
-      - 200 OK
+      - Thu, 03 Nov 2016 09:41:41 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Content-Type:
       - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"551613a621b01d524a24afbca2cac818"'
+      - W/"551613a621b01d524a24afbca2cac818"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE4NjE2MGUyNTg0MTc3NDM1MTNiMGU3NTI4MGIxYTEwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWxhbElwTS9vSkZKUzJ0Y2FTZHk2Tzhxek4zc1A1d2tyM3lDVm5DTUhqbms9BjsARg%3D%3D--bf06aae300dca7fee0dacf15ed3e3b388ae0d037;
+      - _zs_session=V2RIamovNU44WHNaQVo2R2hoOEZIMnBySG5STDFmZndiam4yWE02SkU3L0o4K2RndFFuNXFJZnZLRlg4K0JhNGlkdEljY2wzYjhTY0xvY0xKVU9mVW5RN2J3SklUeUcwS3NMOVRrdm9hN3B6Zk9DWUpkUTgrc0FuU0NnazBseHRJVTZvbXhtMC9CWjQxellveldEQm1heFhLK1d0diszUzlRM1VseHZ5ZGZRaEhuZG9uNkdRNzc4MWsyMHBuVWdELS1kUEV5c0pEYjBoU0VPd29RNkZKcEF3PT0%3D--9991241e6c788ead972a04f6680ac946dcde5bed;
         path=/; HttpOnly
       X-Request-Id:
-      - a08519d1-632c-47e7-91f9-bf44fe6ac3e9
+      - 79e1e2c5-6b52-47d7-bfbb-4e4e3076b786
       X-Runtime:
-      - '0.044958'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.040361'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:47:31 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Thu, 03 Nov 2016 09:41:42 GMT
+recorded_with: VCR 3.0.3
