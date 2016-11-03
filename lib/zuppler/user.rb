@@ -80,7 +80,7 @@ module Zuppler
         response = execute_get user_providers_url(id), {}, headers
         if v4_success? response
           providers = response['providers']
-          @providers = (providers && providers.any?) ? providers.map { |p| Hashie::Mash.new(p) } : []
+          @providers = providers && providers.any? ? providers.map { |p| Hashie::Mash.new(p) } : []
         end
       end
       @providers
@@ -102,6 +102,26 @@ module Zuppler
 
     def touch(user_id)
       response = execute_update user_touch_url(user_id), {}, headers
+      v4_success? response
+    end
+
+    def print_params
+      details
+      if @print_params.nil?
+        response = execute_get user_print_params_url(id), {}, headers
+        if v4_success? response
+          print_params = response['print_params']
+          @print_params = print_params
+        end
+      end
+      @print_params
+    end
+
+    def update_print_params(print_params)
+      details
+      response = execute_update user_print_params_url(id), { print_params: print_params }, headers
+      Rails.logger.debug 'response.body:'
+      Rails.logger.debug response.body
       v4_success? response
     end
 
@@ -130,6 +150,10 @@ module Zuppler
 
     def user_providers_url(id)
       "#{Zuppler.users_api_url}/users/#{id}/providers.json"
+    end
+
+    def user_print_params_url(id)
+      "#{Zuppler.users_api_url}/users/#{id}/print_params.json"
     end
   end
 end
