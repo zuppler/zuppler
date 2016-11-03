@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,33 +17,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Tue, 12 Jul 2016 08:24:58 GMT
+      - Thu, 03 Nov 2016 09:35:51 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"5e76eb889da159f3a839b700f006d985"'
+      - W/"641e9a5b9af03303f63684c64d576eda"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTI5YzEzZmY4ZmQyZDQ5MDI1ZWM1MzdjMzQ1M2I0NzYwBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMS9kaFpCbUVTUGYzeVNRaCtLekxlcTRlOGdCWC9IMFBpN2YzcUZZeVNUQnM9BjsARg%3D%3D--920392c13ef269d2f3ab3bcb31abb8efad72de98;
+      - _zs_session=SmJPNEwvYWc5QTdnRUplV20yak5OeWo2Vk5PK1B2MTZsWWw5SGFva0M0WWJ0YTFhazl0YVJKUVBUclp2d3Y5VCtsRytYTGtpQmMzNjFoTyt0dXg4WWxqTlErTmh0M1lGbDRlNE81eElRUFhtQUg0SnFOei9TL29qN2hMWndoODFsdCtmb2NHSE1nWTFaU214b21MVlNTakE5WEUvR2NuclR5TkZxbnRkZUxTSG5pUEk5M3I1a2RXQk81N1VRNFZwLS1yYlhzMUd2VGlkN0cwc041aUxacGZnPT0%3D--a4f58f34c1cd5f323c2fc6c64cf625a4343b6fc5;
         path=/; HttpOnly
       X-Request-Id:
-      - 67e43138-aad9-453d-98f4-f8708760a95b
+      - fe613423-f9f8-4b78-abdb-c81a3e969c4b
       X-Runtime:
-      - '5.672130'
-      X-Rack-Cache:
-      - miss
+      - '1.897071'
       Via:
       - 1.1 vegur
-      Content-Type:
-      - application/json;charset=utf-8
-      Content-Length:
-      - '5559'
     body:
       encoding: UTF-8
-      string: '{"success":true,"status":{"code":200,"message":"OK"},"order":{"id":"793c50d8-c0bc-11e3-8cc3-22000a98a19e","code":"7447","carts":[{"uuid":"a3ae524a-c0bb-11e3-9321-12313931488a","version":0,"member":{"name":"Vinit
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"order":{"id":"793c50d8-c0bc-11e3-8cc3-22000a98a19e","code":"7447","favorite":null,"carts":[{"uuid":"a3ae524a-c0bb-11e3-9321-12313931488a","version":0,"member":{"name":"Vinit
         Agrawal"},"items":[{"id":2495619,"quantity":1,"name":"Build Your Own... Nalley
         Salad","groups":[{"name":"Protein choice","substitution":"null","modifiers":[{"id":2433063,"modifier_id":750732,"dish_id":69760,"quantity":1,"name":"Falafel
         Baked - Gluten-Free","alias":"","price":0,"tax":0,"total":0,"priority":14}]},{"name":"Greens
@@ -58,14 +58,13 @@ http_interactions:
         Dressings","substitution":"null","modifiers":[{"id":2433073,"modifier_id":207252,"dish_id":76055,"quantity":1,"name":"Cucumber-Yogurt
         dairy","alias":"CY","price":0,"tax":0,"total":0,"priority":11}]}],"menu":"Menu","category":"Nalley
         Salads","barcode":"","alias":"Build a SALAD","price":800,"tax":48,"item_total":800,"total":800,"comments":null,"resource_url":"","item_name":"Build
-        Your Own... Nalley Salad","item_id":370344,"dish_id":148489,"size_name":null,"priority":3}],"discounts":[],"adjustments":[]}],"tracking":"","resource_url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json","placed_at":"2014-04-10T10:29:07-04:00","comments":null,"customer":{"name":"Vinit
-        Agrawal","email":"vinit100@gmail.com","phone":"8608816246","address":null,"resource_url":"http://users.api.biznettechnologies.com/v1/users/39260.json"},"channel":{"id":32,"permalink":"nalleyfresh","name":"Nalley
-        Fresh","resource_url":"http://restaurants.api.biznettechnologies.com/v3/channels/nalleyfresh.json","integration":"site"},"restaurant":{"id":623,"permalink":"nalleyfresh","name":"Nalley
+        Your Own... Nalley Salad","item_id":370344,"dish_id":148489,"size_name":null,"priority":3}],"discounts":[],"adjustments":[]}],"tracking":"","resource_url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json","placed_at":"2014-04-10T10:29:07-04:00","comments":null,"customer":{"name":null,"email":null,"phone":null,"address":null,"resource_url":"http://users-api.biznettechnologies.com/v1/users/39260.json"},"channel":{"id":32,"permalink":"nalleyfresh","name":"Nalley
+        Fresh","resource_url":"http://restaurants-api.biznettechnologies.com/v3/channels/nalleyfresh.json","integration":"site"},"restaurant":{"id":623,"permalink":"nalleyfresh","name":"Nalley
         Fresh - Baltimore","address":{"lat":"39.289646","lng":"-76.612896","delivery_instructions":null,"full":"120
-        E Baltimore St, Baltimore, MD 21202"},"locale":"en","resource_url":"http://restaurants.api.biznettechnologies.com/v3/channels/nalleyfresh/restaurants/nalleyfresh.json"},"service":{"id":"PICKUP","label":"Pickup","value":{"location":"120
+        E Baltimore St, Baltimore, MD 21202"},"locale":"en","resource_url":"http://restaurants-api.biznettechnologies.com/v3/channels/nalleyfresh/restaurants/nalleyfresh.json"},"service":{"id":"PICKUP","label":"Pickup","value":{"location":"120
         E Baltimore St, Baltimore, MD 21202"}},"time":{"id":"SCHEDULE","label":"Scheduled","value":"2014-04-10T11:40:00-04:00","estimation":{"fire":"2014-04-10T11:10:00-04:00","pickup":"2014-04-10T11:40:00-04:00","delivery":null}},"tender":{"id":"CARD","label":"Credit
         Card","value":{"paid":true,"type":"discover","last_4_digits":"1513","as":"Zuppler
-        Food Order"}},"tip":{"id":"PERCENT","label":"Percent","value":0},"settings":{"catering":null,"extra_fields":[]},"totals":{"subtotal":800,"discount":0,"charges":{"delivery":0,"service":0},"tax":48,"tip":0,"total":848},"rewards":{"bucks":64,"points":8000},"links":[{"name":"self","methods":["get"],"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json"},{"name":"notifications","methods":["get"],"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/notifications.json"},{"name":"events","methods":["get","post"],"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/events.json"},{"name":"confirm","methods":["put"],"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/confirm.json"},{"name":"cancel","methods":["put"],"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/cancel.json"},{"name":"miss","methods":["put"],"interactive":false,"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/miss.json"},{"name":"execute","methods":["put"],"interactive":false,"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/execute.json"},{"name":"refresh","methods":["put"],"interactive":true,"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/touch.json"},{"name":"open","methods":["put"],"interactive":false,"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/open.json"},{"name":"close","methods":["put"],"interactive":false,"url":"http://orders.api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/close.json"}]}}'
+        Food Order"}},"tip":{"id":"PERCENT","label":"Percent","value":0},"settings":{"catering":null,"extra_fields":[]},"totals":{"subtotal":800,"discount":0,"charges":{"delivery":0,"service":0},"tax":48,"tip":0,"total":848},"rewards":{"bucks":64,"points":8000},"links":[{"name":"self","methods":["get","put"],"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e.json"},{"name":"notifications","methods":["get"],"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/notifications.json"},{"name":"events","methods":["get","post"],"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/events.json"},{"name":"confirm","methods":["put"],"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/confirm.json"},{"name":"cancel","methods":["put"],"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/cancel.json"},{"name":"miss","methods":["put"],"interactive":false,"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/miss.json"},{"name":"execute","methods":["put"],"interactive":false,"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/execute.json"},{"name":"refresh","methods":["put"],"interactive":true,"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/touch.json"},{"name":"open","methods":["put"],"interactive":false,"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/open.json"},{"name":"close","methods":["put"],"interactive":false,"url":"http://orders-api.biznettechnologies.com/v4/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/close.json"},{"name":"discounts","methods":["get"],"interactive":false,"url":"http://carts.api.biznettechnologies.com/api/v5/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/discounts"},{"name":"ambassadors","methods":["get"],"interactive":false,"url":"http://carts.api.biznettechnologies.com/api/v5/orders/793c50d8-c0bc-11e3-8cc3-22000a98a19e/ambassadors"}]}}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 08:24:58 GMT
+  recorded_at: Thu, 03 Nov 2016 09:35:52 GMT
 recorded_with: VCR 3.0.3

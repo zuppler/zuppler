@@ -92,11 +92,11 @@ module Zuppler
     end
 
     def restaurants_api_url(version = 'v4')
-      'http://restaurants.api.' + api_domain + "/#{version}"
+      'http://restaurants-api.' + api_domain + "/#{version}"
     end
 
     def orders_api_url(version = 'v4')
-      'http://orders.api.' + api_domain + "/#{version}"
+      'http://orders-api.' + api_domain + "/#{version}"
     end
 
     def users_api_url(version = 'v1')

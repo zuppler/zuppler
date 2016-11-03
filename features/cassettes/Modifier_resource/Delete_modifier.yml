@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://restaurants.api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1218.json
+    uri: http://restaurants-api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1218.json
     body:
       encoding: UTF-8
       string: modifier[active]=false
@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 28 Aug 2015 10:06:48 GMT
-      Status:
-      - 200 OK
+      - Thu, 03 Nov 2016 09:42:03 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -28,21 +32,17 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"c5d869ec6b8d10960fd73f16d4e6577f"'
+      - W/"c5d869ec6b8d10960fd73f16d4e6577f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNmOWNkMmM4OGRiYTE4ZGY4ZWFmYTMwYTEwZTdlNTdhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU1CaDlqaGgzMjdQSFQrYkd6STJQcXA4S29iQ0NvMFVqOElkV2JkUTdTVXc9BjsARg%3D%3D--08c8cb3f1a22c486a55d264a6e5f27e283b10f5d;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQ3OThlMTQ4MDQxMGU1MjMxMTliMjQ1OWY3MTI1MjliBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWE2N2xncy92c25pRnl4bDFDN2NBUXVkeGY0b3FQdVdYd1NkMzdWUnA5Tk09BjsARg%3D%3D--90bbe41d26a024285a9340b652d2b92556432b8b;
         path=/; HttpOnly
       X-Request-Id:
-      - 57f86c15-01e9-47e8-a22d-3d2b23e5cf49
+      - ab71f66e-7cd4-4a0b-8dce-1fdbf657dde3
       X-Runtime:
-      - '0.073093'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.022141'
       Vary:
       - Origin
       Via:
@@ -51,5 +51,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"modifier":{"id":1218,"name":"updated","multiple":true,"min_qty":3,"max_qty":5,"priority":1,"active":false}}'
     http_version: 
-  recorded_at: Fri, 28 Aug 2015 10:09:28 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Thu, 03 Nov 2016 09:42:04 GMT
+recorded_with: VCR 3.0.3

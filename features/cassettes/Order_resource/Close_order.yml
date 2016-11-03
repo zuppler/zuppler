@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
     body:
       encoding: UTF-8
       string: sender=test
@@ -17,26 +17,28 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 14 Jul 2016 11:29:04 GMT
+      - Thu, 03 Nov 2016 09:35:59 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Content-Type:
       - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"f16431cbdbf7ed2128a127aeef743a40"'
+      - W/"f16431cbdbf7ed2128a127aeef743a40"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQ5ZDE2ZTBlNmE2ZWVmZDVjNTdkNmI5YzZhNGI4YTY1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUlHZTBBTythYUs2blA0WnNXZHNXbTE1cnZVbnlrUkVHa1RXNVV1SElqZ2M9BjsARg%3D%3D--a1f687d003536a2a6a44abc2dd0a927dfdaaeac2;
+      - _zs_session=bmsvQlorOVZybkZJdVZZZTZCdFYrcGVZSGdOYTNVTDh2WUkrSGJGdDFIMkhGRUhCT3p3S3Z0WlEyVVdCd1BTUlo4TEsrWEdEYkw2N0FqYm9QN3RGem5CZkszakdKUjVMcTIvNCs5K09GNitvUUNJcmFZNFRaalRMZTZDN29aK2s0VkdOM3BPMlpUU1hWR2NDd3o3MTEyS0pLYWhvMWNNak50RkZra3VwZERyR2dNOGtJYzZ3aWl2WE5TeUJrWi95LS1NNHNYY2VFOCtLeno4THg3RGxROU9BPT0%3D--3071582d611f69809227836785999b92ed6cbfb6;
         path=/; HttpOnly
       X-Request-Id:
-      - ad5712b4-22a5-40f5-b6f9-71b45a7cafa7
+      - a3e957b0-f966-4310-8c23-3f7664b9534b
       X-Runtime:
-      - '0.352136'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.635247'
       Via:
       - 1.1 vegur
     body:
@@ -44,10 +46,10 @@ http_interactions:
       string: '{"success":false,"status":{"code":500,"message":"undefined method `in_time_zone''
         for nil:NilClass"}}'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 11:29:04 GMT
+  recorded_at: Thu, 03 Nov 2016 09:36:00 GMT
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
     body:
       encoding: UTF-8
       string: sender=test
@@ -62,26 +64,28 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 14 Jul 2016 11:29:05 GMT
+      - Thu, 03 Nov 2016 09:36:01 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Content-Type:
       - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"f16431cbdbf7ed2128a127aeef743a40"'
+      - W/"f16431cbdbf7ed2128a127aeef743a40"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRjNWY2NTM3ZmJlYzE4Nzk1YmQ5NTE0NDk5M2FmMGVlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWJJVjBOV202YklkWUpBdmpSK3Y2OE4zSDJtd3BqcGxVMnE3bE9UWWEweU09BjsARg%3D%3D--af4c041eae5dfeafdaf1c8b5b2cb98ae61996984;
+      - _zs_session=YWpVODNJdC9PL3FXZGhIdFk4M2xlMThXaG9ablRhQnpLa3gySlpRRVhRN3V3QzRUSVNzUGgvd0ZkQXVEWUIxL0xrMzk1WllvQ25lWUVPb2RqWThhNENoTEZEd1FURjZ5KzNRUDVwdmMzVzE2VGFUbW1hZVEwTDkwUTlWaEpCRUFxN0dEM3ZtcE5hRUJwd0V5Wm9iWk53ZW9HdSt6SmRkWW0wUGlSTlR1enZyZm5QWER3dWJ3STh4bXpGYW1ZK0dDLS1zNXNlVStUdWEvMUZXZmIvMGZ3QnV3PT0%3D--eb9fa9c22e2c40068452800ccd49d01f1e09ea8b;
         path=/; HttpOnly
       X-Request-Id:
-      - 0f964dc7-fcda-4527-8b1d-99ebf81eda6f
+      - 10d56833-9445-4941-a38e-b507774fa366
       X-Runtime:
-      - '0.223662'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.364668'
       Via:
       - 1.1 vegur
     body:
@@ -89,10 +93,10 @@ http_interactions:
       string: '{"success":false,"status":{"code":500,"message":"undefined method `in_time_zone''
         for nil:NilClass"}}'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 11:29:05 GMT
+  recorded_at: Thu, 03 Nov 2016 09:36:01 GMT
 - request:
     method: put
-    uri: http://orders.api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
+    uri: http://orders-api.biznettechnologies.com/v4/orders/faf1ff3c-c0b8-11e3-8cc3-22000a98a19e/close.json
     body:
       encoding: UTF-8
       string: sender=test
@@ -107,26 +111,28 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 14 Jul 2016 11:29:08 GMT
+      - Thu, 03 Nov 2016 09:36:03 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Content-Type:
       - application/json; charset=utf-8
       Vary:
       - Origin
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"f16431cbdbf7ed2128a127aeef743a40"'
+      - W/"f16431cbdbf7ed2128a127aeef743a40"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE4ZDVlNDhiZGQ0NDQwM2YxZDMwNmQ1YmEwZWU1ZmY2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVQ1SEtRV1JPTlZRNFZkRVNhbUp4V0RJc3Q2TEY0ZUtDNmxxYzJTck9WdWs9BjsARg%3D%3D--7b42ad39e7f967c0781054818a605a3e9783b630;
+      - _zs_session=dGMrRytlcHlWdFEvSFo5VUFUODRpenJ1dHNUN3YwZ0krNFQwcHNXSDgyMTNZNldPT0dXN2loYmFFcC9IRWNCQ2VHRkU3SkkzekZxcGNzejZKQ2hCUUJXQ3hWMGlTQXlhaGRETU5ySFZHRlc0ZzJKNnl1R1k4NlNQVEc0SnVsQSt1N3M1eVRrVVZiNHRuZlo4c0pPQmVpQ1dpUnoxdzRPU0hrUlpuVkN5ZGdxZFdKU1N6TVZoMVAyTmYveThIYUxuLS1xVk0rdVFrOWR4NkNpUUJOR3FmVXNnPT0%3D--f6604132e3b27a258f7ea2cde2bb825a1ec26af3;
         path=/; HttpOnly
       X-Request-Id:
-      - 27914a9a-25b1-4d95-83ab-a20c6dad0f15
+      - 4ec821fd-c7ae-4512-baa7-e301c43d7fbc
       X-Runtime:
-      - '0.227058'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.278942'
       Via:
       - 1.1 vegur
     body:
@@ -134,5 +140,5 @@ http_interactions:
       string: '{"success":false,"status":{"code":500,"message":"undefined method `in_time_zone''
         for nil:NilClass"}}'
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 11:29:08 GMT
+  recorded_at: Thu, 03 Nov 2016 09:36:04 GMT
 recorded_with: VCR 3.0.3
