@@ -92,20 +92,24 @@ module Zuppler
       self.class.success? response
     end
 
-    def execute_post(url, body, headers = {})
+    def self.execute_post(url, body, headers = {})
       options = { body: body, headers: headers }
-      response = self.class.post url, options
+      response = post url, options
       log url, response, options
       response
     end
 
-    def execute_update(url, body, headers = {})
+    def execute_post(url, body, headers = {})
+      self.class.execute_post url, body, headers
+    end
+
+    def self.execute_update(url, body, headers = {})
       options = { body: body, headers: headers }
       response = nil
 
       begin
         Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
-          response = self.class.put url, options
+          response = put url, options
 
           unless v4_success? response
             if v4_response_code(response) >= 500
@@ -122,13 +126,18 @@ module Zuppler
       response
     end
 
-    def execute_get(url, body, headers = {})
+    def execute_update(url, body, headers = {})
+      self.class.execute_update url, body, headers
+    end
+
+    def self.execute_get(url, body, headers = {})
       options = { body: body, headers: headers }
 
       response = nil
       begin
         Retriable.retriable on: Zuppler::RetryError, base_interval: 1 do
-          response = self.class.get url, options
+          response = get url, options
+          log url, response, options
           unless v4_success? response
             if v4_response_code(response) == 401
               raise Zuppler::NotAuthorized, 'not authorized'
@@ -137,13 +146,15 @@ module Zuppler
             end
           end
         end
-
       rescue Zuppler::RetryError
         Zuppler.logger.debug "Get Request retry failed for: #{url}" if Zuppler.logger
       end
 
-      log url, response, options
       response
+    end
+
+    def execute_get(url, body, headers = {})
+      self.class.execute_get url, body, headers
     end
 
     def self.execute_find(url, headers = {})
@@ -151,6 +162,14 @@ module Zuppler
       response = get url, options
       log url, response, options
       response
+    end
+
+    def execute_find(url, headers = {})
+      self.class.execute_find url, headers
+    end
+
+    def self.request_headers(token)
+      { 'Authorization' => " Bearer #{token}" }
     end
 
     def update_attributes(options)

@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://users.api.biznettechnologies.com/v1/users/current/vaults.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Tue, 08 Nov 2016 09:48:58 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e0e23446b6e6f746024fbd5f5e33963a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f0567e7a-a65d-44ec-aedb-8a4f07bcbcbf
+      X-Runtime:
+      - '0.033972'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"pagination":{"total":0,"page":0,"count":0},"status":{"code":200,"message":"OK"},"vaults":[]}'
+    http_version: 
+  recorded_at: Tue, 08 Nov 2016 09:48:58 GMT
+recorded_with: VCR 3.0.3

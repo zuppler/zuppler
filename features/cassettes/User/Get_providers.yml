@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://users.api.biznettechnologies.com/v1/users/current/providers.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Tue, 08 Nov 2016 09:48:17 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3a719535bfb5eccb19e001ba2f66f8c1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - db9d4ca3-b7a6-4341-aaed-0174221b06b9
+      X-Runtime:
+      - '0.029136'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"pagination":{"total":2,"page":0,"count":2},"status":{"code":200,"message":"OK"},"providers":[{"id":274181,"provider":"facebook","created_at":"2015-09-15T07:31:04Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/274181"}]},{"id":16106,"provider":"zuppler","created_at":"2012-01-25T18:27:22Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/16106"}]}]}'
+    http_version: 
+  recorded_at: Tue, 08 Nov 2016 09:48:17 GMT
+recorded_with: VCR 3.0.3

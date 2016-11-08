@@ -1,9 +1,13 @@
-require 'zuppler/user_utils/search'
+require 'zuppler/users/search'
+require 'zuppler/users/acls'
+require 'zuppler/users/vaults'
+require 'zuppler/users/providers'
 
 module Zuppler
   class User < Model
     include ActiveAttr::Model
-    include Zuppler::UserUtils::Search
+    include Zuppler::Users::Acls, Zuppler::Users::Vaults, Zuppler::Users::Providers
+    extend Zuppler::Users::Search
 
     attribute :id
     attribute :name
@@ -21,19 +25,16 @@ module Zuppler
       info = omniauth['info']
       extra = omniauth['extra']
       credentials = omniauth['credentials']
-      Zuppler::User.new id: info['id'],
-                        name: info['name'],
-                        email: info['email'],
-                        phone: info['phone'],
-                        roles: info['roles'],
-                        acls: info['acls'],
+      Zuppler::User.new id: info['id'], name: info['name'],
+                        email: info['email'], phone: info['phone'],
+                        roles: info['roles'], acls: info['acls'],
                         provider: extra['provider'],
                         access_token: credentials['token']
     end
 
     def details
       if @details.nil?
-        response = execute_get user_url, {}, headers
+        response = execute_get user_url, {}, request_headers
         if v4_success? response
           @details = Hashie::Mash.new response['user']
           self.id = @details.id
@@ -78,51 +79,15 @@ module Zuppler
       role? 'admin'
     end
 
-    def providers
-      if @providers.nil?
-        response = execute_get user_providers_url(id), {}, headers
-        if v4_success? response
-          providers = response['providers']
-          @providers = providers && providers.any? ? providers.map { |p| Hashie::Mash.new(p) } : []
-        end
-      end
-      @providers
-    end
-
-    def vaults
-      if @vaults.nil?
-        response = execute_get user_vaults_url(id), {}, headers
-        if v4_success? response
-          vaults = response['vaults']
-          @vaults = vaults && vaults.any? ? vaults.map { |p| Hashie::Mash.new(p) } : []
-        end
-      end
-      @vaults
-    end
-
-    def acls(param = nil)
-      param ? details.acls[param] : details.acls
-    end
-
-    def grant(user_id, options = {})
-      response = execute_update user_grant_url(user_id), { acls: options }, headers
-      v4_success? response
-    end
-
-    def revoke(user_id, options = {})
-      response = execute_update user_revoke_url(user_id), { acls: options }, headers
-      v4_success? response
-    end
-
     def touch(user_id)
-      response = execute_update user_touch_url(user_id), {}, headers
+      response = execute_update user_touch_url(user_id), {}, request_headers
       v4_success? response
     end
 
     def print_params
       details
       if @print_params.nil?
-        response = execute_get user_print_params_url(id), {}, headers
+        response = execute_get user_print_params_url(id), {}, request_headers
         if v4_success? response
           print_params = response['print_params']
           @print_params = print_params
@@ -133,41 +98,19 @@ module Zuppler
 
     def update_print_params(print_params)
       details
-      response = execute_update user_print_params_url(id), { print_params: print_params }, headers
-      Rails.logger.debug 'response.body:'
-      Rails.logger.debug response.body
+      response = execute_update user_print_params_url(id), { print_params: print_params }, request_headers
       v4_success? response
     end
 
     private
 
-    def headers
-      { 'Authorization' => " Bearer #{access_token}" }
+    def request_headers
+      self.class.request_headers access_token
     end
 
     def user_url
       user_id = id || 'current'
       "#{Zuppler.users_api_url}/users/#{user_id}.json"
-    end
-
-    def user_grant_url(id)
-      "#{Zuppler.users_api_url}/users/#{id}/grant.json"
-    end
-
-    def user_revoke_url(id)
-      "#{Zuppler.users_api_url}/users/#{id}/revoke.json"
-    end
-
-    def user_touch_url(id)
-      "#{Zuppler.users_api_url}/users/#{id}/touch.json"
-    end
-
-    def user_providers_url(id)
-      "#{Zuppler.users_api_url}/users/#{id}/providers.json"
-    end
-
-    def user_vaults_url(id)
-      "#{Zuppler.users_api_url}/users/#{id}/vaults.json"
     end
 
     def user_print_params_url(id)
