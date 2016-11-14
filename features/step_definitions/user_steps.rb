@@ -24,6 +24,11 @@ When(/^I get user vaults$/) do
   @vaults = @user.vaults
 end
 
+When(/^I create vaults$/) do
+  @success = @user.create_vault name: 'test', brand: 'visa', number: '1234',
+                                expiration_date: '11/2016', uid: 'abcd'
+end
+
 #
 # Thens
 #
@@ -62,4 +67,8 @@ end
 
 Then(/^I receive user vaults$/) do
   expect(@vaults.size).to eq 0
+end
+
+Then(/^vault is created$/) do
+  expect(@success).to be_truthy
 end

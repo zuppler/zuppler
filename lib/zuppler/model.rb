@@ -181,5 +181,11 @@ module Zuppler
     def filter_attributes(attrs, *keys)
       attrs.reject { |k, v| keys.include?(k) || (!disable_blank_filter && v.nil?) }
     end
+
+    def requires!(data, *attributes)
+      attributes.each do |attr|
+        raise ArgumentError, "'#{attr}' is required" unless data.include? attr
+      end
+    end
   end
 end

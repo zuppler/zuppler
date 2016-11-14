@@ -12,6 +12,15 @@ module Zuppler
         @vaults
       end
 
+      def create_vault(options)
+        requires! options, :name, :brand, :number, :expiration_date, :uid
+        vault_attributes = { vault: options }
+        response = execute_post user_vaults_url(id), vault_attributes, request_headers
+        success = v4_success? response
+        yield success, vault_attributes, response if block_given?
+        success
+      end
+
       private
 
       def user_vaults_url(id)

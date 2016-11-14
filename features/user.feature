@@ -54,3 +54,10 @@ Feature: User
     When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
     When I get user vaults
     Then I receive user vaults
+
+  @vcr
+  Scenario: Create vault
+    Given Zuppler configured with "zuppler" and "qwe123"
+    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I create vaults
+    Then vault is created

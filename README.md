@@ -69,6 +69,14 @@ end
 @modifier.save
 ```
 
+Order:
+``` ruby
+@order = Zuppler::Order.find 'abcd-1234-efgh-5678'
+@order.details.customer.name
+@order.details.carts.first.items.first.name
+@order.details.totals.tax
+```
+
 Order actions:
 ``` ruby
 @order = Zuppler::Order.find 'abcd-1234-efgh-5678'
@@ -77,19 +85,32 @@ Order actions:
 @order.miss reason: 'restaurant does not respond'
 ```
 
-Order info:
-``` ruby
-@order = Zuppler::Order.find 'abcd-1234-efgh-5678'
-@order.details.customer.name
-@order.details.carts.first.items.first.name
-@order.details.totals.tax
-```
-
 Order notifications:
 ``` ruby
 notification = @order.notification :email
 notification.execute sender: 'control panel'
 notification.confirm sender: 'control panel'
+```
+
+User:
+``` ruby
+user = Zuppler::User.find 'user_token'
+user.details.name
+user.details.name
+```
+
+User search:
+``` ruby
+users = Zuppler::User.search 'application_token', role: 'driver'
+users.size
+users.first.name
+```
+
+User vaults:
+``` ruby
+user = Zuppler::User.find 'user_token'
+user.create_vault name: 'John', brand: 'visa', number: '1234', expiration_date: '11/2016', uid: 'abcd'
+user.vaults.size
 ```
 
 ## Contributing
