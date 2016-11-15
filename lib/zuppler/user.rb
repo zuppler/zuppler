@@ -2,11 +2,13 @@ require 'zuppler/users/search'
 require 'zuppler/users/acls'
 require 'zuppler/users/vaults'
 require 'zuppler/users/providers'
+require 'zuppler/users/zupps'
 
 module Zuppler
   class User < Model
     include ActiveAttr::Model
-    include Zuppler::Users::Acls, Zuppler::Users::Vaults, Zuppler::Users::Providers
+    include Zuppler::Users::Acls, Zuppler::Users::Vaults
+    include Zuppler::Users::Providers, Zuppler::Users::Zupps
     extend Zuppler::Users::Search
 
     attribute :id
@@ -100,6 +102,10 @@ module Zuppler
       details
       response = execute_update user_print_params_url(id), { print_params: print_params }, request_headers
       v4_success? response
+    end
+
+    def reload
+      @details = nil
     end
 
     private

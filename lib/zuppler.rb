@@ -7,6 +7,7 @@ require 'retriable'
 
 require 'zuppler/version'
 require 'zuppler/model'
+require 'zuppler/request'
 
 require 'zuppler/channel'
 require 'zuppler/restaurant'
