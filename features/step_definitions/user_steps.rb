@@ -61,6 +61,10 @@ When(/^revoke "([^"]*)" points for "([^"]*)" restaurant$/) do |amount, id|
   end
 end
 
+When(/^I get "([^"]*)" provider$/) do |type|
+  @provider = @user._provider type
+end
+
 #
 # Thens
 #
@@ -123,4 +127,9 @@ end
 Then(/^user was revoked "([^"]*)" points for "([^"]*)" restaurant$/) do |amount, id|
   @user.reload
   expect(@user.details.zupp_bucks.send(:id)).to eq @zupp_bucks - amount.to_i
+end
+
+Then(/^I receive user provider$/) do
+  expect(@provider.provider).to eq 'zuppler'
+  expect(@provider.token).not_to be_nil
 end

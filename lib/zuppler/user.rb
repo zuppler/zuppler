@@ -7,6 +7,7 @@ require 'zuppler/users/zupps'
 module Zuppler
   class User < Model
     include ActiveAttr::Model
+    include Zuppler::Requestable
     include Zuppler::Users::Acls, Zuppler::Users::Vaults
     include Zuppler::Users::Providers, Zuppler::Users::Zupps
     extend Zuppler::Users::Search
