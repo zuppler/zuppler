@@ -22,10 +22,7 @@ When(/^I search users by role "(.*)"$/) do |role|
 end
 
 When(/^I update access grant$/) do
-  expect do
-    @user.details
-  end.not_to raise_error
-  @result = @user.grant(@user.id, market: [1])
+  @result = @user.grant('14802', market: [1])
 end
 
 When(/^I get user providers$/) do

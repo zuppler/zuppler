@@ -33,6 +33,8 @@ module Zuppler
   end
   class ServerError < Error
   end
+  class SkipCache < Error
+  end
   class NotAuthorized < Error
   end
 

@@ -40,11 +40,10 @@ module Zuppler
 
     def details
       if @details.nil?
-        response = execute_get user_url, {}, request_headers
-        if v4_success? response
-          @details = Hashie::Mash.new response['user']
-          self.id = @details.id
+        body = cacheable "zu/#{cache_key}/details", 'user' do
+          execute_get user_url, {}, request_headers
         end
+        @details = Hashie::Mash.new body if body
       end
       @details
     end
@@ -58,18 +57,28 @@ module Zuppler
       @details = nil
     end
 
-    private
-
     def request_headers
       self.class.request_headers access_token
     end
 
-    def user_url
-      "#{Zuppler.users_api_url}/users/#{id}.json"
+    private
+
+    def cacheable(cache_key, data_key)
+      Zuppler.cache.fetch cache_key, expires_in: 60 * 5 do
+        response = yield
+        raise Zuppler::SkipCache, 'response error, skip cache' unless v4_success? response
+        response[data_key]
+      end
+    rescue Zuppler::SkipCache
+      nil
     end
 
-    def user_print_params_url(id)
-      "#{Zuppler.users_api_url}/users/#{id}/print_params.json"
+    def cache_key
+      id == 'current' ? rand : id
+    end
+
+    def user_url
+      "#{Zuppler.users_api_url}/users/#{id}.json"
     end
   end
 end

@@ -21,4 +21,22 @@ RSpec.describe Zuppler::User do
       expect(zu.roles).to eq %w(admin config)
     end
   end
+
+  describe '#details' do
+    # Hash cache executes the block every time
+    # it 'cache hit' do
+    #   zu = Zuppler::User.find 'at'
+    #   expect(zu).to receive(:execute_get).once.and_return user: { name: 'test' }, success: true
+    #   expect(zu).to receive(:v4_success?).once.and_return true
+    #   zu.details
+    #   zu.details
+    # end
+    it 'cache miss' do
+      zu = Zuppler::User.find 'at'
+      expect(zu).to receive(:execute_get).twice.and_return user: {}, success: true
+      expect(zu).to receive(:v4_success?).twice.and_return false
+      zu.details
+      zu.details
+    end
+  end
 end

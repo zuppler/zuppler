@@ -18,11 +18,11 @@ module Zuppler
       private
 
       def user_grant_url(user_id)
-        "#{Zuppler.users_api_url}/users/#{id}/grant.json"
+        "#{Zuppler.users_api_url}/users/#{user_id}/grant.json"
       end
 
       def user_revoke_url(user_id)
-        "#{Zuppler.users_api_url}/users/#{id}/revoke.json"
+        "#{Zuppler.users_api_url}/users/#{user_id}/revoke.json"
       end
     end
   end
