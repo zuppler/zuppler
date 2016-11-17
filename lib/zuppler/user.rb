@@ -3,13 +3,16 @@ require 'zuppler/users/acls'
 require 'zuppler/users/vaults'
 require 'zuppler/users/providers'
 require 'zuppler/users/zupps'
+require 'zuppler/users/roles'
+require 'zuppler/users/prints'
 
 module Zuppler
   class User < Model
     include ActiveAttr::Model
     include Zuppler::Requestable
-    include Zuppler::Users::Acls, Zuppler::Users::Vaults
-    include Zuppler::Users::Providers, Zuppler::Users::Zupps
+    include Zuppler::Users::Acls, Zuppler::Users::Roles,
+            Zuppler::Users::Vaults, Zuppler::Users::Providers,
+            Zuppler::Users::Zupps, Zuppler::Users::Prints
     extend Zuppler::Users::Search
 
     attribute :id
@@ -20,7 +23,7 @@ module Zuppler
     attribute :access_token
     attribute :provider
 
-    def self.find(access_token, id = nil)
+    def self.find(access_token, id = 'current')
       Zuppler::User.new access_token: access_token, id: id
     end
 
@@ -46,62 +49,8 @@ module Zuppler
       @details
     end
 
-    def role?(role)
-      details.roles.include? role
-    end
-
-    def user?
-      details.roles.empty?
-    end
-
-    def channel?
-      role? 'channel'
-    end
-
-    def restaurant?
-      role? 'restaurant'
-    end
-
-    def restaurant_staff?
-      role? 'restaurant_staff'
-    end
-
-    def ambassador?
-      role? 'ambassador'
-    end
-
-    def config?
-      role? 'config'
-    end
-
-    def support?
-      role? 'support'
-    end
-
-    def admin?
-      role? 'admin'
-    end
-
     def touch(user_id)
       response = execute_update user_touch_url(user_id), {}, request_headers
-      v4_success? response
-    end
-
-    def print_params
-      details
-      if @print_params.nil?
-        response = execute_get user_print_params_url(id), {}, request_headers
-        if v4_success? response
-          print_params = response['print_params']
-          @print_params = print_params
-        end
-      end
-      @print_params
-    end
-
-    def update_print_params(print_params)
-      details
-      response = execute_update user_print_params_url(id), { print_params: print_params }, request_headers
       v4_success? response
     end
 
@@ -116,8 +65,7 @@ module Zuppler
     end
 
     def user_url
-      user_id = id || 'current'
-      "#{Zuppler.users_api_url}/users/#{user_id}.json"
+      "#{Zuppler.users_api_url}/users/#{id}.json"
     end
 
     def user_print_params_url(id)

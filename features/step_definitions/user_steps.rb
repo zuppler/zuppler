@@ -14,7 +14,7 @@ end
 # Whens
 #
 When(/^I initialize user with "([^"]*)"$/) do |access_token|
-  @user = Zuppler::User.find access_token, 'current'
+  @user = Zuppler::User.find access_token
 end
 
 When(/^I search users by role "(.*)"$/) do |role|
@@ -69,9 +69,9 @@ end
 # Thens
 #
 Then(/^I have user details$/) do
-  expect(@user.details.name).to eq 'Test Account'
+  expect(@user.details.name).to eq 'Test Zuppler'
   expect(@user.details.email).to eq 'test@zuppler.com'
-  expect(@user.details.phone).to eq '1234567890'
+  expect(@user.details.phone).to eq '610-844-2971'
 end
 
 Then(/^I am not authorized$/) do
@@ -102,7 +102,7 @@ Then(/^I receive user providers$/) do
 end
 
 Then(/^I receive user vaults$/) do
-  expect(@vaults.size).to eq 0
+  expect(@vaults.size).to be > 0
 end
 
 Then(/^vault is created$/) do

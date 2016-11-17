@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Tue, 08 Nov 2016 09:48:17 GMT
+      - Thu, 17 Nov 2016 06:48:41 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,20 +29,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3a719535bfb5eccb19e001ba2f66f8c1"
+      - W/"15caafa5431d0523ee0ea0d42ef4e1be"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - db9d4ca3-b7a6-4341-aaed-0174221b06b9
+      - 3a1bdf06-857e-4b18-a131-d1e165701112
       X-Runtime:
-      - '0.029136'
+      - '0.109999'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"pagination":{"total":2,"page":0,"count":2},"status":{"code":200,"message":"OK"},"providers":[{"id":274181,"provider":"facebook","created_at":"2015-09-15T07:31:04Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/274181"}]},{"id":16106,"provider":"zuppler","created_at":"2012-01-25T18:27:22Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/16106"}]}]}'
+      string: '{"success":true,"pagination":{"total":2,"page":0,"count":2},"status":{"code":200,"message":"OK"},"providers":[{"id":274181,"provider":"facebook","created_at":"2015-09-15T07:31:04Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/facebook"}]},{"id":16106,"provider":"zuppler","created_at":"2012-01-25T18:27:22Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/zuppler"}]}]}'
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 09:48:17 GMT
+  recorded_at: Thu, 17 Nov 2016 06:48:42 GMT
 recorded_with: VCR 3.0.3

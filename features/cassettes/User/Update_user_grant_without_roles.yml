@@ -11,52 +11,6 @@ http_interactions:
       - Bearer af1813ae5d79a6e16e574a44c8398d6a6508b825fb31c80b8deddec302f83019
   response:
     status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - close
-      Date:
-      - Fri, 12 Feb 2016 13:17:56 GMT
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"1d6ef1bcb4f3fbe6e319aff9eb973631"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5fb8c128-9586-4a97-9a48-60eb53c31a9b
-      X-Runtime:
-      - '0.030635'
-      Vary:
-      - Origin
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"success":true,"user":{"id":14802,"name":"Test Account","email":"test@zuppler.com","phone":"1234567890","created_at":"2012-01-25
-        18:27:22 UTC","roles":["restaurant"],"access_grants":{},"zuppler_bucks":351.85,"zuppler_points":45178.0,"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get"],"url":"/v1/users/14802.json"},{"name":"vaults","method":"get","url":"/v1/users/14802/vaults.json"},{"name":"orders","method":"get","url":"/v1/users/14802/orders.json"},{"name":"grant","method":"put","url":"/v1/users/14802/grant.json"},{"name":"revoke","method":"put","url":"/v1/users/14802/revoke.json"}]}}'
-    http_version: 
-  recorded_at: Fri, 12 Feb 2016 13:17:56 GMT
-- request:
-    method: put
-    uri: http://users.api.biznettechnologies.com/v1/users/14802/grant.json
-    body:
-      encoding: UTF-8
-      string: access_grants[market][]=1
-    headers:
-      Authorization:
-      - Bearer af1813ae5d79a6e16e574a44c8398d6a6508b825fb31c80b8deddec302f83019
-  response:
-    status:
       code: 401
       message: Unauthorized
     headers:
@@ -65,28 +19,33 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 12 Feb 2016 13:17:56 GMT
+      - Thu, 17 Nov 2016 06:48:39 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Www-Authenticate:
+      - Bearer realm="Doorkeeper", error="invalid_token", error_description="The access
+        token is invalid"
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
       X-Request-Id:
-      - fde3e441-6467-42a3-b7a3-51688ad89a26
+      - efbcf866-e7f2-4afd-ab93-9ce623575cf5
       X-Runtime:
-      - '0.054433'
+      - '0.033825'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"message":"Unauthorized to update access"}'
+      string: '{"success":false,"status":{"code":401,"message":"Unauthorized"}}'
     http_version: 
-  recorded_at: Fri, 12 Feb 2016 13:17:56 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Thu, 17 Nov 2016 06:48:40 GMT
+recorded_with: VCR 3.0.3

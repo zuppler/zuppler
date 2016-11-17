@@ -1,15 +1,14 @@
 module Zuppler
   module Users
     module Providers
-      def providers
-        if @providers.nil?
-          response = execute_get user_providers_url, {}, request_headers
-          if v4_success? response
-            providers = response['providers']
-            @providers = providers && providers.any? ? providers.map { |p| Hashie::Mash.new(p) } : []
-          end
+      def providers(&ablock)
+        request = request user_providers_url, {}
+        response = request.execute_read self, &ablock
+        if v4_success? response
+          response['providers'].map { |p| Hashie::Mash.new p }
+        else
+          []
         end
-        @providers
       end
 
       def _provider(type, &ablock)
@@ -25,7 +24,7 @@ module Zuppler
       end
 
       def user_provider_url(type)
-        "#{Zuppler.users_api_url}/users/#{id}/providers/#{type}"
+        "#{Zuppler.users_api_url}/users/#{id}/providers/#{type}.json"
       end
     end
   end

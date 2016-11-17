@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://users.api.biznettechnologies.com/v1/users/current/providers/zuppler
+    uri: http://users.api.biznettechnologies.com/v1/users/current/providers/zuppler.json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 16 Nov 2016 19:15:02 GMT
+      - Thu, 17 Nov 2016 07:08:34 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 18bcc3de-9e97-47dc-be1d-83a9a6e490c6
+      - 0a620f35-6c07-4f61-bf2e-9d35d5849ba1
       X-Runtime:
-      - '0.117037'
+      - '0.021666'
       Vary:
       - Origin
       Via:
@@ -44,5 +44,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"provider":{"id":16106,"provider":"zuppler","token":"a13c2c3f3e795a08a7e696e71b508803c702c3f3f769c36582b9e1ae64c4e9ce","created_at":"2012-01-25T18:27:22Z"}}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 19:15:02 GMT
+  recorded_at: Thu, 17 Nov 2016 07:08:35 GMT
 recorded_with: VCR 3.0.3

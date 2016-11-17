@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer fc1c261b82768137b36822b380d29289d82c05c0c4b9ee9bcfab720214ae9e6e
+      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 12 Feb 2016 13:17:57 GMT
+      - Thu, 17 Nov 2016 06:56:50 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,32 +29,32 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4cdf756358e2883c01d5458eaad56f5e"
+      - W/"d95a117a4ad14212fb1a8db0b37f9526"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f8406b3d-d1b4-4002-93c6-a3b6f14802bd
+      - 94995780-bd7c-4da3-aa3a-314f23d73d33
       X-Runtime:
-      - '0.033268'
+      - '0.023445'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"user":{"id":3370,"name":"Silviu Rosu","email":"silviu.rosu@gmail.com","phone":"0757220488","created_at":"2011-01-18
-        08:15:22 UTC","roles":["admin"],"access_grants":{"market":[1]},"zuppler_bucks":186.67,"zuppler_points":27808.0,"gravatar_id":"d38b3ac02140944a5dc29691dad2a808","links":[{"name":"self","methods":["get"],"url":"/v1/users/3370.json"},{"name":"vaults","method":"get","url":"/v1/users/3370/vaults.json"},{"name":"orders","method":"get","url":"/v1/users/3370/orders.json"},{"name":"grant","method":"put","url":"/v1/users/3370/grant.json"},{"name":"revoke","method":"put","url":"/v1/users/3370/revoke.json"}]}}'
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"user":{"id":14802,"uuid":"589e9ac9-a8c1-47ed-bf4b-aa9b19431249","name":"Test
+        Zuppler","email":"test@zuppler.com","phone":"610-844-2971","created_at":"2012-01-25T18:27:22Z","roles":["restaurant","config","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10]},"zuppler_bucks":"-3353.9","zuppler_points":77969,"zupp_bucks":{"242":546.1,"1":-3900.0},"zupp_points":{"total":77969,"total_in_dollars":77.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
     http_version: 
-  recorded_at: Fri, 12 Feb 2016 13:17:57 GMT
+  recorded_at: Thu, 17 Nov 2016 06:56:51 GMT
 - request:
     method: put
-    uri: http://users.api.biznettechnologies.com/v1/users/3370/grant.json
+    uri: http://users.api.biznettechnologies.com/v1/users/14802/grant.json
     body:
       encoding: UTF-8
-      string: access_grants[market][]=1
+      string: acls[market][]=1
     headers:
       Authorization:
-      - Bearer fc1c261b82768137b36822b380d29289d82c05c0c4b9ee9bcfab720214ae9e6e
+      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
   response:
     status:
       code: 200
@@ -65,7 +65,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 12 Feb 2016 13:17:57 GMT
+      - Thu, 17 Nov 2016 06:56:50 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -75,20 +75,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e4088f0d3eceb8370781280553cb55f8"
+      - W/"2aae764aad5b003f2cfa24636d2ab0d8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c29c3dc5-7cbd-477f-aa86-0d97b239f754
+      - 059f55db-4e0c-4bdd-89cd-3ac54ce0d53e
       X-Runtime:
-      - '0.060871'
+      - '0.056661'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"user":{"links":[{"name":"self","methods":["get"],"url":"/v1/users/3370.json"},{"name":"vaults","method":"get","url":"/v1/users/3370/vaults.json"},{"name":"orders","method":"get","url":"/v1/users/3370/orders.json"},{"name":"grant","method":"put","url":"/v1/users/3370/grant.json"},{"name":"revoke","method":"put","url":"/v1/users/3370/revoke.json"}]}}'
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"user":{"links":[{"name":"self","methods":["get"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"}]}}'
     http_version: 
-  recorded_at: Fri, 12 Feb 2016 13:17:57 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Thu, 17 Nov 2016 06:56:51 GMT
+recorded_with: VCR 3.0.3

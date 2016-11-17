@@ -17,16 +17,12 @@ module Zuppler
 
       private
 
-      def user_grant_url(id)
+      def user_grant_url(user_id)
         "#{Zuppler.users_api_url}/users/#{id}/grant.json"
       end
 
-      def user_revoke_url(id)
+      def user_revoke_url(user_id)
         "#{Zuppler.users_api_url}/users/#{id}/revoke.json"
-      end
-
-      def user_touch_url(id)
-        "#{Zuppler.users_api_url}/users/#{id}/touch.json"
       end
     end
   end
