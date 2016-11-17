@@ -31,6 +31,18 @@ Feature: User
     Then I receive success grant
 
   @vcr
+  Scenario: Get print params
+    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    And get print params
+    Then receive print params
+
+  @vcr
+  Scenario: Update print params
+    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    And update print params
+    Then receive success response
+
+  @vcr
   Scenario: Search users with application token
     When Zuppler application token
     When I search users by role "ambassador"

@@ -62,6 +62,14 @@ When(/^I get "([^"]*)" provider$/) do |type|
   @provider = @user._provider type
 end
 
+When(/^update print params$/) do
+  @success = @user.update_print_params token: 't'
+end
+
+When(/^get print params$/) do
+  @print_params = @user.print_params
+end
+
 #
 # Thens
 #
@@ -129,4 +137,12 @@ end
 Then(/^I receive user provider$/) do
   expect(@provider.provider).to eq 'zuppler'
   expect(@provider.token).not_to be_nil
+end
+
+Then(/^receive success response$/) do
+  expect(@success).to be_truthy
+end
+
+Then(/^receive print params$/) do
+  expect(@print_params.size).to eq 1
 end
