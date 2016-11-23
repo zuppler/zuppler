@@ -70,6 +70,10 @@ When(/^get print params$/) do
   @print_params = @user.print_params
 end
 
+When(/^I touch user$/) do
+  @success = @user.touch
+end
+
 #
 # Thens
 #

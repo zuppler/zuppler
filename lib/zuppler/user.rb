@@ -48,8 +48,8 @@ module Zuppler
       @details
     end
 
-    def touch(user_id)
-      response = execute_update user_touch_url(user_id), {}, request_headers
+    def touch(_user_id = nil)
+      response = execute_update user_touch_url, {}, request_headers
       v4_success? response
     end
 
@@ -75,6 +75,10 @@ module Zuppler
 
     def cache_key
       id == 'current' ? rand : id
+    end
+
+    def user_touch_url
+      "#{Zuppler.users_api_url}/users/#{id}/touch.json"
     end
 
     def user_url
