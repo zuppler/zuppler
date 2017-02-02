@@ -24,6 +24,7 @@ module OmniAuth
 
       def request_phase
         options[:authorize_params][:provider] = request.params['provider']
+        options[:authorize_params][:provider_page] = request.params['provider_page']
         super
       end
 
