@@ -106,6 +106,10 @@ module Zuppler
       'http://users.api.' + api_domain + "/#{version}"
     end
 
+    def loyalties_api_url(version = 'v5')
+      'http://loyalty.api.' + api_domain + "/#{version}"
+    end
+
     def users_url
       "#{scheme}://users.#{api_domain}"
     end

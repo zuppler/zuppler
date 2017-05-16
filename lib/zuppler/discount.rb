@@ -5,14 +5,15 @@ module Zuppler
     attribute :restaurant
 
     attribute :id
+    attribute :loyalty_id
     attribute :name
     attribute :amount
     attribute :percent
     attribute :min_order_amount
     attribute :promo_code
 
-    def self.find(id, restaurant_id)
-      new id: id, restaurant_id: restaurant_id
+    def self.find(id, restaurant_id, loyalty_id = nil)
+      new id: id, restaurant_id: restaurant_id, loyalty_id: loyalty_id
     end
 
     def save
@@ -24,6 +25,11 @@ module Zuppler
         discount_attributes = filter_attributes attributes, 'restaurant', 'id'
         response = execute_update discount_url, discount: discount_attributes
       end
+      v4_success? response
+    end
+
+    def commit(payload)
+      response = execute_post commit_discount_url, payload
       v4_success? response
     end
 
@@ -43,6 +49,10 @@ module Zuppler
 
     def discounts_url
       "#{Zuppler.restaurants_api_url('v4')}/restaurants/#{restaurant_id}/discounts.json"
+    end
+
+    def commit_discount_url
+      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/commit"
     end
   end
 end
