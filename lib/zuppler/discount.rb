@@ -29,7 +29,12 @@ module Zuppler
     end
 
     def commit(payload)
-      response = execute_post commit_discount_url, payload
+      headers = {
+        "Content-Type" => "application/json",
+        "Accept" => "application/json"
+      }
+
+      response = execute_post commit_discount_url, payload, headers
       v4_success? response
     end
 
