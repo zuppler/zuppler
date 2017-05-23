@@ -30,12 +30,12 @@ module Zuppler
 
     def commit(payload)
       headers = {
-        "Content-Type" => "application/json",
-        "Accept" => "application/json"
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json'
       }
 
-      response = execute_post commit_discount_url, payload, headers
-      v4_success? response
+      response = execute_post commit_discount_url, payload.to_json, headers
+      v5_success? response
     end
 
     def restaurant_id
