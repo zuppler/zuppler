@@ -40,6 +40,14 @@ module Zuppler
       id.blank?
     end
 
+    def self.v5_success?(response)
+      response.success?
+    end
+
+    def v5_success?(response)
+      self.class.v5_success? response
+    end
+
     def self.v4_response_code(response)
       return 0 unless response['status'] && response['status']['code']
       response['status']['code'].to_i
