@@ -38,6 +38,16 @@ module Zuppler
       v5_success? response
     end
 
+    def cancel(payload)
+      headers = {
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json'
+      }
+
+      response = execute_post cancel_discount_url, payload.to_json, headers
+      v5_success? response
+    end
+
     def restaurant_id
       @restaurant_id || restaurant.permalink
     end
@@ -58,6 +68,10 @@ module Zuppler
 
     def commit_discount_url
       "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/commit"
+    end
+
+    def cancel_discount_url
+      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/cancel"
     end
   end
 end
