@@ -18,5 +18,5 @@ Then(/^I should have discount created$/) do
 end
 
 Given(/^I have a discount "(.*?)"$/) do |id|
-  @discount = Zuppler::Discount.find id, 'demorestaurant'
+  @discount = Zuppler::Discount.find id, 'demorestaurant', '4234234234234'
 end
