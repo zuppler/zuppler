@@ -83,8 +83,6 @@ module Zuppler
 
     def checkin_order_url
       "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/orders/#{loyalty_id}/checkin"
-
-      /v5/restaurants/:restaurant_id/orders/:orders_id/checkin
     end
 
     def cancel_discount_url
