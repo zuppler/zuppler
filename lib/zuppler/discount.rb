@@ -6,14 +6,15 @@ module Zuppler
 
     attribute :id
     attribute :loyalty_id
+    attribute :cart_id
     attribute :name
     attribute :amount
     attribute :percent
     attribute :min_order_amount
     attribute :promo_code
 
-    def self.find(id, restaurant_id, loyalty_id = nil)
-      new id: id, restaurant_id: restaurant_id, loyalty_id: loyalty_id
+    def self.find(id, restaurant_id, cart_id, loyalty_id = nil)
+      new id: id, restaurant_id: restaurant_id, cart_id: cart_id, loyalty_id: loyalty_id
     end
 
     def save
@@ -35,6 +36,16 @@ module Zuppler
       }
 
       response = execute_post commit_discount_url, payload.to_json, headers
+      v5_success? response
+    end
+
+    def checkin_order(payload)
+      headers = {
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json'
+      }
+
+      response = execute_post checkin_order_url, payload.to_json, headers
       v5_success? response
     end
 
@@ -70,8 +81,14 @@ module Zuppler
       "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/commit"
     end
 
+    def checkin_order_url
+      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/orders/#{loyalty_id}/checkin"
+
+      /v5/restaurants/:restaurant_id/orders/:orders_id/checkin
+    end
+
     def cancel_discount_url
-      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/cancel"
+      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{cart_id}/cancel"
     end
   end
 end
