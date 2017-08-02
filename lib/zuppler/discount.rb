@@ -6,15 +6,15 @@ module Zuppler
 
     attribute :id
     attribute :loyalty_id
-    attribute :cart_id
+    attribute :order_uuid
     attribute :name
     attribute :amount
     attribute :percent
     attribute :min_order_amount
     attribute :promo_code
 
-    def self.find(id, restaurant_id, cart_id, loyalty_id = nil)
-      new id: id, restaurant_id: restaurant_id, cart_id: cart_id, loyalty_id: loyalty_id
+    def self.find(id, restaurant_id, order_uuid, loyalty_id = nil)
+      new id: id, restaurant_id: restaurant_id, order_uuid: order_uuid, loyalty_id: loyalty_id
     end
 
     def save
@@ -81,12 +81,16 @@ module Zuppler
       "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/commit"
     end
 
-    def checkin_order_url
-      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/orders/#{loyalty_id}/checkin"
-    end
-
     def cancel_discount_url
       "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{cart_id}/cancel"
+    end
+
+    def checkin_order_url
+      "#{Zuppler.loyalties_api_url()}/orders/#{order_uuid}/checkin"
+    end
+
+    def cancel_checkin_order_url
+      "#{Zuppler.loyalties_api_url()}/orders/#{order_uuid}/cancel_checkin"
     end
   end
 end
