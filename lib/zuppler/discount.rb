@@ -30,32 +30,22 @@ module Zuppler
     end
 
     def commit(payload)
-      headers = {
-        'Content-Type' => 'application/json',
-        'Accept' => 'application/json'
-      }
-
       response = execute_post commit_discount_url, payload.to_json, headers
       v5_success? response
     end
 
     def checkin_order(payload)
-      headers = {
-        'Content-Type' => 'application/json',
-        'Accept' => 'application/json'
-      }
-
       response = execute_post checkin_order_url, payload.to_json, headers
       v5_success? response
     end
 
     def cancel(payload)
-      headers = {
-        'Content-Type' => 'application/json',
-        'Accept' => 'application/json'
-      }
-
       response = execute_post cancel_discount_url, payload.to_json, headers
+      v5_success? response
+    end
+
+    def cancel_checkin_order(payload)
+      response = execute_post cancel_checkin_order_url, payload.to_json, headers
       v5_success? response
     end
 
@@ -64,6 +54,13 @@ module Zuppler
     end
 
     private
+
+    def headers
+      {
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/json'
+      }
+    end
 
     def resource_id(response)
       $1 if response.headers['Location'] =~ /\/discounts\/(\d+).json/
