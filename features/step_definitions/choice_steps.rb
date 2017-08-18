@@ -1,6 +1,8 @@
 When(/^I create choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/) do |name, description, multiple, max_qty, priority, order_by_priority, multiple_ingredients|
-  @choice = Zuppler::Choice.new category: @category, name: name, multiple: multiple, max_qty: max_qty,
-                                priority: priority, order_by_priority: order_by_priority, description: description,
+  @choice = Zuppler::Choice.new category: @category, name: name, multiple: multiple,
+                                max_qty: max_qty, size: true,
+                                priority: priority, order_by_priority: order_by_priority,
+                                description: description,
                                 multiple_ingredients: multiple_ingredients
   @choice.save
 end
@@ -8,7 +10,8 @@ When(/^I update choice "(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)","(.*?)"$/
   @choice.attributes = {
     name: name, priority: priority, active: active,
     multiple: multiple, min_qty: min_qty, max_qty: max_qty,
-    modifier_id: 1, multiple_ingredients: multiple_ingredients
+    modifier_id: 1, multiple_ingredients: multiple_ingredients,
+    size: true
   }
   @success = @choice.save
 end
