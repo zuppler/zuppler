@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/1712/choices.json
     body:
       encoding: UTF-8
-      string: choice[name]=toppings%20cat&choice[description]=desc&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=true&choice[multiple_ingredients]=true
+      string: choice[name]=toppings%20cat&choice[description]=desc&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=true&choice[multiple_ingredients]=true&choice[size]=true
     headers: {}
   response:
     status:
@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Tue, 06 Oct 2015 20:05:57 GMT
-      Status:
-      - 200 OK
+      - Fri, 18 Aug 2017 11:26:43 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -28,28 +32,24 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"afa28bfa0e988a6a10d453880e1a1c3d"'
+      - W/"4a1f251bbcca4a6762493831eea0c611"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTYwYTFhNzYzMzc3OTM0ZGI2Y2JlMTkzYTk4NGVmMGEzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWt2M3RudUZ6MWVLSDVKRkI1emdVOGtnVWw1RFlkRXY2cUQ0OXNqSnMyazA9BjsARg%3D%3D--297ea11064c9a64330195a205c0c984372a84cd9;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWJmYmQ2NGM0NDdhNTNmODJhZGRlZTUyNmM1Y2RlMmM0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVNOU1BBMy95aEluTGtvZXB0STU1eUIxZUFaK0c3WDk5bzRnaXV2UHc2cWc9BjsARg%3D%3D--e070c8a369a5be78877c385939b8ee2d9db98a9f;
         path=/; HttpOnly
       X-Request-Id:
-      - 2d7c5a8e-6531-4d6a-85b2-586e4e6af1ee
+      - 7da439c7-d45a-4f6f-9817-7956f35b427e
       X-Runtime:
-      - '0.035383'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.045109'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"choice":{"id":181403,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true,"description":"desc"}}'
+      string: '{"success":true,"choice":{"id":207065,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true,"description":"desc"}}'
     http_version: 
-  recorded_at: Tue, 06 Oct 2015 20:10:18 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 18 Aug 2017 11:26:43 GMT
+recorded_with: VCR 3.0.3

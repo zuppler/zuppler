@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/choices/69212.json
     body:
       encoding: UTF-8
-      string: choice[modifier_id]=1&choice[name]=ddd&choice[active]=true&choice[multiple]=true&choice[min_qty]=3&choice[max_qty]=5&choice[priority]=3&choice[multiple_ingredients]=true
+      string: choice[modifier_id]=1&choice[name]=ddd&choice[active]=true&choice[multiple]=true&choice[min_qty]=3&choice[max_qty]=5&choice[priority]=3&choice[multiple_ingredients]=true&choice[size]=true
     headers: {}
   response:
     status:
@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Tue, 06 Oct 2015 20:05:57 GMT
-      Status:
-      - 200 OK
+      - Fri, 18 Aug 2017 11:26:43 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -28,28 +32,24 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"dccfc589c7f27c715ea27d66c30aac25"'
+      - W/"b3ffc46edfd4555b9a58717dc5adb18e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWJhMjk0ZTA1MDQ3OGJjNTUwOTIxMjA1ZTVkOTI1MWQxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVRYZ1phSGVFSG1IVmxHTk1QZEdhV2Y5eTdpNytSNlQwZTV1WWZPd250MzA9BjsARg%3D%3D--ac26c0337c0a1ce65c4e63291c9bad494025ec8f;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWI2NmViNmM5MGM1MGFhNTUxNTUzOWJkNDg1NDQyOGMyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTErVTVkV1BBcXd4dHNBc24yZU4yWnhwTm4raWdVaGhEdzlqbjgvc04vZFk9BjsARg%3D%3D--fe2ac5a550aef6a23de7b6e79172ddee4f4504fd;
         path=/; HttpOnly
       X-Request-Id:
-      - 640279a9-6505-4151-9814-4257793f5cd4
+      - 14a7780e-1a21-4b60-b4df-b64be5140d09
       X-Runtime:
-      - '0.042572'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.036858'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":false,"active":true,"description":null}}'
+      string: '{"success":true,"choice":{"id":69212,"name":"CHOOSE YOUR PROTEIN","multiple":false,"min_qty":1,"max_qty":1,"priority":3,"order_by_priority":null,"active":true,"description":null}}'
     http_version: 
-  recorded_at: Tue, 06 Oct 2015 20:10:18 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 18 Aug 2017 11:26:44 GMT
+recorded_with: VCR 3.0.3
