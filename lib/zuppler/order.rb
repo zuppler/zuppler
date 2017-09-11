@@ -8,6 +8,7 @@ module Zuppler
     attribute :duration
     attribute :sender
     attribute :metadata
+    attribute :force
 
     validates_presence_of :uuid
 

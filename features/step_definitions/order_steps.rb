@@ -13,7 +13,7 @@ When(/^I cancel order$/) do
   @success = @order.cancel reason: 'food was cold', sender: 'test'
 end
 When(/^I miss order$/) do
-  @success = @order.miss sender: 'test'
+  @success = @order.miss sender: 'test', force: true
 end
 When(/^I open order$/) do
   @response = @order.open reason: 'out of fish', sender: 'test'
