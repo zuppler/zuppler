@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 echo
 echo ' *** Running tests...'
@@ -15,7 +15,7 @@ else
     echo ' *** Test status: SUCCESS'
 fi
 
-if [ "$#" == 1 ]
+if [ $# == 1 ]
 then
     VERSION=$1
 else
@@ -34,11 +34,3 @@ bundle install
 git add .
 git commit -m "Release $VERSION"
 git push
-
-echo
-echo " *** Building and installing... $VERSION"
-rake install
-
-echo
-echo " *** Uploading release package... $VERSION"
-fury push pkg/zuppler-$VERSION.gem --as=zuppler

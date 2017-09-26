@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'faker'
   spec.add_development_dependency 'shoulda-matchers'
   spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'furious'
 end

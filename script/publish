@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+git log -1 --pretty=%B | grep -iq 'release'
+
+if [ $? -eq 0 ]; then
+    echo
+    echo " *** Building package... $VERSION"
+    bundle exec furious package
+
+    echo
+    echo " *** Tagging release... $VERSION"
+    bundle exec furious tag
+
+    echo
+    echo " *** Publish package... $VERSION"
+    bundle exec furious push
+
+    echo '==> Done'
+else
+    echo '==> Nothing to publish.'
+fi
