@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 17 Nov 2016 06:48:41 GMT
+      - Tue, 26 Sep 2017 08:53:15 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,20 +29,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"15caafa5431d0523ee0ea0d42ef4e1be"
+      - W/"65fb1cee76419f49aa11178e7ca47cbc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3a1bdf06-857e-4b18-a131-d1e165701112
+      - d802fae9-e05d-47c0-b012-47f7dc3666c6
       X-Runtime:
-      - '0.109999'
+      - '0.032113'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"pagination":{"total":2,"page":0,"count":2},"status":{"code":200,"message":"OK"},"providers":[{"id":274181,"provider":"facebook","created_at":"2015-09-15T07:31:04Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/facebook"}]},{"id":16106,"provider":"zuppler","created_at":"2012-01-25T18:27:22Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/zuppler"}]}]}'
+      string: '{"success":true,"pagination":{"total":3,"page":0,"count":3},"status":{"code":200,"message":"OK"},"providers":[{"id":274181,"provider":"facebook","created_at":"2015-09-15T07:31:04Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/facebook"}]},{"id":510218,"provider":"punchh","created_at":"2017-05-19T12:27:02Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/punchh"}]},{"id":16106,"provider":"zuppler","created_at":"2012-01-25T18:27:22Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/zuppler"}]}]}'
     http_version: 
-  recorded_at: Thu, 17 Nov 2016 06:48:42 GMT
+  recorded_at: Tue, 26 Sep 2017 08:53:17 GMT
 recorded_with: VCR 3.0.3

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 17 Nov 2016 07:08:34 GMT
+      - Tue, 26 Sep 2017 08:53:15 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,20 +29,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"caa2be99a6e63a030bfd04c939fce8d5"
+      - W/"d08ec9433feabcd39629988fc5988c60"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0a620f35-6c07-4f61-bf2e-9d35d5849ba1
+      - aecea393-552a-4556-8d67-553e86a8228c
       X-Runtime:
-      - '0.021666'
+      - '0.024871'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"status":{"code":200,"message":"OK"},"provider":{"id":16106,"provider":"zuppler","token":"a13c2c3f3e795a08a7e696e71b508803c702c3f3f769c36582b9e1ae64c4e9ce","created_at":"2012-01-25T18:27:22Z"}}'
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"provider":{"id":16106,"provider":"zuppler","token":"363076494d92b39879eac3f3e5dbd5ef0bbef48c49210fe45aead436fd216020","created_at":"2012-01-25T18:27:22Z"}}'
     http_version: 
-  recorded_at: Thu, 17 Nov 2016 07:08:35 GMT
+  recorded_at: Tue, 26 Sep 2017 08:53:17 GMT
 recorded_with: VCR 3.0.3

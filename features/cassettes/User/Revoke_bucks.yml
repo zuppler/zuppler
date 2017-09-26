@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 17 Nov 2016 08:34:42 GMT
+      - Tue, 26 Sep 2017 08:53:20 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,13 +29,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1db0521766fbce52b5c7ee17b4037429"
+      - W/"35529ce9414d3398fa7ec9e67fd96902"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a127de06-d6b4-4360-a7ac-ccc674254f4d
+      - b35520a6-4c42-4546-8029-e6c062bf54be
       X-Runtime:
-      - '0.037053'
+      - '0.064713'
       Vary:
       - Origin
       Via:
@@ -43,9 +43,9 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"user":{"id":14802,"uuid":"589e9ac9-a8c1-47ed-bf4b-aa9b19431249","name":"Test
-        Zuppler","email":"test@zuppler.com","phone":"610-844-2971","created_at":"2012-01-25T18:27:22Z","roles":["restaurant","config","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10],"market":[1]},"zuppler_bucks":"-3343.9","zuppler_points":77969,"zupp_bucks":{"242":546.1,"1":-3890.0},"zupp_points":{"total":77969,"total_in_dollars":77.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
+        Zuppler 2","email":"test@zuppler.com","phone":"610-844-2971","locales":[],"created_at":"2012-01-25T18:27:22Z","roles":["restaurant","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10]},"zuppler_bucks":"-1422.4","zuppler_points":73969,"zupp_bucks":{"242":547.6,"1":-1970.0},"zupp_points":{"total":73969,"total_in_dollars":73.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
     http_version: 
-  recorded_at: Thu, 17 Nov 2016 08:34:42 GMT
+  recorded_at: Tue, 26 Sep 2017 08:53:23 GMT
 - request:
     method: put
     uri: http://users.api.biznettechnologies.com/v1/users/current/zupps_revoke.json
@@ -54,7 +54,7 @@ http_interactions:
       string: bucks[restaurant_id]=1&bucks[amount]=1000
     headers:
       Authorization:
-      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
   response:
     status:
       code: 200
@@ -65,7 +65,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 17 Nov 2016 08:34:42 GMT
+      - Tue, 26 Sep 2017 08:53:21 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -79,9 +79,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7508bf5-483d-4fd3-8c02-f32dacb5c1b4
+      - 5e3e0d0e-ed7d-4a24-bd79-0ba31e8dae2a
       X-Runtime:
-      - '0.157150'
+      - '0.181403'
       Vary:
       - Origin
       Via:
@@ -90,7 +90,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"Zupps revoked"}}'
     http_version: 
-  recorded_at: Thu, 17 Nov 2016 08:34:42 GMT
+  recorded_at: Tue, 26 Sep 2017 08:53:23 GMT
 - request:
     method: get
     uri: http://users.api.biznettechnologies.com/v1/users/current.json
@@ -99,7 +99,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
   response:
     status:
       code: 200
@@ -110,7 +110,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 17 Nov 2016 08:34:43 GMT
+      - Tue, 26 Sep 2017 08:53:21 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -120,13 +120,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c9a72d25582c72e815fa9c4c02863b67"
+      - W/"575440bd768b1b0abff58182b9ea596d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f363b4bb-590d-4d1e-8c66-d314650c326f
+      - 8f79f7c9-0366-44a2-befc-3cec8dd45b35
       X-Runtime:
-      - '0.157855'
+      - '0.147189'
       Vary:
       - Origin
       Via:
@@ -134,7 +134,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"user":{"id":14802,"uuid":"589e9ac9-a8c1-47ed-bf4b-aa9b19431249","name":"Test
-        Zuppler","email":"test@zuppler.com","phone":"610-844-2971","created_at":"2012-01-25T18:27:22Z","roles":["config","restaurant","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10],"market":[1]},"zuppler_bucks":"-4343.9","zuppler_points":77969,"zupp_bucks":{"242":546.1,"1":-4890.0},"zupp_points":{"total":77969,"total_in_dollars":77.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
+        Zuppler 2","email":"test@zuppler.com","phone":"610-844-2971","locales":[],"created_at":"2012-01-25T18:27:22Z","roles":["restaurant","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10]},"zuppler_bucks":"-2422.4","zuppler_points":73969,"zupp_bucks":{"242":547.6,"1":-2970.0},"zupp_points":{"total":73969,"total_in_dollars":73.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
     http_version: 
-  recorded_at: Thu, 17 Nov 2016 08:34:43 GMT
+  recorded_at: Tue, 26 Sep 2017 08:53:23 GMT
 recorded_with: VCR 3.0.3

@@ -3,19 +3,19 @@ Feature: User
   id: 14802
   name: Test Zuppler
   email test@zuppler.com
-  token: e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+  token: cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
 
   Background:
     Given Zuppler configured with "zuppler" and "qwe123"
 
   @vcr
   Scenario: Show user
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     Then I have user details
 
   @vcr
   Scenario: Touch
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     And I touch user
     Then receive success response
 
@@ -32,19 +32,19 @@ Feature: User
 
   @vcr
   Scenario: Update user grant
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     And I update access grant
     Then I receive success grant
 
   @vcr
   Scenario: Get print params
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     And get print params
     Then receive print params
 
   @vcr
   Scenario: Update print params
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     And update print params
     Then receive success response
 
@@ -63,52 +63,52 @@ Feature: User
 
   @vcr
   Scenario: Get providers
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     When I get user providers
     Then I receive user providers
 
   @vcr
   Scenario: Get provider
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     When I get "zuppler" provider
     Then I receive user provider
 
   @vcr
   Scenario: Get vaults
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     When I get user vaults
     Then I receive user vaults
 
   @vcr
   Scenario: Create vault
-    When I initialize user with "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9"
+    When I initialize user with "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d"
     When I create vaults
     Then vault is created
 
   @vcr
   Scenario: Reward points
-    Given an "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9" user
+    Given an "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d" user
     And user has points and bucks
     When reward "1000" points
     Then user was rewarded "1000" points
 
   @vcr
   Scenario: Revoke points
-    Given an "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9" user
+    Given an "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d" user
     And user has points and bucks
     When revoke "1000" points
     Then user was revoked "1000" points
 
   @vcr
   Scenario: Reward bucks
-    Given an "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9" user
+    Given an "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d" user
     And user has points and bucks
     When reward "10" bucks for "1" restaurant
     Then user was rewarded "10" bucks for "1" restaurant
 
   @vcr
   Scenario: Revoke bucks
-    Given an "e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9" user
+    Given an "cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d" user
     And user has points and bucks
     When revoke "1000" points for "1" restaurant
     Then user was revoked "1000" points for "1" restaurant

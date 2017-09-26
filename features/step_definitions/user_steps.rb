@@ -35,7 +35,8 @@ end
 
 When(/^I create vaults$/) do
   @success = @user.create_vault name: 'test', brand: 'visa', number: '1234',
-                                expiration_date: '11/2016', uid: 'abcd'
+                                expiration_date: '11/2016', uid: 'abcd',
+                                gateway_id: 'braintree'
 end
 
 When(/^reward "([^"]*)" points$/) do |amount|
@@ -78,7 +79,7 @@ end
 # Thens
 #
 Then(/^I have user details$/) do
-  expect(@user.details.name).to eq 'Test Zuppler'
+  expect(@user.details.name).to eq 'Test Zuppler 2'
   expect(@user.details.email).to eq 'test@zuppler.com'
   expect(@user.details.phone).to eq '610-844-2971'
 end

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9
+      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 23 Nov 2016 15:05:32 GMT
+      - Tue, 26 Sep 2017 08:53:13 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 87a2695b-f308-40e2-94bd-77f9968cc92a
+      - a14c270f-0455-4bb6-bd67-67ae92a9319c
       X-Runtime:
-      - '0.014194'
+      - '0.033284'
       Vary:
       - Origin
       Via:
@@ -44,5 +44,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"User updated"}}'
     http_version: 
-  recorded_at: Wed, 23 Nov 2016 15:05:32 GMT
+  recorded_at: Tue, 26 Sep 2017 08:53:15 GMT
 recorded_with: VCR 3.0.3

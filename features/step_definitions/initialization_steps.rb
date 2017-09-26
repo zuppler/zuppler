@@ -25,12 +25,13 @@ Given(/^Zuppler configured with "(.*)" and "(.*)"$/) do |channel, key|
 end
 Given(/^Zuppler application token$/) do
   # Test Oauth app
-  za = Zuppler::Application.new 'fd61a191c8b26b364b03eacac66913088abad7e5d144cf0e319d553335e6bbc3', '45669935c634a6cf28f630384cdd6d5bd490983f207005126a9fa1a52fcbbaf6'
-  @access_token = za.access_token 'admin'
+  # za = Zuppler::Application.new 'fd61a191c8b26b364b03eacac66913088abad7e5d144cf0e319d553335e6bbc3', '45669935c634a6cf28f630384cdd6d5bd490983f207005126a9fa1a52fcbbaf6'
+  # @access_token = za.access_token 'admin'
+  @access_token = '78aadbcbf15bb7d393c152a4a8a230f0d0183b4ef62f898c165edc9c6928e693'
 end
 
 Given(/^Zuppler user token$/) do
-  @access_token = 'e4c22df01390e46bb2e7c9e07698e526b3674d5e24a45bc9e173a6fc3560d6c9'
+  @access_token = 'cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d'
 end
 
 #
