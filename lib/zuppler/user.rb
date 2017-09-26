@@ -22,6 +22,8 @@ module Zuppler
     attribute :roles
     attribute :access_token
     attribute :provider
+    attribute :gateway_id
+    attribute :merchant_id
 
     def self.find(access_token, id = 'current')
       Zuppler::User.new access_token: access_token, id: id

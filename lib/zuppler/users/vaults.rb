@@ -23,7 +23,10 @@ module Zuppler
       private
 
       def user_vaults_url
-        "#{Zuppler.users_api_url}/users/#{id}/vaults.json"
+        url = "#{Zuppler.users_api_url}/users/#{id}/vaults.json"
+        url += "&gateway_id=#{gateway_id}" if gateway_id
+        url += "&merchant_id=#{merchant_id}" if merchant_id
+        url
       end
     end
   end
