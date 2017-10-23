@@ -40,6 +40,14 @@ module Zuppler
                         access_token: credentials['token']
     end
 
+    def self.external_login(access_token, secret_key, provider)
+      url = "#{Zuppler.users_api_url}/users/external_login.json"
+      response = execute_post(url,
+                              { secret_key: secret_key, provider: provider },
+                              request_headers(access_token))
+      Hashie::Mash.new response
+    end
+
     def details
       if @details.nil?
         body = cacheable "zu/#{cache_key}/details", 'user' do
