@@ -55,6 +55,11 @@ module Zuppler
       v4_success? response
     end
 
+    def update(user_info)
+      response = execute_update user_url, user_info, request_headers
+      v4_success? response
+    end
+
     def reload
       @details = nil
     end
