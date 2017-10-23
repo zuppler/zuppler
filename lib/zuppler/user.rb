@@ -41,7 +41,7 @@ module Zuppler
     end
 
     def self.external_login(access_token, secret_key, provider)
-      url = "#{Zuppler.users_api_url}/users/external_login.json"
+      url = "#{Zuppler.users_api_url}/external_login.json"
       response = execute_post(url,
                               { secret_key: secret_key, provider: provider },
                               request_headers(access_token))
