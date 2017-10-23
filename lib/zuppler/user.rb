@@ -45,7 +45,7 @@ module Zuppler
       response = execute_post(url,
                               { secret_key: secret_key, provider: provider },
                               request_headers(access_token))
-      Hashie::Mash.new response
+      response
     end
 
     def details
