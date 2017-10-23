@@ -64,7 +64,7 @@ module Zuppler
     end
 
     def update(user_info)
-      response = execute_update user_url, user_info, request_headers
+      response = execute_update user_url, { user: user_info }, request_headers
       v4_success? response
     end
 
