@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.9.6)
+    zuppler (0.9.7)
       active_attr
       hashie
       httparty
@@ -206,7 +206,7 @@ DEPENDENCIES
   zuppler!
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.4p301
 
 BUNDLED WITH
-   1.13.6
+   1.16.0.pre.3
