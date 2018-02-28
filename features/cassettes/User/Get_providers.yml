@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer cebb85da137eeb8fb264b2a652831b84f65a49f358f502f97596358e347ca18d
+      - Bearer 1f8639b026344721bd0126b039609835ffa931b44446907acc11a07719fce59a
   response:
     status:
       code: 200
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Tue, 26 Sep 2017 08:53:15 GMT
+      - Wed, 28 Feb 2018 10:03:41 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d802fae9-e05d-47c0-b012-47f7dc3666c6
+      - a076605a-5494-4798-8e50-1e7a854c929d
       X-Runtime:
-      - '0.032113'
+      - '0.039977'
       Vary:
       - Origin
       Via:
@@ -44,5 +44,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"pagination":{"total":3,"page":0,"count":3},"status":{"code":200,"message":"OK"},"providers":[{"id":274181,"provider":"facebook","created_at":"2015-09-15T07:31:04Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/facebook"}]},{"id":510218,"provider":"punchh","created_at":"2017-05-19T12:27:02Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/punchh"}]},{"id":16106,"provider":"zuppler","created_at":"2012-01-25T18:27:22Z","links":[{"name":"self","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers/zuppler"}]}]}'
     http_version: 
-  recorded_at: Tue, 26 Sep 2017 08:53:17 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Wed, 28 Feb 2018 10:03:55 GMT
+recorded_with: VCR 4.0.0
