@@ -7,7 +7,8 @@ module Zuppler
     end
 
     private
-    def search_url
+
+    def self.search_url
       "#{Zuppler.orders_api_url}/orders.json"
     end
   end
