@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://users.api.biznettechnologies.com/v1/users/14802/grant.json
+    body:
+      encoding: UTF-8
+      string: acls[market][]=1
+    headers:
+      Authorization:
+      - Bearer ea82ba7cbd993a72bbfbcc80e8d35ea71b659e8c41e5eacf137c42e4f7263d76
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Wed, 28 Feb 2018 10:03:37 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2aae764aad5b003f2cfa24636d2ab0d8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 15514faa-501b-4217-937d-8d4fe458b58a
+      X-Runtime:
+      - '0.073765'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"user":{"links":[{"name":"self","methods":["get"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"}]}}'
+    http_version: 
+  recorded_at: Wed, 28 Feb 2018 10:03:52 GMT
+recorded_with: VCR 4.0.0

@@ -5,10 +5,19 @@ Given(/^an "([^"]*)" user$/) do |access_token|
   @user = Zuppler::User.find access_token, 'current'
 end
 
+Given(/^a current user$/) do
+  @user = Zuppler::User.find @access_token, 'current'
+end
+
 Given(/^user has points and bucks$/) do
   @zupp_points = @user.details.zupp_points.total
   @zupp_bucks = @user.details.zupp_bucks
 end
+
+Given(/^I initialize user$/) do
+  @user = Zuppler::User.find @access_token
+end
+
 
 #
 # Whens
@@ -79,7 +88,7 @@ end
 # Thens
 #
 Then(/^I have user details$/) do
-  expect(@user.details.name).to eq 'Test Zuppler 2'
+  expect(@user.details.name).to eq 'Test Zuppler'
   expect(@user.details.email).to eq 'test@zuppler.com'
   expect(@user.details.phone).to eq '610-844-2971'
 end
@@ -98,9 +107,13 @@ Then(/I receive success grant$/) do
   expect(@result).to be true
 end
 
+Then(/I receive failure grant$/) do
+  expect(@result).to be false
+end
+
 Then(/^I receive ambassador users$/) do
-  expect(@response.pagination['total']).to be > 40
-  expect(@response.users.size).to eq 10
+  expect(@response.pagination['total']).to be >= 5
+  expect(@response.users.size).to eq 5
   @response.users.each do |u|
     expect(u.roles).to include 'ambassador'
   end
@@ -149,5 +162,5 @@ Then(/^receive success response$/) do
 end
 
 Then(/^receive print params$/) do
-  expect(@print_params.size).to eq 1
+  expect(@print_params.size).to be >= 1
 end

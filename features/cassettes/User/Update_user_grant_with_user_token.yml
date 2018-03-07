@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://users.api.biznettechnologies.com/v1/users/current/print_params.json
+    method: put
+    uri: http://users.api.biznettechnologies.com/v1/users/14802/grant.json
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: acls[market][]=1
     headers:
       Authorization:
       - Bearer 1f8639b026344721bd0126b039609835ffa931b44446907acc11a07719fce59a
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:04:57 GMT
+      - Wed, 28 Feb 2018 10:03:37 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,20 +29,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f717f064e82cc14de1afcb70a3eccfc6"
+      - W/"9a023f6729efb6dd46fb693c0ba0334f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6f985325-2091-49d2-a254-2053ca1fa8b2
+      - 6e3dc8db-9ced-4179-bfa0-9c0928a427c1
       X-Runtime:
-      - '0.016369'
+      - '0.032941'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"print_params":{"token":"t"},"success":true,"status":{"code":200,"message":"OK"}}'
+      string: '{"success":false,"status":{"code":401,"message":"Unauthorized to update
+        access"}}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:05:11 GMT
+  recorded_at: Wed, 28 Feb 2018 10:03:51 GMT
 recorded_with: VCR 4.0.0
