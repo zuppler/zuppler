@@ -75,11 +75,11 @@ module Zuppler
     end
 
     def commit_discount_url
-      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/commit"
+      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{id}/commit"
     end
 
     def cancel_discount_url
-      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{loyalty_id}/cancel"
+      "#{Zuppler.loyalties_api_url()}/restaurants/#{restaurant_id}/discounts/#{id}/cancel"
     end
 
     def checkin_order_url

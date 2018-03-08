@@ -3,7 +3,7 @@ module Zuppler
     include ActiveAttr::Model, HTTParty
 
     def self.search query
-      execute_post search_url, query
+      execute_get search_url, query
     end
 
     private
