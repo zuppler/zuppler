@@ -24,6 +24,7 @@ module Zuppler
     attribute :provider
     attribute :gateway_id
     attribute :merchant_id
+    attribute :trusted
 
     def self.find(access_token, id = 'current')
       Zuppler::User.new access_token: access_token, id: id
@@ -36,8 +37,10 @@ module Zuppler
       Zuppler::User.new id: info['id'], name: info['name'],
                         email: info['email'], phone: info['phone'],
                         roles: info['roles'], acls: info['acls'],
+                        trusted: info['trusted'],
                         provider: extra['provider'],
-                        access_token: credentials['token']
+                        access_token: credentials['token'],
+
     end
 
     def self.external_login(access_token, secret_key, provider)
