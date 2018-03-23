@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://restaurants-api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers.json
+    body:
+      encoding: UTF-8
+      string: modifier[name]=toppings&modifier[description]=desc&modifier[multiple]=true&modifier[min_qty]=0&modifier[max_qty]=5&modifier[priority]=2
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 23 Mar 2018 13:39:53 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      Location:
+      - http://restaurants-api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1554.json
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"758510ce843407be006bf0715bfeadf1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTdiOTZhNGVkODZmNzhmMDQ2OWI1OTc1MzdiMWVjNGZlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMW1JWVpyTEJZTjRMRDl2cnlWekdRZVJUS1RxdlBLNnk3WlBPdjdwOUQzK2c9BjsARg%3D%3D--b29c8837bcb98567df4bbeb547f29e06f8bd54bf;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 618601cc-b06c-4090-9f42-e16110211c8a
+      X-Runtime:
+      - '0.110470'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":201,"message":"Created"}}'
+    http_version: 
+  recorded_at: Fri, 23 Mar 2018 13:39:53 GMT
+recorded_with: VCR 4.0.0

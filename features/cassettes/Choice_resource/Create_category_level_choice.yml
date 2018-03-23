@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/categories/1712/choices.json
+    body:
+      encoding: UTF-8
+      string: choice[name]=toppings%20cat&choice[description]=desc&choice[multiple]=true&choice[min_qty]=0&choice[max_qty]=5&choice[priority]=2&choice[order_by_priority]=true&choice[multiple_ingredients]=true&choice[size]=true
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 23 Mar 2018 13:39:52 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ab13b8238678432d188b3d44bd92376e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTc4YjU4ZGIyZWMyNjNhZmEwZDlkYzBkOTU4NjNkOGM2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUMvRERxVkN3UWkvZmY4cVhqNU9EL0lhSDdKLzdzWmw4aHQ0Z2NldG5ha2c9BjsARg%3D%3D--fdf801f06af762d351d6c4e06496f7e0456b14fb;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 95a38fbe-7790-4463-ac56-e08e0e43cad8
+      X-Runtime:
+      - '0.188438'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"choice":{"id":213611,"name":"toppings cat","multiple":true,"min_qty":0,"max_qty":5,"priority":2,"order_by_priority":true,"active":true,"description":"desc"}}'
+    http_version: 
+  recorded_at: Fri, 23 Mar 2018 13:39:52 GMT
+recorded_with: VCR 4.0.0

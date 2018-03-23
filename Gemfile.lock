@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.9.14)
+    zuppler (0.9.15)
       active_attr
       hashie
       httparty
@@ -80,7 +80,7 @@ GEM
       rspec (>= 2.99.0, < 4.0)
     hashdiff (0.3.7)
     hashie (3.5.7)
-    httparty (0.16.0)
+    httparty (0.16.1)
       multi_xml (>= 0.5.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)

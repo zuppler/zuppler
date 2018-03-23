@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://restaurants-api.biznettechnologies.com/v4/restaurants/demorestaurant/modifiers/1218.json
+    body:
+      encoding: UTF-8
+      string: modifier[name]=updated&modifier[multiple]=true&modifier[min_qty]=3&modifier[max_qty]=5&modifier[priority]=1
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 23 Mar 2018 13:39:54 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c5d869ec6b8d10960fd73f16d4e6577f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRkZGQ4NDQyMTc1MGE4YmFmZTBjODI5YjFhZjc4Nzk5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUlPbzZmd2J0eld0RTJWNVM1emFpUmlaUmNPa2FTVmhnSEM4MjdEUjBxN1E9BjsARg%3D%3D--c84ea533ff05c2642989168d632cc00e9af29a04;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 8c54e5c4-0b12-4f5b-ac9e-ce0a4dcc1b26
+      X-Runtime:
+      - '0.081620'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"modifier":{"id":1218,"name":"updated","multiple":true,"min_qty":3,"max_qty":5,"priority":1,"active":false}}'
+    http_version: 
+  recorded_at: Fri, 23 Mar 2018 13:39:54 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus.json
+    body:
+      encoding: UTF-8
+      string: menu[name]=lunch&menu[priority]=1&menu[description]=desc&menu[locked]=true
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 23 Mar 2018 13:39:53 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"cb0523e10dabb5072218010bab8fbd47"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThiZmMxMmMwYTYwMmVhOGQ4MjFkNjQwMzQ5YTVlODU0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWVaMmVUMlhuMjN5TEZLTmRiMG8rZ1EvTHhuRXdNK3VVODFKSDd6N1dpVGs9BjsARg%3D%3D--c7684707bf79727a1a5348814f22cad8d3cadf1a;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 7be372a7-baa9-4c55-bfc1-273d331a6c34
+      X-Runtime:
+      - '0.138919'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"menu":{"id":28421,"name":"lunch","description":"desc","active":false,"default":null,"use_category_tabs":null,"availability":{"custom":false,"days":255,"time":[],"services":15},"available_on":"","available_at":"Sun:
+        10:00am  - 10:00am <br/>Mon: 10:00am  - 10:00am <br/>Tue: 10:00am  - 10:00am
+        <br/>Wed: 10:00am  - 10:00am <br/>Thu: 10:00am  - 10:00am <br/>Fri: 10:00am  -
+        10:00am <br/>Sat: 10:00am  - 10:00am ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/28421.json","chain":false,"categories":[]}}'
+    http_version: 
+  recorded_at: Fri, 23 Mar 2018 13:39:53 GMT
+recorded_with: VCR 4.0.0

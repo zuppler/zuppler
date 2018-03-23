@@ -1,0 +1,301 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+Acls	lib/zuppler/users/acls.rb	/^    module Acls$/;"	m	class:Zuppler.Users
+Application	lib/zuppler/application.rb	/^  class Application$/;"	c	class:Zuppler
+Category	lib/zuppler/category.rb	/^  class Category < Model$/;"	c	class:Zuppler	inherits:Model
+Channel	lib/zuppler/channel.rb	/^  class Channel$/;"	c	class:Zuppler
+Choice	lib/zuppler/choice.rb	/^  class Choice < Model$/;"	c	class:Zuppler	inherits:Model
+CucumberLogger	features/step_definitions/initialization_steps.rb	/^class CucumberLogger$/;"	c
+DEFAULT_CACHE	lib/zuppler.rb	/^    DEFAULT_CACHE = {}.freeze$/;"	C	class:Zuppler
+DEFAULT_DOMAINS	lib/zuppler.rb	/^    DEFAULT_DOMAINS = {$/;"	C	class:Zuppler
+Discount	lib/zuppler/discount.rb	/^  class Discount < Model$/;"	c	class:Zuppler	inherits:Model
+Error	lib/zuppler.rb	/^  class Error < StandardError$/;"	c	class:Zuppler	inherits:StandardError
+Ingredient	lib/zuppler/ingredient.rb	/^  class Ingredient < Model$/;"	c	class:Zuppler	inherits:Model
+Item	lib/zuppler/item.rb	/^  class Item < Model$/;"	c	class:Zuppler	inherits:Model
+Macros	lib/zuppler/model.rb	/^  module Macros$/;"	m	class:Zuppler
+Menu	lib/zuppler/menu.rb	/^  class Menu < Model$/;"	c	class:Zuppler	inherits:Model
+Model	lib/zuppler/model.rb	/^  class Model$/;"	c	class:Zuppler
+Modifier	lib/zuppler/modifier.rb	/^  class Modifier < Model$/;"	c	class:Zuppler	inherits:Model
+NotAuthorized	lib/zuppler.rb	/^  class NotAuthorized < Error$/;"	c	class:Zuppler	inherits:Error
+Notification	lib/zuppler/notification.rb	/^  class Notification < Model$/;"	c	class:Zuppler	inherits:Model
+OmniAuth	lib/omniauth_users.rb	/^module OmniAuth$/;"	m
+Option	lib/zuppler/option.rb	/^  class Option < Model$/;"	c	class:Zuppler	inherits:Model
+Order	lib/zuppler/order.rb	/^  class Order < Model$/;"	c	class:Zuppler	inherits:Model
+Prints	lib/zuppler/users/prints.rb	/^    module Prints$/;"	m	class:Zuppler.Users
+Provider	lib/zuppler/provider.rb	/^  class Provider < Model$/;"	c	class:Zuppler	inherits:Model
+Providers	lib/zuppler/users/providers.rb	/^    module Providers$/;"	m	class:Zuppler.Users
+Request	lib/zuppler/request.rb	/^  class Request$/;"	c	class:Zuppler
+Requestable	lib/zuppler/request.rb	/^  module Requestable$/;"	m	class:Zuppler
+Restaurant	lib/zuppler/restaurant.rb	/^  class Restaurant < Model$/;"	c	class:Zuppler	inherits:Model
+RetryError	lib/zuppler.rb	/^  class RetryError < Error$/;"	c	class:Zuppler	inherits:Error
+Roles	lib/zuppler/users/roles.rb	/^    module Roles$/;"	m	class:Zuppler.Users
+Search	lib/zuppler/users/search.rb	/^    module Search$/;"	m	class:Zuppler.Users
+SearchOrders	lib/zuppler/search_orders.rb	/^  class SearchOrders < Model$/;"	c	class:Zuppler	inherits:Model
+ServerError	lib/zuppler.rb	/^  class ServerError < Error$/;"	c	class:Zuppler	inherits:Error
+SkipCache	lib/zuppler.rb	/^  class SkipCache < Error$/;"	c	class:Zuppler	inherits:Error
+Strategies	lib/omniauth_users.rb	/^  module Strategies$/;"	m	class:OmniAuth
+Users	lib/omniauth_users.rb	/^    class Users < OmniAuth::Strategies::OAuth2$/;"	c	class:OmniAuth.Strategies	inherits:OmniAuth.Strategies.OAuth2
+Users	lib/zuppler/users/acls.rb	/^  module Users$/;"	m	class:Zuppler
+Users	lib/zuppler/users/prints.rb	/^  module Users$/;"	m	class:Zuppler
+Users	lib/zuppler/users/providers.rb	/^  module Users$/;"	m	class:Zuppler
+Users	lib/zuppler/users/roles.rb	/^  module Users$/;"	m	class:Zuppler
+Users	lib/zuppler/users/search.rb	/^  module Users$/;"	m	class:Zuppler
+Users	lib/zuppler/users/vaults.rb	/^  module Users$/;"	m	class:Zuppler
+Users	lib/zuppler/users/zupps.rb	/^  module Users$/;"	m	class:Zuppler
+VERSION	lib/zuppler/version.rb	/^  VERSION = '0.9.14'$/;"	C	class:Zuppler
+Vaults	lib/zuppler/users/vaults.rb	/^    module Vaults$/;"	m	class:Zuppler.Users
+Zuppler	lib/zuppler.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/application.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/category.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/channel.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/choice.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/discount.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/ingredient.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/item.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/menu.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/model.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/modifier.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/notification.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/option.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/order.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/provider.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/request.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/restaurant.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/search_orders.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/acls.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/prints.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/providers.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/roles.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/search.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/vaults.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/users/zupps.rb	/^module Zuppler$/;"	m
+Zuppler	lib/zuppler/version.rb	/^module Zuppler$/;"	m
+Zupps	lib/zuppler/users/zupps.rb	/^    module Zupps$/;"	m	class:Zuppler.Users
+_provider	lib/zuppler/users/providers.rb	/^      def _provider(type, &ablock)$/;"	f	class:Zuppler.Users.Providers
+access_token	lib/zuppler/application.rb	/^    def access_token(scope)$/;"	f	class:Zuppler.Application
+acls	lib/zuppler/users/acls.rb	/^      def acls(param = nil)$/;"	f	class:Zuppler.Users.Acls
+admin?	lib/zuppler/users/roles.rb	/^      def admin?$/;"	f	class:Zuppler.Users.Roles
+ambassador?	lib/zuppler/users/roles.rb	/^      def ambassador?$/;"	f	class:Zuppler.Users.Roles
+api_domain	lib/zuppler.rb	/^    def api_domain$/;"	F	class:Zuppler
+api_key	lib/zuppler.rb	/^    attr_accessor :channel_key, :restaurant_key, :api_key$/;"	F	class:Zuppler
+api_key=	lib/zuppler.rb	/^    attr_accessor :channel_key, :restaurant_key, :api_key$/;"	F	class:Zuppler
+api_url	lib/zuppler.rb	/^    def api_url(version = 'v2')$/;"	F	class:Zuppler
+api_version	lib/zuppler.rb	/^    def api_version$/;"	F	class:Zuppler
+body	lib/zuppler/request.rb	/^    attr_reader :url, :body, :headers$/;"	f	class:Zuppler.Request
+cache	lib/zuppler.rb	/^    def cache$/;"	F	class:Zuppler
+cache=	lib/zuppler.rb	/^    attr_writer :cache$/;"	F	class:Zuppler
+cancel	lib/zuppler/discount.rb	/^    def cancel(payload)$/;"	f	class:Zuppler.Discount
+cancel	lib/zuppler/order.rb	/^    def cancel(options = {})$/;"	f	class:Zuppler.Order
+cancel_checkin_order	lib/zuppler/discount.rb	/^    def cancel_checkin_order(payload)$/;"	f	class:Zuppler.Discount
+cancel_checkin_order_url	lib/zuppler/discount.rb	/^    def cancel_checkin_order_url$/;"	f	class:Zuppler.Discount
+cancel_discount_url	lib/zuppler/discount.rb	/^    def cancel_discount_url$/;"	f	class:Zuppler.Discount
+cancel_url	lib/zuppler/order.rb	/^    def cancel_url$/;"	f	class:Zuppler.Order
+categories_url	lib/zuppler/category.rb	/^    def categories_url$/;"	f	class:Zuppler.Category
+category_url	lib/zuppler/category.rb	/^    def category_url$/;"	f	class:Zuppler.Category
+channel	lib/zuppler.rb	/^    def channel$/;"	F	class:Zuppler
+channel?	lib/zuppler/users/roles.rb	/^      def channel?$/;"	f	class:Zuppler.Users.Roles
+channel_key	lib/zuppler.rb	/^    attr_accessor :channel_key, :restaurant_key, :api_key$/;"	F	class:Zuppler
+channel_key=	lib/zuppler.rb	/^    attr_accessor :channel_key, :restaurant_key, :api_key$/;"	F	class:Zuppler
+channels_uri	lib/zuppler.rb	/^    def channels_uri$/;"	F	class:Zuppler
+check	lib/zuppler.rb	/^    def check$/;"	F	class:Zuppler
+checkin_order	lib/zuppler/discount.rb	/^    def checkin_order(payload)$/;"	f	class:Zuppler.Discount
+checkin_order_url	lib/zuppler/discount.rb	/^    def checkin_order_url$/;"	f	class:Zuppler.Discount
+choice_url	lib/zuppler/choice.rb	/^    def choice_url$/;"	f	class:Zuppler.Choice
+choices_url	lib/zuppler/choice.rb	/^    def choices_url$/;"	f	class:Zuppler.Choice
+client_id	lib/zuppler/application.rb	/^    attr_reader :client_id, :client_secret$/;"	f	class:Zuppler.Application
+client_secret	lib/zuppler/application.rb	/^    attr_reader :client_id, :client_secret$/;"	f	class:Zuppler.Application
+close	lib/zuppler/order.rb	/^    def close(options = {})$/;"	f	class:Zuppler.Order
+close_url	lib/zuppler/order.rb	/^    def close_url$/;"	f	class:Zuppler.Order
+commit	lib/zuppler/discount.rb	/^    def commit(payload)$/;"	f	class:Zuppler.Discount
+commit_discount_url	lib/zuppler/discount.rb	/^    def commit_discount_url$/;"	f	class:Zuppler.Discount
+config	lib/zuppler.rb	/^    alias_method :config, :configure$/;"	a	class:Zuppler
+config?	lib/zuppler/users/roles.rb	/^      def config?$/;"	f	class:Zuppler.Users.Roles
+configure	lib/zuppler.rb	/^    def configure$/;"	F	class:Zuppler
+confirm	lib/zuppler/notification.rb	/^    def confirm(options = {})$/;"	f	class:Zuppler.Notification
+confirm	lib/zuppler/order.rb	/^    def confirm(options = {})$/;"	f	class:Zuppler.Order
+confirm_url	lib/zuppler/order.rb	/^    def confirm_url$/;"	f	class:Zuppler.Order
+create	lib/zuppler/restaurant.rb	/^      def create(options = {})$/;"	F	class:Zuppler.Restaurant
+create_vault	lib/zuppler/users/vaults.rb	/^      def create_vault(options)$/;"	f	class:Zuppler.Users.Vaults
+data	lib/omniauth_users.rb	/^      def data$/;"	f	class:OmniAuth.Strategies.Users
+debug	features/step_definitions/initialization_steps.rb	/^  def debug(message)$/;"	f	class:CucumberLogger
+destroy	lib/zuppler/category.rb	/^    def destroy$/;"	f	class:Zuppler.Category
+destroy	lib/zuppler/choice.rb	/^    def destroy$/;"	f	class:Zuppler.Choice
+destroy	lib/zuppler/ingredient.rb	/^    def destroy$/;"	f	class:Zuppler.Ingredient
+destroy	lib/zuppler/item.rb	/^    def destroy$/;"	f	class:Zuppler.Item
+destroy	lib/zuppler/menu.rb	/^    def destroy$/;"	f	class:Zuppler.Menu
+destroy	lib/zuppler/modifier.rb	/^    def destroy$/;"	f	class:Zuppler.Modifier
+destroy	lib/zuppler/option.rb	/^    def destroy$/;"	f	class:Zuppler.Option
+details	lib/zuppler/order.rb	/^    def details$/;"	f	class:Zuppler.Order
+details	lib/zuppler/provider.rb	/^    def details$/;"	f	class:Zuppler.Provider
+details	lib/zuppler/restaurant.rb	/^    def details$/;"	f	class:Zuppler.Restaurant
+disable_blank_filter	lib/zuppler/model.rb	/^    attr_accessor :disable_blank_filter$/;"	f	class:Zuppler.Model
+disable_blank_filter=	lib/zuppler/model.rb	/^    attr_accessor :disable_blank_filter$/;"	f	class:Zuppler.Model
+discount_url	lib/zuppler/discount.rb	/^    def discount_url$/;"	f	class:Zuppler.Discount
+discounts_url	lib/zuppler/discount.rb	/^    def discounts_url$/;"	f	class:Zuppler.Discount
+domains	lib/zuppler.rb	/^    attr_accessor :test, :domains, :logger$/;"	F	class:Zuppler
+domains=	lib/zuppler.rb	/^    attr_accessor :test, :domains, :logger$/;"	F	class:Zuppler
+execute	lib/zuppler/notification.rb	/^    def execute(options = {})$/;"	f	class:Zuppler.Notification
+execute	lib/zuppler/request.rb	/^    def execute(model, verb, &_ablock)$/;"	f	class:Zuppler.Request
+execute_find	lib/zuppler/model.rb	/^    def execute_find(url, headers = {})$/;"	f	class:Zuppler.Model
+execute_find	lib/zuppler/model.rb	/^    def self.execute_find(url, headers = {})$/;"	F	class:Zuppler.Model
+execute_get	lib/zuppler/model.rb	/^    def execute_get(url, body, headers = {})$/;"	f	class:Zuppler.Model
+execute_get	lib/zuppler/model.rb	/^    def self.execute_get(url, body, headers = {})$/;"	F	class:Zuppler.Model
+execute_post	lib/zuppler/model.rb	/^    def execute_post(url, body, headers = {})$/;"	f	class:Zuppler.Model
+execute_post	lib/zuppler/model.rb	/^    def self.execute_post(url, body, headers = {})$/;"	F	class:Zuppler.Model
+execute_read	lib/zuppler/request.rb	/^    def execute_read(model, &ablock)$/;"	f	class:Zuppler.Request
+execute_update	lib/zuppler/model.rb	/^    def execute_update(url, body, headers = {})$/;"	f	class:Zuppler.Model
+execute_update	lib/zuppler/model.rb	/^    def self.execute_update(url, body, headers = {})$/;"	F	class:Zuppler.Model
+execute_update	lib/zuppler/request.rb	/^    def execute_update(model, &ablock)$/;"	f	class:Zuppler.Request
+exists?	lib/zuppler/restaurant.rb	/^    def exists?$/;"	f	class:Zuppler.Restaurant
+filter_attributes	lib/zuppler/model.rb	/^    def filter_attributes(attrs, *keys)$/;"	f	class:Zuppler.Model
+find	lib/zuppler/category.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Category
+find	lib/zuppler/channel.rb	/^      def find(id)$/;"	F	class:Zuppler.Channel
+find	lib/zuppler/choice.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Choice
+find	lib/zuppler/discount.rb	/^    def self.find(id, restaurant_id, order_uuid, loyalty_id = nil)$/;"	F	class:Zuppler.Discount
+find	lib/zuppler/ingredient.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Ingredient
+find	lib/zuppler/item.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Item
+find	lib/zuppler/menu.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Menu
+find	lib/zuppler/modifier.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Modifier
+find	lib/zuppler/option.rb	/^    def self.find(id, restaurant_id)$/;"	F	class:Zuppler.Option
+find	lib/zuppler/order.rb	/^    def self.find(uuid)$/;"	F	class:Zuppler.Order
+find	lib/zuppler/provider.rb	/^    def self.find(token, user_id, id)$/;"	F	class:Zuppler.Provider
+find	lib/zuppler/restaurant.rb	/^    def self.find(permalink)$/;"	F	class:Zuppler.Restaurant
+grant	lib/zuppler/users/acls.rb	/^      def grant(user_id, options = {})$/;"	f	class:Zuppler.Users.Acls
+handle	lib/zuppler/model.rb	/^    def handle(response, version = 'v3')$/;"	f	class:Zuppler.Model
+headers	lib/zuppler/discount.rb	/^    def headers$/;"	f	class:Zuppler.Discount
+headers	lib/zuppler/provider.rb	/^    def headers$/;"	f	class:Zuppler.Provider
+headers	lib/zuppler/request.rb	/^    attr_reader :url, :body, :headers$/;"	f	class:Zuppler.Request
+id	lib/zuppler/provider.rb	/^    def id$/;"	f	class:Zuppler.Provider
+included	lib/zuppler/model.rb	/^    def self.included(mod)$/;"	F	class:Zuppler.Macros
+info	features/step_definitions/initialization_steps.rb	/^  def info(message)$/;"	f	class:CucumberLogger
+init	lib/zuppler.rb	/^    def init(channel_key, api_key, test = true, logger = nil)$/;"	F	class:Zuppler
+initialize	lib/zuppler/application.rb	/^    def initialize(client_id = ENV['CLIENT_ID'], client_secret = ENV['CLIENT_SECRET'])$/;"	f	class:Zuppler.Application
+initialize	lib/zuppler/notification.rb	/^    def initialize(order, type)$/;"	f	class:Zuppler.Notification
+initialize	lib/zuppler/request.rb	/^    def initialize(url, body, headers)$/;"	f	class:Zuppler.Request
+item_url	lib/zuppler/item.rb	/^    def item_url$/;"	f	class:Zuppler.Item
+items_url	lib/zuppler/item.rb	/^    def items_url$/;"	f	class:Zuppler.Item
+log	lib/zuppler/model.rb	/^      def log(url, response, options)$/;"	F	class:Zuppler.Model
+log	lib/zuppler/model.rb	/^    def log(url, response, options)$/;"	f	class:Zuppler.Model
+logger	lib/zuppler.rb	/^    attr_accessor :test, :domains, :logger$/;"	F	class:Zuppler
+logger=	lib/zuppler.rb	/^    attr_accessor :test, :domains, :logger$/;"	F	class:Zuppler
+loyalties_api_url	lib/zuppler.rb	/^    def loyalties_api_url(version = 'v5')$/;"	F	class:Zuppler
+menu_url	lib/zuppler/menu.rb	/^    def menu_url$/;"	f	class:Zuppler.Menu
+menus_url	lib/zuppler/menu.rb	/^    def menus_url$/;"	f	class:Zuppler.Menu
+miss	lib/zuppler/order.rb	/^    def miss(options = {})$/;"	f	class:Zuppler.Order
+miss_url	lib/zuppler/order.rb	/^    def miss_url$/;"	f	class:Zuppler.Order
+modifier_url	lib/zuppler/ingredient.rb	/^    def modifier_url$/;"	f	class:Zuppler.Ingredient
+modifier_url	lib/zuppler/modifier.rb	/^    def modifier_url$/;"	f	class:Zuppler.Modifier
+modifiers_url	lib/zuppler/ingredient.rb	/^    def modifiers_url$/;"	f	class:Zuppler.Ingredient
+modifiers_url	lib/zuppler/modifier.rb	/^    def modifiers_url$/;"	f	class:Zuppler.Modifier
+new?	lib/zuppler/model.rb	/^    def new?$/;"	f	class:Zuppler.Model
+new?	lib/zuppler/restaurant.rb	/^    def new?$/;"	f	class:Zuppler.Restaurant
+notification	lib/zuppler/order.rb	/^    def notification(type)$/;"	f	class:Zuppler.Order
+notification_url	lib/zuppler/notification.rb	/^    def notification_url(action)$/;"	f	class:Zuppler.Notification
+open	lib/zuppler/order.rb	/^    def open(options = {})$/;"	f	class:Zuppler.Order
+open_url	lib/zuppler/order.rb	/^    def open_url$/;"	f	class:Zuppler.Order
+option_url	lib/zuppler/option.rb	/^    def option_url$/;"	f	class:Zuppler.Option
+options_url	lib/zuppler/option.rb	/^    def options_url$/;"	f	class:Zuppler.Option
+order_url	lib/zuppler/order.rb	/^    def order_url$/;"	f	class:Zuppler.Order
+orders_api_url	lib/zuppler.rb	/^    def orders_api_url(version = 'v4')$/;"	F	class:Zuppler
+parent_restaurant_id	lib/zuppler/choice.rb	/^    def parent_restaurant_id$/;"	f	class:Zuppler.Choice
+pause	lib/zuppler/restaurant.rb	/^    def pause(options = {})$/;"	f	class:Zuppler.Restaurant
+pause_url	lib/zuppler/restaurant.rb	/^    def pause_url$/;"	f	class:Zuppler.Restaurant
+persisted?	lib/zuppler/model.rb	/^    def persisted?$/;"	f	class:Zuppler.Model
+print_params	lib/zuppler/users/prints.rb	/^      def print_params$/;"	f	class:Zuppler.Users.Prints
+provider	lib/zuppler/provider.rb	/^    def provider$/;"	f	class:Zuppler.Provider
+provider_id	lib/zuppler/provider.rb	/^    attr_accessor :provider_id$/;"	f	class:Zuppler.Provider
+provider_id=	lib/zuppler/provider.rb	/^    attr_accessor :provider_id$/;"	f	class:Zuppler.Provider
+provider_url	lib/zuppler/provider.rb	/^    def provider_url$/;"	f	class:Zuppler.Provider
+providers	lib/zuppler/users/providers.rb	/^      def providers(&ablock)$/;"	f	class:Zuppler.Users.Providers
+publish	lib/zuppler/restaurant.rb	/^    def publish(options = {})$/;"	f	class:Zuppler.Restaurant
+publish_url	lib/zuppler/restaurant.rb	/^    def publish_url$/;"	f	class:Zuppler.Restaurant
+request	lib/zuppler/request.rb	/^    def request(url, body, headers = request_headers)$/;"	f	class:Zuppler.Requestable
+request_headers	lib/zuppler/model.rb	/^    def self.request_headers(token)$/;"	F	class:Zuppler.Model
+request_phase	lib/omniauth_users.rb	/^      def request_phase$/;"	f	class:OmniAuth.Strategies.Users
+requires!	lib/zuppler/model.rb	/^    def requires!(data, *attributes)$/;"	f	class:Zuppler.Model
+resource_id	lib/zuppler/discount.rb	/^    def resource_id(response)$/;"	f	class:Zuppler.Discount
+resource_id	lib/zuppler/modifier.rb	/^    def resource_id(response)$/;"	f	class:Zuppler.Modifier
+resource_id	lib/zuppler/option.rb	/^    def resource_id(response)$/;"	f	class:Zuppler.Option
+resource_url	lib/zuppler/channel.rb	/^      def resource_url(_cid)$/;"	F	class:Zuppler.Channel
+resource_url	lib/zuppler/order.rb	/^    def resource_url$/;"	f	class:Zuppler.Order
+restaurant	lib/zuppler/choice.rb	/^    def restaurant$/;"	f	class:Zuppler.Choice
+restaurant?	lib/zuppler/users/roles.rb	/^      def restaurant?$/;"	f	class:Zuppler.Users.Roles
+restaurant_id	lib/zuppler/category.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Category
+restaurant_id	lib/zuppler/choice.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Choice
+restaurant_id	lib/zuppler/discount.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Discount
+restaurant_id	lib/zuppler/ingredient.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Ingredient
+restaurant_id	lib/zuppler/item.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Item
+restaurant_id	lib/zuppler/menu.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Menu
+restaurant_id	lib/zuppler/modifier.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Modifier
+restaurant_id	lib/zuppler/option.rb	/^    def restaurant_id$/;"	f	class:Zuppler.Option
+restaurant_id=	lib/zuppler/model.rb	/^    attr_writer :restaurant_id$/;"	f	class:Zuppler.Model
+restaurant_key	lib/zuppler.rb	/^    attr_accessor :channel_key, :restaurant_key, :api_key$/;"	F	class:Zuppler
+restaurant_key=	lib/zuppler.rb	/^    attr_accessor :channel_key, :restaurant_key, :api_key$/;"	F	class:Zuppler
+restaurant_staff?	lib/zuppler/users/roles.rb	/^      def restaurant_staff?$/;"	f	class:Zuppler.Users.Roles
+restaurant_url	lib/zuppler/restaurant.rb	/^    def restaurant_url$/;"	f	class:Zuppler.Restaurant
+restaurant_url	lib/zuppler/restaurant.rb	/^    def self.restaurant_url(permalink)$/;"	F	class:Zuppler.Restaurant
+restaurants	lib/zuppler/channel.rb	/^    def restaurants$/;"	f	class:Zuppler.Channel
+restaurants_api_url	lib/zuppler.rb	/^    def restaurants_api_url(version = 'v4')$/;"	F	class:Zuppler
+restaurants_url	lib/zuppler/restaurant.rb	/^    def restaurants_url$/;"	f	class:Zuppler.Restaurant
+resume	lib/zuppler/restaurant.rb	/^    def resume(options = {})$/;"	f	class:Zuppler.Restaurant
+resume_url	lib/zuppler/restaurant.rb	/^    def resume_url$/;"	f	class:Zuppler.Restaurant
+revoke	lib/zuppler/users/acls.rb	/^      def revoke(user_id, options = {})$/;"	f	class:Zuppler.Users.Acls
+revoke_bucks	lib/zuppler/users/zupps.rb	/^      def revoke_bucks(amount, restaurant_id, &ablock)$/;"	f	class:Zuppler.Users.Zupps
+revoke_points	lib/zuppler/users/zupps.rb	/^      def revoke_points(amount, &ablock)$/;"	f	class:Zuppler.Users.Zupps
+revoke_zupps_url	lib/zuppler/users/zupps.rb	/^      def revoke_zupps_url$/;"	f	class:Zuppler.Users.Zupps
+reward_bucks	lib/zuppler/users/zupps.rb	/^      def reward_bucks(amount, restaurant_id, &ablock)$/;"	f	class:Zuppler.Users.Zupps
+reward_points	lib/zuppler/users/zupps.rb	/^      def reward_points(amount, &ablock)$/;"	f	class:Zuppler.Users.Zupps
+reward_zupps_url	lib/zuppler/users/zupps.rb	/^      def reward_zupps_url$/;"	f	class:Zuppler.Users.Zupps
+role?	lib/zuppler/users/roles.rb	/^      def role?(role)$/;"	f	class:Zuppler.Users.Roles
+save	lib/zuppler/category.rb	/^    def save$/;"	f	class:Zuppler.Category
+save	lib/zuppler/choice.rb	/^    def save$/;"	f	class:Zuppler.Choice
+save	lib/zuppler/discount.rb	/^    def save$/;"	f	class:Zuppler.Discount
+save	lib/zuppler/ingredient.rb	/^    def save$/;"	f	class:Zuppler.Ingredient
+save	lib/zuppler/item.rb	/^    def save$/;"	f	class:Zuppler.Item
+save	lib/zuppler/menu.rb	/^    def save$/;"	f	class:Zuppler.Menu
+save	lib/zuppler/modifier.rb	/^    def save$/;"	f	class:Zuppler.Modifier
+save	lib/zuppler/option.rb	/^    def save$/;"	f	class:Zuppler.Option
+save	lib/zuppler/order.rb	/^    def save(options = {})$/;"	f	class:Zuppler.Order
+save	lib/zuppler/restaurant.rb	/^    def save$/;"	f	class:Zuppler.Restaurant
+scheme	lib/zuppler.rb	/^    def scheme$/;"	F	class:Zuppler
+search	lib/zuppler/search_orders.rb	/^    def self.search query$/;"	F	class:Zuppler.SearchOrders
+search	lib/zuppler/users/search.rb	/^      def search(token, query)$/;"	f	class:Zuppler.Users.Search
+search_url	lib/zuppler/search_orders.rb	/^    def self.search_url$/;"	F	class:Zuppler.SearchOrders
+search_url	lib/zuppler/users/search.rb	/^      def search_url$/;"	f	class:Zuppler.Users.Search
+ssl?	lib/zuppler.rb	/^    def ssl?$/;"	F	class:Zuppler
+success?	lib/zuppler/model.rb	/^    def self.success?(response)$/;"	F	class:Zuppler.Model
+success?	lib/zuppler/model.rb	/^    def success?(response)$/;"	f	class:Zuppler.Model
+support?	lib/zuppler/users/roles.rb	/^      def support?$/;"	f	class:Zuppler.Users.Roles
+test	lib/zuppler.rb	/^    attr_accessor :test, :domains, :logger$/;"	F	class:Zuppler
+test=	lib/zuppler.rb	/^    attr_accessor :test, :domains, :logger$/;"	F	class:Zuppler
+test?	lib/zuppler.rb	/^    def test?$/;"	F	class:Zuppler
+token	lib/zuppler/provider.rb	/^    attr_accessor :token$/;"	f	class:Zuppler.Provider
+token=	lib/zuppler/provider.rb	/^    attr_accessor :token$/;"	f	class:Zuppler.Provider
+touch	lib/zuppler/order.rb	/^    def touch(options = {})$/;"	f	class:Zuppler.Order
+touch_url	lib/zuppler/order.rb	/^    def touch_url$/;"	f	class:Zuppler.Order
+unmarshal	lib/zuppler/restaurant.rb	/^    def self.unmarshal(restaurant, response)$/;"	F	class:Zuppler.Restaurant
+update_attributes	lib/zuppler/model.rb	/^    def update_attributes(options)$/;"	f	class:Zuppler.Model
+update_print_params	lib/zuppler/users/prints.rb	/^      def update_print_params(print_params)$/;"	f	class:Zuppler.Users.Prints
+url	lib/zuppler/request.rb	/^    attr_reader :url, :body, :headers$/;"	f	class:Zuppler.Request
+user?	lib/zuppler/users/roles.rb	/^      def user?$/;"	f	class:Zuppler.Users.Roles
+user_grant_url	lib/zuppler/users/acls.rb	/^      def user_grant_url(user_id)$/;"	f	class:Zuppler.Users.Acls
+user_id	lib/zuppler/provider.rb	/^    attr_accessor :user_id$/;"	f	class:Zuppler.Provider
+user_id=	lib/zuppler/provider.rb	/^    attr_accessor :user_id$/;"	f	class:Zuppler.Provider
+user_print_params_url	lib/zuppler/users/prints.rb	/^      def user_print_params_url$/;"	f	class:Zuppler.Users.Prints
+user_provider_url	lib/zuppler/users/providers.rb	/^      def user_provider_url(type)$/;"	f	class:Zuppler.Users.Providers
+user_providers_url	lib/zuppler/users/providers.rb	/^      def user_providers_url$/;"	f	class:Zuppler.Users.Providers
+user_revoke_url	lib/zuppler/users/acls.rb	/^      def user_revoke_url(user_id)$/;"	f	class:Zuppler.Users.Acls
+user_vaults_url	lib/zuppler/users/vaults.rb	/^      def user_vaults_url$/;"	f	class:Zuppler.Users.Vaults
+users_api_url	lib/zuppler.rb	/^    def users_api_url(version = 'v1')$/;"	F	class:Zuppler
+users_url	lib/zuppler.rb	/^    def users_url$/;"	F	class:Zuppler
+v3_response_code	lib/zuppler/model.rb	/^    def self.v3_response_code(response)$/;"	F	class:Zuppler.Model
+v3_response_code	lib/zuppler/model.rb	/^    def v3_response_code(response)$/;"	f	class:Zuppler.Model
+v3_success?	lib/zuppler/model.rb	/^    def self.v3_success?(response)$/;"	F	class:Zuppler.Model
+v3_success?	lib/zuppler/model.rb	/^    def v3_success?(response)$/;"	f	class:Zuppler.Model
+v4_response_code	lib/zuppler/model.rb	/^    def self.v4_response_code(response)$/;"	F	class:Zuppler.Model
+v4_response_code	lib/zuppler/model.rb	/^    def v4_response_code(response)$/;"	f	class:Zuppler.Model
+v4_success?	lib/zuppler/model.rb	/^    def self.v4_success?(response)$/;"	F	class:Zuppler.Model
+v4_success?	lib/zuppler/model.rb	/^    def v4_success?(response)$/;"	f	class:Zuppler.Model
+v5_success?	lib/zuppler/model.rb	/^    def self.v5_success?(response)$/;"	F	class:Zuppler.Model
+v5_success?	lib/zuppler/model.rb	/^    def v5_success?(response)$/;"	f	class:Zuppler.Model
+vaults	lib/zuppler/users/vaults.rb	/^      def vaults(&ablock)$/;"	f	class:Zuppler.Users.Vaults
