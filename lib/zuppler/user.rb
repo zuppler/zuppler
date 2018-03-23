@@ -39,8 +39,7 @@ module Zuppler
                         roles: info['roles'], acls: info['acls'],
                         trusted: info['trusted'],
                         provider: extra['provider'],
-                        access_token: credentials['token'],
-
+                        access_token: credentials['token']
     end
 
     def self.external_login(access_token, secret_key, provider)
