@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://users.api.biznettechnologies.com/v1/users/14802/grant.json
+    uri: http://users-api.biznettechnologies.com/v1/users/14802/grant.json
     body:
       encoding: UTF-8
       string: acls[market][]=1
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:03:37 GMT
+      - Tue, 27 Mar 2018 10:55:19 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6e3dc8db-9ced-4179-bfa0-9c0928a427c1
+      - 7d91ab1b-67cf-4f07-b6f4-1b291f29b39f
       X-Runtime:
-      - '0.032941'
+      - '0.021674'
       Vary:
       - Origin
       Via:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"success":false,"status":{"code":401,"message":"Unauthorized to update
         access"}}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:03:51 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:19 GMT
 recorded_with: VCR 4.0.0

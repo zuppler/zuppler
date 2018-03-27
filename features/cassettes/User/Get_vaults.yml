@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://users.api.biznettechnologies.com/v1/users/current/vaults.json
+    uri: http://users-api.biznettechnologies.com/v1/users/current/vaults.json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:03:42 GMT
+      - Tue, 27 Mar 2018 10:55:24 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,22 +29,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ebb6759ce4acf4bab60a58e73ac3882f"
+      - W/"04bf397f3db69cdc06fa9b919282fe58"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d1748d67-d7bb-4b6b-8667-8766d44c21e1
+      - 6fa1e153-5e35-46d5-916d-0ceca935cd3a
       X-Runtime:
-      - '0.036853'
+      - '0.065316'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"pagination":{"total":2,"page":0,"count":2},"status":{"code":200,"message":"OK"},"vaults":[{"id":195579,"expiration_date":"11/2016","created_at":"2018-02-28T09:45:54Z","gateway_id":"braintree","merchant_id":null,"uid":"abcd","brand":"visa","name":"test","number":"1234","title":"test
+      string: '{"success":true,"pagination":{"total":4,"page":0,"count":4},"status":{"code":200,"message":"OK"},"vaults":[{"id":195581,"expiration_date":"11/2016","created_at":"2018-02-28T10:07:43Z","gateway_id":"braintree","merchant_id":null,"uid":"abcd","brand":"visa","name":"test","number":"1234","title":"test
+        - visa - ****-1234","links":[{"name":"self","methods":["get","delete"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults/195581"}]},{"id":195580,"expiration_date":"11/2016","created_at":"2018-02-28T10:03:42Z","gateway_id":"braintree","merchant_id":null,"uid":"abcd","brand":"visa","name":"test","number":"1234","title":"test
+        - visa - ****-1234","links":[{"name":"self","methods":["get","delete"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults/195580"}]},{"id":195579,"expiration_date":"11/2016","created_at":"2018-02-28T09:45:54Z","gateway_id":"braintree","merchant_id":null,"uid":"abcd","brand":"visa","name":"test","number":"1234","title":"test
         - visa - ****-1234","links":[{"name":"self","methods":["get","delete"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults/195579"}]},{"id":122103,"expiration_date":"XX/2018","created_at":"2017-01-30T18:23:17Z","gateway_id":"braintree","merchant_id":null,"uid":"dcpbkb","brand":"master","name":"Test
         Zuppler","number":"4444","title":"Test Zuppler - master - ****-4444","links":[{"name":"self","methods":["get","delete"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults/122103"}]}]}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:03:56 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:24 GMT
 recorded_with: VCR 4.0.0

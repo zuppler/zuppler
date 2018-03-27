@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://users.api.biznettechnologies.com/v1/users/current.json
+    uri: http://users-api.biznettechnologies.com/v1/users/current.json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:03:36 GMT
+      - Tue, 27 Mar 2018 10:55:18 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -36,9 +36,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Request-Id:
-      - 8325eddd-89f0-4bf2-bab7-9b4ee7a311b9
+      - c0d16ec8-6e99-4edb-b6ea-d1ca0e4632b6
       X-Runtime:
-      - '0.018370'
+      - '0.013766'
       Vary:
       - Origin
       Via:
@@ -47,5 +47,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":false,"status":{"code":401,"message":"Unauthorized"}}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:03:51 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:18 GMT
 recorded_with: VCR 4.0.0

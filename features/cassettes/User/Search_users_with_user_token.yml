@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://users.api.biznettechnologies.com/v1/users/search.json
+    uri: http://users-api.biznettechnologies.com/v1/users/search.json
     body:
       encoding: UTF-8
       string: role=ambassador
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:03:40 GMT
+      - Tue, 27 Mar 2018 10:55:22 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c54b34af-0957-46cb-ac53-2457be005352
+      - 8846351b-12f0-4a13-8e47-fcf75b091239
       X-Runtime:
-      - '0.114141'
+      - '0.196293'
       Vary:
       - Origin
       Via:
@@ -48,5 +48,5 @@ http_interactions:
         Rosen","email":"alex@chitownmenus.com","phone":"847-207-9829","channel_id":1,"roles":["channel","ambassador","integration"],"created_at":"2011-03-10T12:09:54.000Z","gravatar_id":"c38b99c5536ccb458a431fad70946f86","acls":{"restaurant":[303,399,414,415,416,418,431,432,435,445,502,506,508,509,516,518,520,527,528,537,540,551,552,553,554,556,558,561,563,567,572,592,598,599,603,607,608,611,613,616,617,618,619,621,622,633,635,644,646,655,666,668],"channel":[8,12,14,16,17,18,19,21,24,25,26,29,39,45,47,61,983]},"links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/35e20f5e-fd1d-424a-aca9-ba4bb3be0e11"},{"name":"vaults","method":"get","url":"/v1/users/35e20f5e-fd1d-424a-aca9-ba4bb3be0e11/vaults"},{"name":"grant","method":"put","url":"/v1/users/35e20f5e-fd1d-424a-aca9-ba4bb3be0e11/grant"},{"name":"revoke","method":"put","url":"/v1/users/35e20f5e-fd1d-424a-aca9-ba4bb3be0e11/revoke"},{"name":"touch","method":"put","url":"/v1/users/35e20f5e-fd1d-424a-aca9-ba4bb3be0e11/touch"},{"name":"providers","method":"get","url":"/v1/users/35e20f5e-fd1d-424a-aca9-ba4bb3be0e11/providers"}]},{"id":5622,"uuid":"fea90a85-4675-4ce7-a122-32a0d608e46d","name":"AJ","email":"support@brandonlewismedia.com","phone":"217-552-8238","channel_id":1,"roles":["ambassador","channel","integration"],"created_at":"2011-05-09T01:29:32.000Z","gravatar_id":"1f3f21139dce4ca5ba996251453d8151","acls":{"restaurant":[637,640,641,642,643,645,648,649,651,652,654,657,658,663,678,679,680,684,690,694,728,742,743,746,750,753,754,755,773,774,778,824,884,911,912,1586,1933],"channel":[94]},"links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/fea90a85-4675-4ce7-a122-32a0d608e46d"},{"name":"vaults","method":"get","url":"/v1/users/fea90a85-4675-4ce7-a122-32a0d608e46d/vaults"},{"name":"grant","method":"put","url":"/v1/users/fea90a85-4675-4ce7-a122-32a0d608e46d/grant"},{"name":"revoke","method":"put","url":"/v1/users/fea90a85-4675-4ce7-a122-32a0d608e46d/revoke"},{"name":"touch","method":"put","url":"/v1/users/fea90a85-4675-4ce7-a122-32a0d608e46d/touch"},{"name":"providers","method":"get","url":"/v1/users/fea90a85-4675-4ce7-a122-32a0d608e46d/providers"}]},{"id":6,"uuid":"f15cedd7-1db4-452a-afc9-fedd55b1bc35","name":"Iulian
         Costan","email":"iulian.costan@zuppler.com","phone":"6109095204","channel_id":1,"roles":["admin","config","dispatcher","channel","restaurant","ambassador"],"created_at":"2009-06-18T13:52:00.000Z","gravatar_id":"d91103fc35162730d228767e64126911","acls":{"restaurant":[1076,1137,1182,1550,1587,4548],"channel":[517,521,1040]},"links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/f15cedd7-1db4-452a-afc9-fedd55b1bc35"},{"name":"vaults","method":"get","url":"/v1/users/f15cedd7-1db4-452a-afc9-fedd55b1bc35/vaults"},{"name":"grant","method":"put","url":"/v1/users/f15cedd7-1db4-452a-afc9-fedd55b1bc35/grant"},{"name":"revoke","method":"put","url":"/v1/users/f15cedd7-1db4-452a-afc9-fedd55b1bc35/revoke"},{"name":"touch","method":"put","url":"/v1/users/f15cedd7-1db4-452a-afc9-fedd55b1bc35/touch"},{"name":"providers","method":"get","url":"/v1/users/f15cedd7-1db4-452a-afc9-fedd55b1bc35/providers"}]}]}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:03:54 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:22 GMT
 recorded_with: VCR 4.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://users.api.biznettechnologies.com/v1/users/current/print_params.json
+    uri: http://users-api.biznettechnologies.com/v1/users/current/print_params.json
     body:
       encoding: UTF-8
       string: print_params[token]=t
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:03:39 GMT
+      - Tue, 27 Mar 2018 10:55:21 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2d5c8652-af09-42f7-ac7e-c9e1bdfff15a
+      - a2cf00aa-7361-474c-a86a-55ef341a5b81
       X-Runtime:
-      - '0.129655'
+      - '0.089787'
       Vary:
       - Origin
       Via:
@@ -44,5 +44,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"print_params":{"token":"t"},"success":true,"status":{"code":200,"message":"OK"}}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:03:53 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:21 GMT
 recorded_with: VCR 4.0.0

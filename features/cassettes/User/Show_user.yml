@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://users.api.biznettechnologies.com/v1/users/current.json
+    uri: http://users-api.biznettechnologies.com/v1/users/current.json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:03:35 GMT
+      - Tue, 27 Mar 2018 10:55:17 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,13 +29,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5c8cd286ba67c8277738107ca4984316"
+      - W/"7a95fe01356b79aa6b2da8caf974cb79"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b6e3ab0f-d17b-4e0b-802d-7cb5164f06c9
+      - 97b8c099-b3d2-4346-bff8-c376f0d4a716
       X-Runtime:
-      - '0.052814'
+      - '0.062588'
       Vary:
       - Origin
       Via:
@@ -43,7 +43,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"user":{"id":14802,"uuid":"589e9ac9-a8c1-47ed-bf4b-aa9b19431249","name":"Test
-        Zuppler","email":"test@zuppler.com","phone":"610-844-2971","locales":[],"created_at":"2012-01-25T18:27:22Z","roles":["restaurant","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10],"market":[1]},"zuppler_bucks":"-440.0","zuppler_points":73969,"zupp_bucks":{"242":550.0,"1":-990.0},"zupp_points":{"total":73969,"total_in_dollars":73.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
+        Zuppler","email":"test@zuppler.com","phone":"610-844-2971","locales":[],"created_at":"2012-01-25T18:27:22Z","roles":["restaurant","dispatcher"],"acls":{"channel":[9],"restaurant":[242],"delivery_service":[1,10],"market":[1]},"zuppler_bucks":"-1430.0","zuppler_points":73969,"zupp_bucks":{"242":550.0,"1":-1980.0},"zupp_points":{"total":73969,"total_in_dollars":73.97},"gravatar_id":"b120236ab9362cc0ee826a1145e1fdff","links":[{"name":"self","methods":["get","patch","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249"},{"name":"vaults","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults"},{"name":"grant","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/grant"},{"name":"revoke","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/revoke"},{"name":"touch","method":"put","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/touch"},{"name":"providers","method":"get","url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/providers"},{"name":"print_params","methods":["get","put"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/print_params"}]}}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:03:50 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:17 GMT
 recorded_with: VCR 4.0.0

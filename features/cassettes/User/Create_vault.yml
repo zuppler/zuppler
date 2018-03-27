@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://users.api.biznettechnologies.com/v1/users/current/vaults.json
+    uri: http://users-api.biznettechnologies.com/v1/users/current/vaults.json
     body:
       encoding: UTF-8
       string: vault[name]=test&vault[brand]=visa&vault[number]=1234&vault[expiration_date]=11%2F2016&vault[uid]=abcd&vault[gateway_id]=braintree
@@ -19,7 +19,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Wed, 28 Feb 2018 10:07:43 GMT
+      - Tue, 27 Mar 2018 10:55:25 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,20 +29,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"23e49a15b3975203f1967fc0f0f9e21a"
+      - W/"8e7ede83631d234991d0a107f6812e81"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d24d7e6a-f8bb-43e3-b910-826431d875da
+      - 487a05ef-8aed-4427-9306-3cdedef48713
       X-Runtime:
-      - '0.051418'
+      - '0.067330'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"status":{"code":200,"message":"OK"},"vault":{"id":195581,"expiration_date":"11/2016","created_at":"2018-02-28T10:07:43Z","gateway_id":"braintree","merchant_id":null,"uid":"abcd","brand":"visa","name":"test","number":"1234","links":[{"name":"self","methods":["get","delete"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults/195581"}]}}'
+      string: '{"success":true,"status":{"code":200,"message":"OK"},"vault":{"id":195707,"expiration_date":"11/2016","created_at":"2018-03-27T10:55:24Z","gateway_id":"braintree","merchant_id":null,"uid":"abcd","brand":"visa","name":"test","number":"1234","links":[{"name":"self","methods":["get","delete"],"url":"/v1/users/589e9ac9-a8c1-47ed-bf4b-aa9b19431249/vaults/195707"}]}}'
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 10:07:57 GMT
+  recorded_at: Tue, 27 Mar 2018 10:55:25 GMT
 recorded_with: VCR 4.0.0
