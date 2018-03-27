@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 03 Nov 2016 09:42:03 GMT
+      - Fri, 23 Mar 2018 13:39:54 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -37,12 +37,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWNjNjI0NzFkOWM5ZDc3NmM2ZTZiOGNiZTRjMzVlMGMxBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUN0Y3JVZWVGSzJGaVVVdldXNzJUUC92Y3U3Q3kxM3NhUXVOeFU2YURoTjQ9BjsARg%3D%3D--96945aac4dd14f4a74e442fe482ffff54979ecb2;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRkZGQ4NDQyMTc1MGE4YmFmZTBjODI5YjFhZjc4Nzk5BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUlPbzZmd2J0eld0RTJWNVM1emFpUmlaUmNPa2FTVmhnSEM4MjdEUjBxN1E9BjsARg%3D%3D--c84ea533ff05c2642989168d632cc00e9af29a04;
         path=/; HttpOnly
       X-Request-Id:
-      - 8c2f215f-2bd0-4ef0-bf50-6e5a8468495b
+      - 8c54e5c4-0b12-4f5b-ac9e-ce0a4dcc1b26
       X-Runtime:
-      - '0.045672'
+      - '0.081620'
       Vary:
       - Origin
       Via:
@@ -51,5 +51,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":200,"message":"OK"},"modifier":{"id":1218,"name":"updated","multiple":true,"min_qty":3,"max_qty":5,"priority":1,"active":false}}'
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 09:42:04 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 23 Mar 2018 13:39:54 GMT
+recorded_with: VCR 4.0.0

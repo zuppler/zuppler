@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:28 GMT
-      Status:
-      - 200 OK
+      - Fri, 23 Mar 2018 13:39:53 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -28,31 +32,27 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"ac991d0bcf1e31118aa20e4266b32e2b"'
+      - W/"cb0523e10dabb5072218010bab8fbd47"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThkZDJhOTFjNzViYjcwOTM5YjM5ZmE5Mzg3Zjc5MzQzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWtuSUEvbWwzalV2MnRGVytGdm9XaUhyZmIwTEI4VEZWNk40eUt4M1JYQ2s9BjsARg%3D%3D--b07f64c7e1194dc9c7d71bae73d56070f190ae83;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThiZmMxMmMwYTYwMmVhOGQ4MjFkNjQwMzQ5YTVlODU0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWVaMmVUMlhuMjN5TEZLTmRiMG8rZ1EvTHhuRXdNK3VVODFKSDd6N1dpVGs9BjsARg%3D%3D--c7684707bf79727a1a5348814f22cad8d3cadf1a;
         path=/; HttpOnly
       X-Request-Id:
-      - 4ce59ca6-353e-4fe9-9751-7148676c4d90
+      - 7be372a7-baa9-4c55-bfc1-273d331a6c34
       X-Runtime:
-      - '0.494180'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.138919'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"menu":{"id":24924,"name":"lunch","description":"desc","active":false,"default":null,"use_category_tabs":null,"available_on":"","available_at":"Sun:
+      string: '{"success":true,"menu":{"id":28421,"name":"lunch","description":"desc","active":false,"default":null,"use_category_tabs":null,"availability":{"custom":false,"days":255,"time":[],"services":15},"available_on":"","available_at":"Sun:
         10:00am  - 10:00am <br/>Mon: 10:00am  - 10:00am <br/>Tue: 10:00am  - 10:00am
         <br/>Wed: 10:00am  - 10:00am <br/>Thu: 10:00am  - 10:00am <br/>Fri: 10:00am  -
-        10:00am <br/>Sat: 10:00am  - 10:00am ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/24924.json","categories":[]}}'
+        10:00am <br/>Sat: 10:00am  - 10:00am ","resource_url":"http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/menus/28421.json","chain":false,"categories":[]}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:28 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 23 Mar 2018 13:39:53 GMT
+recorded_with: VCR 4.0.0
