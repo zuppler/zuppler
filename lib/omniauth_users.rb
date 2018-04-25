@@ -25,7 +25,7 @@ module OmniAuth
       def request_phase
         options[:authorize_params][:provider] = request.params['provider']
         options[:authorize_params][:provider_page] = request.params['provider_page']
-        options[:authorize_params][:locale] = request.params['locale']
+        options[:authorize_params][:locale] = request.params['locale'] if request.params['locale'].present?
         super
       end
 
