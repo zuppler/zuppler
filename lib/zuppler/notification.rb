@@ -3,6 +3,7 @@ module Zuppler
     include ActiveAttr::Model
 
     attribute :sender
+    attribute :duration
 
     def initialize(order, type)
       @order = order
