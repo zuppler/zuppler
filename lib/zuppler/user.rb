@@ -26,6 +26,7 @@ module Zuppler
     attribute :merchant_id
     attribute :trusted
     attribute :marketing_opt_in
+    attribute :is_active
 
     def self.find(access_token, id = 'current')
       Zuppler::User.new access_token: access_token, id: id
@@ -40,6 +41,7 @@ module Zuppler
                         roles: info['roles'], acls: info['acls'],
                         trusted: info['trusted'],
                         marketing_opt_in: info['marketing_opt_in'],
+                        is_active: info['is_active'],
                         provider: extra['provider'],
                         access_token: credentials['token']
     end
