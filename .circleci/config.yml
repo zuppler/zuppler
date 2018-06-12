@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.3.4
+        environment:
+          RAILS_ENV: test
+          RACK_ENV: test
+    steps:
+      - checkout
+      - run:
+        name: Install Ruby Dependencies
+        command: bundle install
+      - run:
+        name: Run specs
+        command: bundle exec rspec --color --format progress spec
