@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (0.9.20)
+    zuppler (0.9.21)
       active_attr
       hashie
       httparty
@@ -12,7 +12,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    active_attr (0.10.3)
+    active_attr (0.11.0)
       activemodel (>= 3.0.2, < 6.0)
       activesupport (>= 3.0.2, < 6.0)
     activemodel (5.1.5)
@@ -128,7 +128,7 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    retriable (3.1.1)
+    retriable (3.1.2)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
