@@ -17,3 +17,6 @@ jobs:
       - run:
           name: Run features
           command: bundle exec cucumber
+      - run:
+          name: Release gem
+          command: ./script/publish
