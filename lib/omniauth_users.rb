@@ -27,6 +27,7 @@ module OmniAuth
         options[:authorize_params][:provider_page] = request.params['provider_page']
         options[:authorize_params][:locale] = request.params['locale'] if request.params['locale'].present?
         options[:authorize_params][:theme] = request.params['theme'] if request.params['theme'].present?
+        options[:authorize_params][:back_uri] = request.params['back_uri'] if request.params['back_uri'].present?
         super
       end
 
