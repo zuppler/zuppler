@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (1.0.0)
+    zuppler (1.0.1)
       active_attr
       hashie
       httparty
@@ -68,6 +68,7 @@ GEM
     formatador (0.2.5)
     furious (0.1.0)
       typhoeus (~> 0.7)
+    gem-release (2.0.1)
     gherkin (5.1.0)
     guard (2.14.2)
       formatador (>= 0.2.4)
@@ -197,6 +198,7 @@ DEPENDENCIES
   cucumber
   faker
   furious
+  gem-release
   guard
   guard-cucumber
   guard-rspec
