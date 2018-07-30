@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/modifiers/812695.json
     body:
       encoding: UTF-8
-      string: modifier[name]=cream&modifier[description]=up%20up&modifier[price]=1.99&modifier[priority]=1&modifier[default]=true&modifier[customization_id]=85100
+      string: modifier[name]=cream&modifier[description]=up%20up&modifier[price]=1.99&modifier[priority]=1&modifier[default]=true&modifier[priced_in]=true&modifier[customization_id]=85100
     headers: {}
   response:
     status:
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 06 Oct 2016 15:39:39 GMT
+      - Mon, 30 Jul 2018 14:48:32 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -37,12 +37,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThkMjQwMDgyZjhlOTM2ZjNkOGU5MGJhMGMxMWQzYThkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVVkeFlaN25YcU1XZStkdUxZVnZjbkxEdWU0T0toSm55UjA0WE1jZFRkb1E9BjsARg%3D%3D--5acf3f0a84735b132780f3c3331e41211e65b8cf;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTczMTcxZjVjOTlkOGFiYmE3MTNmODdlNTNmMjdjYTZmBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMU9RQ0cxQ1VyMGY5cEgzbTAvb25ZR093Q1dJV2cxUE5BdEJZUVZDcFIxbE09BjsARg%3D%3D--60914cc1d9c8db5a93f272db65163d14bcae796d;
         path=/; HttpOnly
       X-Request-Id:
-      - 5c36213b-ffe8-4a3b-8bbb-ed22c8db350f
+      - 04fd8e81-3607-46eb-9269-f72121f46796
       X-Runtime:
-      - '0.075166'
+      - '0.137960'
       Vary:
       - Origin
       Via:
@@ -52,5 +52,5 @@ http_interactions:
       string: '{"success":true,"modifier":{"customization_id":85100,"id":812695,"size_name":"Extra-Large","name":"cream","description":"up
         up","price":"1.99","priority":1,"active":true,"default":true,"parent_id":330875}}'
     http_version: 
-  recorded_at: Thu, 06 Oct 2016 15:39:39 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 30 Jul 2018 14:48:43 GMT
+recorded_with: VCR 4.0.0

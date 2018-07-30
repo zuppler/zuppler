@@ -13,6 +13,7 @@ module Zuppler
     attribute :priority
     attribute :active
     attribute :default
+    attribute :priced_in
 
     validates_presence_of :choice, :name, :price
 

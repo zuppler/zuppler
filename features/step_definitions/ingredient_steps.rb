@@ -13,7 +13,7 @@ end
 When(/^I update ingredient "(.*?)" with "(.*?)","(.*?)","(.*?)","(.*?)"$/) do |_id, name, price, priority, _active|
   @ingredient.attributes = {
     name: name, price: price, priority: priority, default: true, description: 'up up',
-    option_id: nil
+    option_id: nil, priced_in: true
   }
   @ingredient.choice = @choice
   @success = @ingredient.save

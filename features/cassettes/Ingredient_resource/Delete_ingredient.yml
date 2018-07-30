@@ -17,9 +17,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 04 May 2015 05:44:26 GMT
-      Status:
-      - 200 OK
+      - Mon, 30 Jul 2018 14:48:43 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -28,28 +32,24 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"1de0b39c77aa8c24037be2451399eee6"'
+      - W/"71b729885ee16df5b429f1f813bfc6d1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWUyY2ZkZjIwYjM4MTU4ZTgwYmFiYTU1OGU1NzMxMmM3BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMThjQmU0azdzWkJ0dEd0THJZZU9Ra2w4YlBqUTRPay81OFE3ZjJFU2JXS0k9BjsARkkiCmZsYXNoBjsAVG86JUFjdGlvbkRpc3BhdGNoOjpGbGFzaDo6Rmxhc2hIYXNoCToKQHVzZWRvOghTZXQGOgpAaGFzaHsAOgxAY2xvc2VkRjoNQGZsYXNoZXN7BjoLbm90aWNlSSIaU3VjY2Vzc2Z1bGx5IHVwZGF0ZWQhBjsAVDoJQG5vdzA%3D--c60c9c3cbcf7b0024072c7cc2eef2734f1d923b1;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTYzNmM1MTcwNTdjNDI3YTY3MWYyYjQ5OTU3OTM5Y2I2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXBobTdXcVdRa2UzSGgrS2lBUmlPVnVYNjY0d2hmaVhtQ1BqcFRnam1HN289BjsARg%3D%3D--8592888fb505889acea0518e7f345227cb8339c6;
         path=/; HttpOnly
       X-Request-Id:
-      - fa7ea801-d5e2-4470-bf37-642d11584a0c
+      - f4c90399-f557-48fe-bf95-ad64b133b275
       X-Runtime:
-      - '0.033844'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.036910'
       Vary:
       - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"success":true,"modifier":{"id":1,"size_name":"","name":"bacon","price":0.0,"priority":7,"active":true,"parent_id":461}}'
+      string: '{"success":true,"modifier":{"customization_id":1,"id":1,"size_name":"","name":"bacon","description":null,"price":0.0,"priority":7,"active":true,"default":null,"parent_id":461}}'
     http_version: 
-  recorded_at: Mon, 04 May 2015 05:44:26 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Mon, 30 Jul 2018 14:48:43 GMT
+recorded_with: VCR 4.0.0
