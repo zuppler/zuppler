@@ -16,6 +16,13 @@ module Zuppler
       Zuppler::Order.new uuid: uuid
     end
 
+    def create_adjustment(options = {})
+      update_attributes options
+      order_adjustment_attributes = filter_attributes attributes, 'tip', 'order', 'uuid'
+      response = execute_update order_adjustment_url, order_adjustment_attributes, {}
+      v4_success? response
+    end
+
     def confirm(options = {})
       update_attributes options
       order_attributes = filter_attributes attributes, 'uuid'
@@ -82,6 +89,10 @@ module Zuppler
     end
 
     private
+
+    def order_adjustment_url
+      "#{resource_url}/create_adjustment.json"
+    end
 
     def confirm_url
       "#{resource_url}/confirm.json"
