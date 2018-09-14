@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zuppler (1.1.0)
+    zuppler (1.1.1)
       active_attr
       hashie
       httparty
@@ -12,7 +12,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    active_attr (0.11.0)
+    active_attr (0.12.0)
       activemodel (>= 3.0.2, < 6.0)
       activesupport (>= 3.0.2, < 6.0)
     activemodel (5.2.0)
@@ -214,4 +214,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.3
+   1.16.4
