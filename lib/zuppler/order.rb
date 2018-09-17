@@ -9,6 +9,8 @@ module Zuppler
     attribute :sender
     attribute :metadata
     attribute :force
+    attribute :tip
+    attribute :order
 
     validates_presence_of :uuid
 
