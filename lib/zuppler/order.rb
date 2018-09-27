@@ -20,7 +20,7 @@ module Zuppler
 
     def create_adjustment(options = {})
       update_attributes options
-      order_adjustment_attributes = filter_attributes attributes, 'tip', 'order', 'uuid'
+      order_adjustment_attributes = filter_attributes attributes, 'uuid'
       response = execute_update order_adjustment_url, order_adjustment_attributes, {}
       v4_success? response
     end
