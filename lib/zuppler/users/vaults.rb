@@ -12,7 +12,7 @@ module Zuppler
       end
 
       def create_vault(options)
-        requires! options, :name, :brand, :number, :expiration_date, :uid
+        requires! options, :name, :brand, :number, :expiration_date, :uid, :customer_token
         vault_attributes = { vault: options }
         response = execute_post user_vaults_url, vault_attributes, request_headers
         success = v4_success? response
