@@ -10,7 +10,8 @@ module Zuppler
     attribute :metadata
     attribute :force
     attribute :tip
-    attribute :order
+    attribute :total
+    attribute :type
 
     validates_presence_of :uuid
 
