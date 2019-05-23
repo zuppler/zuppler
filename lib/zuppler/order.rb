@@ -98,7 +98,7 @@ module Zuppler
     end
 
     def confirm_url
-      "#{resource_url}/confirm.json"
+      "http://zuppler-secure-staging-pr-79.herokuapp.com/v4/orders/#{uuid}/confirm.json"
     end
 
     def cancel_url
