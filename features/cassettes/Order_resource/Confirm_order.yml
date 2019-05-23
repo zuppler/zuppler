@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders-api.biznettechnologies.com/v4/orders/e692b248-57f7-11e5-99a6-927284b3d77a/confirm.json
+    uri: http://zuppler-secure-staging-pr-79.herokuapp.com/v4/orders/e692b248-57f7-11e5-99a6-927284b3d77a/confirm.json
     body:
       encoding: UTF-8
       string: time=2016-07-12%2011%3A23&duration=20&sender=test
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 03 Nov 2016 09:35:52 GMT
+      - Thu, 23 May 2019 11:54:46 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -26,24 +26,24 @@ http_interactions:
       - nosniff
       Content-Type:
       - application/json; charset=utf-8
-      Vary:
-      - Origin
       Etag:
       - W/"551613a621b01d524a24afbca2cac818"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=VDdWZm5JZU5FM0hTYkxMUWd1emJjRWp0VndXZzlXRWZQd05SNmFmNWRIZW5ybGI0SlNsR1dENjRINFVQNmxnT3l4ZXdiekpNK0F5R01Ha1VaUXhuTDFLZFVvQjJ0UmRHOGpvVy8wNXJiRWgvTVB5U2ZTakxFaXFsZTloNUtFNU0xVytHdE01K01HRW9jalgxNlNaWkQvdG1xa3ZYZEx4cElNMTI1MkJ2Wnh6NE9zbU04dFF4d2NiR3BoQWFCYTNLLS1tOGJ1bW0yRnZSdUZXWWk3RU9RUFhnPT0%3D--fa79282a4f625e580456f322c38d3b7cbb777046;
+      - _zs_session=TDBJOWVZMHZyczE5em8vUmY5c0ZhODQvbHZUQXU0dENZMDRDUTIycDByajJ4WHRxK1FvZ2VCM1BHWnVxaUNXT3lCbmVOVlNPZW1DTEF3ZkxIRndwdTRCTWFHVXM3anB5cTI3WDNMZmdTaFY2NzcrTmkra3pNRUpkVTNyY3QvWWxrTlcxNlJ3UCt1c1NjSjc1NG5HblIwRk9iQ3VMTTNMejc0eTByc3pwL0VxdU0vUHp1OHh3eUdpQnF1dkhNSk1QLS1tTlpGenpubzRXc3g3YmRMRlhOaFZRPT0%3D--b2e8a5c1de5d0b397c35feddf5411521d478ceb0;
         path=/; HttpOnly
       X-Request-Id:
-      - ecf7b5ba-fbd8-4fc7-8822-545e4a054d26
+      - 7fc387a1-77cb-43bf-ae98-71e1442cc8d4
       X-Runtime:
-      - '0.401119'
+      - '0.011066'
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 09:35:52 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 23 May 2019 11:54:47 GMT
+recorded_with: VCR 4.0.0
