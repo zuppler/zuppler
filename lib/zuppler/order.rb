@@ -102,7 +102,7 @@ module Zuppler
     end
 
     def cancel_url
-      "#{resource_url}/cancel.json"
+      "http://zuppler-secure-staging-pr-79.herokuapp.com/v4/orders/#{uuid}/cancel.json"
     end
 
     def miss_url

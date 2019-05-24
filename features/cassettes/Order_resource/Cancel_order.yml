@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: http://orders-api.biznettechnologies.com/v4/orders/fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1/cancel.json
+    uri: http://zuppler-secure-staging-pr-79.herokuapp.com/v4/orders/fcbe0bfe-78df-11e5-94c3-4e2ac2a314c1/cancel.json
     body:
       encoding: UTF-8
       string: reason=food%20was%20cold&sender=test
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Thu, 03 Nov 2016 09:35:52 GMT
+      - Fri, 24 May 2019 06:03:30 GMT
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -26,24 +26,24 @@ http_interactions:
       - nosniff
       Content-Type:
       - application/json; charset=utf-8
-      Vary:
-      - Origin
       Etag:
       - W/"551613a621b01d524a24afbca2cac818"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zs_session=OTNmZmpGN1lEWGhXSmZqYjFHa2J6UVY0UzZGQWxZZDRhQm1zNU1KeXJ0YU02amkxYk1RZVFidUo3VE1RTGszYjYrMU9NWGgwUHd3ekNlNXR6N3ppdldVVmQ0dkZrbmZKUURBRmpkTjNxZmxnWk1rOEdNMHBEQ3d0TWQ1ckk1bzdEYlNIZjVMcENJTEhYMHkyc2VaeGJtd2M1RjAvdythRVhOaG9RcXc2TkNFMWhnQzFrSnZQRHBINFBtR25qcWFGLS1XTjR4YkVMaEJnbk1DaHdBNjVJUVdBPT0%3D--8828b23e687ce33c30aabb9b37dc7d72d0786e7e;
+      - _zs_session=WVdOU2xiQ1FvakdvOUxkVXdiaDF5SUJNV0FHK1JoLytrNWxkU0RLS0JkNkZtY1k2ejdRQmdDYnBzczJWcFB5SWZ5UnNXSTdOdlJzRm5JTmlocHFQUFRvSFRkYUZYdDhlUHVqYmdaaVhUbHF4ekJ2NldvRW5JTkZkVTJCRTRVTzlHazE3V3dzOTRLUnpOOXBEWkE4R3RyYkdiK0F6V1pTTUR1ZmhobU9MTFluVlFrdjhHWFZVQXFRa25WZk1NZllLLS1PWGhQSm5UMWxHS0FLeTJJNzRKcjlnPT0%3D--ef8cf5b0dfabdcd714b6b755afe7d97c97b52f14;
         path=/; HttpOnly
       X-Request-Id:
-      - 25e2a2d8-50c2-410a-a399-7eb75eca07ac
+      - cc9d0362-f7cf-43f7-95aa-345939bc6266
       X-Runtime:
-      - '0.022169'
+      - '2.199301'
+      Vary:
+      - Origin
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"success":true,"status":{"code":202,"message":"Accepted"}}'
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 09:35:53 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 24 May 2019 06:03:30 GMT
+recorded_with: VCR 4.0.0
