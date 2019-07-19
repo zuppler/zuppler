@@ -47,6 +47,27 @@ module Zuppler
       v4_success? response
     end
 
+    def prepare(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update prepare_url, order_attributes, {}
+      v4_success? response
+    end
+
+    def pickup(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update pickup_url, order_attributes, {}
+      v4_success? response
+    end
+
+    def delivery(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update delivery_url, order_attributes, {}
+      v4_success? response
+    end
+
     def open(options = {})
       update_attributes options
       order_attributes = filter_attributes attributes, 'uuid'
@@ -107,6 +128,18 @@ module Zuppler
 
     def miss_url
       "#{resource_url}/miss.json"
+    end
+
+    def prepare_url
+      "#{resource_url}/prepare.json"
+    end
+
+    def pickup_url
+      "#{resource_url}/picup.json"
+    end
+
+    def delivery_url
+      "#{resource_url}/delivery.json"
     end
 
     def open_url
