@@ -54,19 +54,19 @@ module Zuppler
       v4_success? response
     end
 
-    # def pickup(options = {})
-    #   update_attributes options
-    #   order_attributes = filter_attributes attributes, 'uuid'
-    #   response = execute_update pickup_url, order_attributes, {}
-    #   v4_success? response
-    # end
+    def pickup(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update pickup_url, order_attributes, {}
+      v4_success? response
+    end
 
-    # def delivery(options = {})
-    #   update_attributes options
-    #   order_attributes = filter_attributes attributes, 'uuid'
-    #   response = execute_update delivery_url, order_attributes, {}
-    #   v4_success? response
-    # end
+    def delivery(options = {})
+      update_attributes options
+      order_attributes = filter_attributes attributes, 'uuid'
+      response = execute_update delivery_url, order_attributes, {}
+      v4_success? response
+    end
 
     def open(options = {})
       update_attributes options
