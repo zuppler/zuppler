@@ -47,7 +47,7 @@ module Zuppler
       production: 'zuppler.com',
       staging: 'biznettechnologies.com',
       development: 'zuppler.test',
-      test: 'biznettechnologies.com'
+      test: 'zuppler.test'
     }.freeze
     DEFAULT_CACHE = {}.freeze
 
@@ -99,7 +99,7 @@ module Zuppler
     end
 
     def orders_api_url(version = 'v4')
-      'http://secure.' + api_domain + "/#{version}" if defined? Rails && Rails.env.to_sym == :development
+      'http://secure.' + api_domain + "/#{version}" if test? || (defined? Rails && Rails.env.to_sym == :development)
       'http://orders-api.' + api_domain + "/#{version}"
     end
 
