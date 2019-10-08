@@ -13,7 +13,7 @@ module Zuppler
     attribute :size_priority
     attribute :image_url
     attribute :min_qty
-    attribute :alias
+    attribute :alias_name
 
     validates_presence_of :category, :name, :price
 
