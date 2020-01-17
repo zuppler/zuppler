@@ -195,5 +195,14 @@ module Zuppler
         raise ArgumentError, "'#{attr}' is required" unless data.include? attr
       end
     end
+
+    def self.publish_to_google(params)
+      options = { body: params }
+      post google_publish_url, options
+    end
+
+    def self.google_publish_url
+      'http://api.' + Zuppler.api_domain + '/google/publish'
+    end
   end
 end
