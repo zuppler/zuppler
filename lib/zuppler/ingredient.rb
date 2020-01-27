@@ -14,6 +14,7 @@ module Zuppler
     attribute :active
     attribute :default
     attribute :priced_in
+    attribute :image_url
 
     validates_presence_of :choice, :name, :price
 
