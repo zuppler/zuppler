@@ -4,6 +4,7 @@ module Zuppler
 
     attribute :sender
     attribute :duration
+    attribute :time
 
     def initialize(order, type)
       @order = order
