@@ -39,7 +39,7 @@ module Zuppler
       response.success?
     end
 
-    def configurations(options = {})
+    def set_configurations(options = {})
       configuration_attributes = filter_attributes attributes, 'id', 'permalink'
       response = execute_update configurations_url, configurations: configuration_attributes
       response.success?
@@ -105,6 +105,10 @@ module Zuppler
 
     def resume_url
       "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/pause.json"
+    end
+
+    def configurations_url
+      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/configurations.json"
     end
   end
 end
