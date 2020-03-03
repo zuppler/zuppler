@@ -6,6 +6,7 @@ module Zuppler
     attribute :permalink
     attribute :name
     attribute :address
+    attribute :configurations
 
     class << self
       def create(options = {})
@@ -35,6 +36,12 @@ module Zuppler
 
     def resume(options = {})
       response = execute_update resume_url, options
+      response.success?
+    end
+
+    def configurations(options = {})
+      configuration_attributes = filter_attributes attributes, 'id', 'permalink'
+      response = execute_update configurations_url, configurations: configuration_attributes
       response.success?
     end
 
