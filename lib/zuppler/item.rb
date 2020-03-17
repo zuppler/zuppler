@@ -15,6 +15,7 @@ module Zuppler
     attribute :min_qty
     attribute :alias_name
     attribute :featured
+    attribute :force
 
     validates_presence_of :category, :name, :price
 
