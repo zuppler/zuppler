@@ -104,7 +104,7 @@ module Zuppler
     end
 
     def resume_url
-      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/pause.json"
+      "#{Zuppler.api_url('v3')}/restaurants/#{permalink}/resume.json"
     end
 
     def configurations_url
