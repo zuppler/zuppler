@@ -2,11 +2,17 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/pause.json
+    uri: http://api.biznettechnologies.com/v3/channels/zuppler/restaurants/demorestaurant/resume.json
     body:
       encoding: US-ASCII
       string: ''
-    headers: {}
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
   response:
     status:
       code: 200
@@ -17,7 +23,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Fri, 18 Dec 2015 09:28:09 GMT
+      - Tue, 07 Apr 2020 12:00:31 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -26,21 +38,17 @@ http_interactions:
       - "*"
       Content-Type:
       - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       Etag:
-      - '"7363e85fe9edee6f053a4b319588c086"'
+      - W/"7363e85fe9edee6f053a4b319588c086"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWY1YmRlODZmMmViMTgzMGVkMzJiNWY0MmUyN2YxNjUzBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTJtTlFGbDRaT05QZkZmdjFXV2RLaHRmdkpIRzliL0NkZmYrMG1YZXFFaFE9BjsARg%3D%3D--5bd92750f5a00d96ea9ed64d553bcc056f8a5f8d;
+      - _zapi_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTFhMWJkNDJmNDMzMjNhMmU2NGFiNWIzN2M2OGVmZGI4BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVJwYXlGVExsZjN2d2NZNi8wN0hBakF2VmhDRCtnaXY1VnZoeFFPcENCQVE9BjsARg%3D%3D--135b05c64506495174cc0a7fcda269dc4ab9969b;
         path=/; HttpOnly
       X-Request-Id:
-      - a7d1d534-4496-48d3-b5fc-e4c4bfc6a773
+      - b4a10471-6930-4c98-a02c-53f3fdd0b7d2
       X-Runtime:
-      - '0.096664'
-      X-Rack-Cache:
-      - invalidate, pass
+      - '0.664617'
       Vary:
       - Origin
       Via:
@@ -49,5 +57,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true}'
     http_version: 
-  recorded_at: Fri, 18 Dec 2015 09:28:50 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Tue, 07 Apr 2020 12:00:31 GMT
+recorded_with: VCR 4.0.0
