@@ -1,4 +1,5 @@
 *.gem
+*.vim
 *.rbc
 .bundle
 .config
