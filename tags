@@ -1,406 +1,0 @@
-
-features/support/vcr.rb,0
-
-features/support/env.rb,0
-
-features/step_definitions/base_steps.rb,0
-
-features/step_definitions/discount_steps.rb,0
-
-features/step_definitions/ingredient_steps.rb,0
-
-features/step_definitions/user_steps.rb,0
-
-features/step_definitions/notification_steps.rb,0
-
-features/step_definitions/order_steps.rb,0
-
-features/step_definitions/item_steps.rb,0
-
-features/step_definitions/restaurant_steps.rb,0
-
-features/step_definitions/choice_steps.rb,0
-
-features/step_definitions/initialization_steps.rb,102
-class CucumberLoggerCucumberLogger1,0
-  def info(message)info2,21
-  def debug(message)debug6,65
-
-features/step_definitions/option_steps.rb,0
-
-features/step_definitions/env.rb,0
-
-features/step_definitions/menu_steps.rb,0
-
-features/step_definitions/modifier_steps.rb,0
-
-features/step_definitions/category_steps.rb,0
-
-spec/spec_helper.rb,0
-
-spec/zuppler/category_spec.rb,0
-
-spec/zuppler/restaurant_spec.rb,0
-
-spec/zuppler/menu_spec.rb,0
-
-spec/zuppler/item_spec.rb,0
-
-spec/zuppler/choice_spec.rb,0
-
-spec/zuppler/order_spec.rb,0
-
-spec/zuppler/user_spec.rb,0
-
-spec/zuppler/application_spec.rb,0
-
-spec/zuppler/channel_spec.rb,0
-
-spec/zuppler/model_spec.rb,104
-  class M < Zuppler::ModelM4,52
-    class RR8,115
-      def self.create(_options = {})create9,127
-
-script/release,0
-
-script/buildbox_tests,0
-
-script/publish,0
-
-script/buildbox_install,0
-
-lib/zuppler.rb,1016
-module ZupplerZuppler29,598
-  class Error < StandardErrorError30,613
-  class RetryError < ErrorRetryError32,649
-  class ServerError < ErrorServerError34,682
-  class SkipCache < ErrorSkipCache36,716
-  class NotAuthorized < ErrorNotAuthorized38,748
-    def init(channel_key, api_key, test = true, logger = nil)init54,1139
-    def configureconfigure60,1347
-    def checkcheck65,1428
-    def api_domainapi_domain70,1605
-    def cachecache81,1851
-    def api_versionapi_version85,1904
-    def channels_urichannels_uri89,1945
-    def api_url(version = 'v2')api_url93,2008
-    def restaurants_api_url(version = 'v4')restaurants_api_url97,2113
-    def orders_api_url(version = 'v4')orders_api_url101,2227
-    def users_api_url(version = 'v1')users_api_url105,2331
-    def loyalties_api_url(version = 'v5')loyalties_api_url109,2433
-    def users_urlusers_url113,2541
-    def schemescheme117,2608
-    def ssl?ssl?121,2662
-    def test?test?125,2724
-    def channelchannel129,2760
-
-lib/zuppler/category.rb,304
-module ZupplerZuppler1,0
-  class Category < ModelCategory2,15
-    def self.find(id, restaurant_id)find19,386
-    def savesave23,479
-    def destroydestroy38,1058
-    def restaurant_idrestaurant_id43,1120
-    def category_urlcategory_url49,1209
-    def categories_urlcategories_url53,1323
-
-lib/zuppler/item.rb,278
-module ZupplerZuppler1,0
-  class Item < ModelItem2,15
-    def self.find(id, restaurant_id)find19,391
-    def savesave23,484
-    def destroydestroy38,1034
-    def restaurant_idrestaurant_id43,1096
-    def item_urlitem_url49,1189
-    def items_urlitems_url53,1294
-
-lib/zuppler/discount.rb,809
-module ZupplerZuppler1,0
-  class Discount < ModelDiscount2,15
-    def self.find(id, restaurant_id, order_uuid, loyalty_id = nil)find16,302
-    def savesave20,473
-    def commit(payload)commit32,929
-    def checkin_order(payload)checkin_order37,1065
-    def cancel(payload)cancel42,1206
-    def cancel_checkin_order(payload)cancel_checkin_order47,1342
-    def restaurant_idrestaurant_id52,1497
-    def headersheaders58,1586
-    def resource_id(response)resource_id65,1712
-    def discount_urldiscount_url69,1821
-    def discounts_urldiscounts_url73,1946
-    def commit_discount_urlcommit_discount_url77,2066
-    def cancel_discount_urlcancel_discount_url81,2194
-    def checkin_order_urlcheckin_order_url85,2322
-    def cancel_checkin_order_urlcancel_checkin_order_url89,2425
-
-lib/zuppler/search_orders.rb,154
-module ZupplerZuppler1,0
-  class SearchOrders < ModelSearchOrders2,15
-    def self.search querysearch5,85
-    def self.search_urlsearch_url11,169
-
-lib/zuppler/menu.rb,278
-module ZupplerZuppler1,0
-  class Menu < ModelMenu2,15
-    def self.find(id, restaurant_id)find20,429
-    def savesave24,522
-    def destroydestroy38,1011
-    def restaurant_idrestaurant_id43,1073
-    def menus_urlmenus_url49,1164
-    def menu_urlmenu_url53,1264
-
-lib/zuppler/model.rb,1837
-module ZupplerZuppler1,0
-  module MacrosMacros2,15
-    def self.included(mod)included3,31
-        def create(options = {})create7,125
-  class ModelModel15,253
-      def log(url, response, options)log21,378
-    def log(url, response, options)log31,701
-    def persisted?persisted?35,790
-    def new?new?39,830
-    def self.v5_success?(response)v5_success43,868
-    def v5_success?(response)v5_success?47,936
-    def self.v4_response_code(response)v4_response_code51,1013
-    def v4_response_code(response)v4_response_code56,1171
-    def self.v4_success?(response)v4_success60,1258
-    def v4_success?(response)v4_success?64,1357
-    def self.v3_success?(response)v3_success68,1434
-    def v3_success?(response)v3_success?72,1533
-    def self.v3_response_code(response)v3_response_code76,1610
-    def v3_response_code(response)v3_response_code80,1696
-    def handle(response, version = 'v3')handle84,1783
-    def self.success?(response)success95,2048
-    def success?(response)success?99,2142
-    def self.execute_post(url, body, headers = {})execute_post103,2213
-    def execute_post(url, body, headers = {})execute_post110,2405
-    def self.execute_update(url, body, headers = {})execute_update114,2509
-    def execute_update(url, body, headers = {})execute_update137,3163
-    def self.execute_get(url, body, headers = {})execute_get141,3271
-    def execute_get(url, body, headers = {})execute_get164,4006
-    def self.execute_find(url, headers = {})execute_find168,4108
-    def execute_find(url, headers = {})execute_find175,4281
-    def self.request_headers(token)request_headers179,4373
-    def update_attributes(options)update_attributes183,4466
-    def filter_attributes(attrs, *keys)filter_attributes189,4585
-    def requires!(data, *attributes)requires!193,4718
-
-lib/zuppler/application.rb,215
-module ZupplerZuppler1,0
-  class ApplicationApplication2,15
-    def initialize(client_id = ENV['CLIENT_ID'], client_secret = ENV['CLIENT_SECRET'])initialize5,79
-    def access_token(scope)access_token11,358
-
-lib/zuppler/restaurant.rb,733
-module ZupplerZuppler1,0
-  class Restaurant < ModelRestaurant2,15
-      def create(options = {})create11,188
-    def self.find(permalink)find22,416
-    def publish(options = {})publish26,505
-    def pause(options = {})pause31,621
-    def resume(options = {})resume36,733
-    def savesave41,847
-    def exists?exists?53,1307
-    def detailsdetails57,1352
-    def new?new?69,1597
-    def self.unmarshal(restaurant, response)unmarshal73,1642
-    def restaurants_urlrestaurants_url79,1829
-    def self.restaurant_url(permalink)restaurant_url83,1912
-    def restaurant_urlrestaurant_url87,2023
-    def publish_urlpublish_url91,2097
-    def pause_urlpause_url95,2197
-    def resume_urlresume_url99,2293
-
-lib/zuppler/request.rb,392
-module ZupplerZuppler1,0
-  class RequestRequest2,15
-    def initialize(url, body, headers)initialize7,92
-    def execute_read(model, &ablock)execute_read13,201
-    def execute_update(model, &ablock)execute_update17,282
-    def execute(model, verb, &_ablock)execute23,381
-  module RequestableRequestable31,611
-    def request(url, body, headers = request_headers)request32,632
-
-lib/zuppler/modifier.rb,351
-module ZupplerZuppler1,0
-  class Modifier < ModelModifier2,15
-    def self.find(id, restaurant_id)find18,338
-    def savesave22,431
-    def destroydestroy36,958
-    def restaurant_idrestaurant_id42,1045
-    def resource_id(response)resource_id48,1136
-    def modifier_urlmodifier_url52,1245
-    def modifiers_urlmodifiers_url56,1370
-
-lib/zuppler/notification.rb,270
-module ZupplerZuppler1,0
-  class Notification < ModelNotification2,15
-    def initialize(order, type)initialize8,122
-    def execute(options = {})execute13,203
-    def confirm(options = {})confirm19,377
-    def notification_url(action)notification_url27,564
-
-lib/zuppler/users/acls.rb,336
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module AclsAcls3,30
-      def acls(param = nil)acls4,46
-      def grant(user_id, options = {})grant8,136
-      def revoke(user_id, options = {})revoke13,309
-      def user_grant_url(user_id)user_grant_url20,499
-      def user_revoke_url(user_id)user_revoke_url24,607
-
-lib/zuppler/users/prints.rb,256
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module PrintsPrints3,30
-      def print_paramsprint_params4,48
-      def update_print_params(print_params)update_print_params14,340
-      def user_print_params_urluser_print_params_url21,544
-
-lib/zuppler/users/zupps.rb,457
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module ZuppsZupps3,30
-      def reward_points(amount, &ablock)reward_points4,47
-      def revoke_points(amount, &ablock)revoke_points10,252
-      def reward_bucks(amount, restaurant_id, &ablock)reward_bucks16,457
-      def revoke_bucks(amount, restaurant_id, &ablock)revoke_bucks23,735
-      def reward_zupps_urlreward_zupps_url32,1028
-      def revoke_zupps_urlrevoke_zupps_url36,1131
-
-lib/zuppler/users/search.rb,164
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module SearchSearch3,30
-      def search(token, query)search4,48
-      def search_urlsearch_url9,214
-
-lib/zuppler/users/providers.rb,299
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module ProvidersProviders3,30
-      def providers(&ablock)providers4,51
-      def _provider(type, &ablock)_provider14,327
-      def user_providers_urluser_providers_url22,566
-      def user_provider_url(type)user_provider_url26,668
-
-lib/zuppler/users/roles.rb,411
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module RolesRoles3,30
-      def role?(role)role?4,47
-      def user?user?8,116
-      def channel?channel?12,172
-      def restaurant?restaurant?16,226
-      def restaurant_staff?restaurant_staff?20,286
-      def ambassador?ambassador?24,358
-      def config?config?28,418
-      def support?support?32,470
-      def admin?admin?36,524
-
-lib/zuppler/users/vaults.rb,222
-module ZupplerZuppler1,0
-  module UsersUsers2,15
-    module VaultsVaults3,30
-      def vaults(&ablock)vaults4,48
-      def create_vault(options)create_vault14,315
-      def user_vaults_urluser_vaults_url25,697
-
-lib/zuppler/ingredient.rb,306
-module ZupplerZuppler1,0
-  class Ingredient < ModelIngredient2,15
-    def self.find(id, restaurant_id)find19,384
-    def savesave23,477
-    def destroydestroy41,1159
-    def restaurant_idrestaurant_id48,1236
-    def modifier_urlmodifier_url52,1312
-    def modifiers_urlmodifiers_url56,1425
-
-lib/zuppler/channel.rb,173
-module ZupplerZuppler1,0
-  class ChannelChannel2,15
-      def find(id)find6,71
-      def resource_url(_cid)resource_url11,158
-    def restaurantsrestaurants16,240
-
-lib/zuppler/order.rb,765
-module ZupplerZuppler1,0
-  class Order < ModelOrder2,15
-    def self.find(uuid)find15,255
-    def confirm(options = {})confirm19,324
-    def cancel(options = {})cancel26,550
-    def miss(options = {})miss33,774
-    def open(options = {})open40,994
-    def close(options = {})close47,1218
-    def touch(options = {})touch54,1444
-    def save(options = {})save61,1670
-    def notification(type)notification68,1902
-    def detailsdetails72,1981
-    def resource_urlresource_url80,2182
-    def confirm_urlconfirm_url86,2274
-    def cancel_urlcancel_url90,2340
-    def miss_urlmiss_url94,2404
-    def open_urlopen_url98,2464
-    def close_urlclose_url102,2524
-    def touch_urltouch_url106,2586
-    def order_urlorder_url110,2648
-
-lib/zuppler/choice.rb,386
-module ZupplerZuppler1,0
-  class Choice < ModelChoice2,15
-    def self.find(id, restaurant_id)find27,597
-    def savesave31,690
-    def destroydestroy45,1210
-    def restaurantrestaurant51,1297
-    def restaurant_idrestaurant_id55,1380
-    def parent_restaurant_idparent_restaurant_id61,1495
-    def choice_urlchoice_url65,1594
-    def choices_urlchoices_url69,1703
-
-lib/zuppler/version.rb,27
-module ZupplerZuppler1,0
-
-lib/zuppler/option.rb,338
-module ZupplerZuppler1,0
-  class Option < ModelOption2,15
-    def self.find(id, restaurant_id)find16,294
-    def savesave20,387
-    def destroydestroy34,892
-    def resource_id(response)resource_id41,969
-    def restaurant_idrestaurant_id45,1076
-    def option_urloption_url49,1154
-    def options_urloptions_url53,1275
-
-lib/zuppler/provider.rb,272
-module ZupplerZuppler1,0
-  class Provider < ModelProvider2,15
-    def self.find(token, user_id, id)find9,155
-    def detailsdetails15,350
-    def providerprovider23,563
-    def idid27,613
-    def provider_urlprovider_url33,664
-    def headersheaders37,774
-
-lib/zuppler/user.rb,637
-module ZupplerZuppler9,217
-  class User < ModelUser10,232
-    def self.find(access_token, id = 'current')find31,816
-    def self.from_omniauth(omniauth)from_omniauth35,932
-    def self.external_login(access_token, secret_key, provider)external_login49,1562
-    def detailsdetails57,1883
-    def touch(_user_id = nil)touch67,2131
-    def update(user_info)update72,2265
-    def reloadreload77,2406
-    def request_headersrequest_headers81,2451
-    def cacheable(cache_key, data_key)cacheable87,2543
-    def cache_keycache_key97,2843
-    def user_touch_urluser_touch_url101,2904
-    def user_urluser_url105,2992
-
-lib/omniauth_users.rb,195
-module OmniAuthOmniAuth1,0
-  module StrategiesStrategies2,16
-    class Users < OmniAuth::Strategies::OAuth2Users3,36
-      def request_phaserequest_phase25,513
-      def datadata33,935
