@@ -5,6 +5,7 @@ require 'zuppler/users/providers'
 require 'zuppler/users/zupps'
 require 'zuppler/users/roles'
 require 'zuppler/users/prints'
+require 'zuppler/users/provider_keys'
 
 module Zuppler
   class User < Model
@@ -14,6 +15,7 @@ module Zuppler
             Zuppler::Users::Vaults, Zuppler::Users::Providers,
             Zuppler::Users::Zupps, Zuppler::Users::Prints
     extend Zuppler::Users::Search
+    extend Zuppler::Users::ProviderKeys
 
     attribute :id
     attribute :name
