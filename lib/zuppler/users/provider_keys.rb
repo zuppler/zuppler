@@ -6,12 +6,12 @@ module Zuppler
         headers = request_headers(token)
         body = create_body(params)
 
-        execute_post base_url, body.to_json, headers
+        execute_post base_url, body, headers
       end
 
       def load_providers_keys(token, channel_id)
         headers = request_headers(token)
-        body = {channel_id: channel_id}.to_json
+        body = {channel_id: channel_id}
 
         response = execute_get base_url, body, headers
 
@@ -23,7 +23,7 @@ module Zuppler
         headers = request_headers(token)
         body = create_body(params)
 
-        execute_update base_url, body.to_json, headers
+        execute_update base_url, body, headers
       end
 
       private
