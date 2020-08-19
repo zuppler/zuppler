@@ -16,6 +16,7 @@ module Zuppler
     attribute :alias_name
     attribute :featured
     attribute :force
+    attribute :dish_id
 
     validates_presence_of :category, :name, :price
 
@@ -27,11 +28,15 @@ module Zuppler
       if new?
         item_attributes = filter_attributes attributes, 'category'
         response = execute_post items_url, item: item_attributes
-        self.id = response['item']['id'] if v3_success?(response)
+        if v3_success?(response)
+          self.id = response['item']['id']
+          self.dish_id = response['item']['dish_id'] if response['item']['dish_id'].present?
+        end
       else
         item_attributes = filter_attributes attributes, 'category', 'id'
         item_attributes[:category_id] = category.id if category
         response = execute_update item_url, item: item_attributes
+        self.dish_id = response['item']['dish_id'] if response['item']['dish_id'].present?
       end
       success = handle response
       yield success, response if block_given?
