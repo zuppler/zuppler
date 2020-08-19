@@ -6,4 +6,4 @@ gemspec
 
 gem 'coveralls', require: false, group: :test
 gem 'codeclimate-test-reporter', require: nil, group: :test
-gem 'bump'
+# gem 'bump'
