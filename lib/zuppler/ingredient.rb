@@ -35,6 +35,7 @@ module Zuppler
         modifier_attributes = filter_attributes attributes, 'choice', 'id'
         modifier_attributes[:customization_id] = choice.id if choice
         response = execute_update modifier_url, modifier: modifier_attributes
+        self.parent_id = response['modifier']['parent_id'] if response['modifier']['parent_id'].present?
       end
       success = handle response
       yield success, response if block_given?
