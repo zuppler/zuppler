@@ -23,7 +23,7 @@ module Zuppler
       def update_vault(options)
         requires! options, :uid, :profile_id
         vault_attributes = { vault: options }
-        response = execute_update vault_update_url, vault_attributes, request_headers
+        response = execute_post vault_update_url, vault_attributes, request_headers
         success = v4_success? response
         yield success, vault_attributes, response if block_given?
         success
