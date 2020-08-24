@@ -20,6 +20,15 @@ module Zuppler
         success
       end
 
+      def update_vault(options)
+        requires! options, :uid, :profile_id
+        vault_attributes = { vault: options }
+        response = execute_update vault_update_url, vault_attributes, request_headers
+        success = v4_success? response
+        yield success, vault_attributes, response if block_given?
+        success
+      end
+
       private
 
       def user_vaults_url
@@ -27,6 +36,10 @@ module Zuppler
         url += "?gateway_id=#{gateway_id}" if gateway_id
         url += "&merchant_id=#{merchant_id}" if merchant_id
         url
+      end
+
+      def vault_update_url
+        "#{Zuppler.users_api_url}/users/#{id}/vaults/update_profile_id.json"
       end
     end
   end
