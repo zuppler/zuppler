@@ -36,7 +36,7 @@ module Zuppler
         item_attributes = filter_attributes attributes, 'category', 'id'
         item_attributes[:category_id] = category.id if category
         response = execute_update item_url, item: item_attributes
-        self.dish_id = response['item']['dish_id'] if response['item']['dish_id'].present?
+        self.dish_id = response['item']['dish_id'] if response['item'].present? && response['item']['dish_id'].present?
       end
       success = handle response
       yield success, response if block_given?
