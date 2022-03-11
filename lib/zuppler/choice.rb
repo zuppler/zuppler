@@ -16,6 +16,7 @@ module Zuppler
     attribute :order_by_priority
     attribute :multiple_ingredients
     attribute :size
+    attribute :depends_on, default: []
 
     validates_presence_of :name
     validate do
