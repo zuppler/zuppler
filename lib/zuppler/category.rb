@@ -10,6 +10,7 @@ module Zuppler
     attribute :active
     attribute :priced_by_size
     attribute :min_qty
+    attribute :remote_id
 
     validates_presence_of :menu, :name
     validate do

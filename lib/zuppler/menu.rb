@@ -9,6 +9,7 @@ module Zuppler
     attribute :description
     attribute :active
     attribute :locked, default: true
+    attribute :remote_id
 
     validates_presence_of :restaurant, :name
     validate do

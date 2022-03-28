@@ -17,6 +17,7 @@ module Zuppler
     attribute :multiple_ingredients
     attribute :size
     attribute :depends_on, default: []
+    attribute :remote_id
 
     validates_presence_of :name
     validate do

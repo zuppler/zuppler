@@ -17,6 +17,7 @@ module Zuppler
     attribute :featured
     attribute :force
     attribute :dish_id
+    attribute :remote_id
 
     validates_presence_of :category, :name, :price
 

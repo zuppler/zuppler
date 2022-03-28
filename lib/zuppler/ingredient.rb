@@ -16,6 +16,7 @@ module Zuppler
     attribute :priced_in
     attribute :image_url
     attribute :force
+    attribute :remote_id
 
     validates_presence_of :choice, :name, :price
 
